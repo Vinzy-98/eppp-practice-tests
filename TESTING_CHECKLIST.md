@@ -1,484 +1,288 @@
-# Resume Functionality - Testing Checklist
+# EPPP Manual Testing Checklist
 
-## Testing Completed: November 16, 2025
+## ⚠️ IMPORTANT: Test Everything Before Using
 
-### ✅ Critical Bug Fix Applied
-- **Issue Found**: `loadProgress()` function was defined but never called
-- **Fix Applied**: Added `loadProgress()` call in `window.addEventListener('load')` 
-- **Files Fixed**: All 15 test files (AR_Exam_1-8, Practice_EPPP_1-7)
-- **Status**: DEPLOYED to production
+This checklist verifies that all critical functionality works correctly. **Test these in order.**
 
 ---
 
-## Manual Testing Required
-
-### 1. Basic Resume Functionality
-**Test Steps:**
-1. Open any test (e.g., AR_Exam_1.html)
-2. Answer 10-15 questions
-3. Close browser tab
-4. Re-open the same test
-5. **Expected**: Resume prompt appears showing "X of Y questions answered"
-6. Click "OK"
-7. **Expected**: Answers are restored, progress bar shows correct percentage
-
-**Status**: ✅ Code Review Passed
-
-**Verification Points:**
-- ✅ `saveProgress()` called after `updateProgress()` in `selectChoice()`
-- ✅ `loadProgress()` called in window load event
-- ✅ Progress data includes: answers, startTime, elapsedTime, totalQuestions, answeredCount
-- ✅ `clearProgress()` called in `checkAnswers()` before grading
+## Prerequisites
+- Use Chrome, Safari, or Firefox
+- Clear browser cache if testing after updates
+- Have at least 10 minutes to complete all tests
 
 ---
 
-### 2. Time Tracking
-**Test Steps:**
-1. Start a test
-2. Answer questions (wait at least 2-3 minutes)
-3. Complete the test
-4. Click "Check Answers"
-5. **Expected**: Results show "Time: Xm Ys" format
+## Test 1: Authentication ✓
+**Purpose:** Verify login system works
 
-**Status**: ✅ Code Review Passed
+1. Navigate to: https://vinzy-98.github.io/eppp-practice-tests/
+2. You should see a login page
+3. Enter password: `EPPP2025`
+4. Click "Access Tests"
+5. **Expected:** You are redirected to the main page
 
-**Verification Points:**
-- ✅ `testStartTime` initialized to `Date.now()` on page load
-- ✅ `testElapsedTime` initialized to 0
-- ✅ `completionTime` calculated: `Math.floor((Date.now() - testStartTime + testElapsedTime) / 1000)`
-- ✅ Time displayed in scoreDetails: `Time: ${Math.floor(completionTime / 60)}m ${completionTime % 60}s`
+**Status:** □ Pass □ Fail
+**Notes:**
 
 ---
 
-### 3. Resume with Time Continuation
-**Test Steps:**
-1. Start a test, answer 5 questions (note the time)
-2. Close browser
-3. Wait 1-2 minutes
-4. Re-open test and resume
-5. Complete the test
-6. **Expected**: Total time includes both sessions
+## Test 2: User Registration ✓
+**Purpose:** Verify user tracking works
 
-**Status**: ✅ Code Review Passed
+1. Click on any test (e.g., "AR Exam 1")
+2. A modal should appear asking for your name
+3. Enter: Name: `Test User`, Email: `test@example.com`
+4. Click "Start Test"
+5. **Expected:** Modal closes, you see the test questions
 
-**Verification Points:**
-- ✅ `testStartTime` restored from progress on resume
-- ✅ `testElapsedTime` restored from progress on resume
-- ✅ Time calculation includes both sessions
+**Status:** □ Pass □ Fail
+**Notes:**
 
 ---
 
-### 4. Cancel Resume (Start Fresh)
-**Test Steps:**
-1. Start a test, answer some questions
-2. Close browser
-3. Re-open test
-4. Click "Cancel" on resume prompt
-5. **Expected**: Progress cleared, test starts fresh
-6. Close and re-open again
-7. **Expected**: No resume prompt (progress was cleared)
+## Test 3: Taking a Test ✓
+**Purpose:** Verify basic test functionality
 
-**Status**: ✅ Code Review Passed
+1. Answer at least 5 questions (select any answers)
+2. Check the progress bar updates (should show "5 of X questions answered")
+3. Scroll down and click "Check Answers"
+4. **Expected:** 
+   - Results appear at top showing your score
+   - Each question shows ✓ or ✗
+   - Correct answers are highlighted in green
+   - "Download Results" button appears
 
-**Verification Points:**
-- ✅ `localStorage.removeItem(progressKey)` called when user clicks Cancel
-- ✅ Function returns `false` when cancelled
-
----
-
-### 5. Dashboard - Incomplete Tests Display
-**Test Steps:**
-1. Start 2-3 different tests, answer some questions in each
-2. Don't complete any of them
-3. Go to Dashboard
-4. **Expected**: "⏸️ In-Progress Tests" section appears
-5. **Expected**: Each test shows progress bar and "Resume Test" button
-
-**Status**: ✅ Code Review Passed
-
-**Verification Points:**
-- ✅ `displayIncompleteTests()` searches for all `eppp_progress_*` keys
-- ✅ Section hidden if no incomplete tests: `incompleteSection.style.display = 'none'`
-- ✅ Section shown if incomplete tests exist: `incompleteSection.style.display = 'block'`
-- ✅ Progress percentage calculated: `(answeredCount / totalQuestions) * 100`
-- ✅ Time ago displayed using `getTimeAgo()` function
+**Status:** □ Pass □ Fail
+**Notes:**
 
 ---
 
-### 6. Dashboard - Resume Button
-**Test Steps:**
-1. From Dashboard "In-Progress Tests" section
-2. Click "▶️ Resume Test" on any incomplete test
-3. **Expected**: Navigates to test file
-4. **Expected**: Resume prompt appears automatically
+## Test 4: Saving Results ✓
+**Purpose:** Verify results are saved to localStorage
 
-**Status**: ✅ Code Review Passed
+1. After completing Test 3, open browser DevTools (F12 or Cmd+Option+I)
+2. Go to "Application" or "Storage" tab → Local Storage
+3. Look for keys starting with `eppp_`
+4. **Expected:** You should see:
+   - `eppp_user` - your user info
+   - `eppp_history_Test_User` - test history (old format)
+   - `eppp_user_test@example.com_tests` - test results (new format)
 
-**Verification Points:**
-- ✅ `resumeTest()` function maps test names to file names
-- ✅ Covers all tests: AR_Exam_1-8, Practice_EPPP_1-7
-- ✅ Uses `window.location.href` to navigate
-
----
-
-### 7. Dashboard - Clear Progress Button
-**Test Steps:**
-1. From Dashboard "In-Progress Tests" section
-2. Click "✕" button next to any test
-3. Confirm the dialog
-4. **Expected**: Test removed from list
-5. Go to that test
-6. **Expected**: No resume prompt
-
-**Status**: ✅ Code Review Passed
-
-**Verification Points:**
-- ✅ `clearTestProgress()` shows confirmation dialog
-- ✅ Removes localStorage key on confirmation
-- ✅ Calls `displayIncompleteTests()` to refresh list
-- ✅ Shows "Progress cleared" alert
+**Status:** □ Pass □ Fail
+**Notes:**
 
 ---
 
-### 8. Export with Incomplete Tests
-**Test Steps:**
-1. Complete 1-2 tests
-2. Start 1-2 tests without completing them
-3. Go to Dashboard
-4. Click "📤 Export Progress"
-5. **Expected**: Download .eppp file
-6. Open file in text editor
-7. **Expected**: JSON contains "incompleteTests" array with progress data
+## Test 5: Download Results ✓
+**Purpose:** Verify download functionality
 
-**Status**: ✅ Code Review Passed
+1. After checking answers in Test 3, click "Download Results"
+2. **Expected:** A .txt file downloads
+3. Open the file
+4. **Expected:** File contains:
+   - Test title
+   - Your score
+   - Detailed results for each question
+   - Your answer vs correct answer
+   - Completion timestamp
 
-**Verification Points:**
-- ✅ Export searches localStorage for `eppp_progress_*` keys
-- ✅ `incompleteTests` array added to export data
-- ✅ Export version set to "1.1"
-- ✅ Alert message shows incomplete test count
+**Status:** □ Pass □ Fail
+**Notes:**
 
 ---
 
-### 9. Import with Incomplete Tests
-**Test Steps:**
-1. Export progress from Device A (with incomplete tests)
-2. Open Dashboard on Device B (different browser/device)
-3. Click "📥 Import Progress"
-4. Select the .eppp file
-5. **Expected**: Confirmation dialog shows incomplete test count
-6. Confirm import
-7. **Expected**: "In-Progress Tests" section shows restored tests
-8. Click "Resume Test"
-9. **Expected**: Progress is restored correctly
+## Test 6: Dashboard Display ✓
+**Purpose:** Verify dashboard shows test history
 
-**Status**: ✅ Code Review Passed
+1. Click "📊 My Dashboard" button (top right)
+2. **Expected:** Dashboard shows:
+   - Your name and email
+   - Stats cards (Total Attempts, Average Score, etc.)
+   - Charts showing your progress
+   - List of all completed tests with scores
+   - Each test shows: name, score, date, attempt number
 
-**Verification Points:**
-- ✅ `mergeImportedData()` checks for `importedData.incompleteTests`
-- ✅ Restores each incomplete test with correct key format
-- ✅ Alert shows "In-progress tests restored: X"
-- ✅ Page reloads to show updated data
+**Status:** □ Pass □ Fail
+**Notes:**
 
 ---
 
-### 10. Multiple Incomplete Tests (Same Test)
-**Test Steps:**
-1. Start AR_Exam_1, answer 10 questions, close
-2. Re-open AR_Exam_1, cancel resume (start fresh)
-3. Answer 20 questions, close
-4. Re-open AR_Exam_1
-5. **Expected**: Resume prompt shows "20 of X questions" (latest progress)
+## Test 7: Resume Functionality ✓
+**Purpose:** Verify tests can be paused and resumed
 
-**Status**: ✅ Code Review Passed
+1. Start a NEW test (different from Test 3)
+2. Answer 3-5 questions (don't complete the test)
+3. **Don't click "Check Answers"**
+4. Close the browser tab/window
+5. Navigate back to the same test
+6. **Expected:** You see a prompt: "You have a saved session..."
+7. Click "Resume"
+8. **Expected:** Your previous answers are restored
 
-**Verification Points:**
-- ✅ Each save overwrites previous progress (same localStorage key)
-- ✅ Only one progress entry per user per test
-- ✅ Latest progress is always shown
-
----
-
-### 11. User with No Email
-**Test Steps:**
-1. Clear localStorage
-2. Reload page
-3. Enter name only (skip email) - if allowed
-4. Answer questions
-5. **Expected**: Progress NOT saved (requires email)
-
-**Status**: ✅ Code Review Passed
-
-**Verification Points:**
-- ✅ `saveProgress()` checks `if (user.email)` before saving
-- ✅ `loadProgress()` checks `if (user.email)` before loading
-- ✅ Graceful handling - no errors if email missing
+**Status:** □ Pass □ Fail
+**Notes:**
 
 ---
 
-### 12. Browser Compatibility
-**Test on each browser:**
-- [ ] Chrome (Desktop)
-- [ ] Firefox (Desktop)
-- [ ] Safari (Desktop)
-- [ ] Edge (Desktop)
-- [ ] Chrome (Mobile)
-- [ ] Safari (iOS)
+## Test 8: Mark for Review ✓
+**Purpose:** Verify review marking works
 
-**Test Steps per Browser:**
-1. Answer questions, close tab
-2. Re-open, verify resume works
-3. Complete test, verify time tracking
-4. Export/import, verify works
+1. In any test, click the "🔖 Mark for Review" button below a question
+2. **Expected:** 
+   - Button turns green and says "✓ Marked for Review"
+   - Question background becomes yellow/orange
+3. Mark 2-3 questions
+4. **Expected:** A summary box appears at top showing "Questions Marked for Review"
+5. Click on a question number in the summary (e.g., "Q5")
+6. **Expected:** Page scrolls to that question
 
-**Status**: ⏳ Requires Manual Testing
+**Status:** □ Pass □ Fail
+**Notes:**
 
 ---
 
-### 13. localStorage Limits
-**Test Steps:**
-1. Complete 50+ tests (fill localStorage)
-2. Start new test, answer questions
-3. **Expected**: Progress still saves
-4. If quota exceeded, graceful error handling
+## Test 9: Incomplete Tests on Dashboard ✓
+**Purpose:** Verify dashboard shows in-progress tests
 
-**Status**: ⏳ Requires Manual Testing (unlikely to hit limits)
+1. Start a test, answer a few questions, then leave (don't complete)
+2. Go to Dashboard
+3. Scroll to "In-Progress Tests" section
+4. **Expected:** Shows the test you started with:
+   - Test name
+   - Progress (e.g., "5 of 100 questions answered")
+   - Progress bar
+   - "Resume Test" and "Clear Progress" buttons
 
-**Verification Points:**
-- Average test progress: 2-5 KB
-- localStorage typical limit: 5-10 MB
-- Would need 1000+ incomplete tests to hit limit
-
----
-
-### 14. Concurrent Browser Tabs
-**Test Steps:**
-1. Open same test in 2 tabs
-2. Answer questions in Tab 1
-3. Switch to Tab 2, refresh
-4. **Expected**: Resume prompt shows progress from Tab 1
-5. Resume in Tab 2
-6. Switch to Tab 1, answer more questions
-7. **Expected**: Both tabs save independently, latest save wins
-
-**Status**: ✅ Expected Behavior (last write wins)
-
-**Verification Points:**
-- ✅ Each save overwrites previous
-- ✅ No conflicts - last save is always used
-- ⚠️ User should only use one tab per test (document this)
+**Status:** □ Pass □ Fail
+**Notes:**
 
 ---
 
-### 15. Edge Case: Complete Then Resume
-**Test Steps:**
-1. Start test, answer all questions
-2. Click "Check Answers"
-3. Close browser
-4. Re-open same test
-5. **Expected**: No resume prompt (progress was cleared on completion)
+## Test 10: Export/Import Progress ✓
+**Purpose:** Verify data portability
 
-**Status**: ✅ Code Review Passed
+### Export:
+1. Go to Dashboard
+2. Click "Export Progress" button
+3. **Expected:** A .eppp file downloads
 
-**Verification Points:**
-- ✅ `clearProgress()` called at start of `checkAnswers()`
-- ✅ Runs before any other grading logic
-- ✅ Removes localStorage entry completely
+### Import:
+4. Open the downloaded .eppp file in a text editor
+5. Verify it's valid JSON with your test data
+6. On Dashboard, click "Import Progress"
+7. Select the .eppp file you downloaded
+8. **Expected:** Success message appears
 
----
-
-## Code Quality Checks
-
-### ✅ JavaScript Function Verification
-
-#### Test Files (All 15 files)
-- ✅ `saveProgress()` - properly implemented
-- ✅ `loadProgress()` - properly implemented and CALLED
-- ✅ `clearProgress()` - properly implemented
-- ✅ `testStartTime` - declared and initialized
-- ✅ `testElapsedTime` - declared and initialized
-- ✅ Time tracking in `checkAnswers()` - implemented
-- ✅ Auto-save in `selectChoice()` - implemented
-
-#### Dashboard.html
-- ✅ `displayIncompleteTests()` - properly implemented
-- ✅ `getTimeAgo()` - properly implemented
-- ✅ `resumeTest()` - properly implemented with all test mappings
-- ✅ `clearTestProgress()` - properly implemented
-- ✅ `exportProgress()` - enhanced with incomplete tests
-- ✅ `mergeImportedData()` - enhanced to restore incomplete tests
-
-### ✅ CSS Styling Verification
-- ✅ `.incomplete-test-card` - defined with hover effects
-- ✅ `.incomplete-tests-list` - defined as flex container
-- ✅ `.incomplete-info` - styles for test info
-- ✅ `.incomplete-meta` - styles for metadata
-- ✅ `.progress-bar-container` - container for progress bar
-- ✅ `.progress-bar-fill` - animated fill bar
-- ✅ `.resume-btn` - styled button with gradient
-- ✅ `.clear-progress-btn` - danger button styling
-
-### ✅ HTML Structure Verification
-- ✅ `<div id="incompleteSection">` - section container
-- ✅ `<div id="incompleteTestsList">` - list container
-- ✅ Section hidden by default: `style="display: none;"`
-- ✅ Heading and description text included
+**Status:** □ Pass □ Fail
+**Notes:**
 
 ---
 
-## Performance Checks
+## Test 11: Multiple Attempts ✓
+**Purpose:** Verify attempt tracking
 
-### ✅ Auto-Save Performance
-- **Frequency**: After every answer selection
-- **Overhead**: < 5ms per save (localStorage write)
-- **Impact**: Negligible - users won't notice
-- **Status**: ✅ Acceptable
+1. Complete the same test twice (reset and retake)
+2. Go to Dashboard
+3. **Expected:** Both attempts appear in the history
+4. Each attempt shows "Attempt #1", "Attempt #2", etc.
 
-### ✅ Load Performance
-- **loadProgress() execution**: < 50ms
-- **Impact on page load**: Minimal
-- **Status**: ✅ Acceptable
-
-### ✅ Dashboard Load with Many Incomplete Tests
-- **10 incomplete tests**: < 100ms to render
-- **50 incomplete tests**: < 500ms to render
-- **Status**: ✅ Acceptable for realistic usage
+**Status:** □ Pass □ Fail
+**Notes:**
 
 ---
 
-## Security Checks
+## Test 12: Cross-Device Compatibility ✓
+**Purpose:** Verify export/import allows device switching
 
-### ✅ Data Validation
-- ✅ JSON parsing wrapped in try-catch
-- ✅ Checks for data structure before using
-- ✅ Graceful handling of corrupted data
+1. Export progress on Device A (see Test 10)
+2. Email the .eppp file to yourself
+3. Open on Device B
+4. Navigate to Dashboard and import the file
+5. **Expected:** All your progress appears on Device B
 
-### ✅ User Isolation
-- ✅ Progress keys include user email
-- ✅ Different users can't access each other's progress
-- ✅ Export files contain user email (proper isolation)
-
-### ✅ XSS Protection
-- ✅ Test names come from HTML (not user input)
-- ✅ Progress data is JSON (no HTML injection)
-- ✅ DOM manipulation uses textContent where appropriate
+**Status:** □ Pass □ Fail
+**Notes:**
 
 ---
 
-## Documentation Checks
+## Common Issues & Fixes
 
-### ✅ User Documentation
-- ✅ RESUME_FEATURE_GUIDE.md - comprehensive guide
-- ✅ RESUME_QUICK_START.md - quick reference
-- ✅ Both include troubleshooting
-- ✅ Examples and scenarios included
+### Issue: "Nothing is saving"
+**Fix:** 
+- Check if you entered your name when starting the test
+- Verify localStorage is enabled (check DevTools → Application → Local Storage)
+- Make sure you clicked "Check Answers" to complete the test
 
-### ✅ Technical Documentation
-- ✅ RESUME_IMPLEMENTATION_SUMMARY.md - complete technical details
-- ✅ Code comments in place
-- ✅ Function purposes clear
+### Issue: "Dashboard is empty"
+**Fix:**
+- Complete at least one test first
+- Check localStorage has `eppp_history_` and `eppp_user_*_tests` keys
+- Hard refresh the dashboard (Ctrl+F5 or Cmd+Shift+R)
 
----
+### Issue: "Download not working"
+**Fix:**
+- Make sure you clicked "Check Answers" first
+- Check if downloads are blocked in browser settings
+- Try a different browser
 
-## Deployment Checklist
+### Issue: "Resume not working"
+**Fix:**
+- Make sure you left the test without clicking "Check Answers"
+- Check localStorage for `eppp_progress_` keys
+- Clear browser cache and try again
 
-### ✅ Pre-Deployment
-- ✅ All code committed to git
-- ✅ All files pushed to GitHub
-- ✅ No merge conflicts
-
-### ✅ GitHub Pages
-- ✅ Changes will deploy automatically
-- ✅ Live URL: https://vinzy-98.github.io/eppp-practice-tests/
-- ✅ TinyURL still points to correct location
-
-### ✅ Post-Deployment
-- [ ] Test on live site (Chrome)
-- [ ] Test on live site (Firefox)
-- [ ] Test on live site (Safari)
-- [ ] Test export/import on live site
-- [ ] Verify documentation accessible
+### Issue: "404 error on dashboard"
+**Fix:**
+- This should be fixed in latest version
+- Make sure you're using the deployed version at: https://vinzy-98.github.io/eppp-practice-tests/
+- Not a local file:// URL
 
 ---
 
-## Critical Fix Summary
+## Automated Test Page
 
-### Bug Found
-**Issue**: Resume functionality was not working because `loadProgress()` was never called.
+For quick verification, open:
+`test_functionality.html`
 
-**Root Cause**: The Python script `add_resume_functionality.py` added the function definitions but failed to add the function call in the window load event.
-
-**Impact**: Users could not resume tests - the feature was completely non-functional.
-
-### Fix Applied
-**Solution**: Added `loadProgress()` call in `window.addEventListener('load')` event handler in all 15 test files.
-
-**Code Change**:
-```javascript
-// Before (BROKEN)
-window.addEventListener('load', function() {
-    initializeUser();
-});
-
-// After (FIXED)
-window.addEventListener('load', function() {
-    initializeUser();
-    loadProgress(); // Check for saved progress
-});
-```
-
-**Files Modified**: 
-- AR_Exam_1.html through AR_Exam_8.html (8 files)
-- Practice_EPPP_1.html through Practice_EPPP_7.html (7 files)
-
-**Status**: ✅ FIXED and DEPLOYED
+This page has buttons to test each function programmatically.
 
 ---
 
-## Final Status
+## Browser DevTools Checks
 
-### ✅ Code Complete
-All code is implemented, tested via code review, and deployed.
+### Check localStorage:
+1. Open DevTools (F12)
+2. Application/Storage → Local Storage
+3. Should see keys:
+   - `eppp_user`
+   - `eppp_history_{username}`
+   - `eppp_user_{email}_tests`
+   - `eppp_progress_{email}_{testname}` (for incomplete tests)
 
-### ⏳ Requires Live Testing
-Manual browser testing needed to verify end-to-end functionality.
-
-### ✅ Documentation Complete
-All user and technical documentation written and deployed.
-
-### ✅ Bug Fixed
-Critical bug preventing resume functionality has been identified and fixed.
-
----
-
-## Next Steps
-
-1. **Test on Live Site** (https://vinzy-98.github.io/eppp-practice-tests/)
-   - Open AR_Exam_1 or Practice_EPPP_1
-   - Answer 5-10 questions
-   - Close tab
-   - Re-open
-   - **Verify**: Resume prompt appears ✓
-
-2. **Test Export/Import**
-   - Complete steps above
-   - Go to Dashboard
-   - Export progress
-   - Clear browser localStorage
-   - Import progress
-   - Resume test
-   - **Verify**: Progress restored ✓
-
-3. **Cross-Browser Testing**
-   - Repeat tests in Chrome, Firefox, Safari
-   - Test on mobile devices if possible
-
-4. **Report Results**
-   - Document any issues found
-   - Update documentation if needed
+### Check for JavaScript errors:
+1. Open DevTools (F12)
+2. Go to Console tab
+3. Complete a test
+4. **Expected:** No red errors (warnings are OK)
 
 ---
 
-**Testing Date**: November 16, 2025  
-**Tested By**: GitHub Copilot (Code Review) + User (Live Testing Required)  
-**Status**: ✅ Code Complete, ⏳ Awaiting Live Testing
+## Final Verification
+
+After completing all tests:
+
+□ All tests passed
+□ No critical errors in console
+□ localStorage contains correct data
+□ Can export and import successfully
+□ Dashboard displays all completed tests
+□ Resume works for incomplete tests
+□ Download produces valid files
+□ Mark for review functions correctly
+
+**Overall Status:** □ READY FOR USE □ NEEDS FIXES
+
+**Date Tested:** _______________
+**Browser:** _______________
+**Notes:**
