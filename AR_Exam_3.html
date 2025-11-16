@@ -9371,7 +9371,7 @@
         function downloadResults() {
             const examTitle = document.querySelector('h1').textContent;
             const scoreDisplay = document.getElementById('scoreDisplay').textContent;
-            const scoreDetails = document.getElementById('scoreDetails').textContent.replace(/<br>/g, '\n');
+            const scoreDetails = document.getElementById('scoreDetails').innerHTML.replace(/<br>/g, '\n');
             
             // Collect all results
             let resultsText = `${examTitle}\n`;
