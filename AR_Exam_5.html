@@ -223,10 +223,149 @@
         .score-details {
             font-size: 1.2em;
         }
+    
+        /* USER DASHBOARD STYLES */
+        .user-panel {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .user-info {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .user-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        
+        .user-details h3 {
+            margin: 0;
+            font-size: 1.1em;
+            color: #2c3e50;
+        }
+        
+        .user-details p {
+            margin: 0;
+            font-size: 0.9em;
+            color: #7f8c8d;
+        }
+        
+        .dashboard-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: transform 0.2s;
+        }
+        
+        .dashboard-btn:hover {
+            transform: translateY(-2px);
+        }
+        
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.7);
+            z-index: 9999;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .modal-content {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            max-width: 600px;
+            width: 90%;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+        
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .modal-close {
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: #7f8c8d;
+        }
+        
+        .user-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .user-form input {
+            padding: 12px;
+            border: 2px solid #e1e8ed;
+            border-radius: 8px;
+            font-size: 1em;
+        }
+        
+        .user-form button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        
+        .attempt-badge {
+            background: #e8f4f8;
+            color: #2c3e50;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.85em;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
+    
     <div class="container">
+        <div class="user-panel" id="userPanel" style="display: none;">
+            <div class="user-info">
+                <div class="user-avatar" id="userAvatar"></div>
+                <div class="user-details">
+                    <h3 id="userName"></h3>
+                    <p id="userAttemptInfo"></p>
+                </div>
+            </div>
+            <button class="dashboard-btn" onclick="openDashboard()">📊 My Dashboard</button>
+        </div>
+
         <h1>AR Exam 5 - Interactive Test</h1>
         <div class="exam-info">
             <p>Total Questions: 224</p>
@@ -8724,6 +8863,141 @@
         
         // Initialize progress on load
         updateProgress();
+    </script>
+
+    <!-- User Identification Modal -->
+    <div class="modal-overlay" id="userModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Welcome! 👋</h2>
+            </div>
+            <p style="color: #7f8c8d; margin-bottom: 20px;">
+                Enter your name to track your progress across all tests and attempts.
+            </p>
+            <form class="user-form" onsubmit="saveUserInfo(event)">
+                <input 
+                    type="text" 
+                    id="userNameInput" 
+                    placeholder="Enter your full name" 
+                    required 
+                    minlength="2"
+                    autocomplete="name"
+                >
+                <input 
+                    type="email" 
+                    id="userEmailInput" 
+                    placeholder="Email (optional - for your records)" 
+                    autocomplete="email"
+                >
+                <button type="submit">Start Test</button>
+            </form>
+            <p style="font-size: 0.85em; color: #95a5a6; margin-top: 15px;">
+                ℹ️ Your information is stored only on your device and never shared.
+            </p>
+        </div>
+    </div>
+    
+    <script>
+        // USER_DASHBOARD functionality
+        let currentUser = null;
+        let currentAttempt = 1;
+        
+        // Initialize user system on page load
+        window.addEventListener('load', function() {
+            initializeUser();
+        });
+        
+        function initializeUser() {
+            // Get stored user info
+            const storedUser = localStorage.getItem('eppp_user');
+            
+            if (storedUser) {
+                currentUser = JSON.parse(storedUser);
+                showUserPanel();
+                loadAttemptNumber();
+            } else {
+                // Show user modal
+                document.getElementById('userModal').style.display = 'flex';
+            }
+        }
+        
+        function saveUserInfo(event) {
+            event.preventDefault();
+            
+            const name = document.getElementById('userNameInput').value.trim();
+            const email = document.getElementById('userEmailInput').value.trim();
+            
+            currentUser = {
+                name: name,
+                email: email,
+                created: new Date().toISOString()
+            };
+            
+            localStorage.setItem('eppp_user', JSON.stringify(currentUser));
+            document.getElementById('userModal').style.display = 'none';
+            showUserPanel();
+            loadAttemptNumber();
+        }
+        
+        function showUserPanel() {
+            const panel = document.getElementById('userPanel');
+            const avatar = document.getElementById('userAvatar');
+            const nameEl = document.getElementById('userName');
+            
+            if (currentUser) {
+                panel.style.display = 'flex';
+                avatar.textContent = currentUser.name.charAt(0).toUpperCase();
+                nameEl.textContent = currentUser.name;
+            }
+        }
+        
+        function loadAttemptNumber() {
+            const examTitle = document.querySelector('.exam-title').textContent;
+            const historyKey = 'eppp_history_' + currentUser.name.replace(/\s+/g, '_');
+            const history = JSON.parse(localStorage.getItem(historyKey) || '[]');
+            
+            // Count previous attempts for this test
+            const attempts = history.filter(h => h.test === examTitle);
+            currentAttempt = attempts.length + 1;
+            
+            document.getElementById('userAttemptInfo').textContent = 
+                `Attempt #${currentAttempt} • ${new Date().toLocaleDateString()}`;
+        }
+        
+        function saveAttemptToHistory(score, correct, incorrect, unanswered) {
+            if (!currentUser) return;
+            
+            const examTitle = document.querySelector('.exam-title').textContent;
+            const historyKey = 'eppp_history_' + currentUser.name.replace(/\s+/g, '_');
+            const history = JSON.parse(localStorage.getItem(historyKey) || '[]');
+            
+            const attempt = {
+                test: examTitle,
+                attemptNumber: currentAttempt,
+                date: new Date().toISOString(),
+                score: score,
+                correct: correct,
+                incorrect: incorrect,
+                unanswered: unanswered,
+                totalQuestions: correct + incorrect + unanswered
+            };
+            
+            history.push(attempt);
+            localStorage.setItem(historyKey, JSON.stringify(history));
+        }
+        
+        function openDashboard() {
+            // Store current location and redirect to dashboard
+            sessionStorage.setItem('dashboard_return', window.location.href);
+            window.location.href = '../dashboard.html';
+        }
+        
+        function changeUser() {
+            if (confirm('Change user? Your current test progress will be lost.')) {
+                localStorage.removeItem('eppp_user');
+                location.reload();
+            }
+        }
     </script>
 </body>
 </html>
