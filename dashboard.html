@@ -264,11 +264,14 @@
                 </div>
             </div>
             <div class="action-buttons">
-                <button class="btn btn-secondary" onclick="exportAllData()">📥 Export Data</button>
+                <button class="btn btn-secondary" onclick="exportProgress()">💾 Export Progress</button>
+                <button class="btn btn-secondary" onclick="importProgress()">📥 Import Progress</button>
                 <button class="btn btn-secondary" onclick="changeUser()">👤 Change User</button>
                 <button class="btn btn-primary" onclick="goBackToTests()">📝 Take Tests</button>
             </div>
         </div>
+        
+        <input type="file" id="importFile" accept=".json,.eppp" style="display: none;" onchange="handleImportFile(event)">
         
         <div class="stats-grid" id="statsGrid">
             <!-- Stats will be dynamically added -->
@@ -610,6 +613,150 @@
                 window.location.href = `EPPP_Format/${fileName}_EPPP.html`;
             } else {
                 window.location.href = `${fileName}.html`;
+            }
+        }
+        
+        function exportProgress() {
+            // Create comprehensive backup of user data
+            const exportData = {
+                version: '1.0',
+                exportDate: new Date().toISOString(),
+                user: currentUser,
+                attempts: allAttempts,
+                stats: {
+                    totalTests: allAttempts.length,
+                    avgScore: allAttempts.reduce((sum, a) => sum + a.score, 0) / allAttempts.length,
+                    totalQuestions: allAttempts.reduce((sum, a) => sum + a.totalQuestions, 0)
+                }
+            };
+            
+            // Convert to JSON
+            const dataStr = JSON.stringify(exportData, null, 2);
+            const blob = new Blob([dataStr], { type: 'application/json' });
+            
+            // Create download
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `EPPP_Progress_${currentUser.name.replace(/\s+/g, '_')}_${new Date().toISOString().split('T')[0]}.eppp`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+            
+            alert('✅ Progress exported!\n\nSave this file and use "Import Progress" on any device to restore your data.');
+        }
+        
+        function importProgress() {
+            if (!confirm('Import progress from another device?\n\nThis will MERGE the imported data with your current progress. Your existing data will be preserved.')) {
+                return;
+            }
+            
+            document.getElementById('importFile').click();
+        }
+        
+        function handleImportFile(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+            
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                try {
+                    const importedData = JSON.parse(e.target.result);
+                    
+                    // Validate data structure
+                    if (!importedData.user || !importedData.attempts || !Array.isArray(importedData.attempts)) {
+                        alert('❌ Invalid file format. Please use a valid EPPP progress file.');
+                        return;
+                    }
+                    
+                    // Ask user what to do
+                    const action = confirm(
+                        `Import progress for ${importedData.user.name}?\n\n` +
+                        `File contains ${importedData.attempts.length} test attempts.\n` +
+                        `Exported: ${new Date(importedData.exportDate).toLocaleString()}\n\n` +
+                        `Click OK to MERGE with current data, or Cancel to abort.`
+                    );
+                    
+                    if (!action) {
+                        alert('Import cancelled.');
+                        return;
+                    }
+                    
+                    // Merge data
+                    mergeImportedData(importedData);
+                    
+                } catch (error) {
+                    alert('❌ Error reading file: ' + error.message);
+                    console.error('Import error:', error);
+                }
+                
+                // Reset file input
+                event.target.value = '';
+            };
+            
+            reader.readAsText(file);
+        }
+        
+        function mergeImportedData(importedData) {
+            try {
+                // Get current user data
+                const currentEmail = localStorage.getItem('eppp_user') ? 
+                    JSON.parse(localStorage.getItem('eppp_user')).email : null;
+                
+                // Update or set user info
+                const importedEmail = importedData.user.email;
+                localStorage.setItem('eppp_user', JSON.stringify(importedData.user));
+                
+                // Get existing tests for this user
+                const existingKey = `eppp_user_${importedEmail}_tests`;
+                const existingTests = JSON.parse(localStorage.getItem(existingKey) || '[]');
+                
+                // Create a map to avoid duplicates (by test name and date)
+                const testsMap = new Map();
+                
+                // Add existing tests
+                existingTests.forEach(test => {
+                    const key = `${test.testName}_${test.completedAt}`;
+                    testsMap.set(key, test);
+                });
+                
+                // Add imported tests (will overwrite if same key)
+                importedData.attempts.forEach(attempt => {
+                    const test = {
+                        testName: attempt.test,
+                        score: attempt.score,
+                        correct: attempt.correct,
+                        incorrect: attempt.incorrect,
+                        unanswered: attempt.unanswered,
+                        totalQuestions: attempt.totalQuestions,
+                        completedAt: attempt.date,
+                        attemptNumber: attempt.attemptNumber
+                    };
+                    const key = `${test.testName}_${test.completedAt}`;
+                    testsMap.set(key, test);
+                });
+                
+                // Convert map back to array and save
+                const mergedTests = Array.from(testsMap.values());
+                localStorage.setItem(existingKey, JSON.stringify(mergedTests));
+                
+                // Also update the old storage format if present
+                localStorage.setItem(`eppp_user_${importedEmail}`, JSON.stringify(importedData.user));
+                
+                alert(
+                    `✅ Progress imported successfully!\n\n` +
+                    `Total tests: ${mergedTests.length}\n` +
+                    `New tests added: ${mergedTests.length - existingTests.length}\n\n` +
+                    `Refreshing dashboard...`
+                );
+                
+                // Reload the page to show updated data
+                location.reload();
+                
+            } catch (error) {
+                alert('❌ Error importing data: ' + error.message);
+                console.error('Merge error:', error);
             }
         }
         
