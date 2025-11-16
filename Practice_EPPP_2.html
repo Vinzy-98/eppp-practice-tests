@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script>
+        // Check authentication before loading page
+        if (!sessionStorage.getItem('eppp_authenticated')) {
+            window.location.href = 'login.html';
+        }
+    </script>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practice EPPP 2 - Interactive Test</title>

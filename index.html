@@ -6,6 +6,12 @@
     <meta name="description" content="Free EPPP practice tests with personal dashboard, progress tracking, and analytics. Prepare for your psychology licensing exam with realistic timed tests.">
     <meta name="keywords" content="EPPP, practice tests, psychology exam, licensing exam, EPPP preparation">
     <title>EPPP Practice Tests - Free Interactive Exam Preparation</title>
+    <script>
+        // Check authentication before loading page
+        if (!sessionStorage.getItem('eppp_authenticated')) {
+            window.location.href = 'login.html';
+        }
+    </script>
     <style>
         * {
             margin: 0;
