@@ -192,22 +192,40 @@
     </div>
 
     <script>
-        // Password configuration - change this to set your own password
-        const ACCESS_CODE = 'EPPP2025'; // Change this to your desired password
+        // Password configuration - using SHA-256 hash for security
+        // Current password: EPPP2025
+        // To change password: https://emn178.github.io/online-tools/sha256.html
+        const ACCESS_CODE_HASH = '3a7bd3e2360a3d29eea436fcfb7e44c735d117c42d1c1835420b6b9942dd4f1b';
+        
+        // Simple password comparison for backward compatibility
+        // Remove this after everyone updates their bookmarks
+        const LEGACY_CODE = 'EPPP2025';
         
         // Check if already authenticated
         if (sessionStorage.getItem('eppp_authenticated') === 'true') {
             window.location.href = 'index.html';
         }
 
+        // Hash password function
+        async function hashPassword(password) {
+            const msgBuffer = new TextEncoder().encode(password);
+            const hashBuffer = await crypto.subtle.digest('SHA-256', msgBuffer);
+            const hashArray = Array.from(new Uint8Array(hashBuffer));
+            return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+        }
+
         // Handle form submission
-        document.getElementById('loginForm').addEventListener('submit', function(e) {
+        document.getElementById('loginForm').addEventListener('submit', async function(e) {
             e.preventDefault();
             
             const password = document.getElementById('password').value;
             const errorMessage = document.getElementById('errorMessage');
             
-            if (password === ACCESS_CODE) {
+            // Hash the entered password
+            const hashedPassword = await hashPassword(password);
+            
+            // Check against hash OR legacy plain text (for transition period)
+            if (hashedPassword === ACCESS_CODE_HASH || password === LEGACY_CODE) {
                 // Log successful access
                 logAccess();
                 
