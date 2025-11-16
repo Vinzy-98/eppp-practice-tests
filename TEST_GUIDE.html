@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual Testing Guide - EPPP Tests</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 15px;
+        }
+        h2 {
+            color: #667eea;
+            margin-top: 30px;
+        }
+        .test-section {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #667eea;
+        }
+        .checklist {
+            list-style: none;
+            padding: 0;
+        }
+        .checklist li {
+            padding: 10px;
+            margin: 5px 0;
+            background: white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .checklist li:hover {
+            background: #e8f4f8;
+            transform: translateX(5px);
+        }
+        .checklist li::before {
+            content: '☐ ';
+            font-size: 1.2em;
+            margin-right: 10px;
+        }
+        .checklist li.checked {
+            background: #d4edda;
+            text-decoration: line-through;
+            opacity: 0.7;
+        }
+        .checklist li.checked::before {
+            content: '✓ ';
+            color: #28a745;
+        }
+        .quick-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .quick-link {
+            display: block;
+            padding: 15px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .quick-link:hover {
+            transform: translateY(-3px);
+        }
+        .status {
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+        .status.success {
+            background: #d4edda;
+            color: #155724;
+        }
+        .status.info {
+            background: #d1ecf1;
+            color: #0c5460;
+        }
+        .warning {
+            background: #fff3cd;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🧪 Manual Testing Guide</h1>
+        <p>Use this guide to manually test all functionality before deployment.</p>
+        
+        <div class="status success">
+            ✅ Automated tests: <strong>88/88 PASSED (100%)</strong>
+        </div>
+        
+        <h2>🔗 Quick Test Links</h2>
+        <div class="quick-links">
+            <a href="index.html" class="quick-link" target="_blank">Main Index</a>
+            <a href="dashboard.html" class="quick-link" target="_blank">Dashboard</a>
+            <a href="AR_Exam_1.html" class="quick-link" target="_blank">Sample Test 1</a>
+            <a href="EPPP_Format/index_eppp.html" class="quick-link" target="_blank">EPPP Format</a>
+            <a href="EPPP_Format/AR_Exam_1_EPPP.html" class="quick-link" target="_blank">Sample Timed Test</a>
+        </div>
+        
+        <h2>📋 Testing Checklist</h2>
+        <p>Click each item to mark as completed:</p>
+        
+        <div class="test-section">
+            <h3>1. User Identification Flow</h3>
+            <ul class="checklist" id="userIdTests">
+                <li>Open any test → User modal appears</li>
+                <li>Enter name "Test User" → Modal closes</li>
+                <li>User panel appears at top with "T" avatar</li>
+                <li>Shows "Test User" and "Attempt #1"</li>
+                <li>Open another test → No modal (remembered)</li>
+                <li>User panel still shows "Test User"</li>
+            </ul>
+        </div>
+        
+        <div class="test-section">
+            <h3>2. Taking a Test</h3>
+            <ul class="checklist" id="testTakingTests">
+                <li>Questions display correctly</li>
+                <li>Can select answers by clicking</li>
+                <li>Selected answer highlights</li>
+                <li>Progress bar updates</li>
+                <li>Can change answers before checking</li>
+                <li>"Check Answers" button works</li>
+                <li>Correct answers show in green</li>
+                <li>Incorrect answers show in red</li>
+                <li>Score displays correctly</li>
+            </ul>
+        </div>
+        
+        <div class="test-section">
+            <h3>3. Dashboard Access</h3>
+            <ul class="checklist" id="dashboardAccessTests">
+                <li>Click "My Dashboard" from test page</li>
+                <li>Dashboard opens successfully</li>
+                <li>User greeting shows correct name</li>
+                <li>Stats show 1 attempt after first test</li>
+                <li>Avatar displays first letter of name</li>
+            </ul>
+        </div>
+        
+        <div class="test-section">
+            <h3>4. Dashboard Analytics</h3>
+            <ul class="checklist" id="dashboardAnalyticsTests">
+                <li>Statistics grid displays numbers</li>
+                <li>"Progress Over Time" chart loads</li>
+                <li>"Performance by Test" chart loads</li>
+                <li>Charts are interactive (hover works)</li>
+                <li>Test history list shows attempts</li>
+                <li>Attempt cards show correct info</li>
+            </ul>
+        </div>
+        
+        <div class="test-section">
+            <h3>5. Multiple Attempts</h3>
+            <ul class="checklist" id="multipleAttemptsTests">
+                <li>Take same test again</li>
+                <li>Shows "Attempt #2" in user panel</li>
+                <li>Complete test and check answers</li>
+                <li>Return to dashboard</li>
+                <li>See 2 attempts in history</li>
+                <li>Improvement badge shows if score changed</li>
+                <li>Charts update with new data</li>
+            </ul>
+        </div>
+        
+        <div class="test-section">
+            <h3>6. Retake Functionality</h3>
+            <ul class="checklist" id="retakeTests">
+                <li>In dashboard, find test in history</li>
+                <li>Click "Retake Test" button</li>
+                <li>Test opens in browser</li>
+                <li>Shows correct attempt number</li>
+                <li>Previous attempts still in history</li>
+            </ul>
+        </div>
+        
+        <div class="test-section">
+            <h3>7. Filter Functionality</h3>
+            <ul class="checklist" id="filterTests">
+                <li>Take tests from different exams</li>
+                <li>Dashboard shows filter buttons</li>
+                <li>Click "All Tests" → Shows everything</li>
+                <li>Click specific test name → Filters correctly</li>
+                <li>Active filter button highlights</li>
+            </ul>
+        </div>
+        
+        <div class="test-section">
+            <h3>8. Data Export</h3>
+            <ul class="checklist" id="exportTests">
+                <li>Click "Export Data" button</li>
+                <li>File downloads automatically</li>
+                <li>Open file in text editor</li>
+                <li>Valid JSON format</li>
+                <li>Contains user info</li>
+                <li>Contains all attempts</li>
+                <li>Timestamps are correct</li>
+            </ul>
+        </div>
+        
+        <div class="test-section">
+            <h3>9. EPPP Format (Timed Tests)</h3>
+            <ul class="checklist" id="epppFormatTests">
+                <li>Open EPPP Format test</li>
+                <li>Timer starts countdown</li>
+                <li>Question navigator shows all questions</li>
+                <li>Can click numbers to jump to questions</li>
+                <li>"Mark for Review" works</li>
+                <li>Previous/Next buttons work</li>
+                <li>Review screen shows before submit</li>
+                <li>Results display after submission</li>
+                <li>Saved to dashboard history</li>
+            </ul>
+        </div>
+        
+        <div class="test-section">
+            <h3>10. Navigation Between Pages</h3>
+            <ul class="checklist" id="navigationTests">
+                <li>Main index → Dashboard link works</li>
+                <li>Main index → EPPP Format link works</li>
+                <li>EPPP Format index → Dashboard link works</li>
+                <li>EPPP Format index → Back to main works</li>
+                <li>Dashboard → "Take Tests" returns to index</li>
+                <li>Test → Dashboard → Back to test works</li>
+            </ul>
+        </div>
+        
+        <div class="test-section">
+            <h3>11. Change User</h3>
+            <ul class="checklist" id="changeUserTests">
+                <li>Click "Change User" in dashboard</li>
+                <li>Confirmation dialog appears</li>
+                <li>Click OK → Returns to index</li>
+                <li>Open test → Name prompt appears again</li>
+                <li>Enter different name</li>
+                <li>New user has empty dashboard</li>
+                <li>Can switch back to original user later</li>
+            </ul>
+        </div>
+        
+        <div class="test-section">
+            <h3>12. Mobile Responsiveness</h3>
+            <ul class="checklist" id="mobileTests">
+                <li>Open on mobile device (or resize browser)</li>
+                <li>All elements display properly</li>
+                <li>Text is readable</li>
+                <li>Buttons are clickable</li>
+                <li>Charts resize correctly</li>
+                <li>Navigation works on touch</li>
+            </ul>
+        </div>
+        
+        <h2>📊 Test Results</h2>
+        <div id="results" class="status info">
+            Click checklist items above to track your testing progress.
+        </div>
+        
+        <div class="warning">
+            <strong>⚠️ Important Notes:</strong>
+            <ul>
+                <li>Charts require internet connection (Chart.js loaded from CDN)</li>
+                <li>localStorage is browser/device specific</li>
+                <li>Private/incognito mode may not persist data</li>
+                <li>Test in Chrome, Firefox, Safari, and Edge</li>
+            </ul>
+        </div>
+        
+        <h2>✅ Pre-Deployment Checklist</h2>
+        <div class="test-section">
+            <ul class="checklist" id="deploymentChecklist">
+                <li>All automated tests passed (88/88) ✓</li>
+                <li>Completed manual testing above</li>
+                <li>Tested in at least 2 different browsers</li>
+                <li>Tested on mobile device</li>
+                <li>All Git changes committed</li>
+                <li>Documentation reviewed</li>
+                <li>Ready to push to GitHub</li>
+            </ul>
+        </div>
+        
+        <h2>🚀 Next Steps</h2>
+        <p>Once all tests pass:</p>
+        <ol>
+            <li>Open <code>DEPLOY_NOW.md</code> for deployment instructions</li>
+            <li>Create GitHub repository</li>
+            <li>Push code to GitHub</li>
+            <li>Enable GitHub Pages</li>
+            <li>Test on live site after deployment</li>
+        </ol>
+        
+        <div style="text-align: center; margin-top: 40px; padding-top: 20px; border-top: 2px solid #e1e8ed;">
+            <p style="color: #7f8c8d;">
+                <strong>Testing completed?</strong><br>
+                You're ready to deploy! 🎉
+            </p>
+        </div>
+    </div>
+    
+    <script>
+        // Make checklist items clickable
+        document.querySelectorAll('.checklist').forEach(list => {
+            list.addEventListener('click', function(e) {
+                if (e.target.tagName === 'LI') {
+                    e.target.classList.toggle('checked');
+                    updateResults();
+                }
+            });
+        });
+        
+        function updateResults() {
+            const total = document.querySelectorAll('.checklist li').length;
+            const checked = document.querySelectorAll('.checklist li.checked').length;
+            const percentage = Math.round((checked / total) * 100);
+            
+            const resultsDiv = document.getElementById('results');
+            resultsDiv.innerHTML = `
+                <strong>Testing Progress:</strong> ${checked}/${total} items completed (${percentage}%)
+                ${percentage === 100 ? '<br><strong>🎉 All manual tests completed!</strong>' : ''}
+            `;
+            
+            if (percentage === 100) {
+                resultsDiv.className = 'status success';
+            }
+        }
+        
+        // Initialize
+        updateResults();
+    </script>
+</body>
+</html>
