@@ -33,11 +33,16 @@
         
         .container {
             max-width: 900px;
-            margin: 0 auto;
+            margin: 20px auto;
             background: white;
             padding: 30px;
             border-radius: 10px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            flex: 1;
+        }
+        
+        body.has-sidebar .container {
+            margin-left: 170px;
         }
         
         h1 {
@@ -398,17 +403,16 @@
         
         .review-summary {
             position: fixed;
-            left: 20px;
-            top: 100px;
-            width: 120px;
+            left: 0;
+            top: 0;
+            width: 150px;
+            height: 100vh;
             background: #fff3cd;
-            border: 2px solid #f39c12;
-            border-radius: 8px;
-            padding: 15px;
+            border-right: 3px solid #f39c12;
+            padding: 20px 15px;
             display: none;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            box-shadow: 2px 0 10px rgba(0,0,0,0.1);
             z-index: 1000;
-            max-height: calc(100vh - 120px);
             overflow-y: auto;
         }
         
@@ -455,16 +459,28 @@
         }
         
         @media (max-width: 768px) {
+            body {
+                display: block;
+                padding: 20px;
+            }
+            
+            body.has-sidebar .container {
+                margin-left: auto;
+            }
+            
             .container {
-                max-width: 100%;
-                margin-right: auto;
+                margin: 0 auto;
             }
             
             .review-summary {
                 position: static;
                 width: 100%;
+                height: auto;
                 margin: 20px 0;
                 max-height: 200px;
+                border-right: none;
+                border: 2px solid #f39c12;
+                border-radius: 8px;
             }
             
             .review-links {
@@ -8258,6 +8274,7 @@
             
             if (markedQuestions.length > 0) {
                 summary.classList.add('show');
+                document.body.classList.add('has-sidebar');
                 linksContainer.innerHTML = '';
                 
                 markedQuestions.forEach(q => {
@@ -8274,6 +8291,7 @@
                 });
             } else {
                 summary.classList.remove('show');
+                document.body.classList.remove('has-sidebar');
             }
         }
         
