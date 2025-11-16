@@ -362,7 +362,80 @@
             font-size: 0.85em;
             font-weight: bold;
         }
-    </style>
+    
+        .question.marked-review {
+            border-left-color: #f39c12;
+            background: #fff8e6;
+        }
+        
+        .review-btn {
+            background: #f39c12;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.9em;
+            margin-top: 10px;
+            transition: all 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .review-btn:hover {
+            background: #e67e22;
+            transform: translateY(-1px);
+        }
+        
+        .review-btn.marked {
+            background: #27ae60;
+        }
+        
+        .review-btn.marked:hover {
+            background: #229954;
+        }
+        
+        .review-summary {
+            background: #fff3cd;
+            border: 2px solid #f39c12;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 20px 0;
+            display: none;
+        }
+        
+        .review-summary.show {
+            display: block;
+        }
+        
+        .review-summary h3 {
+            color: #856404;
+            margin-bottom: 10px;
+        }
+        
+        .review-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        
+        .review-link {
+            background: #f39c12;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.2s;
+        }
+        
+        .review-link:hover {
+            background: #e67e22;
+            transform: translateY(-2px);
+        }
+        </style>
 </head>
 <body>
     
@@ -388,6 +461,12 @@
             <div class="progress-bar">
                 <div class="progress-fill" id="progressBar">0%</div>
             </div>
+        
+        <div class="review-summary" id="reviewSummary">
+            <h3>📋 Questions Marked for Review</h3>
+            <div class="review-links" id="reviewLinks"></div>
+        </div>
+
             <button onclick="checkAnswers()" id="checkBtn">Check Answers</button>
             <button onclick="resetTest()" id="resetBtn" style="background: #e74c3c;">Reset Test</button>
             <button onclick="downloadResults()" id="downloadBtn" style="background: #27ae60; display: none;">Download Results</button>
@@ -436,6 +515,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="96" data-correct="B">
@@ -473,6 +553,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="98" data-correct="D">
@@ -510,6 +591,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="99" data-correct="D">
@@ -547,6 +629,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="100" data-correct="D">
@@ -584,6 +667,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="101" data-correct="C">
@@ -621,6 +705,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="102" data-correct="C">
@@ -658,6 +743,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="103" data-correct="A">
@@ -695,6 +781,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="104" data-correct="A">
@@ -732,6 +819,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="105" data-correct="C">
@@ -769,6 +857,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="106" data-correct="A">
@@ -806,6 +895,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="107" data-correct="C">
@@ -843,6 +933,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="108" data-correct="A">
@@ -880,6 +971,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="109" data-correct="A">
@@ -917,6 +1009,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="110" data-correct="C">
@@ -954,6 +1047,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="111" data-correct="C">
@@ -991,6 +1085,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="112" data-correct="B">
@@ -1028,6 +1123,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="113" data-correct="D">
@@ -1065,6 +1161,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="114" data-correct="D">
@@ -1102,6 +1199,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="115" data-correct="D">
@@ -1139,6 +1237,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="116" data-correct="D">
@@ -1176,6 +1275,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="117" data-correct="A">
@@ -1213,6 +1313,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="118" data-correct="A">
@@ -1250,6 +1351,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="119" data-correct="B">
@@ -1287,6 +1389,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="120" data-correct="D">
@@ -1324,6 +1427,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="121" data-correct="D">
@@ -1361,6 +1465,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="122" data-correct="C">
@@ -1398,6 +1503,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="123" data-correct="A">
@@ -1435,6 +1541,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="124" data-correct="B">
@@ -1472,6 +1579,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="125" data-correct="A">
@@ -1509,6 +1617,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="126" data-correct="C">
@@ -1546,6 +1655,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="128" data-correct="A">
@@ -1583,6 +1693,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="129" data-correct="B">
@@ -1620,6 +1731,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="130" data-correct="D">
@@ -1657,6 +1769,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="131" data-correct="B">
@@ -1694,6 +1807,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="132" data-correct="D">
@@ -1731,6 +1845,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="133" data-correct="B">
@@ -1768,6 +1883,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="134" data-correct="D">
@@ -1805,6 +1921,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="135" data-correct="A">
@@ -1842,6 +1959,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="136" data-correct="D">
@@ -1879,6 +1997,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="137" data-correct="C">
@@ -1916,6 +2035,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="138" data-correct="B">
@@ -1953,6 +2073,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="139" data-correct="B">
@@ -1990,6 +2111,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="140" data-correct="C">
@@ -2027,6 +2149,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="141" data-correct="A">
@@ -2064,6 +2187,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="142" data-correct="D">
@@ -2101,6 +2225,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="143" data-correct="C">
@@ -2138,6 +2263,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="144" data-correct="B">
@@ -2175,6 +2301,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="145" data-correct="A">
@@ -2212,6 +2339,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="146" data-correct="D">
@@ -2249,6 +2377,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="147" data-correct="A">
@@ -2286,6 +2415,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="148" data-correct="D">
@@ -2323,6 +2453,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="149" data-correct="B">
@@ -2360,6 +2491,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="150" data-correct="A">
@@ -2397,6 +2529,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="151" data-correct="B">
@@ -2434,6 +2567,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="152" data-correct="D">
@@ -2471,6 +2605,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="153" data-correct="A">
@@ -2508,6 +2643,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="154" data-correct="D">
@@ -2545,6 +2681,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="155" data-correct="D">
@@ -2582,6 +2719,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="156" data-correct="A">
@@ -2619,6 +2757,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="157" data-correct="C">
@@ -2656,6 +2795,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="158" data-correct="C">
@@ -2693,6 +2833,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="159" data-correct="D">
@@ -2730,6 +2871,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="160" data-correct="C">
@@ -2767,6 +2909,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="161" data-correct="A">
@@ -2804,6 +2947,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="162" data-correct="B">
@@ -2841,6 +2985,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="163" data-correct="D">
@@ -2878,6 +3023,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="164" data-correct="D">
@@ -2915,6 +3061,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="165" data-correct="B">
@@ -2952,6 +3099,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="166" data-correct="D">
@@ -2989,6 +3137,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="167" data-correct="B">
@@ -3026,6 +3175,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="168" data-correct="C">
@@ -3063,6 +3213,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="169" data-correct="D">
@@ -3100,6 +3251,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="170" data-correct="B">
@@ -3137,6 +3289,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="171" data-correct="C">
@@ -3174,6 +3327,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="172" data-correct="A">
@@ -3211,6 +3365,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="173" data-correct="A">
@@ -3248,6 +3403,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="174" data-correct="C">
@@ -3285,6 +3441,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="176" data-correct="B">
@@ -3322,6 +3479,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="177" data-correct="A">
@@ -3359,6 +3517,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="178" data-correct="D">
@@ -3396,6 +3555,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="179" data-correct="C">
@@ -3433,6 +3593,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="180" data-correct="B">
@@ -3470,6 +3631,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="181" data-correct="B">
@@ -3507,6 +3669,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="182" data-correct="D">
@@ -3544,6 +3707,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="183" data-correct="C">
@@ -3581,6 +3745,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="184" data-correct="A">
@@ -3618,6 +3783,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="185" data-correct="D">
@@ -3655,6 +3821,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="195" data-correct="B">
@@ -3692,6 +3859,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="196" data-correct="D">
@@ -3729,6 +3897,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="197" data-correct="A">
@@ -3766,6 +3935,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="198" data-correct="C">
@@ -3803,6 +3973,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="199" data-correct="A">
@@ -3840,6 +4011,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="200" data-correct="C">
@@ -3877,6 +4049,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="201" data-correct="A">
@@ -3914,6 +4087,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="202" data-correct="D">
@@ -3951,6 +4125,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="203" data-correct="C">
@@ -3988,6 +4163,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="204" data-correct="A">
@@ -4025,6 +4201,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="205" data-correct="D">
@@ -4062,6 +4239,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="206" data-correct="B">
@@ -4099,6 +4277,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="207" data-correct="D">
@@ -4136,6 +4315,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="208" data-correct="D">
@@ -4173,6 +4353,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="209" data-correct="D">
@@ -4210,6 +4391,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="210" data-correct="C">
@@ -4247,6 +4429,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="211" data-correct="A">
@@ -4284,6 +4467,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="212" data-correct="B">
@@ -4321,6 +4505,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="213" data-correct="D">
@@ -4358,6 +4543,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="214" data-correct="A">
@@ -4395,6 +4581,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
             <div class="question" data-question="215" data-correct="D">
@@ -4432,6 +4619,7 @@
 
                 </div>
                 <div class="result-indicator"></div>
+                <button class="review-btn" onclick="toggleReview(this)">🔖 Mark for Review</button>
             </div>
 
         </div>
@@ -4539,6 +4727,53 @@
                 localStorage.removeItem(progressKey);
             }
         }
+        // Mark for Review functionality
+        function toggleReview(button) {
+            const question = button.closest('.question');
+            const questionNum = question.dataset.question;
+            
+            if (question.classList.contains('marked-review')) {
+                // Unmark
+                question.classList.remove('marked-review');
+                button.textContent = '🔖 Mark for Review';
+                button.classList.remove('marked');
+            } else {
+                // Mark
+                question.classList.add('marked-review');
+                button.textContent = '✓ Marked for Review';
+                button.classList.add('marked');
+            }
+            
+            updateReviewSummary();
+        }
+        
+        function updateReviewSummary() {
+            const markedQuestions = document.querySelectorAll('.question.marked-review');
+            const summary = document.getElementById('reviewSummary');
+            const linksContainer = document.getElementById('reviewLinks');
+            
+            if (markedQuestions.length > 0) {
+                summary.classList.add('show');
+                linksContainer.innerHTML = '';
+                
+                markedQuestions.forEach(q => {
+                    const questionNum = q.dataset.question;
+                    const link = document.createElement('a');
+                    link.href = '#';
+                    link.className = 'review-link';
+                    link.textContent = `Q${questionNum}`;
+                    link.onclick = function(e) {
+                        e.preventDefault();
+                        q.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    };
+                    linksContainer.appendChild(link);
+                });
+            } else {
+                summary.classList.remove('show');
+            }
+        }
+        
+
 
         
         function selectChoice(choiceElement) {
