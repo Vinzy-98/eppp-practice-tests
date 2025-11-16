@@ -9297,7 +9297,7 @@
                 return;
             }
             
-            const examTitle = document.querySelector('.exam-title').textContent;
+            const examTitle = document.querySelector('h1').textContent;
             const historyKey = 'eppp_history_' + currentUser.name.replace(/\s+/g, '_');
             const history = JSON.parse(localStorage.getItem(historyKey) || '[]');
             
@@ -9506,7 +9506,7 @@
         }
         
         function loadAttemptNumber() {
-            const examTitle = document.querySelector('.exam-title').textContent;
+            const examTitle = document.querySelector('h1').textContent;
             const historyKey = 'eppp_history_' + currentUser.name.replace(/\s+/g, '_');
             const history = JSON.parse(localStorage.getItem(historyKey) || '[]');
             
@@ -9521,7 +9521,7 @@
         function saveAttemptToHistory(score, correct, incorrect, unanswered) {
             if (!currentUser) return;
             
-            const examTitle = document.querySelector('.exam-title').textContent;
+            const examTitle = document.querySelector('h1').textContent;
             const historyKey = 'eppp_history_' + currentUser.name.replace(/\s+/g, '_');
             const history = JSON.parse(localStorage.getItem(historyKey) || '[]');
             
