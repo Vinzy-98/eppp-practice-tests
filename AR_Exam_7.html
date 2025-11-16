@@ -28,8 +28,6 @@
             line-height: 1.6;
             color: #333;
             background: #f5f5f5;
-            display: flex;
-            min-height: 100vh;
             padding: 20px;
         }
         
@@ -466,9 +464,7 @@
         @media (max-width: 768px) {
             body {
                 display: block;
-                display: flex;
-            min-height: 100vh;
-            padding: 20px;
+                padding: 20px;
             }
             
             body.has-sidebar .container {
@@ -500,11 +496,26 @@
                 min-width: 50px;
             }
         }
+        
+        .top-container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin: 0 20px 20px 20px;
+        }
+        
+        .main-layout {
+            display: flex;
+            flex: 1;
+            min-height: 0;
+        }
+        
         </style>
 </head>
 <body>
     
-    <div class="container">
+    <div class="top-container">
         <div class="user-panel" id="userPanel" style="display: none;">
             <div class="user-info">
                 <div class="user-avatar" id="userAvatar"></div>
@@ -534,13 +545,17 @@
             <button onclick="resetTest()" id="resetBtn" style="background: #e74c3c;">Reset Test</button>
             <button onclick="downloadResults()" id="downloadBtn" style="background: #27ae60; display: none;">Download Results</button>
         </div>
-        </div>
+    </div>
 
+    <div class="main-layout">
         <div class="review-summary" id="reviewSummary">
             <h3>📋 Questions Marked for Review</h3>
             <div class="review-links" id="reviewLinks"></div>
         </div>
 
+        
+
+        <div class="container">
         <div class="results-summary" id="resultsSummary">
             <h2>Test Results</h2>
             <div class="score" id="scoreDisplay">--</div>
@@ -9567,5 +9582,7 @@ III. test-retest reliability coefficient.</div>
             }
         }
     </script>
+    </div> <!-- Close container -->
+    </div> <!-- Close main-layout -->
 </body>
 </html>
