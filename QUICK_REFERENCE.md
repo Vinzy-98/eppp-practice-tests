@@ -14,7 +14,9 @@ View:
 - Export data as JSON or CSV
 
 ### Current Password
-**Access Code:** `EPPP2024`
+**Access Code:** `EPPP2025`
+
+**User-Facing URL:** https://tinyurl.com/eppp-practice
 
 ### Change Password
 1. Go to `login.html`
@@ -27,8 +29,8 @@ View:
 ## For Users
 
 ### How to Access Tests
-1. Visit: https://vinzy-98.github.io/eppp-practice-tests/
-2. Enter access code: `EPPP2024`
+1. Visit: **https://tinyurl.com/eppp-practice**
+2. Enter access code: `EPPP2025`
 3. Click "Access Tests"
 
 ### What Users See
@@ -77,9 +79,9 @@ View:
 
 | Purpose | URL |
 |---------|-----|
-| Login (share with users) | https://vinzy-98.github.io/eppp-practice-tests/ |
-| Admin Dashboard | https://vinzy-98.github.io/eppp-practice-tests/admin.html |
-| URL Shortening Guide | See `URL_SHORTENING_GUIDE.md` |
+| **Share with Users** | **https://tinyurl.com/eppp-practice** |
+| Admin Dashboard (Private) | https://vinzy-98.github.io/eppp-practice-tests/admin.html |
+| Direct URL (Private) | https://vinzy-98.github.io/eppp-practice-tests/ |
 
 ---
 
@@ -89,8 +91,8 @@ View:
 ```
 Hi! Here's your access to the EPPP Practice Tests:
 
-URL: https://vinzy-98.github.io/eppp-practice-tests/
-Access Code: EPPP2024
+URL: https://tinyurl.com/eppp-practice
+Access Code: EPPP2025
 
 Enter the code when prompted. Your progress is saved automatically!
 ```
