@@ -449,6 +449,7 @@
                 </div>
             </div>
             <button class="dashboard-btn" onclick="openDashboard()">📊 My Dashboard</button>
+            <button class="dashboard-btn" onclick="window.location.href='tests.html'" style="background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);">📚 All Tests</button>
         </div>
 
         <h1>Practice EPPP 4 - Interactive Test</h1>
@@ -8439,13 +8440,29 @@
                 const selectedRadio = question.querySelector('input[type="radio"]:checked');
                 const selectedAnswer = selectedRadio ? selectedRadio.value : 'Not answered';
                 
+                // Get the full text of selected and correct answers
+                let selectedAnswerText = selectedAnswer;
+                let correctAnswerText = correctAnswer;
+                
+                if (selectedRadio) {
+                    const selectedLabel = selectedRadio.nextElementSibling;
+                    if (selectedLabel) {
+                        selectedAnswerText = `${selectedAnswer}: ${selectedLabel.textContent.trim()}`;
+                    }
+                }
+                
+                const correctChoice = question.querySelector(`input[value="${correctAnswer}"]`);
+                if (correctChoice && correctChoice.nextElementSibling) {
+                    correctAnswerText = `${correctAnswer}: ${correctChoice.nextElementSibling.textContent.trim()}`;
+                }
+                
                 const isCorrect = selectedAnswer === correctAnswer;
                 const status = !selectedRadio ? '⚠️ NOT ANSWERED' : (isCorrect ? '✓ CORRECT' : '✗ INCORRECT');
                 
                 resultsText += `Question ${questionNum}:\n`;
                 resultsText += `${questionText}\n\n`;
-                resultsText += `Your Answer: ${selectedAnswer}\n`;
-                resultsText += `Correct Answer: ${correctAnswer}\n`;
+                resultsText += `Your Answer: ${selectedAnswerText}\n`;
+                resultsText += `Correct Answer: ${correctAnswerText}\n`;
                 resultsText += `Status: ${status}\n`;
                 resultsText += `${'-'.repeat(50)}\n\n`;
             });
