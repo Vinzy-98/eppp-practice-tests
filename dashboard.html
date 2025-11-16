@@ -416,9 +416,53 @@
             
             currentUser = JSON.parse(storedUser);
             
-            // Load history
+            // Load history from both old and new formats
             const historyKey = 'eppp_history_' + currentUser.name.replace(/\s+/g, '_');
+            const userTestsKey = `eppp_user_${currentUser.email || currentUser.name}_tests`;
+            
+            // Try old format first
             allAttempts = JSON.parse(localStorage.getItem(historyKey) || '[]');
+            
+            // If old format is empty, try new format
+            if (allAttempts.length === 0) {
+                const newFormatTests = JSON.parse(localStorage.getItem(userTestsKey) || '[]');
+                // Convert new format to old format structure
+                allAttempts = newFormatTests.map(test => ({
+                    test: test.testName,
+                    score: test.score,
+                    correct: test.correct,
+                    incorrect: test.incorrect,
+                    unanswered: test.unanswered,
+                    totalQuestions: test.totalQuestions,
+                    completionTime: test.completionTime || 0,
+                    date: test.completedAt,
+                    attemptNumber: test.attemptNumber
+                }));
+            } else {
+                // Also load from new format and merge if exists
+                const newFormatTests = JSON.parse(localStorage.getItem(userTestsKey) || '[]');
+                if (newFormatTests.length > 0) {
+                    // Merge both formats, avoiding duplicates
+                    const existingDates = new Set(allAttempts.map(a => a.date));
+                    newFormatTests.forEach(test => {
+                        if (!existingDates.has(test.completedAt)) {
+                            allAttempts.push({
+                                test: test.testName,
+                                score: test.score,
+                                correct: test.correct,
+                                incorrect: test.incorrect,
+                                unanswered: test.unanswered,
+                                totalQuestions: test.totalQuestions,
+                                completionTime: test.completionTime || 0,
+                                date: test.completedAt,
+                                attemptNumber: test.attemptNumber
+                            });
+                        }
+                    });
+                    // Sort by date
+                    allAttempts.sort((a, b) => new Date(a.date) - new Date(b.date));
+                }
+            }
             
             // Display user info
             document.getElementById('dashboardAvatar').textContent = 
