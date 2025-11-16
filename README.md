@@ -10,7 +10,19 @@ Perfect for learning and reviewing concepts at your own pace.
 ### 2. EPPP Format Mode (EPPP_Format Directory)
 Realistic exam simulation with countdown timer and navigation.
 
+### 3. Personal Dashboard (NEW! 🎉)
+Track your progress across all tests with beautiful analytics and insights.
+
 ## Features
+
+### Personal Dashboard
+- 👤 **User Identification** - Enter your name once, tracked automatically
+- 📊 **Progress Analytics** - Charts showing score trends over time
+- 📈 **Performance Tracking** - Compare scores across different tests
+- 🔄 **Attempt History** - See all your test attempts with improvement badges
+- 📥 **Data Export** - Download your complete history as JSON
+- 🎯 **Retake Functionality** - One-click retake from your history
+- 📉 **Strengths/Weaknesses** - Visual identification of areas needing focus
 
 ### Untimed Practice Mode
 - 🎯 **15 Full Practice Tests** - 3,043 total questions
@@ -46,6 +58,13 @@ Realistic exam simulation with countdown timer and navigation.
 - Practice EPPP 1-7: 200 questions each (~225 min in EPPP mode)
 
 ## How to Use
+
+### For Personal Dashboard:
+1. Open `dashboard.html` or click "My Dashboard" from any test
+2. View your progress, scores, and analytics
+3. Filter by test or view all attempts
+4. Retake any test with one click
+5. Export your data for backup
 
 ### For Untimed Practice:
 1. Open `index.html` in your web browser
