@@ -80,7 +80,8 @@ View:
 | Purpose | URL |
 |---------|-----|
 | **Share with Users** | **https://tinyurl.com/eppp-practice** |
-| Admin Dashboard (Private) | https://vinzy-98.github.io/eppp-practice-tests/admin.html |
+| Admin Dashboard | Open locally from private repo: `eppp-admin/admin.html` |
+| Admin Private Repo | https://github.com/Vinzy-98/eppp-admin (Private) |
 | Direct URL (Private) | https://vinzy-98.github.io/eppp-practice-tests/ |
 
 ---
