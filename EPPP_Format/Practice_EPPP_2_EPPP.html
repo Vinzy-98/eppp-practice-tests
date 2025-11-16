@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice EPPP 2 - EPPP Format - EPPP Format</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+        
+        /* Header with timer */
+        .exam-header {
+            background: #2c3e50;
+            color: white;
+            padding: 15px 30px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .exam-title {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        
+        .timer {
+            font-size: 1.5em;
+            font-weight: bold;
+            font-family: 'Courier New', monospace;
+            padding: 8px 20px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 5px;
+        }
+        
+        .timer.warning {
+            background: #e74c3c;
+            animation: pulse 1s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+        
+        /* Main content area */
+        .exam-container {
+            display: flex;
+            margin-top: 70px;
+            height: calc(100vh - 70px);
+        }
+        
+        /* Left sidebar - Question navigator */
+        .question-navigator {
+            width: 250px;
+            background: white;
+            border-right: 2px solid #ddd;
+            overflow-y: auto;
+            padding: 20px;
+        }
+        
+        .nav-title {
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #2c3e50;
+            font-size: 1.1em;
+        }
+        
+        .nav-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+        
+        .nav-btn {
+            aspect-ratio: 1;
+            border: 2px solid #ddd;
+            background: white;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.2s;
+        }
+        
+        .nav-btn:hover {
+            border-color: #3498db;
+            transform: scale(1.05);
+        }
+        
+        .nav-btn.answered {
+            background: #3498db;
+            color: white;
+            border-color: #3498db;
+        }
+        
+        .nav-btn.marked {
+            background: #f39c12;
+            color: white;
+            border-color: #f39c12;
+        }
+        
+        .nav-btn.current {
+            border: 3px solid #2c3e50;
+            box-shadow: 0 0 0 2px #3498db;
+        }
+        
+        .nav-legend {
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+        
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin: 8px 0;
+        }
+        
+        .legend-box {
+            width: 20px;
+            height: 20px;
+            border-radius: 3px;
+            margin-right: 10px;
+            border: 2px solid #ddd;
+        }
+        
+        .legend-box.answered {
+            background: #3498db;
+            border-color: #3498db;
+        }
+        
+        .legend-box.marked {
+            background: #f39c12;
+            border-color: #f39c12;
+        }
+        
+        /* Question display area */
+        .question-area {
+            flex: 1;
+            background: white;
+            padding: 40px;
+            overflow-y: auto;
+        }
+        
+        .question-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #ecf0f1;
+        }
+        
+        .question-number {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .mark-review-btn {
+            background: #f39c12;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        
+        .mark-review-btn:hover {
+            background: #e67e22;
+        }
+        
+        .mark-review-btn.marked {
+            background: #95a5a6;
+        }
+        
+        .question-text {
+            font-size: 1.1em;
+            line-height: 1.8;
+            margin: 25px 0;
+        }
+        
+        .choices {
+            margin: 20px 0;
+        }
+        
+        .choice {
+            margin: 15px 0;
+            padding: 15px;
+            background: #f9f9f9;
+            border: 2px solid #ddd;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .choice:hover {
+            border-color: #3498db;
+            background: #f0f8ff;
+        }
+        
+        .choice.selected {
+            border-color: #3498db;
+            background: #e3f2fd;
+        }
+        
+        .choice input[type="radio"] {
+            margin-right: 12px;
+            cursor: pointer;
+            transform: scale(1.2);
+        }
+        
+        .choice label {
+            cursor: pointer;
+            display: inline;
+            font-size: 1.05em;
+        }
+        
+        /* Navigation buttons */
+        .nav-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #ecf0f1;
+        }
+        
+        .nav-buttons button {
+            padding: 12px 30px;
+            font-size: 1em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+        
+        .btn-prev {
+            background: #95a5a6;
+            color: white;
+        }
+        
+        .btn-prev:hover:not(:disabled) {
+            background: #7f8c8d;
+        }
+        
+        .btn-next {
+            background: #3498db;
+            color: white;
+        }
+        
+        .btn-next:hover {
+            background: #2980b9;
+        }
+        
+        .btn-review {
+            background: #27ae60;
+            color: white;
+        }
+        
+        .btn-review:hover {
+            background: #229954;
+        }
+        
+        button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        
+        /* Review screen */
+        .review-screen {
+            display: none;
+            padding: 40px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .review-screen.active {
+            display: block;
+        }
+        
+        .review-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .review-header h2 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .review-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .stat-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .stat-number {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        
+        .stat-label {
+            color: #7f8c8d;
+        }
+        
+        .stat-card.answered .stat-number {
+            color: #3498db;
+        }
+        
+        .stat-card.unanswered .stat-number {
+            color: #e74c3c;
+        }
+        
+        .stat-card.marked .stat-number {
+            color: #f39c12;
+        }
+        
+        .review-actions {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .review-actions button {
+            padding: 15px 40px;
+            font-size: 1.1em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        
+        .btn-back {
+            background: #95a5a6;
+            color: white;
+        }
+        
+        .btn-submit {
+            background: #27ae60;
+            color: white;
+        }
+        
+        /* Results screen */
+        .results-screen {
+            display: none;
+            padding: 40px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .results-screen.active {
+            display: block;
+        }
+        
+        .results-header {
+            text-align: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        
+        .score-display {
+            font-size: 4em;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        
+        .results-breakdown {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .result-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+            border-bottom: 1px solid #ecf0f1;
+        }
+        
+        .download-actions {
+            text-align: center;
+            margin-top: 30px;
+        }
+        
+        .download-actions button {
+            padding: 15px 40px;
+            font-size: 1.1em;
+            background: #27ae60;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            margin: 0 10px;
+        }
+        
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.7);
+            z-index: 2000;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .modal.active {
+            display: flex;
+        }
+        
+        .modal-content {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            max-width: 500px;
+            text-align: center;
+        }
+        
+        .modal-content h3 {
+            color: #e74c3c;
+            margin-bottom: 20px;
+        }
+        
+        .modal-buttons {
+            margin-top: 30px;
+        }
+        
+        .modal-buttons button {
+            padding: 12px 30px;
+            margin: 0 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 1em;
+        }
+        
+        .btn-cancel {
+            background: #95a5a6;
+            color: white;
+        }
+        
+        .btn-confirm {
+            background: #e74c3c;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with Timer -->
+    <div class="exam-header">
+        <div class="exam-title">Practice EPPP 2 - EPPP Format</div>
+        <div class="timer" id="timer">225:00</div>
+    </div>
+    
+    <!-- Main Exam Container -->
+    <div class="exam-container" id="examContainer">
+        <!-- Question Navigator -->
+        <div class="question-navigator">
+            <div class="nav-title">Questions</div>
+            <div class="nav-grid" id="navGrid">
+                <!-- Generated by JavaScript -->
+            </div>
+            <div class="nav-legend">
+                <div class="legend-item">
+                    <div class="legend-box answered"></div>
+                    <span>Answered</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-box marked"></div>
+                    <span>Marked for Review</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-box"></div>
+                    <span>Not Answered</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Question Display Area -->
+        <div class="question-area">
+            <div class="question-header">
+                <div class="question-number" id="questionNumber">Question 1 of 200</div>
+                <button class="mark-review-btn" id="markBtn" onclick="toggleMark()">
+                    ⭐ Mark for Review
+                </button>
+            </div>
+            
+            <div class="question-text" id="questionText"></div>
+            
+            <div class="choices" id="choicesContainer"></div>
+            
+            <div class="nav-buttons">
+                <button class="btn-prev" id="prevBtn" onclick="previousQuestion()" disabled>
+                    ← Previous
+                </button>
+                <button class="btn-review" onclick="showReview()">
+                    Review Answers
+                </button>
+                <button class="btn-next" id="nextBtn" onclick="nextQuestion()">
+                    Next →
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Review Screen -->
+    <div class="review-screen" id="reviewScreen">
+        <div class="review-header">
+            <h2>Review Your Answers</h2>
+            <p>Check your answers before submitting the exam</p>
+        </div>
+        
+        <div class="review-stats">
+            <div class="stat-card answered">
+                <div class="stat-label">Answered</div>
+                <div class="stat-number" id="answeredCount">0</div>
+            </div>
+            <div class="stat-card unanswered">
+                <div class="stat-label">Not Answered</div>
+                <div class="stat-number" id="unansweredCount">0</div>
+            </div>
+            <div class="stat-card marked">
+                <div class="stat-label">Marked for Review</div>
+                <div class="stat-number" id="markedCount">0</div>
+            </div>
+        </div>
+        
+        <div class="nav-grid" id="reviewGrid">
+            <!-- Generated by JavaScript -->
+        </div>
+        
+        <div class="review-actions">
+            <button class="btn-back" onclick="closeReview()">← Back to Exam</button>
+            <button class="btn-submit" onclick="confirmSubmit()">Submit Exam</button>
+        </div>
+    </div>
+    
+    <!-- Results Screen -->
+    <div class="results-screen" id="resultsScreen">
+        <!-- Generated by JavaScript after submission -->
+    </div>
+    
+    <!-- Confirmation Modal -->
+    <div class="modal" id="confirmModal">
+        <div class="modal-content">
+            <h3>⚠️ Submit Exam?</h3>
+            <p>Are you sure you want to submit your exam?</p>
+            <p id="unansweredWarning"></p>
+            <p style="margin-top: 15px; color: #e74c3c; font-weight: bold;">
+                You cannot change your answers after submission.
+            </p>
+            <div class="modal-buttons">
+                <button class="btn-cancel" onclick="closeModal()">Cancel</button>
+                <button class="btn-confirm" onclick="submitExam()">Submit Exam</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Time Warning Modal -->
+    <div class="modal" id="timeWarningModal">
+        <div class="modal-content">
+            <h3>⏰ Time Warning</h3>
+            <p id="timeWarningText"></p>
+            <div class="modal-buttons">
+                <button class="btn-confirm" onclick="closeTimeWarning()">OK</button>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Question data
+        const questions = [{"number": 1, "question": "A teacher finds out that if she yells at a disruptive boy in class, he will calm down for a few minutes. Over time, her yelling becomes louder and more frequent. Which of the following statements best describes, in behavioral terms, what is happening in this situation?", "choices": [{"letter": "A", "text": "The teacher's yelling is serving as positive reinforcement for the boy, which is why he is becoming more and more disruptive over time."}, {"letter": "B", "text": "The teacher's yelling is serving as positive punishment, but the boy is becoming habituated over time."}, {"letter": "C", "text": "The teacher's yelling is probably serving as negative punishment for her, because she likely finds the situation to be aversive; however, it is serving as positive punishment for the boy, because he seems to enjoy being yelled at."}, {"letter": "D", "text": "The teacher's yelling is serving as positive reinforcement for herself, as she seems to enjoy yelling."}], "correct_answer": null}, {"number": 2, "question": "According to the research findings of Patterson and his colleagues, parents of aggressive children typically use discipline which is:", "choices": [{"letter": "A", "text": "consistent, but accompanied by humiliating verbal messages"}, {"letter": "B", "text": "consistent, but often followed by affection which sends mixed messages to the child"}, {"letter": "C", "text": "inconsistent, and often not associated with the child's behavior"}, {"letter": "D", "text": "inconsistent, but which particularly ignores the child's aggressive behaviors"}], "correct_answer": null}, {"number": 3, "question": "Delirium may occur due to intoxication with all of the following substances except", "choices": [{"letter": "A", "text": "cocaine."}, {"letter": "B", "text": "cannabis."}, {"letter": "C", "text": "caffeine."}, {"letter": "D", "text": "LSD."}], "correct_answer": null}, {"number": 4, "question": "An advantage of using a MANOVA over multiple one-way ANOVAs is that", "choices": [{"letter": "A", "text": "the use of a MANOVA reduces the experiment-wise error rate."}, {"letter": "B", "text": "a MANOVA can be used when the study involves more than one dependent variable."}, {"letter": "C", "text": "a MANOVA is the more appropriate test when the researcher has an a priori hypotheses about the nature of the relationship between the independent and dependent variables."}, {"letter": "D", "text": "a MANOVA involves simpler mathematical calculations."}], "correct_answer": null}, {"number": 5, "question": "Children diagnosed with a Learning Disorder are most likely to receive a co-diagnosis of:", "choices": [{"letter": "A", "text": "Major Depressive Disorder"}, {"letter": "B", "text": "Tourette's Syndrome"}, {"letter": "C", "text": "Mental Retardation"}, {"letter": "D", "text": "Attention-Deficit/Hyperactivity Disorder"}], "correct_answer": null}, {"number": 6, "question": "Compared to decentralized networks, centralized networks", "choices": [{"letter": "A", "text": "are less effective but more accepted by employees."}, {"letter": "B", "text": "are more effective when the task is complex."}, {"letter": "C", "text": "are more effective when the task is easy."}, {"letter": "D", "text": "are more effective and more accepted by employees."}], "correct_answer": null}, {"number": 7, "question": "Linehan's dialectical behavior therapy shows promise in the treatment of borderline patients. It involves a combination of treatment modalities that include", "choices": [{"letter": "A", "text": "inpatient therapy."}, {"letter": "B", "text": "social skills training."}, {"letter": "C", "text": "family therapy."}, {"letter": "D", "text": "psychotropic medication."}], "correct_answer": null}, {"number": 8, "question": "If you administer a measure of global job satisfaction to employees at the Acme Corporation, you would expect to find the highest levels of satisfaction among workers aged:", "choices": [{"letter": "A", "text": "20 to 25."}, {"letter": "B", "text": "30 to 35."}, {"letter": "C", "text": "40 to 45."}, {"letter": "D", "text": "50 to 55."}], "correct_answer": null}, {"number": 9, "question": "You are completing a court-ordered evaluation in order to determine the person's competency to stand trial and during the administration of the MMPI-2 your client jumps out of his seat and shouts \"OK, OK, I killed her!\" Now you are", "choices": [{"letter": "A", "text": "obligated to include this information in your report; it is a court-ordered report."}, {"letter": "B", "text": "obligated to include this information; privilege is waived because the mental status is part of the defense."}, {"letter": "C", "text": "obligated to include this information; privilege is waived because you know have a Tarasoff situation."}, {"letter": "D", "text": "not obligated to include the confessional information."}], "correct_answer": null}, {"number": 10, "question": "Which of the following is least likely to cause secondary impotence?", "choices": [{"letter": "A", "text": "medication use"}, {"letter": "B", "text": "alcohol use"}, {"letter": "C", "text": "diabetes mellitus"}, {"letter": "D", "text": "old age"}], "correct_answer": null}, {"number": 11, "question": "An interpersonal therapist who is working with a client suffering from a prolonged grief reaction would attempt to", "choices": [{"letter": "A", "text": "connect the person's current grief reaction to losses of significant others in early childhood."}, {"letter": "B", "text": "help the client understanding how the loss is impacting the current therapeutic relationship."}, {"letter": "C", "text": "build up a positive relationship with the client and avoid discussing the loss until the termination phase of therapy."}, {"letter": "D", "text": "modify the client's maladaptive behaviors under the assumption that psychological change follows behavioral change."}], "correct_answer": null}, {"number": 12, "question": "Herbert Simon's decision-making model suggests that decision makers", "choices": [{"letter": "A", "text": "consider all alternatives and then pick the best one."}, {"letter": "B", "text": "consider alternatives only until they find one that seems acceptable."}, {"letter": "C", "text": "consider only those alternatives that have a 50% or better chance of success."}, {"letter": "D", "text": "rely more on their affective than cognitive reactions when choosing an alternative."}], "correct_answer": null}, {"number": 13, "question": "Which of the following structures develops last?", "choices": [{"letter": "A", "text": "cerebellum"}, {"letter": "B", "text": "frontal lobe"}, {"letter": "C", "text": "occipital lobe"}, {"letter": "D", "text": "temporal lobe"}], "correct_answer": null}, {"number": 14, "question": "Release of the sex hormones by the gonads depends on signals from the", "choices": [{"letter": "A", "text": "medulla"}, {"letter": "B", "text": "amygdala."}, {"letter": "C", "text": "thalamus."}, {"letter": "D", "text": "hypothalamus."}], "correct_answer": null}, {"number": 15, "question": "Wernicke’s, Broca’s and conduction aphasia share which of the following difficulties?", "choices": [{"letter": "A", "text": "repeating what is said"}, {"letter": "B", "text": "word prosody"}, {"letter": "C", "text": "reception"}, {"letter": "D", "text": "expression"}], "correct_answer": null}, {"number": 16, "question": "Which of the following contradicts the predictions of Herzberg's two-factor theory?", "choices": [{"letter": "A", "text": "Workers say the same work-related factors cause satisfaction and dissatisfaction with work."}, {"letter": "B", "text": "Workers say they prefer leaders who show a high level of both instrumentality and consideration."}, {"letter": "C", "text": "Job satisfaction and job performance have a reciprocal relationship."}, {"letter": "D", "text": "Job enrichment increases satisfaction for both blue- and white-collar workers."}], "correct_answer": null}, {"number": 17, "question": "Low LPC leaders would be most likely to say:", "choices": [{"letter": "A", "text": "More beautiful paint colors in this office make us all feel better"}, {"letter": "B", "text": "Flexitime was a brillant invention"}, {"letter": "C", "text": "It's time for a change around here"}, {"letter": "D", "text": "The first one to hand in this budget report wins the office lottery pool"}], "correct_answer": null}, {"number": 18, "question": "What effect do neurotransmitters have on postsynaptic cells?", "choices": [{"letter": "A", "text": "an excitatory effect"}, {"letter": "B", "text": "an inhibitory effect"}, {"letter": "C", "text": "either an excitatory or inhibitory effect"}, {"letter": "D", "text": "the ability to decrease the action potential"}], "correct_answer": null}, {"number": 19, "question": "If data points are widely scattered around a regression line, it would indicate", "choices": [{"letter": "A", "text": "high heteroscedasticity."}, {"letter": "B", "text": "low heteroscedasticity."}, {"letter": "C", "text": "low homoscedasticity."}, {"letter": "D", "text": "a low correlation coefficient."}], "correct_answer": null}, {"number": 20, "question": "Recent literature comparing leadership and management has identified several similarities and differences. Which of the following set of characteristics is more critical for today's leaders than for managers?", "choices": [{"letter": "A", "text": "rational, persistent, and tough-minded"}, {"letter": "B", "text": "problem-solving, persistent, and independent"}, {"letter": "C", "text": "visionary, authoritative, and tough-minded"}, {"letter": "D", "text": "independent, innovative, and flexible"}], "correct_answer": null}, {"number": 21, "question": "A primary tenet of rational-emotive therapy is that:", "choices": [{"letter": "A", "text": "a belief determines behavior."}, {"letter": "B", "text": "self-attributions determine behavior."}, {"letter": "C", "text": "conditioning determines behavior."}, {"letter": "D", "text": "internalized role constructs determine behavior."}], "correct_answer": null}, {"number": 22, "question": "A child diagnosed with Attention -Deficit/Hyperactivity Disorder is most likely to also be diagnosed with:", "choices": [{"letter": "A", "text": "Tourette's Disorder"}, {"letter": "B", "text": "Conduct Disorder"}, {"letter": "C", "text": "Enuresis"}, {"letter": "D", "text": "Obsessive-Compulsive Disorder"}], "correct_answer": null}, {"number": 23, "question": "Communication-interaction therapy espouses that communication has both a \"report\" function and a", "choices": [{"letter": "A", "text": "Principle of equifinality"}, {"letter": "B", "text": "Command function"}, {"letter": "C", "text": "Circular model of causality"}, {"letter": "D", "text": "Paradoxical strategy"}], "correct_answer": null}, {"number": 24, "question": "Depth perception in infants develops in which of the following sequences?", "choices": [{"letter": "A", "text": "kinetic, pictorial, binocular"}, {"letter": "B", "text": "pictorial, binocular, kinetic"}, {"letter": "C", "text": "kinetic, binocular, pictorial"}, {"letter": "D", "text": "binocular, kinetic, pictorial"}], "correct_answer": null}, {"number": 25, "question": "An organization decides to implement changes based on a job characteristics assessment. Which of the following is least likely to be affected?", "choices": [{"letter": "A", "text": "work quality"}, {"letter": "B", "text": "motivation"}, {"letter": "C", "text": "satisfaction"}, {"letter": "D", "text": "absenteeism"}], "correct_answer": null}, {"number": 26, "question": "Which of the following is an application of negative punishment?", "choices": [{"letter": "A", "text": "D.R.O."}, {"letter": "B", "text": "overcorrection"}, {"letter": "C", "text": "Premack Principle"}, {"letter": "D", "text": "time-out"}], "correct_answer": null}, {"number": 27, "question": "The “fourth force” in psychology has been identified as:", "choices": [{"letter": "A", "text": "humanistic"}, {"letter": "B", "text": "psychodynamic"}, {"letter": "C", "text": "multiculturalism"}, {"letter": "D", "text": "behavioral"}], "correct_answer": null}, {"number": 28, "question": "Tricyclic antidepressants, as compared to MAO inhibitors,", "choices": [{"letter": "A", "text": "are more effective in the treatment of the vegetative symptoms of depression."}, {"letter": "B", "text": "are more effective in the treatment of atypical depressions."}, {"letter": "C", "text": "are less effective in the treatment of panic disorder."}, {"letter": "D", "text": "are associated with a greater range of dangerous side effects."}], "correct_answer": null}, {"number": 29, "question": "If a job selection test has lower validity for Hispanics as compared to White or African-Americans, you could say that ethnicity is acting as a:", "choices": [{"letter": "A", "text": "confounding variable"}, {"letter": "B", "text": "criterion contaminator"}, {"letter": "C", "text": "discriminant variable"}, {"letter": "D", "text": "moderator variable"}], "correct_answer": null}, {"number": 30, "question": "According to research on parenting styles, which of the following describes the parents who are most likely to raise very aggressive children?", "choices": [{"letter": "A", "text": "attentive parents who are very controlling of their children's behavior"}, {"letter": "B", "text": "parents who use frequent and intermittent violence and are very controlling of their children's behavior"}, {"letter": "C", "text": "loving parents with a laissez-faire attitude toward their children's behavior"}, {"letter": "D", "text": "parents who use frequent and intermittent violence and have a laissez-faire attitude toward their children's behavior"}], "correct_answer": null}, {"number": 31, "question": "Journal reviewers who show strong bias against manuscripts that report results contrary to their theoretical perspective are demonstrating:", "choices": [{"letter": "A", "text": "self-serving bias"}, {"letter": "B", "text": "confirmatory bias"}, {"letter": "C", "text": "fundamental attribution bias"}, {"letter": "D", "text": "self verification theory"}], "correct_answer": null}, {"number": 32, "question": "The \"Big Five\" personality factors were based on which of the following approaches?", "choices": [{"letter": "A", "text": "cognitive-behavioral"}, {"letter": "B", "text": "industrial-organizational"}, {"letter": "C", "text": "classical test theory"}, {"letter": "D", "text": "lexical"}], "correct_answer": null}, {"number": 33, "question": "You are trying to recall the facts surrounding a mugging you recently witnessed. According to the notion of state dependence, your recall of these facts will be best if you are in the same __________ when you recall the crime as you were at the time you witnessed it.", "choices": [{"letter": "A", "text": "attitudinal state."}, {"letter": "B", "text": "physical environment."}, {"letter": "C", "text": "emotional state."}, {"letter": "D", "text": "state of alertness."}], "correct_answer": null}, {"number": 34, "question": "The research suggests that, to control excessive aggression in children, the best approach is:", "choices": [{"letter": "A", "text": "time-out and similar behavioral techniques."}, {"letter": "B", "text": "opportunities for catharsis."}, {"letter": "C", "text": "explaining the consequences of aggressive acts."}, {"letter": "D", "text": "social-skills training."}], "correct_answer": null}, {"number": 35, "question": "Coding Personality Disorders on a separate axis, according to the DSM-IV-TR, is due to:", "choices": [{"letter": "A", "text": "the need to reduce the possibility of being overlooked"}, {"letter": "B", "text": "the need to reduce the possibility of prioritization over an Axis I disorder"}, {"letter": "C", "text": "having a differing etiology than Axis I disorders"}, {"letter": "D", "text": "having less daily functioning interference than Axis I disorders"}], "correct_answer": null}, {"number": 36, "question": "Research comparing the relationship between age and therapy outcome has produced mixed results. However, in their most recent meta-analysis of the research, Weisz and his colleagues (1995) found:", "choices": [{"letter": "A", "text": "no relationship between age and outcome."}, {"letter": "B", "text": "that therapy is more beneficial for children and adolescents than adults."}, {"letter": "C", "text": "that therapy is more beneficial for children than adolescents, especially among girls."}, {"letter": "D", "text": "that therapy is more beneficial for adolescents than children, especially among girls."}], "correct_answer": null}, {"number": 37, "question": "You receive a subpoena for a current client's therapy records from a process server hired by the court. This means that you must:", "choices": [{"letter": "A", "text": "inform the server that you cannot comply with the subpoena because therapy records are privileged."}, {"letter": "B", "text": "tell the server to wait while you make a copy of the records."}, {"letter": "C", "text": "appear at a designated place and time with a copy of the records."}, {"letter": "D", "text": "leave a copy of the records at the courthouse within 48 hours."}], "correct_answer": null}, {"number": 38, "question": "An MRI of a patient in the early stages of Huntington's disease would indicate:", "choices": [{"letter": "A", "text": "no abnormalities."}, {"letter": "B", "text": "overactivity in the temporal lobes."}, {"letter": "C", "text": "reduced volume of the basal ganglia."}, {"letter": "D", "text": "reduced volume of the ventricles."}], "correct_answer": null}, {"number": 39, "question": "Hypnosis involves three factors", "choices": [{"letter": "A", "text": "Absorption, regression, dissociation"}, {"letter": "B", "text": "Dissociation, absorption, suggestibility"}, {"letter": "C", "text": "Suggestibility, dissociation, regression"}, {"letter": "D", "text": "Regression, distortion, suggestibility"}], "correct_answer": null}, {"number": 40, "question": "In the context of expectancy theory, instrumentality refers to:", "choices": [{"letter": "A", "text": "the willingness of a worker to exert effort."}, {"letter": "B", "text": "the likelihood of effort leading to performance"}, {"letter": "C", "text": "the likelihood of performance leading to certain outcomes."}, {"letter": "D", "text": "the value of the outcomes of performance."}], "correct_answer": null}, {"number": 41, "question": "The WISC-III subtests that are most sensitive to perceptual-motor problems are:", "choices": [{"letter": "A", "text": "block design and object assembly."}, {"letter": "B", "text": "object assembly and picture completion."}, {"letter": "C", "text": "digit span and coding."}, {"letter": "D", "text": "picture arrangement and picture completion."}], "correct_answer": null}, {"number": 42, "question": "A parent finds that she has to nag her son more and more to get him to stop teasing his sister. The last time it happened, the boy finally stopped his teasing after his mother's 16th angry request. The boy's compliance is best described as the result of", "choices": [{"letter": "A", "text": "escape conditioning."}, {"letter": "B", "text": "avoidance conditioning."}, {"letter": "C", "text": "stimulus discrimination."}, {"letter": "D", "text": "stimulus generalization."}], "correct_answer": null}, {"number": 43, "question": "According to family therapists:", "choices": [{"letter": "A", "text": "when one family member improves, others will improve also."}, {"letter": "B", "text": "no member of a family will improve unless all members improve."}, {"letter": "C", "text": "if the identified patient improves, the family system will improve."}, {"letter": "D", "text": "if the family system changes, the identified patient will improve."}], "correct_answer": null}, {"number": 44, "question": "Which of the following stages in Erikson's theory of psychosocial development corresponds to Freud's latency stage?", "choices": [{"letter": "A", "text": "trust versus mistrust"}, {"letter": "B", "text": "autonomy versus shame"}, {"letter": "C", "text": "initiative versus guilt"}, {"letter": "D", "text": "industry versus inferiority"}], "correct_answer": null}, {"number": 45, "question": "In late childhood and adolescence, sibling relationships tend to become egalitarian; however, during middle childhood they can best be described as:", "choices": [{"letter": "A", "text": "distant and distrustful"}, {"letter": "B", "text": "conflicted and close"}, {"letter": "C", "text": "abusive and uncaring"}, {"letter": "D", "text": "dominant and submissive"}], "correct_answer": null}, {"number": 46, "question": "All of the following are generally considered to be characteristic of brief psychotherapy, except:", "choices": [{"letter": "A", "text": "time limited therapy"}, {"letter": "B", "text": "lack of theoretical orientation"}, {"letter": "C", "text": "effective for acute symptoms"}, {"letter": "D", "text": "encourages the development of a positive transference between the client and the therapist."}], "correct_answer": null}, {"number": 47, "question": "The variable most directly associated with a need for personal space is", "choices": [{"letter": "A", "text": "education."}, {"letter": "B", "text": "sex."}, {"letter": "C", "text": "income."}, {"letter": "D", "text": "cultural background."}], "correct_answer": null}, {"number": 48, "question": "The suicide rate for African-American adolescent males over the past few decades has been:", "choices": [{"letter": "A", "text": "higher than the rate for white adolescent males, but there has recently been an increase in the rates for both groups."}, {"letter": "B", "text": "lower than the rate for white adolescents males, but there has been an increase in the rates for both groups."}, {"letter": "C", "text": "higher than the rate for white adolescent males, but there has recently been a decrease in the rates for both groups."}, {"letter": "D", "text": "lower than the rate for white adolescent males, but there has been a decrease in the rates for both groups."}], "correct_answer": null}, {"number": 49, "question": "Jerome and Jamal have significant problems with their peers. However, while Jerome is rejected by his classmates, Jamal is neglected. If Jerome and Jamal change schools, which of the following is most likely to happen?", "choices": [{"letter": "A", "text": "Jerome may be better accepted by his new classmates but Jamal will continue to be neglected."}, {"letter": "B", "text": "Jamal may be better accepted by his new classmates but Jerome will continue to be rejected."}, {"letter": "C", "text": "Jerome and Jamal will both be better accepted by their new classmates."}, {"letter": "D", "text": "Jerome and Jamal will both continue to have the same peer problems they had in their old school."}], "correct_answer": null}, {"number": 50, "question": "A person with high self-esteem is likely to make what type of attributions for his or her achievements?", "choices": [{"letter": "A", "text": "internal and specific"}, {"letter": "B", "text": "internal and global"}, {"letter": "C", "text": "external and specific"}, {"letter": "D", "text": "external and global"}], "correct_answer": null}, {"number": 51, "question": "The ability to remember the first and last parts of a lecture, but not the middle part, would most likely be due to:", "choices": [{"letter": "A", "text": "retroactive inhibition"}, {"letter": "B", "text": "primacy and recency effects"}, {"letter": "C", "text": "method of loci"}, {"letter": "D", "text": "selective attention"}], "correct_answer": null}, {"number": 52, "question": "If one were to apply the confluence model to predict the intellectual and achievement scores of children, the most accurate prediction would be that", "choices": [{"letter": "A", "text": "middle children would show the highest score when compared to both earlier and later born children."}, {"letter": "B", "text": "children from small families would score the highest."}, {"letter": "C", "text": "only-borns would be the highest scoring group."}, {"letter": "D", "text": "later borns would be the highest scoring group."}], "correct_answer": null}, {"number": 53, "question": "Primary memory is the same as", "choices": [{"letter": "A", "text": "implicit memory."}, {"letter": "B", "text": "short-term memory."}, {"letter": "C", "text": "procedural memory."}, {"letter": "D", "text": "episodic memory."}], "correct_answer": null}, {"number": 54, "question": "Which of the following is true regarding Obsessive-Compulsive Disorder (OCD) and Obsessive Compulsive Personality Disorder (OCPD)?", "choices": [{"letter": "A", "text": "Both OCD and OCPD are characterized by the presence of true obsessions and/or compulsions."}, {"letter": "B", "text": "Unlike OCD, OCPD involves a preoccupation with orderliness, perfectionism, and control."}, {"letter": "C", "text": "Obsessions and compulsions are less severe in OCPD."}, {"letter": "D", "text": "Unlike OCPD, the DSM-IV-TR criteria for OCD requires onset of symptoms before age 18."}], "correct_answer": null}, {"number": 55, "question": "According to Lenore Walker, which of the following best describes the dynamic that keeps battered women \"hooked\" into their relationship with the batterer?", "choices": [{"letter": "A", "text": "Due to having grown up in an abusive family, the victim believes that battering is a normal part of relationships."}, {"letter": "B", "text": "The costs of the abuse and the benefits of remaining in the relationship are about equal."}, {"letter": "C", "text": "The woman fears that the abuse will become even more severe if she tries to leave the relationship."}, {"letter": "D", "text": "The woman lacks knowledge about the resources available to help her leave the relationship."}], "correct_answer": null}, {"number": 56, "question": "According to Hersey and Blanchard (1974), a \"telling\" leader is most effective when employees are low in both ability and willingness to assume responsibility. A telling leadership style is characterized by a", "choices": [{"letter": "A", "text": "low task and low relationship orientation."}, {"letter": "B", "text": "low task and high relationship orientation."}, {"letter": "C", "text": "high task and high relationship orientation."}, {"letter": "D", "text": "high task and low relationship orientation."}], "correct_answer": null}, {"number": 57, "question": "Consider the factor loadings for each of the four tests as explained in the table below:", "choices": [{"letter": "A", "text": "at least as high as the correlation of each one with its highest correlated skill."}, {"letter": "B", "text": "as low as possible, preferably close to .00."}, {"letter": "C", "text": "no higher than the average correlations of each of the four tests with each skill."}, {"letter": "D", "text": "equal to the sum of the squared correlations of each test with each skill."}], "correct_answer": null}, {"number": 58, "question": "At the request of an attorney, a psychologist in a rural community agrees to conduct a psychological evaluation and provide treatment for the same person. This would probably be considered:", "choices": [{"letter": "A", "text": "ethical, since both services are within the boundaries of a professional relationship"}, {"letter": "B", "text": "ethical, if the psychologist takes reasonable steps to minimize any negative effects"}, {"letter": "C", "text": "unethical, since evaluation and treatment are inherently conflicting"}, {"letter": "D", "text": "unethical, since only a patient, not an attorney can request treatment services"}], "correct_answer": null}, {"number": 59, "question": "A number of books in the popular press have been written regarding the relationship between psychological factors and cancer. Which of the following statements best reflects the outcome of scientific studies of this issue?", "choices": [{"letter": "A", "text": "Psychological factors are related both to the onset of cancer and the success of recovery from it."}, {"letter": "B", "text": "Psychological factors are related to the onset of cancer but not to the success of recovery from it."}, {"letter": "C", "text": "Psychological factors are not related to the onset of cancer but are related to the success of recovery from it."}, {"letter": "D", "text": "Psychological factors are related to neither the onset of cancer nor the success of recovery from it."}], "correct_answer": null}, {"number": 60, "question": "The type of racism exemplified by the lack of quality health care, delivery of substandard health care services and unavailability of preventive health services in minority communities is:", "choices": [{"letter": "A", "text": "institutional racism"}, {"letter": "B", "text": "personally mediated racism"}, {"letter": "C", "text": "internalized racism"}, {"letter": "D", "text": "subtle racism"}], "correct_answer": null}, {"number": 61, "question": "Use of benzodiazepines is associated with a “rebound effect.” If an individual is experiencing “rebound anxiety,” this refers to:", "choices": [{"letter": "A", "text": "an initial paradoxical increase in anxiety"}, {"letter": "B", "text": "anxiety persisting even after increasing dosage"}, {"letter": "C", "text": "anxiety re-appearing after long-term usage of the drug"}, {"letter": "D", "text": "an increase in severity of anxiety temporarily following the discontinuation of the drug"}], "correct_answer": null}, {"number": 62, "question": "The best predictor of treatment outcome among adult substance abusers is:", "choices": [{"letter": "A", "text": "age"}, {"letter": "B", "text": "ethnicity"}, {"letter": "C", "text": "history of criminal behavior"}, {"letter": "D", "text": "severity of substance abuse problems"}], "correct_answer": null}, {"number": 63, "question": "The effects of parental discipline on the development of conscience in toddlers is mediated by the toddlers' level of:", "choices": [{"letter": "A", "text": "fearfulness"}, {"letter": "B", "text": "intelligence"}, {"letter": "C", "text": "activity level"}, {"letter": "D", "text": "pain threshold"}], "correct_answer": null}, {"number": 64, "question": "Anger management training for children has been criticized for:", "choices": [{"letter": "A", "text": "limited positive effects due to focusing on the individual"}, {"letter": "B", "text": "limited positive effects due to focusing on the behavior"}, {"letter": "C", "text": "being developmentally inappropriate due to children’s tendency to blame anger on others"}, {"letter": "D", "text": "being developmentally inappropriate due to children’s inability to control feelings and behaviors"}], "correct_answer": null}, {"number": 65, "question": "Latane called this a social disease. It occurred when high-level employees were assessed on a combined effort. It turned out they produced less than when they were working individually. It's called:", "choices": [{"letter": "A", "text": "Social loafing"}, {"letter": "B", "text": "Group think"}, {"letter": "C", "text": "Social polarization"}, {"letter": "D", "text": "Social facilitation"}], "correct_answer": null}, {"number": 66, "question": "Bilingual children ______________________ than monolingual children.", "choices": [{"letter": "A", "text": "perform no better or no worse academically"}, {"letter": "B", "text": "perform worse academically"}, {"letter": "C", "text": "have no better or no worse intellectual flexibility"}, {"letter": "D", "text": "have increased intellectual flexibility"}], "correct_answer": null}, {"number": 67, "question": "Cognitive dissonance theory suggests that which of the following clients would be most likely to report benefitting from psychotherapy?", "choices": [{"letter": "A", "text": "a wealthy client who pays a very high fee"}, {"letter": "B", "text": "a poor client who pays a very high fee"}, {"letter": "C", "text": "a wealthy client who pays a very low fee"}, {"letter": "D", "text": "a poor client who pays a very low fee"}], "correct_answer": null}, {"number": 68, "question": "In comparison studies of younger and older adults, it has been found that depression in older adults is least likely to result in", "choices": [{"letter": "A", "text": "difficulties with memory problems."}, {"letter": "B", "text": "anxiety feelings."}, {"letter": "C", "text": "feelings of hopelessness."}, {"letter": "D", "text": "expressed sadness."}], "correct_answer": null}, {"number": 69, "question": "The incidence of Obsessive-Compulsive Disorder begins to differ for males and females at which age:", "choices": [{"letter": "A", "text": "3 years"}, {"letter": "B", "text": "6 years"}, {"letter": "C", "text": "12 years"}, {"letter": "D", "text": "18 years"}], "correct_answer": null}, {"number": 70, "question": "A psychologist is planning to retire in the next few months and has been decreasing her caseload. One of the psychologist's former clients, who had terminated a few months earlier, phones the psychologist and reports having suicidal thoughts. The psychologist should:", "choices": [{"letter": "A", "text": "inform the client that she is retiring and that she cannot accept any clients"}, {"letter": "B", "text": "refer the client to a colleague immediately"}, {"letter": "C", "text": "meet with the client until the client no longer needs treatment"}, {"letter": "D", "text": "meet with the client until the situation is stabilized and then refer"}], "correct_answer": null}, {"number": 71, "question": "The most consistent predictors of adolescent suicide are:", "choices": [{"letter": "A", "text": "Depression, use of drugs and alcohol, antisocial behavior"}, {"letter": "B", "text": "Depression, loss of popularity, avoidance of social situations"}, {"letter": "C", "text": "Use of drugs and alcohol, body weight, level of social acceptance"}, {"letter": "D", "text": "Use of drugs, cigarette smoking, depression"}], "correct_answer": null}, {"number": 72, "question": "Which of the following is not a characteristic of Western culture-bound values?", "choices": [{"letter": "A", "text": "cause-effect approach"}, {"letter": "B", "text": "openness and intimacy"}, {"letter": "C", "text": "clear distinction between mental and physical well-being"}, {"letter": "D", "text": "strict adherence to a schedule"}], "correct_answer": null}, {"number": 73, "question": "Mothers who get high scores on the WAIS-III tend to have children who get high scores on the WISC-III. On the basis of this information, which of the following conclusions is most justified?", "choices": [{"letter": "A", "text": "intelligence is hereditary"}, {"letter": "B", "text": "parental intelligence is correlated with offspring intelligence"}, {"letter": "C", "text": "the WAIS-III and the WISC-III are correlated"}, {"letter": "D", "text": "the WAIS-III and the WISC-III are uncorrelated"}], "correct_answer": null}, {"number": 74, "question": "The difference between the multiple hurdle and the multiple cut-off selection technique is that, in multiple hurdle,", "choices": [{"letter": "A", "text": "examinees must succeed on all predictors."}, {"letter": "B", "text": "not all predictors are administered to all examinees."}, {"letter": "C", "text": "predictors are specially designed to be \"culture-fair.\""}, {"letter": "D", "text": "predictive validity is empirically established."}], "correct_answer": null}, {"number": 75, "question": "Which of the following statements regarding therapist-client sexual relations is, according to research, most correct?", "choices": [{"letter": "A", "text": "Therapists treating clients with a diagnosis of Borderline Personality Disorder, Histrionic Personality Disorder, or who have a history of incest are more likely to become sexually involved with their patients than other therapists."}, {"letter": "B", "text": "Therapists who become sexually involved with their patients are likely to have less formal education or to have received less professional recognition than other therapists."}, {"letter": "C", "text": "Therapists who have completed a personal course of therapy are less likely to become sexually involved with their patients than therapists who have not undergone therapy."}, {"letter": "D", "text": "Therapists who become sexually involved with a patient typically do so with a patient who is significantly younger."}], "correct_answer": null}, {"number": 76, "question": "Which of the following medications would be least likely to cause impaired concentration as a side effect?", "choices": [{"letter": "A", "text": "clomipramine"}, {"letter": "B", "text": "tofranil"}, {"letter": "C", "text": "anafranil"}, {"letter": "D", "text": "fluoxetine"}], "correct_answer": null}, {"number": 77, "question": "It has been found that abused children often cling to their abusive parents. This can be explained in behavioral terms as the effect of", "choices": [{"letter": "A", "text": "extinction."}, {"letter": "B", "text": "delayed conditioning."}, {"letter": "C", "text": "intermittent reinforcement."}, {"letter": "D", "text": "spontaneous recovery."}], "correct_answer": null}, {"number": 78, "question": "A kappa coefficient of .93 would indicate that the two tests", "choices": [{"letter": "A", "text": "measure what they are supposed to."}, {"letter": "B", "text": "have a high degree of agreement between their raters."}, {"letter": "C", "text": "aren't especially reliable."}, {"letter": "D", "text": "present test items with a high level of difficulty."}], "correct_answer": null}, {"number": 79, "question": "The difference between insanity and psychosis is that:", "choices": [{"letter": "A", "text": "insanity is a legal term and psychosis is a term used in mental health literature"}, {"letter": "B", "text": "insanity is an outdated term and is no longer applied in legal cases, while psychosis is used both in mental health and legal literature"}, {"letter": "C", "text": "insanity is legally a broader term, and subsumes the term psychosis"}, {"letter": "D", "text": "insanity refers to disturbances in thought and emotion, while a psychotic disturbance, by definition, affects thought only"}], "correct_answer": null}, {"number": 80, "question": "The Wisconsin Card Sorting Test is useful for the detection of damage to the:", "choices": [{"letter": "A", "text": "frontal lobe"}, {"letter": "B", "text": "temporal lobe"}, {"letter": "C", "text": "hippocampus"}, {"letter": "D", "text": "corpus callosum"}], "correct_answer": null}, {"number": 81, "question": "A child has been assigned a new legal guardian. His biological parents had a psychological evaluation completed and had received the results. The new legal guardian is requesting a copy of the report. What is the most correct thing to do?", "choices": [{"letter": "A", "text": "Get a signed release from the biological parents"}, {"letter": "B", "text": "Provide the legal guardian with a copy of the report"}, {"letter": "C", "text": "Send the report to the court mediator"}, {"letter": "D", "text": "Keep the evaluation on file until the child is emancipated; then forward to him"}], "correct_answer": null}, {"number": 82, "question": "Introducing a goal that requires cooperation between conflicting intergroups results in:", "choices": [{"letter": "A", "text": "increased hositility, increased competition"}, {"letter": "B", "text": "increased hostility, reduced competition"}, {"letter": "C", "text": "reduced hositility, increased competition"}, {"letter": "D", "text": "reduced hostility, reduced competition"}], "correct_answer": null}, {"number": 83, "question": "Which of the following correlation coefficients is used to assess convergent validity:", "choices": [{"letter": "A", "text": "heterotrait-monomethod"}, {"letter": "B", "text": "monotrait-heteromethod"}, {"letter": "C", "text": "heterotrait-heteromethod"}, {"letter": "D", "text": "monotrait-monomethod"}], "correct_answer": null}, {"number": 84, "question": "According to both Kohlberg's and Piaget's theory of moral development, which of the following statements is not true?", "choices": [{"letter": "A", "text": "Moral development is rooted in cognitive development."}, {"letter": "B", "text": "Appropriate peer interaction promotes moral development."}, {"letter": "C", "text": "Moral development occurs in an invariant sequence of stages."}, {"letter": "D", "text": "There may be differences across cultures in the development of moral reasoning, especially in the early stages."}], "correct_answer": null}, {"number": 85, "question": "What did Vygotsky stress over Piaget?", "choices": [{"letter": "A", "text": "developmental levels of specific children"}, {"letter": "B", "text": "Cognitive development of children"}, {"letter": "C", "text": "Their relationship with others in the family"}, {"letter": "D", "text": "The importance of the accommodation stage"}], "correct_answer": null}, {"number": 86, "question": "The stages of the Minority Identity Development (MID) model developed by Atkinson, Morten, and Sue (1994) reflect changes in which of the following?", "choices": [{"letter": "A", "text": "acculturation"}, {"letter": "B", "text": "ego development"}, {"letter": "C", "text": "locus of control"}, {"letter": "D", "text": "self-awareness"}], "correct_answer": null}, {"number": 87, "question": "In cases of sexual abuse, the abuser is typically:", "choices": [{"letter": "A", "text": "A relative or close family friend"}, {"letter": "B", "text": "A stranger"}, {"letter": "C", "text": "A same-age sibling"}, {"letter": "D", "text": "An alcoholic"}], "correct_answer": null}, {"number": 88, "question": "When a person with deep dyslexia is presented with the written word \"cat,\" he is most likely to respond with which of the following?", "choices": [{"letter": "A", "text": "\"tac\""}, {"letter": "B", "text": "\"dog\""}, {"letter": "C", "text": "\"at\""}, {"letter": "D", "text": "\"I don't know\""}], "correct_answer": null}, {"number": 89, "question": "Which of the following would be used to measure the internal consistency of a test?", "choices": [{"letter": "A", "text": "kappa coefficient"}, {"letter": "B", "text": "test-retest reliability"}, {"letter": "C", "text": "split-half reliability"}, {"letter": "D", "text": "alternate forms reliability"}], "correct_answer": null}, {"number": 90, "question": "Which of the following is the clearest indication that a person is suffering from a substance addiction?", "choices": [{"letter": "A", "text": "The person denies that he or she has a problem."}, {"letter": "B", "text": "The person displays clear signs of tolerance and/or withdrawal."}, {"letter": "C", "text": "The person uses the substance in situations when use is physically hazardous, such as when driving."}, {"letter": "D", "text": "The person sometimes misses work because he or she is intoxicated or hung over."}], "correct_answer": null}, {"number": 91, "question": "To testify as an \"expert witness\" in a court case, you must", "choices": [{"letter": "A", "text": "obtain certification as a forensic psychologist."}, {"letter": "B", "text": "obtain certification in the specific area you are testifying about."}, {"letter": "C", "text": "be recognized by both sides' attorneys as an expert."}, {"letter": "D", "text": "have specialized knowledge in the area about which you are testifying."}], "correct_answer": null}, {"number": 92, "question": "The authoritative style of parenting typically results in better school performance among:", "choices": [{"letter": "A", "text": "Asians"}, {"letter": "B", "text": "Hispanics"}, {"letter": "C", "text": "African-Americans"}, {"letter": "D", "text": "Whites"}], "correct_answer": null}, {"number": 93, "question": "From a legal standpoint, a charge of malpractice against a psychologist would be held valid if it were proven that the therapist:", "choices": [{"letter": "A", "text": "had a duty of care to the patient, held malevolent intentions toward the patient, and engaged in activity that resulted in harm to the patient."}, {"letter": "B", "text": "had a duty of care to the patient and held malevolent intentions toward the patient; demonstration of actual harm is not necessary."}, {"letter": "C", "text": "had a duty of care to the patient and engaged in activity that resulted in harm to the patient; malevolent intentions need not be present."}, {"letter": "D", "text": "engages in activity that harms a patient; malevolent intentions and a duty of care are not necessary."}], "correct_answer": null}, {"number": 94, "question": "A friend complains to you that his four-year old frequently lies to him even when the child will not be punished or experience other negative consequences for not telling the truth. Based on your familiarity with the literature on deception in children, you", "choices": [{"letter": "A", "text": "tell your friend that the child can't be lying because children are not cognitively capable of doing so until age six or seven."}, {"letter": "B", "text": "tell your friend that the child must be anticipating negative consequences because, at age four, children lie only in order to avoid punishment."}, {"letter": "C", "text": "tell your friend that, without any other symptoms, the child's behavior is probably normal since young children lie for several reasons besides avoiding punishment."}, {"letter": "D", "text": "tell your friend that the child should be evaluated since lying at such an early age is often a warning sign of pathology."}], "correct_answer": null}, {"number": 95, "question": "An African-American family presents for family therapy. From a systems perspective, it would be most advisable to:", "choices": [{"letter": "A", "text": "focus on multi-generational issues."}, {"letter": "B", "text": "see each family member individually."}, {"letter": "C", "text": "use behavioral techniques."}, {"letter": "D", "text": "educate family members about community resources."}], "correct_answer": null}, {"number": 96, "question": "A student who is aware of the serial position effect, should pay more attention to:", "choices": [{"letter": "A", "text": "material studied at the beginning of a study session"}, {"letter": "B", "text": "material studied at the end of a study session"}, {"letter": "C", "text": "material studied during the middle of a study session"}, {"letter": "D", "text": "an older sibling's advice"}], "correct_answer": null}, {"number": 97, "question": "The tendency to experience losses more heavily than gains of equal magnitude results in less risky decisions and is referred to as:", "choices": [{"letter": "A", "text": "risky shift"}, {"letter": "B", "text": "adverse impact"}, {"letter": "C", "text": "satisficing"}, {"letter": "D", "text": "loss aversion"}], "correct_answer": null}, {"number": 98, "question": "According to research on sex-role determinants, the characteristic that is most related to genetics as opposed to socialization is:", "choices": [{"letter": "A", "text": "sociability."}, {"letter": "B", "text": "dependency."}, {"letter": "C", "text": "aggression."}, {"letter": "D", "text": "anxiety."}], "correct_answer": null}, {"number": 99, "question": "You are commuting to work early in the morning at 15 mph over the speed limit. You glance in your rearview mirror and notice blue flashing lights. You slow down and pull over. According to French and Raven's ideas about social power, which type of power are you attributing to the policemen?", "choices": [{"letter": "A", "text": "legitimate"}, {"letter": "B", "text": "reward"}, {"letter": "C", "text": "informational"}, {"letter": "D", "text": "referent"}], "correct_answer": null}, {"number": 100, "question": "Repetitive exercise and hypnosis are therapeutic techniques used to establish the “relaxation response” which involves ____________________________ activity.", "choices": [{"letter": "A", "text": "decreased parasympathetic nervous system"}, {"letter": "B", "text": "decreased sympathetic nervous system"}, {"letter": "C", "text": "increased somatic nervous system"}, {"letter": "D", "text": "increased autonomic nervous system"}], "correct_answer": null}, {"number": 101, "question": "Dementia due to Head Trauma", "choices": [{"letter": "A", "text": "is usually progressive in cases of moderate to severe trauma."}, {"letter": "B", "text": "is usually progressive only in cases of repeated head trauma."}, {"letter": "C", "text": "unlike other forms of Dementia, does not usually involve disturbances in executive functions."}, {"letter": "D", "text": "unlike other forms of Dementia, is associated more with deficits in executive functions than with memory impairment."}], "correct_answer": null}, {"number": 102, "question": "A young man is in a car accident and apparently receives some brain injury. Two days later, the man has a 10 a.m. appointment with a neurologist to evaluate the extent of his injury. Later that same day, the young man encounters the neurologist in a coffee shop but doesn't recall the neurologist, their meeting, or the evaluation. The young man is apparently suffering from", "choices": [{"letter": "A", "text": "paraprosopia."}, {"letter": "B", "text": "prosopagnosia."}, {"letter": "C", "text": "anterograde amnesia."}, {"letter": "D", "text": "retrograde amnesia."}], "correct_answer": null}, {"number": 103, "question": "The director at the training agency, where you are a supervisor, has promised two new interns that they will have plenty of testing experience as part of their training. In order to meet quota, you are under a great deal of pressure to bill many hours. One intern has a great deal of previous testing experience and the other intern has very little. The majority of the testing cases are given to the more experienced intern, and as a result this intern is given the majority of your time and attention. This situation is:", "choices": [{"letter": "A", "text": "ethical"}, {"letter": "B", "text": "unethical"}, {"letter": "C", "text": "unethical because you are exploiting the more experienced intern"}, {"letter": "D", "text": "unethical because the less experienced intern is not getting the training as it was described to him by the director of the clinic"}], "correct_answer": null}, {"number": 104, "question": "A post-menopausal woman is most likely to find that her reduced level of estrogen has", "choices": [{"letter": "A", "text": "decreased her ability to become sexually aroused."}, {"letter": "B", "text": "reduced her overall interest in sex."}, {"letter": "C", "text": "made intercourse uncomfortable."}, {"letter": "D", "text": "made it easier to achieve orgasm."}], "correct_answer": null}, {"number": 105, "question": "Korsakoff's syndrome is a form of Alcohol-Induced Persisting Amnestic Disorder that is due to", "choices": [{"letter": "A", "text": "dehydration."}, {"letter": "B", "text": "thiamine deficiency."}, {"letter": "C", "text": "vitamin C deficiency."}, {"letter": "D", "text": "sensory impairment."}], "correct_answer": null}, {"number": 106, "question": "Brief dynamic therapy is least likely to involve", "choices": [{"letter": "A", "text": "a focus on specific problems."}, {"letter": "B", "text": "an emphasis on restoring the person to a previous level of normal functioning."}, {"letter": "C", "text": "an attempt to engender insight into the unconscious."}, {"letter": "D", "text": "the use of techniques such as free association and dream interpretation."}], "correct_answer": null}, {"number": 107, "question": "What is needed for a successful malpractice lawsuit against a psychologist?", "choices": [{"letter": "A", "text": "A stated professional relationship"}, {"letter": "B", "text": "Significant neglect"}, {"letter": "C", "text": "Severe damage"}, {"letter": "D", "text": "Sufficient harm"}], "correct_answer": null}, {"number": 108, "question": "A predictor that is highly sensitive for identifying the presence of a disorder would most likely result in:", "choices": [{"letter": "A", "text": "measurement error"}, {"letter": "B", "text": "type II error"}, {"letter": "C", "text": "a high number of false positives"}, {"letter": "D", "text": "a high number of false negatives"}], "correct_answer": null}, {"number": 109, "question": "When scoring the Rorschach, \"form quality\" is a measure of the degree to which:", "choices": [{"letter": "A", "text": "determinants are fully integrated"}, {"letter": "B", "text": "a response meaningfully integrates two or more adjacent detail areas"}, {"letter": "C", "text": "the examinee's response corresponds to the actual structure of the inkblot"}, {"letter": "D", "text": "the examinee's response makes use of the entire inkblot"}], "correct_answer": null}, {"number": 110, "question": "A manager assumes that his employees need constant supervision and detailed guidelines in order to perform their jobs well. What management style does this reflect?", "choices": [{"letter": "A", "text": "Theory Y"}, {"letter": "B", "text": "Theory X"}, {"letter": "C", "text": "laissez-faire"}, {"letter": "D", "text": "management by objectives"}], "correct_answer": null}, {"number": 111, "question": "Following a stroke, a woman complains of numbness in her left hand and she does not respond to images presented to her left visual field. She most likely suffered damage in:", "choices": [{"letter": "A", "text": "Broca's area"}, {"letter": "B", "text": "Wernicke's area"}, {"letter": "C", "text": "the right precentral gyrus"}, {"letter": "D", "text": "the right postcentral gyrus"}], "correct_answer": null}, {"number": 112, "question": "According to recent research, the compressed workweek has the least impact on:", "choices": [{"letter": "A", "text": "absenteeism"}, {"letter": "B", "text": "supervisor performance ratings"}, {"letter": "C", "text": "overall job satisfaction"}, {"letter": "D", "text": "satisfaction with work schedule"}], "correct_answer": null}, {"number": 113, "question": "A patient with diabetes and no prior history of a mental disorder recently had his leg amputated. For the past several weeks, he has had depressed mood and decreased interest in activities he used to enjoy. His diagnosis would most likely be:", "choices": [{"letter": "A", "text": "Adjustment Disorder with Depressed Mood"}, {"letter": "B", "text": "Major Depressive Disorder, Single Episode"}, {"letter": "C", "text": "Acute Stress Disorder"}, {"letter": "D", "text": "Posttraumatic Stress Disorder"}], "correct_answer": null}, {"number": 114, "question": "General symptoms that may accompany the third stage of Alzheimer's Dementia include", "choices": [{"letter": "A", "text": "apathy and emotional blunting."}, {"letter": "B", "text": "depression and anomia."}, {"letter": "C", "text": "irritability and anger."}, {"letter": "D", "text": "paranoia and labile mood."}], "correct_answer": null}, {"number": 115, "question": "According to Berry's acculturation model, marginalization is characterized by:", "choices": [{"letter": "A", "text": "low involvement in the mainstream culture."}, {"letter": "B", "text": "low involvement in both the mainstream culture and the minority culture."}, {"letter": "C", "text": "low involvement in the minority culture."}, {"letter": "D", "text": "low involvement in the mainstream culture and high involvement in the minority culture."}], "correct_answer": null}, {"number": 116, "question": "The Working Memory Index of the WAIS-III is based on which of the following subtests?", "choices": [{"letter": "A", "text": "vocabulary, similarities, and information"}, {"letter": "B", "text": "digit symbol and symbol search"}, {"letter": "C", "text": "digit span, arithmetic, and letter-number sequencing"}, {"letter": "D", "text": "picture completion, block design, and matrix reasoning"}], "correct_answer": null}, {"number": 117, "question": "The friend of a psychologist is the owner of a small publishing firm. The friend offers the psychologist substantial compensation if she would lend her name to endorsements for his publications, and at times advise and consult on book acquisitions and marketing plans. The psychologist:", "choices": [{"letter": "A", "text": "could accept this as long as APA affiliation is not mentioned in the endorsements."}, {"letter": "B", "text": "could accept this only if the publications she would be dealing with are in her area of competency."}, {"letter": "C", "text": "could accept this only if the publications she would be dealing with are in her area of competency, and the endorsements will be based on the psychologist's honest opinion of the publications."}, {"letter": "D", "text": "should consult the local ethics committee before making her decision."}], "correct_answer": null}, {"number": 118, "question": "Which of the following descriptive words for tests are most opposite in nature?", "choices": [{"letter": "A", "text": "speed and power"}, {"letter": "B", "text": "subjective and aptitude"}, {"letter": "C", "text": "norm-referenced and standardized"}, {"letter": "D", "text": "maximal and ipsative"}], "correct_answer": null}, {"number": 119, "question": "Which is the most common anticholinergic side-effect?", "choices": [{"letter": "A", "text": "Light tremor"}, {"letter": "B", "text": "Blurred vision"}, {"letter": "C", "text": "Diarrhea"}, {"letter": "D", "text": "Weight loss"}], "correct_answer": null}, {"number": 120, "question": "Studies have been conducted to determine the relationship between number of therapy sessions and outcomes. Some of these studies demonstrate that, after only a few sessions, clients are most likely to show improvement in terms of which of the following?", "choices": [{"letter": "A", "text": "insight"}, {"letter": "B", "text": "interpersonal skills"}, {"letter": "C", "text": "sense of hopelessness"}, {"letter": "D", "text": "stress"}], "correct_answer": null}, {"number": 121, "question": "A psychologist, who is a member of APA, receives a charge letter from the Ethics Committee. The charge against the psychologist is that he cheated on the psychology-licensing exam. This means that the psychologist", "choices": [{"letter": "A", "text": "will be barred from further consideration for licensure."}, {"letter": "B", "text": "will have to retake the exam under supervision."}, {"letter": "C", "text": "must respond to the charge letter within thirty days."}, {"letter": "D", "text": "can request independent adjudication or a formal hearing."}], "correct_answer": null}, {"number": 122, "question": "An effective behavioral treatment to reduce the symptoms of depression is Structured Learning Therapy (SLT). SLT contains all of the following except:", "choices": [{"letter": "A", "text": "social skills training"}, {"letter": "B", "text": "overcorrection"}, {"letter": "C", "text": "modeling"}, {"letter": "D", "text": "role-playing"}], "correct_answer": null}, {"number": 123, "question": "Individuals with Tourette’s Disorder frequently suffer from a learning disorder in school. The most likely cause is:", "choices": [{"letter": "A", "text": "expressive language disorder"}, {"letter": "B", "text": "attentional and hyperactivity problems"}, {"letter": "C", "text": "social problems"}, {"letter": "D", "text": "environmental stressors"}], "correct_answer": null}, {"number": 124, "question": "Early signs of Dementia due to HIV Disease are", "choices": [{"letter": "A", "text": "cognitive slowing and apathy."}, {"letter": "B", "text": "disorientation and aphasia."}, {"letter": "C", "text": "impairments in executive functioning."}, {"letter": "D", "text": "speech impairments and inappropriate social behavior."}], "correct_answer": null}, {"number": 125, "question": "You are starting a stop-smoking group and tell a newspaper reporter who smokes that he can participate in the group for free if he'll write an article about it for the local newspaper. This arrangement is", "choices": [{"letter": "A", "text": "unethical."}, {"letter": "B", "text": "ethical as long as you don't tell the reporter what to write about."}, {"letter": "C", "text": "ethical as long as you check to make sure that information about the group is accurate."}, {"letter": "D", "text": "ethical as long as the confidentiality of the group participants is not violated."}], "correct_answer": null}, {"number": 126, "question": "If you are interested in determining whether the relationship between arousal and performance assumes a linear or a non-linear shape, the best statistical analysis to use would be", "choices": [{"letter": "A", "text": "multiple regression analysis."}, {"letter": "B", "text": "trend analysis."}, {"letter": "C", "text": "logistic regression."}, {"letter": "D", "text": "principal components analysis."}], "correct_answer": null}, {"number": 127, "question": "A meta-analysis differs from a literature review in that", "choices": [{"letter": "A", "text": "a meta-analysis involves a review of research in a more broadly defined area than a literature review."}, {"letter": "B", "text": "a literature review involves a review of research in which no statistical hypothesis tests were used."}, {"letter": "C", "text": "a meta-analysis, but not a literature review, involves calculation of an effect size."}, {"letter": "D", "text": "a literature review, but not a meta-analysis, involves calculation of an effect size."}], "correct_answer": null}, {"number": 128, "question": "Your friend Bill has been involved in a motorcycle accident that resulted in a head injury. His neurologist has indicated that Bill is experiencing aphasia. As a knowlegeable psychologist, you would give Bill all the following news about his injury except:", "choices": [{"letter": "A", "text": "because his language loss is not severe, he has a better chance of recovery."}, {"letter": "B", "text": "the greatest amount of recovery will occur in the next 3 months."}, {"letter": "C", "text": "since he is right-handed he will probably exhibit milder aphasia."}, {"letter": "D", "text": "he is lucky to be sixteen instead of sixty-six."}], "correct_answer": null}, {"number": 129, "question": "The most frequent complaints among individuals diagnosed with Undifferentiated Somatoform Disorder include:", "choices": [{"letter": "A", "text": "Chronic fatigue, loss of appetite, gastrointestinal, or genitourinary symptoms"}, {"letter": "B", "text": "Joint pain, headache, or sexual indifference"}, {"letter": "C", "text": "Impaired coordination, paralysis, or double vision"}, {"letter": "D", "text": "Heart palpitations, chest pain, shortness of breath, or feeling of choking"}], "correct_answer": null}, {"number": 130, "question": "In psychotherapy, patients with Borderline Personality Disorder are most likely to exhibit:", "choices": [{"letter": "A", "text": "feelings of inadequacy"}, {"letter": "B", "text": "idealization of the therapist"}, {"letter": "C", "text": "hostility towards the therapist"}, {"letter": "D", "text": "instability of thoughts and feelings about the therapist and themselves"}], "correct_answer": null}, {"number": 131, "question": "Although conclusions will vary across different studies, which of the following statements is most supported by the overall body of research on therapy outcome for African-American and Caucasian patients?", "choices": [{"letter": "A", "text": "There is no significant difference in outcome between African-American and Caucasian patients."}, {"letter": "B", "text": "African-American patients have better outcomes overall than Caucasian patients."}, {"letter": "C", "text": "Caucasian patients have better outcomes overall than African-American patients."}, {"letter": "D", "text": "Treatment outcomes for African-American patients are better but only when the therapist is also African-American."}], "correct_answer": null}, {"number": 132, "question": "Working Memory is an expansion of the WISC-III Freedom from Distractibility factor. It is comprised of which of the following scales?", "choices": [{"letter": "A", "text": "Coding, symbol search, digit span"}, {"letter": "B", "text": "Arithmetic and digit-span"}, {"letter": "C", "text": "Perceptual organization, comprehension, similarities"}, {"letter": "D", "text": "Digit-span, picture arrangement, coding"}], "correct_answer": null}, {"number": 133, "question": "Which of the following sections of the 2002 Ethical Principles of Psychologists and Code of Conduct “discusses the intent, organization, procedural considerations, and scope of application of the Ethics Code.”", "choices": [{"letter": "A", "text": "Introduction only"}, {"letter": "B", "text": "Introduction and Preamble"}, {"letter": "C", "text": "Preamble only"}, {"letter": "D", "text": "General Principles and Ethical Standards"}], "correct_answer": null}, {"number": 134, "question": "_________________ is a present-oriented, structured and time-limited treatment that integrates biological and psychosocial approaches.", "choices": [{"letter": "A", "text": "Motivational interviewing"}, {"letter": "B", "text": "Solution-focused therapy"}, {"letter": "C", "text": "Interpersonal psychotherapy"}, {"letter": "D", "text": "Reality therapy"}], "correct_answer": null}, {"number": 135, "question": "According to M. Seligman's theory of learned optimism, a student with an optimistic attribution style who fails an exam in a class which he usually does well in is most likely to say:", "choices": [{"letter": "A", "text": "\"I was unlucky\""}, {"letter": "B", "text": "\"I didn't study enough\""}, {"letter": "C", "text": "\"the teacher is always a tough grader\""}, {"letter": "D", "text": "\"the test was hard this time\""}], "correct_answer": null}, {"number": 136, "question": "Components of health anxiety include disease conviction, disease fears, disease preoccupation, bodily checking and reassurance seeking, and disease-related avoidance and escape behaviors. Strong disease conviction is most associated with:", "choices": [{"letter": "A", "text": "Specific (“disease”) Phobia"}, {"letter": "B", "text": "Delusional Disorder, Somantic Type"}, {"letter": "C", "text": "Hypochondriasis"}, {"letter": "D", "text": "Panic Disorder"}], "correct_answer": null}, {"number": 137, "question": "According to Piaget, centration is:", "choices": [{"letter": "A", "text": "characteristic of the formal operational stage and is the belief that others are as concerned with a subject's behavior as the subject is."}, {"letter": "B", "text": "characteristic of the preoperational stage and involves focusing on one aspect of a situation while neglecting others."}, {"letter": "C", "text": "characteristic of the preoperational stage and is an inability to consider another's point of view."}, {"letter": "D", "text": "characteristic of the concrete operational stage in which it is understood that two objects can remain equal according to a certain measure despite changes to their perceived form."}], "correct_answer": null}, {"number": 138, "question": "A 10-year old child who has an IQ of 90 is having difficulty doing her homework because she doesn't make use of effective learning strategies. This child would benefit from training in", "choices": [{"letter": "A", "text": "adaptive skills."}, {"letter": "B", "text": "metacognitive skills."}, {"letter": "C", "text": "mindfulness."}, {"letter": "D", "text": "elaborative rehearsal."}], "correct_answer": null}, {"number": 139, "question": "The ability to understand that changing an object's appearance doesn't change the object's physical qualities typically develops during years:", "choices": [{"letter": "A", "text": "0 to 2"}, {"letter": "B", "text": "2 to 6"}, {"letter": "C", "text": "7 to 10"}, {"letter": "D", "text": "11 to 13"}], "correct_answer": null}, {"number": 140, "question": "Dr. Que has recently started working with a family consisting of a mother, father, and five year old boy. The parents say the boy has become \"impossible to manage\" and they don't know what to do to control him. Dr. Que believes he will get a better idea of the family's dynamics if he is able to observe them at home. When he suggests this, the parents say that, because of their religious beliefs, they cannot allow this. Dr. Que should:", "choices": [{"letter": "A", "text": "refer the family to a therapist from the same religious background."}, {"letter": "B", "text": "impress upon the parents his need to observe them at home in order to best serve the interests of the child."}, {"letter": "C", "text": "determine if there is an alternative and mutually agreeable location for the observation."}, {"letter": "D", "text": "contact child protective services immediately."}], "correct_answer": null}, {"number": 141, "question": "Which of the following is an endogenous opiate?", "choices": [{"letter": "A", "text": "dopamine"}, {"letter": "B", "text": "catecholamine"}, {"letter": "C", "text": "endorphins"}, {"letter": "D", "text": "heroin"}], "correct_answer": null}, {"number": 142, "question": "Researchers are interested in detecting differential item functioning (DIF). Which method would not be used?", "choices": [{"letter": "A", "text": "SIBTEST"}, {"letter": "B", "text": "Mantel-Haenszel"}, {"letter": "C", "text": "Lord’s chi-square"}, {"letter": "D", "text": "cluster analysis"}], "correct_answer": null}, {"number": 143, "question": "Overall, research on the compressed work week suggests that its effects are:", "choices": [{"letter": "A", "text": "increased job satisfaction, with no effect on job performance."}, {"letter": "B", "text": "increased job performance, with no effect on job satisfaction."}, {"letter": "C", "text": "decreased job performance, with no effect on satisfaction."}, {"letter": "D", "text": "increased job performance and increased job satisfaction."}], "correct_answer": null}, {"number": 144, "question": "A psychologist is asked by the attorney for the father in a divorce procedure to determine, in his expert opinion, which parent is better able to care for the children. The father is in the same state as the psychologist but the mother is in a distant state. The psychologist should", "choices": [{"letter": "A", "text": "agree to evaluate the father and give his opinion as requested as long as the conclusions are not influenced by who pays the fee."}, {"letter": "B", "text": "evaluate the father but not send the report until asked for it by the judge."}, {"letter": "C", "text": "evaluate the children and both parents before giving such an opinion."}, {"letter": "D", "text": "refuse to accept this work since there can be no firm predictions made as to which parent would be better able to care for the children."}], "correct_answer": null}, {"number": 145, "question": "A patient obtains a T-score of 100 on the MMPI-2's F scale. This score indicates that", "choices": [{"letter": "A", "text": "the examinee is trying to fake good."}, {"letter": "B", "text": "the examinee is disoriented and confused."}, {"letter": "C", "text": "the examinee is defensive."}, {"letter": "D", "text": "the entire test should be considered invalid."}], "correct_answer": null}, {"number": 146, "question": "According to Beck, depression is caused by", "choices": [{"letter": "A", "text": "biochemical factors."}, {"letter": "B", "text": "early parental rejection."}, {"letter": "C", "text": "dysfunctional automatic thoughts."}, {"letter": "D", "text": "dysfunctional irrational thoughts."}], "correct_answer": null}, {"number": 147, "question": "The best treatment for someone who has difficulty making friends, is shy, and can't maintain steady employment is:", "choices": [{"letter": "A", "text": "individual social skills training."}, {"letter": "B", "text": "paradoxical intention."}, {"letter": "C", "text": "token economy."}, {"letter": "D", "text": "group social skills training."}], "correct_answer": null}, {"number": 148, "question": "A multivariate analysis of variance would be used to analyze collected data when:", "choices": [{"letter": "A", "text": "the researcher wants to analyze the effects of an extraneous variable"}, {"letter": "B", "text": "the researcher wants to remove the effects of an extraneous variable"}, {"letter": "C", "text": "the study includes two or more independent variables"}, {"letter": "D", "text": "the study includes two or more dependent variables"}], "correct_answer": null}, {"number": 149, "question": "The Health Belief Model (HBM) is a tool for predicting and understanding an individual’s health-related decision making. The results from which dimension provide the most information?", "choices": [{"letter": "A", "text": "perceived severity"}, {"letter": "B", "text": "perceived susceptibility"}, {"letter": "C", "text": "perceived benefits"}, {"letter": "D", "text": "perceived barriers"}], "correct_answer": null}, {"number": 150, "question": "Which of the following methods of establishing a test's reliability is, all other things being equal, likely to be lowest?", "choices": [{"letter": "A", "text": "split-half"}, {"letter": "B", "text": "Cronbach's alpha"}, {"letter": "C", "text": "alternate forms"}, {"letter": "D", "text": "test-retest"}], "correct_answer": null}, {"number": 151, "question": "Approximately what percent of women experience full-blown postpartum (clinical) depression?", "choices": [{"letter": "A", "text": "1 to 5%."}, {"letter": "B", "text": "10 to 20%."}, {"letter": "C", "text": "20 to 30%."}, {"letter": "D", "text": "30 to 40%."}], "correct_answer": null}, {"number": 152, "question": "Which of the following individuals would agree that the acquisition of language is due largely to biologically-programmed capacities?", "choices": [{"letter": "A", "text": "Piaget"}, {"letter": "B", "text": "Vygotsky"}, {"letter": "C", "text": "Chomsky"}, {"letter": "D", "text": "Bruner"}], "correct_answer": null}, {"number": 153, "question": "You conduct a study designed to assess the effectiveness of psychotherapy in the treatment of depression. You work with two groups, one of which receives the therapy and one of which is an attention-only control group. All of your subjects are hospitalized inpatients; thus, all of them are extremely depressed and therefore score extremely low on your pretest measure of depression. The biggest threat to external validity in this study is:", "choices": [{"letter": "A", "text": "regression to the mean"}, {"letter": "B", "text": "reactivity"}, {"letter": "C", "text": "interaction between selection and treatment"}, {"letter": "D", "text": "pretest sensitization"}], "correct_answer": null}, {"number": 154, "question": "A psychiatrist sends you a release for information from a former patient of yours requesting records that are seven years old. In this situation, you should", "choices": [{"letter": "A", "text": "send the records as requested."}, {"letter": "B", "text": "send the records with a cover letter explaining the limitations of the records."}, {"letter": "C", "text": "refuse to send the records."}, {"letter": "D", "text": "contact the patient to make sure he or she understands the ramifications of the situation."}], "correct_answer": null}, {"number": 155, "question": "Which of the following statements is MOST consistent with the research results on the effects of crowding?", "choices": [{"letter": "A", "text": "Women are more adversely affected by crowding than men."}, {"letter": "B", "text": "The effects of crowding are mediated by a person's level of distraction."}, {"letter": "C", "text": "Crowding always has a negative impact on individuals' affect."}, {"letter": "D", "text": "Individuals are more willing to discuss intimate topics in crowded situations vs. uncrowded situations."}], "correct_answer": null}, {"number": 156, "question": "The three dimensions of situational control identified by Fiedler include all of the following except:", "choices": [{"letter": "A", "text": "leader-employee relations"}, {"letter": "B", "text": "position or legitimate power"}, {"letter": "C", "text": "role expectations"}, {"letter": "D", "text": "task structure"}], "correct_answer": null}, {"number": 157, "question": "Research comparing patients with Schizophrenia from non-Western developing countries to those from Western industrialized countries has found that they differ in terms of:", "choices": [{"letter": "A", "text": "symptoms"}, {"letter": "B", "text": "age and gender"}, {"letter": "C", "text": "gender and prognosis"}, {"letter": "D", "text": "course and outcome"}], "correct_answer": null}, {"number": 158, "question": "The police inform you that they have a warrant out on one of your clients who is suspected of several felony charges of grand theft auto. They want you to provide them with the client's address and phone number. You should:", "choices": [{"letter": "A", "text": "cooperate with the police"}, {"letter": "B", "text": "require them to get a warrant before you release any information"}, {"letter": "C", "text": "refuse to provide them with the information and notify your client"}, {"letter": "D", "text": "inform them when your next scheduled appointment is with your client"}], "correct_answer": null}, {"number": 159, "question": "Equity theory suggests that the relationship between pay and motivation", "choices": [{"letter": "A", "text": "is positive; the more one is paid, the more motivated one is likely to be."}, {"letter": "B", "text": "is negative; the more one is paid, the less motivated one is likely to be."}, {"letter": "C", "text": "is negligible; pay has little or nothing to do with motivation."}, {"letter": "D", "text": "is complex; the relationship between pay and motivation is mediated by a variety of other factors."}], "correct_answer": null}, {"number": 160, "question": "The most effective behavioral technique to reduce a school-aged child’s temper tantrums is:", "choices": [{"letter": "A", "text": "modeling"}, {"letter": "B", "text": "extinction"}, {"letter": "C", "text": "positive reinforcement"}, {"letter": "D", "text": "negative reinforcement"}], "correct_answer": null}, {"number": 161, "question": "In Ainsworth's \"strange situation,\" a child exhibits the disorganized/disoriented attachment pattern. This pattern is most associated with:", "choices": [{"letter": "A", "text": "a difficult temperament."}, {"letter": "B", "text": "mental retardation."}, {"letter": "C", "text": "early maltreatment."}, {"letter": "D", "text": "early enrollment in daycare."}], "correct_answer": null}, {"number": 162, "question": "When a psychologist believes that her patient's records will be used in a legal proceeding, she should:", "choices": [{"letter": "A", "text": "rewrite them to meet the higher standards of a forensic setting"}, {"letter": "B", "text": "avoid the use of any psychological terminology in favor of legal terminology"}, {"letter": "C", "text": "maintain them in the same kind and quality as all of her patients' records"}, {"letter": "D", "text": "maintain them in the kind and quality consistent with reasonable scrutiny in an adjudicative forum"}], "correct_answer": null}, {"number": 163, "question": "The ratio of Major Depressive Disorder in females to males is approximately", "choices": [{"letter": "A", "text": "1:1."}, {"letter": "B", "text": "2.5:1."}, {"letter": "C", "text": "5:1."}, {"letter": "D", "text": "1:2."}], "correct_answer": null}, {"number": 164, "question": "If a child can understand that A is greater than B and B is greater than C, and then understand that as a result, A is greater than C, this is an example of:", "choices": [{"letter": "A", "text": "Inductive reasoning"}, {"letter": "B", "text": "Symbolic thought"}, {"letter": "C", "text": "Deductive reasoning"}, {"letter": "D", "text": "Pre-operational thought."}], "correct_answer": null}, {"number": 165, "question": "During the 10th psychotherapy session with a client, you realize that your client has recently started dating your best friend. You should:", "choices": [{"letter": "A", "text": "refer the client to another therapist"}, {"letter": "B", "text": "discuss this with your client immediately"}, {"letter": "C", "text": "discontinue your relationship with your friend"}, {"letter": "D", "text": "wait and address the problem with your client if a conflict becomes imminent"}], "correct_answer": null}, {"number": 166, "question": "The use of \"pooled variance\" in statistics assumes that:", "choices": [{"letter": "A", "text": "the sample sizes are equal"}, {"letter": "B", "text": "the sample variances are equal"}, {"letter": "C", "text": "the population sizes are equal"}, {"letter": "D", "text": "the population variances are equal"}], "correct_answer": null}, {"number": 167, "question": "According to Marlatt's theory of substance dependence:", "choices": [{"letter": "A", "text": "a relapse of dependence is likely if the person makes non-dispositional attributions for use following a \"slip\" (use of a drug after a period of abstinence)."}, {"letter": "B", "text": "substance use is \"over-learned\" in that it is maintained by itself as well as by multiple cognitive mediators and external reinforcers."}, {"letter": "C", "text": "addictions can be easily extinguished."}, {"letter": "D", "text": "excessive substance use is related to an unresolved need for power."}], "correct_answer": null}, {"number": 168, "question": "According to Holland, a person who enjoys filing, copying, and data entry would have which of the following personality types?", "choices": [{"letter": "A", "text": "realistic"}, {"letter": "B", "text": "investigative"}, {"letter": "C", "text": "conventional"}, {"letter": "D", "text": "obsessive-compulsive"}], "correct_answer": null}, {"number": 169, "question": "A research study using an ABAB design involves the following elements in sequence:", "choices": [{"letter": "A", "text": "treatment, baseline, treatment, baseline"}, {"letter": "B", "text": "baseline, treatment, baseline, treatment"}, {"letter": "C", "text": "baseline, intervention in setting A, baseline, intervention in setting B"}, {"letter": "D", "text": "baseline for group A, treatment for group A, baseline for group B, treatment for group B"}], "correct_answer": null}, {"number": 170, "question": "A whisper being audible in a library reading room, but not in a busy cafeteria is explained by:", "choices": [{"letter": "A", "text": "the all-or-nothing principle"}, {"letter": "B", "text": "the “law of effect”"}, {"letter": "C", "text": "Weber’s law"}, {"letter": "D", "text": "the “law of proximity”"}], "correct_answer": null}, {"number": 171, "question": "Which of the following statements is not contained in APA's Ethical Principles of Psychologists and Code of Conduct?", "choices": [{"letter": "A", "text": "“the purely private conduct of psychologists ... is not within the purview of the Ethics Code."}, {"letter": "B", "text": "“This Ethics Code ... has as its goals the welfare and protection of the individuals and groups with whom psychologists work ...\""}, {"letter": "C", "text": "“The fact that a given conduct is not specifically addressed by an Ethical Standard does not mean that it is necessarily either ethical or unethical.”"}, {"letter": "D", "text": "“A violation of the Ethics Code usually means ... that a psychologist will be legally liable in a court action or face other legal consequences.”"}], "correct_answer": null}, {"number": 172, "question": "Extinction treatment paradigms are often limited by:", "choices": [{"letter": "A", "text": "improperly applied reinforcers."}, {"letter": "B", "text": "accidental reinforcement."}, {"letter": "C", "text": "client expectations."}, {"letter": "D", "text": "practical constraints such as time."}], "correct_answer": null}, {"number": 173, "question": "In an experiment, a psychologist establishes a conditioned startle response to a flashing red light by pairing presentation of the light with a loud noise that naturally elicits a startle reaction. Subsequently, the red light is simultaneously presented with a strong odor just before the loud noise. After many of these conditioning trials, which of the following is likely to occur when the strong odor is presented alone?", "choices": [{"letter": "A", "text": "The strong odor will produce a startle response that is even stronger than the response produced by the red light due to sensitization of the subject."}, {"letter": "B", "text": "The strong odor will produce a very weak or no startle response due to habituation."}, {"letter": "C", "text": "The strong odor will not produce a startle response because blocking will have occurred."}, {"letter": "D", "text": "The strong odor may or may not produce a startle response depending on the original strength of the subject's response to the loud noise."}], "correct_answer": null}, {"number": 174, "question": "In a \"split-brain\" patient,", "choices": [{"letter": "A", "text": "the patient cannot name objects or comprehend information that is projected solely to the right hemisphere."}, {"letter": "B", "text": "the patient cannot name objects or comprehend information that is projected solely to the left hemisphere."}, {"letter": "C", "text": "both hemispheres could process linguistic information, even though language production is controlled by the left hemisphere."}, {"letter": "D", "text": "both hemispheres could process linguistic information, even though language production is controlled by the right hemisphere."}], "correct_answer": null}, {"number": 175, "question": "There is evidence that the effectiveness of systematic desensitization for reducing anxiety is actually due to repeated exposure to the feared stimulus, which leads to extinction of the anxiety response. However, systematic desensitization was originally developed as an application of", "choices": [{"letter": "A", "text": "negative reinforcement."}, {"letter": "B", "text": "counterconditioning."}, {"letter": "C", "text": "stimulus discrimination."}, {"letter": "D", "text": "avoidance conditioning."}], "correct_answer": null}, {"number": 176, "question": "Compared to the Stanford-Binet, the WAIS-III tends to:", "choices": [{"letter": "A", "text": "underestimate the IQ scores of higher functioning individuals."}, {"letter": "B", "text": "underestimate the IQ scores of lower functioning individuals."}, {"letter": "C", "text": "overestimate the IQ scores of lower functioning individuals and underestimate the IQ scores of higher functioning individuals."}, {"letter": "D", "text": "underestimate the IQ scores of lower functioning individuals and overestimate the IQ scores of higher functioning individuals."}], "correct_answer": null}, {"number": 177, "question": "The best way to increase the intra-rater reliability of a test that is subjectively scored would be to", "choices": [{"letter": "A", "text": "train raters to pay very close attention to the scoring of the test."}, {"letter": "B", "text": "have a second set of raters rescore the test."}, {"letter": "C", "text": "use mutually exclusive and exhaustive rating categories."}, {"letter": "D", "text": "ensure that the rating instrument is correlated with multiple criterion measures."}], "correct_answer": null}, {"number": 178, "question": "Which of the following is not an advantage of the use of co-therapists in group therapy, according to Yalom?", "choices": [{"letter": "A", "text": "The observational range of co-therapists is greater than that of a single group leader."}, {"letter": "B", "text": "Co-therapists broaden the range of possible transferential reactions, making the nature of the client's transferential distortions more evident."}, {"letter": "C", "text": "A co-therapist can provide a beginning group therapist with needed objectivity and expertise."}, {"letter": "D", "text": "When co-therapists pursue their own separate agendas in therapy, clients have the opportunity to intervene and learn conflict management skills."}], "correct_answer": null}, {"number": 179, "question": "When comparing feminist therapy to a more psychodynamic approach, feminist theory", "choices": [{"letter": "A", "text": "Disallows the mother's role"}, {"letter": "B", "text": "Takes factors other than a woman's view of herself into consideration"}, {"letter": "C", "text": "Relies much more on the emphasis of the biological mother"}, {"letter": "D", "text": "Encourages women to call men to task for the oppression of women"}], "correct_answer": null}, {"number": 180, "question": "To reduce a child's aggressive behavior, the best approach is to:", "choices": [{"letter": "A", "text": "punish the aggression consistently and harshly."}, {"letter": "B", "text": "use differential reinforcement of alternative behaviors."}, {"letter": "C", "text": "identify the consequences of the behavior and alternatives to it."}, {"letter": "D", "text": "have the child vent his or her aggressive feelings by hitting a pillow."}], "correct_answer": null}, {"number": 181, "question": "The Personality Disorder that has been found to have the best prognosis is:", "choices": [{"letter": "A", "text": "Borderline Personality Disorder"}, {"letter": "B", "text": "Paranoid Personality Disorder"}, {"letter": "C", "text": "Dependent Personality Disorder"}, {"letter": "D", "text": "Obsessive-Compulsive Personality Disorder"}], "correct_answer": null}, {"number": 182, "question": "Differences in communication style can act as a barrier in cross-cultural counseling. For example, some cultures have a high-context style, while others are more low-context. Which of the following is true about high-context communication and culture?", "choices": [{"letter": "A", "text": "The communication found in high-context cultures reflects an emphasis on rules of law and procedures."}, {"letter": "B", "text": "People belonging to high-context cultures rely heavily on nonverbal cues when communicating with others."}, {"letter": "C", "text": "People in high-context cultures make extensive use of elaborative codes in their speech."}, {"letter": "D", "text": "High-context communication changes rapidly and easily."}], "correct_answer": null}, {"number": 183, "question": "Bob, who came from a poor family, was encouraged throughout high school to take vocational classes due to his \"low aptitude\" scores. Bob ignored this advice and focused on college preparatory courses. After graduating Magna Cum Laude from Harvard Business School, he wrote his old alma mater and asked for a complete copy of his records. Bob's grandmother said, \"While you are at it--tell them to burn mine\". According to the Buckley Amendment,", "choices": [{"letter": "A", "text": "Overall, the school must comply with both requests"}, {"letter": "B", "text": "They need to honor Bob's wishes but not his grandmother's"}, {"letter": "C", "text": "They need to honor Bob's grandmother's request, but not Bob's"}, {"letter": "D", "text": "Then can disregard both requests"}], "correct_answer": null}, {"number": 184, "question": "You are asked to evaluate a 3-year old child who has no interest in peer relationships, engages in highly unusual play behavior on his own, and is preoccupied with parts of objects. The child has no cognitive or language impairments. Based on this information, the correct diagnosis for this child is", "choices": [{"letter": "A", "text": "Asperger's Disorder."}, {"letter": "B", "text": "Rett's Disorder."}, {"letter": "C", "text": "Autistic Disorder."}, {"letter": "D", "text": "Schizoid Personality Disorder."}], "correct_answer": null}, {"number": 185, "question": "Specific Phobia, Blood-Injection-Injury Type is characterized by each of the following EXCEPT:", "choices": [{"letter": "A", "text": "a strong vasogal response"}, {"letter": "B", "text": "onset in late adolescence"}, {"letter": "C", "text": "more common in women than men"}, {"letter": "D", "text": "strong familial patterns"}], "correct_answer": null}, {"number": 186, "question": "Someone advocating an emic rather than an etic approach to cross-cultural psychology would argue that the study of a culture", "choices": [{"letter": "A", "text": "should be undertaken from a detached and objective position."}, {"letter": "B", "text": "should be undertaken from within the culture itself."}, {"letter": "C", "text": "should involve a comparison across different cultures."}, {"letter": "D", "text": "should use the history of the culture being studied as a reference point."}], "correct_answer": null}, {"number": 187, "question": "Which of the following medications would MOST likely cause confusion?", "choices": [{"letter": "A", "text": "fluoxetine"}, {"letter": "B", "text": "amitriptyline"}, {"letter": "C", "text": "sertraline"}, {"letter": "D", "text": "paroxetine"}], "correct_answer": null}, {"number": 188, "question": "On the WISC-III, \"freedom from distractibility\" is measured using which of the following subtests?", "choices": [{"letter": "A", "text": "Digit Span and Digit Symbol"}, {"letter": "B", "text": "Arithmetic and Digit Span"}, {"letter": "C", "text": "Picture Completion and Picture Arrangement"}, {"letter": "D", "text": "Coding and Arithmetic"}], "correct_answer": null}, {"number": 189, "question": "The person who is unable to recognize certain objects when she grasps them and is unaware of that deficit is suffering from", "choices": [{"letter": "A", "text": "agnosia."}, {"letter": "B", "text": "ataxia."}, {"letter": "C", "text": "aphasia."}, {"letter": "D", "text": "akinesia."}], "correct_answer": null}, {"number": 190, "question": "An adolescent exhibiting foreclosure is most likely to respond in which of the following ways when asked about her career choice?", "choices": [{"letter": "A", "text": "I haven't given my career much thought yet."}, {"letter": "B", "text": "My father, who's a lawyer, has convinced me that I'd make a good lawyer too."}, {"letter": "C", "text": "I've given that a lot of thought and I think being a veterinarian best suits my interests."}, {"letter": "D", "text": "That's something that's been bothering me lately and I'm worried that I'm never going to be able to reach a decision."}], "correct_answer": null}, {"number": 191, "question": "Which of the following statements is most reflective of research findings?", "choices": [{"letter": "A", "text": "Both male and female teachers are more likely to criticize boys than girls."}, {"letter": "B", "text": "Male teachers are more likely to criticize boys, while female teachers are more likely to criticize girls."}, {"letter": "C", "text": "Female teachers are more likely to criticize boys, while male teachers are more likely to criticize girls."}, {"letter": "D", "text": "Boys and girls are equally likely to be criticized by both male and female teachers."}], "correct_answer": null}, {"number": 192, "question": "The most correct statement that can be made about biofeedback as a therapeutic treatment for pain reduction is that", "choices": [{"letter": "A", "text": "the significant effects found can be accounted for by the type of instrumentation employed."}, {"letter": "B", "text": "it is effective for certain types of patients only."}, {"letter": "C", "text": "its effectiveness has diminished over the years."}, {"letter": "D", "text": "it is probably no different from relaxation training in its effectiveness."}], "correct_answer": null}, {"number": 193, "question": "In the multitrait-multimethod matrix, a low heterotrait-monomethod coefficient would indicate:", "choices": [{"letter": "A", "text": "low convergent validity."}, {"letter": "B", "text": "low divergent validity."}, {"letter": "C", "text": "high convergent validity."}, {"letter": "D", "text": "high divergent validity."}], "correct_answer": null}, {"number": 194, "question": "The primary purpose of feedback in the context of organizational development is to:", "choices": [{"letter": "A", "text": "help clients understand the diagnostic information that has been collected"}, {"letter": "B", "text": "provide clients with information on the effectiveness of an OD intervention"}, {"letter": "C", "text": "provide employees with information about their individual performance"}, {"letter": "D", "text": "provide managers with information on the employee's concerns"}], "correct_answer": null}, {"number": 195, "question": "Wolfgang Kohler, a founder of the gestalt school of learning and thought, is known for applying gestalt learning principles to the development of", "choices": [{"letter": "A", "text": "unfinished business."}, {"letter": "B", "text": "insight."}, {"letter": "C", "text": "integration of all parts of the psyche."}, {"letter": "D", "text": "awareness of psychological boundaries."}], "correct_answer": null}, {"number": 196, "question": "During the first of structural family therapy’s three steps, which of the following techniques is most useful?", "choices": [{"letter": "A", "text": "constructing a family map"}, {"letter": "B", "text": "relabeling and reframing"}, {"letter": "C", "text": "enactment"}, {"letter": "D", "text": "tracking and mimesis"}], "correct_answer": null}, {"number": 197, "question": "Erikson proposed that psychosocial development continues throughout the lifespan. Successful resolution of the conflict of the final stage of development results in:", "choices": [{"letter": "A", "text": "formation of intimate relationships."}, {"letter": "B", "text": "participation in activities that promote the welfare of future generations."}, {"letter": "C", "text": "development of mature ego defenses."}, {"letter": "D", "text": "development of a sense of meaning."}], "correct_answer": null}, {"number": 198, "question": "Ultrasound techniques are least effective for detecting which type of traumatic brain injury?", "choices": [{"letter": "A", "text": "shearing"}, {"letter": "B", "text": "tissue bruising"}, {"letter": "C", "text": "swelling"}, {"letter": "D", "text": "inter-cranial pressure (ICP)"}], "correct_answer": null}, {"number": 199, "question": "As an organizational psychologist, Dr. Jobb will recommend frame-of-reference training in order to", "choices": [{"letter": "A", "text": "improve the accuracy of selection decisions."}, {"letter": "B", "text": "enhance communication among team members."}, {"letter": "C", "text": "reduce rater biases on performance appraisals."}, {"letter": "D", "text": "improve leadership effectiveness."}], "correct_answer": null}, {"number": 200, "question": "What is the approximate probability that a person with a Schizophrenic brother (not an identical or fraternal twin) would also have Schizophrenia?", "choices": [{"letter": "A", "text": "60%"}, {"letter": "B", "text": "45%"}, {"letter": "C", "text": "10%"}, {"letter": "D", "text": "0.5%"}], "correct_answer": null}];
+        
+        // Exam state
+        let currentQuestion = 0;
+        let userAnswers = {};
+        let markedQuestions = new Set();
+        let timeRemaining = 225 * 60; // in seconds
+        let timerInterval;
+        let examSubmitted = false;
+        
+        // Initialize exam
+        function initExam() {
+            createNavigator();
+            displayQuestion(0);
+            startTimer();
+        }
+        
+        // Timer functions
+        function startTimer() {
+            timerInterval = setInterval(() => {
+                if (timeRemaining <= 0) {
+                    clearInterval(timerInterval);
+                    autoSubmit();
+                    return;
+                }
+                
+                timeRemaining--;
+                updateTimerDisplay();
+                
+                // Warnings
+                if (timeRemaining === 300) { // 5 minutes
+                    showTimeWarning('5 minutes remaining!');
+                }
+                if (timeRemaining === 60) { // 1 minute
+                    showTimeWarning('1 minute remaining!');
+                }
+            }, 1000);
+        }
+        
+        function updateTimerDisplay() {
+            const hours = Math.floor(timeRemaining / 3600);
+            const minutes = Math.floor((timeRemaining % 3600) / 60);
+            const seconds = timeRemaining % 60;
+            
+            const display = hours > 0 
+                ? `${hours}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`
+                : `${minutes}:${String(seconds).padStart(2, '0')}`;
+            
+            const timer = document.getElementById('timer');
+            timer.textContent = display;
+            
+            if (timeRemaining <= 300) { // Last 5 minutes
+                timer.classList.add('warning');
+            }
+        }
+        
+        function showTimeWarning(message) {
+            document.getElementById('timeWarningText').textContent = message;
+            document.getElementById('timeWarningModal').classList.add('active');
+        }
+        
+        function closeTimeWarning() {
+            document.getElementById('timeWarningModal').classList.remove('active');
+        }
+        
+        // Question navigator
+        function createNavigator() {
+            const navGrid = document.getElementById('navGrid');
+            questions.forEach((q, index) => {
+                const btn = document.createElement('button');
+                btn.className = 'nav-btn';
+                btn.textContent = index + 1;
+                btn.onclick = () => displayQuestion(index);
+                btn.id = `nav-${index}`;
+                navGrid.appendChild(btn);
+            });
+        }
+        
+        function updateNavigator() {
+            questions.forEach((q, index) => {
+                const btn = document.getElementById(`nav-${index}`);
+                btn.classList.remove('answered', 'marked', 'current');
+                
+                if (index === currentQuestion) {
+                    btn.classList.add('current');
+                }
+                if (userAnswers[index] !== undefined) {
+                    btn.classList.add('answered');
+                }
+                if (markedQuestions.has(index)) {
+                    btn.classList.add('marked');
+                }
+            });
+        }
+        
+        // Display question
+        function displayQuestion(index) {
+            if (examSubmitted) return;
+            
+            currentQuestion = index;
+            const q = questions[index];
+            
+            document.getElementById('questionNumber').textContent = 
+                `Question ${index + 1} of ${questions.length}`;
+            document.getElementById('questionText').textContent = q.question;
+            
+            // Update mark button
+            const markBtn = document.getElementById('markBtn');
+            if (markedQuestions.has(index)) {
+                markBtn.textContent = '⭐ Marked';
+                markBtn.classList.add('marked');
+            } else {
+                markBtn.textContent = '⭐ Mark for Review';
+                markBtn.classList.remove('marked');
+            }
+            
+            // Display choices
+            const container = document.getElementById('choicesContainer');
+            container.innerHTML = '';
+            
+            q.choices.forEach(choice => {
+                const div = document.createElement('div');
+                div.className = 'choice';
+                if (userAnswers[index] === choice.letter) {
+                    div.classList.add('selected');
+                }
+                
+                div.onclick = () => selectAnswer(index, choice.letter, div);
+                
+                const radio = document.createElement('input');
+                radio.type = 'radio';
+                radio.name = `q${index}`;
+                radio.value = choice.letter;
+                radio.id = `q${index}${choice.letter}`;
+                radio.checked = userAnswers[index] === choice.letter;
+                
+                const label = document.createElement('label');
+                label.htmlFor = radio.id;
+                label.innerHTML = `<strong>${choice.letter}.</strong> ${choice.text}`;
+                
+                div.appendChild(radio);
+                div.appendChild(label);
+                container.appendChild(div);
+            });
+            
+            // Update navigation buttons
+            document.getElementById('prevBtn').disabled = index === 0;
+            document.getElementById('nextBtn').textContent = 
+                index === questions.length - 1 ? 'Review Answers' : 'Next →';
+            
+            updateNavigator();
+        }
+        
+        function selectAnswer(questionIndex, answer, choiceElement) {
+            if (examSubmitted) return;
+            
+            userAnswers[questionIndex] = answer;
+            
+            // Update UI
+            document.querySelectorAll('.choice').forEach(c => c.classList.remove('selected'));
+            choiceElement.classList.add('selected');
+            choiceElement.querySelector('input').checked = true;
+            
+            updateNavigator();
+        }
+        
+        function toggleMark() {
+            if (examSubmitted) return;
+            
+            if (markedQuestions.has(currentQuestion)) {
+                markedQuestions.delete(currentQuestion);
+            } else {
+                markedQuestions.add(currentQuestion);
+            }
+            
+            displayQuestion(currentQuestion);
+        }
+        
+        function previousQuestion() {
+            if (currentQuestion > 0) {
+                displayQuestion(currentQuestion - 1);
+            }
+        }
+        
+        function nextQuestion() {
+            if (currentQuestion < questions.length - 1) {
+                displayQuestion(currentQuestion + 1);
+            } else {
+                showReview();
+            }
+        }
+        
+        // Review screen
+        function showReview() {
+            const answeredCount = Object.keys(userAnswers).length;
+            const unansweredCount = questions.length - answeredCount;
+            const markedCount = markedQuestions.size;
+            
+            document.getElementById('answeredCount').textContent = answeredCount;
+            document.getElementById('unansweredCount').textContent = unansweredCount;
+            document.getElementById('markedCount').textContent = markedCount;
+            
+            // Create review grid
+            const reviewGrid = document.getElementById('reviewGrid');
+            reviewGrid.innerHTML = '';
+            
+            questions.forEach((q, index) => {
+                const btn = document.createElement('button');
+                btn.className = 'nav-btn';
+                btn.textContent = index + 1;
+                
+                if (userAnswers[index] !== undefined) {
+                    btn.classList.add('answered');
+                }
+                if (markedQuestions.has(index)) {
+                    btn.classList.add('marked');
+                }
+                
+                btn.onclick = () => {
+                    closeReview();
+                    displayQuestion(index);
+                };
+                
+                reviewGrid.appendChild(btn);
+            });
+            
+            document.getElementById('examContainer').style.display = 'none';
+            document.getElementById('reviewScreen').classList.add('active');
+        }
+        
+        function closeReview() {
+            document.getElementById('reviewScreen').classList.remove('active');
+            document.getElementById('examContainer').style.display = 'flex';
+        }
+        
+        // Submit exam
+        function confirmSubmit() {
+            const unansweredCount = questions.length - Object.keys(userAnswers).length;
+            const warning = document.getElementById('unansweredWarning');
+            
+            if (unansweredCount > 0) {
+                warning.textContent = `Warning: You have ${unansweredCount} unanswered question(s).`;
+                warning.style.color = '#e74c3c';
+                warning.style.fontWeight = 'bold';
+            } else {
+                warning.textContent = 'All questions answered.';
+                warning.style.color = '#27ae60';
+            }
+            
+            document.getElementById('confirmModal').classList.add('active');
+        }
+        
+        function closeModal() {
+            document.getElementById('confirmModal').classList.remove('active');
+        }
+        
+        function submitExam() {
+            closeModal();
+            clearInterval(timerInterval);
+            examSubmitted = true;
+            
+            // Calculate results
+            let correct = 0;
+            let incorrect = 0;
+            let unanswered = 0;
+            
+            const results = questions.map((q, index) => {
+                const userAnswer = userAnswers[index];
+                const correctAnswer = q.correct_answer;
+                
+                if (userAnswer === undefined) {
+                    unanswered++;
+                    return {
+                        ...q,
+                        userAnswer: 'Not answered',
+                        correct: false,
+                        status: 'unanswered'
+                    };
+                }
+                
+                const isCorrect = userAnswer === correctAnswer;
+                if (isCorrect) {
+                    correct++;
+                } else {
+                    incorrect++;
+                }
+                
+                return {
+                    ...q,
+                    userAnswer,
+                    correct: isCorrect,
+                    status: isCorrect ? 'correct' : 'incorrect'
+                };
+            });
+            
+            showResults(correct, incorrect, unanswered, results);
+        }
+        
+        function autoSubmit() {
+            alert('Time is up! Your exam will be submitted automatically.');
+            submitExam();
+        }
+        
+        function showResults(correct, incorrect, unanswered, results) {
+            const percentage = Math.round((correct / questions.length) * 100);
+            
+            const resultsHTML = `
+                <div class="results-header">
+                    <h2>Exam Complete!</h2>
+                    <div class="score-display">${percentage}%</div>
+                    <p style="font-size: 1.2em;">Your Score: ${correct} / ${questions.length}</p>
+                </div>
+                
+                <div class="results-breakdown">
+                    <h3 style="margin-bottom: 20px; color: #2c3e50;">Results Breakdown</h3>
+                    <div class="result-item">
+                        <span>Correct Answers</span>
+                        <strong style="color: #27ae60;">${correct}</strong>
+                    </div>
+                    <div class="result-item">
+                        <span>Incorrect Answers</span>
+                        <strong style="color: #e74c3c;">${incorrect}</strong>
+                    </div>
+                    <div class="result-item">
+                        <span>Unanswered</span>
+                        <strong style="color: #95a5a6;">${unanswered}</strong>
+                    </div>
+                    <div class="result-item">
+                        <span>Total Questions</span>
+                        <strong>${questions.length}</strong>
+                    </div>
+                    <div class="result-item" style="border-bottom: none; margin-top: 15px; padding-top: 15px; border-top: 2px solid #2c3e50;">
+                        <span style="font-size: 1.2em;">Final Score</span>
+                        <strong style="font-size: 1.3em; color: #2c3e50;">${percentage}%</strong>
+                    </div>
+                </div>
+                
+                <div class="download-actions">
+                    <button onclick="downloadResults(${JSON.stringify(results)}, ${correct}, ${incorrect}, ${unanswered}, ${percentage})">
+                        📥 Download Detailed Results
+                    </button>
+                    <button onclick="location.reload()" style="background: #3498db;">
+                        🔄 Take Exam Again
+                    </button>
+                </div>
+            `;
+            
+            document.getElementById('reviewScreen').classList.remove('active');
+            document.getElementById('examContainer').style.display = 'none';
+            document.getElementById('resultsScreen').innerHTML = resultsHTML;
+            document.getElementById('resultsScreen').classList.add('active');
+        }
+        
+        function downloadResults(results, correct, incorrect, unanswered, percentage) {
+            const examTitle = document.querySelector('.exam-title').textContent;
+            
+            let resultsText = examTitle + '\n';
+            resultsText += '='.repeat(examTitle.length) + '\n\n';
+            resultsText += 'EXAM RESULTS\n\n';
+            resultsText += 'Final Score: ' + percentage + '%\n';
+            resultsText += 'Correct: ' + correct + ' / ' + results.length + '\n';
+            resultsText += 'Incorrect: ' + incorrect + '\n';
+            resultsText += 'Unanswered: ' + unanswered + '\n';
+            resultsText += '\nCompleted: ' + new Date().toLocaleString() + '\n';
+            resultsText += '\n' + '='.repeat(70) + '\n\n';
+            resultsText += 'DETAILED RESULTS\n\n';
+            
+            results.forEach((q, index) => {
+                resultsText += 'Question ' + (index + 1) + ':\n';
+                resultsText += q.question + '\n\n';
+                resultsText += 'Your Answer: ' + q.userAnswer + '\n';
+                resultsText += 'Correct Answer: ' + q.correct_answer + '\n';
+                resultsText += 'Status: ' + (q.status === 'correct' ? '✓ CORRECT' : (q.status === 'unanswered' ? '⚠️ NOT ANSWERED' : '✗ INCORRECT')) + '\n';
+                resultsText += '-'.repeat(70) + '\n\n';
+            });
+            
+            const blob = new Blob([resultsText], { type: 'text/plain' });
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = examTitle.replace(/\s+/g, '_') + '_Results_' + Date.now() + '.txt';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            window.URL.revokeObjectURL(url);
+        }
+        
+        // Start exam on load
+        window.onload = initExam;
+        
+        // Prevent accidental page close
+        window.onbeforeunload = function(e) {
+            if (!examSubmitted) {
+                e.preventDefault();
+                e.returnValue = 'Your exam progress will be lost. Are you sure you want to leave?';
+                return e.returnValue;
+            }
+        };
+    </script>
+</body>
+</html>
