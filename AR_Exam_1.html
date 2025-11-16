@@ -8412,12 +8412,61 @@
                 `Correct: ${correct} | Incorrect: ${incorrect} | Unanswered: ${unanswered}<br>Total: ${totalQuestions} questions<br>Time: ${Math.floor(completionTime / 60)}m ${completionTime % 60}s`;
             document.getElementById('resultsSummary').classList.add('show');
             
+            // Save test results
+            saveTestResults(correct, incorrect, unanswered, totalQuestions, percentage, completionTime);
+            
             // Disable check button and show download button
             document.getElementById('checkBtn').disabled = true;
             document.getElementById('downloadBtn').style.display = 'inline-block';
             
             // Scroll to results
             document.getElementById('resultsSummary').scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+        
+        function saveTestResults(correct, incorrect, unanswered, totalQuestions, percentage, completionTime) {
+            if (!currentUser) {
+                console.warn('No user logged in, results not saved');
+                return;
+            }
+            
+            const examTitle = document.querySelector('.exam-title').textContent;
+            const historyKey = 'eppp_history_' + currentUser.name.replace(/\s+/g, '_');
+            const history = JSON.parse(localStorage.getItem(historyKey) || '[]');
+            
+            const testResult = {
+                test: examTitle,
+                score: percentage,
+                correct: correct,
+                incorrect: incorrect,
+                unanswered: unanswered,
+                totalQuestions: totalQuestions,
+                completionTime: completionTime,
+                date: new Date().toISOString(),
+                attemptNumber: currentAttempt
+            };
+            
+            history.push(testResult);
+            localStorage.setItem(historyKey, JSON.stringify(history));
+            
+            // Also save in new format for dashboard compatibility
+            const userTestsKey = `eppp_user_${currentUser.email || currentUser.name}_tests`;
+            const userTests = JSON.parse(localStorage.getItem(userTestsKey) || '[]');
+            
+            const testResultNew = {
+                testName: examTitle,
+                score: percentage,
+                correct: correct,
+                incorrect: incorrect,
+                unanswered: unanswered,
+                totalQuestions: totalQuestions,
+                completedAt: new Date().toISOString(),
+                attemptNumber: currentAttempt
+            };
+            
+            userTests.push(testResultNew);
+            localStorage.setItem(userTestsKey, JSON.stringify(userTests));
+            
+            console.log('Test results saved successfully!');
         }
         
         function resetTest() {
