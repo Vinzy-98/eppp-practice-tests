@@ -6,6 +6,11 @@
         if (!sessionStorage.getItem('eppp_authenticated')) {
             window.location.href = 'login.html';
         }
+    
+        // Load saved progress on page load
+        window.addEventListener('DOMContentLoaded', function() {
+            loadProgress();
+        });
     </script>
     
     <meta charset="UTF-8">
@@ -8763,6 +8768,107 @@
     
     <script>
         let answersChecked = false;
+
+        // Time tracking
+        let testStartTime = Date.now();
+        let testElapsedTime = 0;
+        
+        // Resume functionality
+        function saveProgress() {
+            if (answersChecked) return; // Don't save after test is submitted
+            
+            const testName = document.querySelector('h1') ? document.querySelector('h1').textContent.trim() : 'Unknown Test';
+            const questions = document.querySelectorAll('.question');
+            const totalQuestions = questions.length;
+            const answeredCount = document.querySelectorAll('.question.answered').length;
+            
+            // Collect all selected answers
+            const answers = {};
+            questions.forEach((q, index) => {
+                const selected = q.querySelector('input[type="radio"]:checked');
+                if (selected) {
+                    answers[index] = selected.value;
+                }
+            });
+            
+            const progressData = {
+                testName: testName,
+                answers: answers,
+                startTime: testStartTime,
+                elapsedTime: Date.now() - testStartTime,
+                totalQuestions: totalQuestions,
+                answeredCount: answeredCount,
+                savedAt: new Date().toISOString()
+            };
+            
+            const user = JSON.parse(localStorage.getItem('eppp_user') || '{}');
+            if (user.email) {
+                const progressKey = `eppp_progress_${user.email}_${testName.replace(/\s+/g, '_')}`;
+                localStorage.setItem(progressKey, JSON.stringify(progressData));
+            }
+        }
+        
+        function loadProgress() {
+            const testName = document.querySelector('h1') ? document.querySelector('h1').textContent.trim() : 'Unknown Test';
+            const user = JSON.parse(localStorage.getItem('eppp_user') || '{}');
+            
+            if (user.email) {
+                const progressKey = `eppp_progress_${user.email}_${testName.replace(/\s+/g, '_')}`;
+                const savedProgress = localStorage.getItem(progressKey);
+                
+                if (savedProgress) {
+                    const progress = JSON.parse(savedProgress);
+                    
+                    // Ask user if they want to resume
+                    const resume = confirm(
+                        `Resume previous attempt?\n\n` +
+                        `Progress: ${progress.answeredCount}/${progress.totalQuestions} questions answered\n` +
+                        `Saved: ${new Date(progress.savedAt).toLocaleString()}\n\n` +
+                        `Click OK to resume, or Cancel to start fresh.`
+                    );
+                    
+                    if (resume) {
+                        // Restore answers
+                        const questions = document.querySelectorAll('.question');
+                        Object.keys(progress.answers).forEach(index => {
+                            const question = questions[parseInt(index)];
+                            const answer = progress.answers[index];
+                            const radio = question.querySelector(`input[value="${answer}"]`);
+                            if (radio) {
+                                radio.checked = true;
+                                const choice = radio.closest('.choice');
+                                choice.classList.add('selected');
+                                question.classList.add('answered');
+                            }
+                        });
+                        
+                        // Restore time
+                        testStartTime = progress.startTime || Date.now();
+                        testElapsedTime = progress.elapsedTime || 0;
+                        
+                        // Update progress bar
+                        updateProgress();
+                        
+                        return true;
+                    } else {
+                        // Clear saved progress if starting fresh
+                        localStorage.removeItem(progressKey);
+                    }
+                }
+            }
+            return false;
+        }
+        
+        function clearProgress() {
+            const testName = document.querySelector('h1') ? document.querySelector('h1').textContent.trim() : 'Unknown Test';
+            const user = JSON.parse(localStorage.getItem('eppp_user') || '{}');
+            
+            if (user.email) {
+                const progressKey = `eppp_progress_${user.email}_${testName.replace(/\s+/g, '_')}`;
+                localStorage.removeItem(progressKey);
+            }
+        }
+
         
         function selectChoice(choiceElement) {
             if (answersChecked) return; // Don't allow changes after checking
@@ -8782,6 +8888,7 @@
             
             // Update progress
             updateProgress();
+            saveProgress();
         }
         
         function updateProgress() {
@@ -8795,6 +8902,8 @@
         }
         
         function checkAnswers() {
+            clearProgress();
+            const completionTime = Math.floor((Date.now() - testStartTime + testElapsedTime) / 1000);
             if (answersChecked) return;
             
             answersChecked = true;
@@ -8855,7 +8964,7 @@
             
             document.getElementById('scoreDisplay').textContent = percentage + '%';
             document.getElementById('scoreDetails').innerHTML = 
-                `Correct: ${correct} | Incorrect: ${incorrect} | Unanswered: ${unanswered}<br>Total: ${totalQuestions} questions`;
+                `Correct: ${correct} | Incorrect: ${incorrect} | Unanswered: ${unanswered}<br>Total: ${totalQuestions} questions<br>Time: ${Math.floor(completionTime / 60)}m ${completionTime % 60}s`;
             document.getElementById('resultsSummary').classList.add('show');
             
             // Disable check button and show download button

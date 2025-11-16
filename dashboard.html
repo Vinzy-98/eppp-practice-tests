@@ -150,6 +150,91 @@
             gap: 15px;
         }
         
+        .incomplete-tests-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .incomplete-test-card {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.2s;
+        }
+        
+        .incomplete-test-card:hover {
+            transform: translateX(5px);
+            background: #fff8dc;
+            box-shadow: 0 2px 8px rgba(255, 193, 7, 0.3);
+        }
+        
+        .incomplete-info h3 {
+            color: #856404;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .incomplete-meta {
+            color: #856404;
+            font-size: 0.9em;
+            margin-bottom: 8px;
+        }
+        
+        .progress-bar-container {
+            width: 100%;
+            height: 8px;
+            background: #fff;
+            border-radius: 4px;
+            overflow: hidden;
+            margin-top: 10px;
+        }
+        
+        .progress-bar-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #ffc107, #ff9800);
+            transition: width 0.3s;
+        }
+        
+        .resume-btn {
+            background: linear-gradient(135deg, #ffc107 0%, #ff9800 100%);
+            color: #fff;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.2s;
+            white-space: nowrap;
+        }
+        
+        .resume-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(255, 193, 7, 0.4);
+        }
+        
+        .clear-progress-btn {
+            background: #dc3545;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 0.85em;
+            cursor: pointer;
+            margin-left: 10px;
+            transition: all 0.2s;
+        }
+        
+        .clear-progress-btn:hover {
+            background: #c82333;
+        }
+        
         .attempt-card {
             background: #f8f9fa;
             padding: 20px;
@@ -277,6 +362,14 @@
             <!-- Stats will be dynamically added -->
         </div>
         
+        <div class="section" id="incompleteSection" style="display: none;">
+            <h2>⏸️ In-Progress Tests</h2>
+            <p style="color: #666; margin-bottom: 15px;">Resume your unfinished tests from where you left off</p>
+            <div class="incomplete-tests-list" id="incompleteTestsList">
+                <!-- Incomplete tests will be dynamically added -->
+            </div>
+        </div>
+        
         <div class="section">
             <h2>📈 Progress Over Time</h2>
             <div class="chart-container">
@@ -337,6 +430,9 @@
             
             // Display stats
             displayStats();
+            
+            // Display incomplete tests
+            displayIncompleteTests();
             
             // Display charts
             if (allAttempts.length > 0) {
@@ -404,6 +500,113 @@
                 </div>
                 ` : ''}
             `;
+        }
+        
+        function displayIncompleteTests() {
+            const incompleteTestsList = document.getElementById('incompleteTestsList');
+            const incompleteSection = document.getElementById('incompleteSection');
+            const incompleteTests = [];
+            
+            // Search localStorage for incomplete tests
+            if (currentUser && currentUser.email) {
+                for (let i = 0; i < localStorage.length; i++) {
+                    const key = localStorage.key(i);
+                    if (key.startsWith(`eppp_progress_${currentUser.email}_`)) {
+                        try {
+                            const progressData = JSON.parse(localStorage.getItem(key));
+                            incompleteTests.push({
+                                key: key,
+                                data: progressData
+                            });
+                        } catch (e) {
+                            console.error('Error parsing progress:', e);
+                        }
+                    }
+                }
+            }
+            
+            if (incompleteTests.length === 0) {
+                incompleteSection.style.display = 'none';
+                return;
+            }
+            
+            incompleteSection.style.display = 'block';
+            
+            incompleteTestsList.innerHTML = incompleteTests.map(test => {
+                const progress = test.data;
+                const progressPercent = Math.round((progress.answeredCount / progress.totalQuestions) * 100);
+                const savedDate = new Date(progress.savedAt);
+                const timeAgo = getTimeAgo(savedDate);
+                
+                return `
+                    <div class="incomplete-test-card">
+                        <div class="incomplete-info">
+                            <h3>
+                                ⏸️ ${progress.testName}
+                            </h3>
+                            <div class="incomplete-meta">
+                                ${progress.answeredCount} of ${progress.totalQuestions} questions answered • Saved ${timeAgo}
+                            </div>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar-fill" style="width: ${progressPercent}%"></div>
+                            </div>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 10px;">
+                            <button class="resume-btn" onclick="resumeTest('${progress.testName}')">
+                                ▶️ Resume Test
+                            </button>
+                            <button class="clear-progress-btn" onclick="clearTestProgress('${test.key}', '${progress.testName}')">
+                                ✕
+                            </button>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+        
+        function getTimeAgo(date) {
+            const seconds = Math.floor((new Date() - date) / 1000);
+            
+            if (seconds < 60) return 'just now';
+            const minutes = Math.floor(seconds / 60);
+            if (minutes < 60) return `${minutes}m ago`;
+            const hours = Math.floor(minutes / 60);
+            if (hours < 24) return `${hours}h ago`;
+            const days = Math.floor(hours / 24);
+            if (days < 7) return `${days}d ago`;
+            return date.toLocaleDateString();
+        }
+        
+        function resumeTest(testName) {
+            // Map test names to their file names
+            const testFiles = {
+                'AR Exam 1': 'AR_Exam_1',
+                'AR Exam 2': 'AR_Exam_2',
+                'AR Exam 3': 'AR_Exam_3',
+                'AR Exam 4': 'AR_Exam_4',
+                'AR Exam 5': 'AR_Exam_5',
+                'AR Exam 6': 'AR_Exam_6',
+                'AR Exam 7': 'AR_Exam_7',
+                'AR Exam 8': 'AR_Exam_8',
+                'Practice EPPP 1': 'Practice_EPPP_1',
+                'Practice EPPP 2': 'Practice_EPPP_2',
+                'Practice EPPP 3': 'Practice_EPPP_3',
+                'Practice EPPP 4': 'Practice_EPPP_4',
+                'Practice EPPP 5': 'Practice_EPPP_5',
+                'Practice EPPP 6': 'Practice_EPPP_6',
+                'Practice EPPP 7': 'Practice_EPPP_7'
+            };
+            
+            const fileName = testFiles[testName] || testName.replace(/\s+/g, '_');
+            window.location.href = `${fileName}.html`;
+        }
+        
+        function clearTestProgress(key, testName) {
+            if (confirm(`Clear progress for "${testName}"?\n\nThis will delete your saved progress for this test.`)) {
+                localStorage.removeItem(key);
+                displayIncompleteTests();
+                alert('Progress cleared.');
+            }
         }
         
         function displayProgressChart() {
@@ -618,14 +821,34 @@
         
         function exportProgress() {
             // Create comprehensive backup of user data
+            
+            // Collect incomplete test progress
+            const incompleteTests = [];
+            if (currentUser && currentUser.email) {
+                // Search localStorage for all progress keys
+                for (let i = 0; i < localStorage.length; i++) {
+                    const key = localStorage.key(i);
+                    if (key.startsWith(`eppp_progress_${currentUser.email}_`)) {
+                        try {
+                            const progressData = JSON.parse(localStorage.getItem(key));
+                            incompleteTests.push(progressData);
+                        } catch (e) {
+                            console.error('Error parsing progress:', e);
+                        }
+                    }
+                }
+            }
+            
             const exportData = {
-                version: '1.0',
+                version: '1.1',
                 exportDate: new Date().toISOString(),
                 user: currentUser,
                 attempts: allAttempts,
+                incompleteTests: incompleteTests,
                 stats: {
                     totalTests: allAttempts.length,
-                    avgScore: allAttempts.reduce((sum, a) => sum + a.score, 0) / allAttempts.length,
+                    incompleteTests: incompleteTests.length,
+                    avgScore: allAttempts.length > 0 ? allAttempts.reduce((sum, a) => sum + a.score, 0) / allAttempts.length : 0,
                     totalQuestions: allAttempts.reduce((sum, a) => sum + a.totalQuestions, 0)
                 }
             };
@@ -644,7 +867,14 @@
             document.body.removeChild(a);
             URL.revokeObjectURL(url);
             
-            alert('✅ Progress exported!\n\nSave this file and use "Import Progress" on any device to restore your data.');
+            const msg = incompleteTests.length > 0 
+                ? `✅ Progress exported!\n\n` +
+                  `Completed tests: ${allAttempts.length}\n` +
+                  `In-progress tests: ${incompleteTests.length}\n\n` +
+                  `Save this file and use "Import Progress" on any device to restore your data.`
+                : `✅ Progress exported!\n\nSave this file and use "Import Progress" on any device to restore your data.`;
+            
+            alert(msg);
         }
         
         function importProgress() {
@@ -744,12 +974,30 @@
                 // Also update the old storage format if present
                 localStorage.setItem(`eppp_user_${importedEmail}`, JSON.stringify(importedData.user));
                 
-                alert(
-                    `✅ Progress imported successfully!\n\n` +
-                    `Total tests: ${mergedTests.length}\n` +
-                    `New tests added: ${mergedTests.length - existingTests.length}\n\n` +
-                    `Refreshing dashboard...`
-                );
+                // Import incomplete tests if present (v1.1+)
+                let restoredIncomplete = 0;
+                if (importedData.incompleteTests && Array.isArray(importedData.incompleteTests)) {
+                    importedData.incompleteTests.forEach(progress => {
+                        if (progress.testName) {
+                            const progressKey = `eppp_progress_${importedEmail}_${progress.testName.replace(/\s+/g, '_')}`;
+                            localStorage.setItem(progressKey, JSON.stringify(progress));
+                            restoredIncomplete++;
+                        }
+                    });
+                }
+                
+                const msg = restoredIncomplete > 0
+                    ? `✅ Progress imported successfully!\n\n` +
+                      `Completed tests: ${mergedTests.length}\n` +
+                      `New completed tests: ${mergedTests.length - existingTests.length}\n` +
+                      `In-progress tests restored: ${restoredIncomplete}\n\n` +
+                      `Refreshing dashboard...`
+                    : `✅ Progress imported successfully!\n\n` +
+                      `Total tests: ${mergedTests.length}\n` +
+                      `New tests added: ${mergedTests.length - existingTests.length}\n\n` +
+                      `Refreshing dashboard...`;
+                
+                alert(msg);
                 
                 // Reload the page to show updated data
                 location.reload();
