@@ -24,12 +24,7 @@ html { font-size: 16px; }
 
 body {
     font-family: 'Space Grotesk', 'Manrope', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
-    background:
-        radial-gradient(circle at 8% 0%, rgba(109, 123, 232, 0.18), transparent 38%),
-        radial-gradient(circle at 100% 10%, rgba(55, 213, 214, 0.16), transparent 36%),
-        radial-gradient(circle at 72% 32%, rgba(174, 139, 255, 0.14), transparent 34%),
-        repeating-linear-gradient(135deg, rgba(255,255,255,0.22) 0, rgba(255,255,255,0.22) 2px, transparent 2px, transparent 10px),
-        linear-gradient(180deg, var(--bg) 0%, var(--bg-soft) 100%);
+    background: linear-gradient(180deg, var(--bg) 0%, var(--bg-soft) 100%);
     color: #111620;
     line-height: 1.6;
     min-height: 100vh;
@@ -43,10 +38,9 @@ body::after {
     width: 44vw;
     height: 44vw;
     border-radius: 50%;
-    filter: blur(54px);
     pointer-events: none;
     z-index: -1;
-    opacity: 0.44;
+    opacity: 0.38;
 }
 
 body::before {
@@ -715,7 +709,6 @@ body::after {
     transition: transform 0.16s ease, box-shadow 0.16s ease, border-color 0.16s, background 0.16s;
     position: relative;
     box-shadow: var(--shadow-sm);
-    animation: card-in 0.42s ease both;
     overflow: visible;
     display: grid;
     grid-template-columns: minmax(0, 1fr) auto;
@@ -726,7 +719,6 @@ body::after {
     column-gap: 0.75rem;
     row-gap: 0.12rem;
     contain: layout style;
-    will-change: transform;
 }
 
 .test-card::before {
@@ -1475,9 +1467,7 @@ body::after {
     }
 }
 
-.test-card:nth-child(2n) { animation-delay: 0.01s; }
-.test-card:nth-child(3n) { animation-delay: 0.02s; }
-.test-card:nth-child(4n) { animation-delay: 0.03s; }
+
 
 .dashboard-panel { animation: panel-rise 0.35s ease both; }
 
