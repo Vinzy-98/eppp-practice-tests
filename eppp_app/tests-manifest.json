@@ -1,0 +1,149 @@
+[
+  {
+    "name": "Ethics and Professional Issues",
+    "slug": "ethics-and-professional-issues",
+    "category": "Category Tests",
+    "questionCount": 89,
+    "file": "data/ethics-and-professional-issues.json"
+  },
+  {
+    "name": "Industrial / Organizational Psychology",
+    "slug": "industrial-organizational-psychology",
+    "category": "Category Tests",
+    "questionCount": 1,
+    "file": "data/industrial-organizational-psychology.json"
+  },
+  {
+    "name": "Learning Theory",
+    "slug": "learning-theory",
+    "category": "Category Tests",
+    "questionCount": 91,
+    "file": "data/learning-theory.json"
+  },
+  {
+    "name": "Lifespan Development",
+    "slug": "lifespan-development",
+    "category": "Category Tests",
+    "questionCount": 1,
+    "file": "data/lifespan-development.json"
+  },
+  {
+    "name": "Physiological Psychology / Psychopharmacology",
+    "slug": "physiological-psychology-psychopharmacology",
+    "category": "Category Tests",
+    "questionCount": 101,
+    "file": "data/physiological-psychology-psychopharmacology.json"
+  },
+  {
+    "name": "Psychological Assessment",
+    "slug": "psychological-assessment",
+    "category": "Category Tests",
+    "questionCount": 74,
+    "file": "data/psychological-assessment.json"
+  },
+  {
+    "name": "Social Psychology",
+    "slug": "social-psychology",
+    "category": "Category Tests",
+    "questionCount": 67,
+    "file": "data/social-psychology.json"
+  },
+  {
+    "name": "Statistics and Research Design",
+    "slug": "statistics-and-research-design",
+    "category": "Category Tests",
+    "questionCount": 65,
+    "file": "data/statistics-and-research-design.json"
+  },
+  {
+    "name": "Test Construction",
+    "slug": "test-construction",
+    "category": "Category Tests",
+    "questionCount": 67,
+    "file": "data/test-construction.json"
+  },
+  {
+    "name": "2025 Academic Review Test 1",
+    "slug": "2025-academic-review-test-1",
+    "category": "Full Tests",
+    "questionCount": 225,
+    "file": "data/2025-academic-review-test-1.json"
+  },
+  {
+    "name": "2025 Academic Review Test 2",
+    "slug": "2025-academic-review-test-2",
+    "category": "Full Tests",
+    "questionCount": 225,
+    "file": "data/2025-academic-review-test-2.json"
+  },
+  {
+    "name": "2025 Academic Review Test 3",
+    "slug": "2025-academic-review-test-3",
+    "category": "Full Tests",
+    "questionCount": 225,
+    "file": "data/2025-academic-review-test-3.json"
+  },
+  {
+    "name": "2025 Academic Review Test 4",
+    "slug": "2025-academic-review-test-4",
+    "category": "Full Tests",
+    "questionCount": 225,
+    "file": "data/2025-academic-review-test-4.json"
+  },
+  {
+    "name": "Assessment Exam - EPPP",
+    "slug": "assessment-exam---eppp",
+    "category": "Full Tests",
+    "questionCount": 225,
+    "file": "data/assessment-exam---eppp.json"
+  },
+  {
+    "name": "EPPP Exam Simulation - Test 1",
+    "slug": "eppp-exam-simulation---test-1",
+    "category": "Full Tests",
+    "questionCount": 224,
+    "file": "data/eppp-exam-simulation---test-1.json"
+  },
+  {
+    "name": "EPPP Exam Simulation - Test 2",
+    "slug": "eppp-exam-simulation---test-2",
+    "category": "Full Tests",
+    "questionCount": 225,
+    "file": "data/eppp-exam-simulation---test-2.json"
+  },
+  {
+    "name": "Practice Exam 6",
+    "slug": "practice-exam-6",
+    "category": "Full Tests",
+    "questionCount": 225,
+    "file": "data/practice-exam-6.json"
+  },
+  {
+    "name": "Practice Exam 7",
+    "slug": "practice-exam-7",
+    "category": "Full Tests",
+    "questionCount": 225,
+    "file": "data/practice-exam-7.json"
+  },
+  {
+    "name": "Practice Exam 8",
+    "slug": "practice-exam-8",
+    "category": "Full Tests",
+    "questionCount": 225,
+    "file": "data/practice-exam-8.json"
+  },
+  {
+    "name": "Practice Test 2 AR all domains",
+    "slug": "practice-test-2-ar-all-domains",
+    "category": "Full Tests",
+    "questionCount": 224,
+    "file": "data/practice-test-2-ar-all-domains.json"
+  },
+  {
+    "name": "Practice Test AR 1 all domains",
+    "slug": "practice-test-ar-1-all-domains",
+    "category": "Full Tests",
+    "questionCount": 224,
+    "file": "data/practice-test-ar-1-all-domains.json"
+  }
+]

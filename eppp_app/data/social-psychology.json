@@ -1,0 +1,745 @@
+{
+  "name": "Social Psychology",
+  "slug": "social-psychology",
+  "category": "Category Tests",
+  "questionCount": 67,
+  "questions": [
+    {
+      "question": "Those with privilege may hold beliefs that they are superior to others or others are inferior to them, that they have the power to impose standards, and that their reality is the same experience for everyone. This sort of worldview is known as:",
+      "options": {
+        "A": "ethnocentric monoculturalism.",
+        "B": "prejudice.",
+        "C": "racism.",
+        "D": "discrimination."
+      },
+      "correct": "A",
+      "explanation": "\"Ethnocentric monoculturalism\" is a worldview sometimes exhibited by those who hold privilege, including the characteristics described in the\nquestion.\nAnswers B, C, and D: The views described in the question are best de\u0000ned as ethnocentric monoculturalism."
+    },
+    {
+      "question": "According to Hays (2001), would a 25-year-old person be considered privileged?",
+      "options": {
+        "A": "Yes, their age affords them rights that other age groups do not have.",
+        "B": "No, the age group identi\u0000ed as privileged is between 30 and 60 years of age.",
+        "C": "No, age is not included in the groups Hays identi\u0000ed.",
+        "D": "Yes, 25-year-olds are more able-bodied than older people, which affords them greater privilege."
+      },
+      "correct": "B",
+      "explanation": "Regarding age and generational in\u0000uence, people between the ages of 30 and 60 were identi\u0000ed as holding privilege.\nAnswers A, C, and D: Hays identi\u0000ed the 30–60-year-old age group as having privilege."
+    },
+    {
+      "question": "In the context of attitude change, \"inoculation\" refers to:",
+      "options": {
+        "A": "reducing the likelihood that a listener will be persuaded by a message.",
+        "B": "increasing a listener's attention to a message.",
+        "C": "reducing the likelihood that a listener will forget a message.",
+        "D": "increasing the attractiveness of the person delivering the message."
+      },
+      "correct": "A",
+      "explanation": "The purpose of inoculation is to reduce a listener's susceptibility to a persuasive message. It involves three steps: warning the listener of the\nimpending persuasive message, making a weak attack against the listener's position, and having the listener actively defend his/her position.\nAnswers B, C, and D: None of these correspond to the de\u0000nition of inoculation."
+    },
+    {
+      "question": "In a research study on bystander intervention, a participant hears someone fall and cry out in pain in an adjacent room. In this situation, the participant is most likely to respond to this apparent need for help when he/she is:",
+      "options": {
+        "A": "alone",
+        "B": "with a friend",
+        "C": "with a stranger",
+        "D": "with three or more other people"
+      },
+      "correct": "A",
+      "explanation": "Studies on bystander intervention have found that a person in need is most likely to receive help when there is only one bystander. A bystander\nis more likely to intervene when alone than when in the presence of others, be they, strangers or friends.\nAnswer B: A bystander is more likely to intervene when alone than when in the presence of others.\nAnswer C: A bystander is more likely to intervene when alone than when in the presence of others.\nAnswer D: The greater the number of bystanders, the greater the bystander apathy (i.e., the less likely a person in need of help will receive\nassistance)."
+    },
+    {
+      "question": "The belief that watching someone else act aggressively will serve to reduce one's own aggressiveness is most consistent with the notion of:",
+      "options": {
+        "A": "attitude inoculation",
+        "B": "vicarious reinforcement",
+        "C": "catharsis",
+        "D": "desensitization"
+      },
+      "correct": "C",
+      "explanation": "Given that catharsis involves the release, or venting, of emotion, earlier research suggested that watching someone else act aggressively could\nserve as catharsis for one's own aggression. This theory, however, has not held up well in more recent studies.\nAnswer A: McGuire (1969), borrowed the notion of inoculation from the medical model and proposed that we’re better able to resist a\npersuasive communication when we’ve been “inoculated” against it.\nAnswer B: Vicarious reinforcement involves learning through observing the consequences of actions in other people.\nAnswer D: Desensitization helps to reduce emotional responsiveness to a negative, aversive or positive stimulus after repeated\nexposure to it."
+    },
+    {
+      "question": "Sherif (1935) used which of the following to investigate conformity to group norms?",
+      "options": {
+        "A": "Visual cliff",
+        "B": "Jigsaw classroom",
+        "C": "Door-in-the-face technique",
+        "D": "Autokinetic effect"
+      },
+      "correct": "D",
+      "explanation": "The autokinetic effect is a perceptual phenomenon in which a stationary point of light appears to move in a darkened room. Sherif's (1935)\nstudy is a classic in social psychology. Sherif found that, in certain circumstances, research participants conformed to the judgments of\nconfederates regarding how far the light had moved, even though the light was stationary.\nAnswers A, B, C: These choices are not associated with Sherif's conformity research."
+    },
+    {
+      "question": "During a family therapy session, the therapist tells the 8-year-old son that he should keep annoying his sister, even though it makes her very mad. The boy says, \"I don't have to if I don't want to.\" The boy's response to the therapist's request is best described as a manifestation of which of the following?",
+      "options": {
+        "A": "Paradox",
+        "B": "Double-bind",
+        "C": "Source derogation",
+        "D": "Psychological reactance"
+      },
+      "correct": "D",
+      "explanation": "Psychological reactance occurs when we do the opposite of what is requested or desired by another person because we feel our freedom-of-\nchoice is being restricted. (Note that this question is asking about the boy's behavior, not the therapist's.)\nAnswer A: The therapist is using paradox, but this question is asking about the boy's behavior. In family therapy, paradox is sometimes used to\nelicit resistance (psychological reactance) in order to promote change.\nAnswer B: Double-bind communication presents a \"mixed message\" (e.g., contradictory verbal and nonverbal messages) and is not relevant to\nthe situation described in this question.\nAnswer C: Source derogation refers to defending oneself against persuasion by criticizing the source of the message."
+    },
+    {
+      "question": "A father is quite upset about his 11-year-old son's recent unwillingness to do as he is told, and he tells his son, \"I'm the boss around here and you must do as I say.\" The father is relying on which type of social power to control his son's behavior?",
+      "options": {
+        "A": "Expert",
+        "B": "Referent",
+        "C": "Legitimate",
+        "D": "Coercive"
+      },
+      "correct": "C",
+      "explanation": "French and Raven (1959) distinguished between six types of social power—coercive, reward, expert, referent, informational, and legitimate.\n(Additional information about them is provided in the Social Psychology chapter of the written study materials.) When using legitimate power,\nthe individual emphasizes his/her position of power or authority and the other person's obligation to comply. In this situation, the father is\nrelying on his position as \"boss\" to control his son's behavior.\nAnswer A: When using expert power, an individual emphasizes his/her superior knowledge or expertise. The father would be using expert\npower if he had said, \"You'll do what I say because I know what's best for you.\"\nAnswer B: Referent power refers to the ability of an individual or group to control the behavior of others because of their desire to identify with\nthat individual or group. The father would be relying on referent power if he said \"You should do what I say because you're part of this family.\"\nAnswer D: Coercive power is being used when an individual in\u0000uences the behavior of others through the control of punishments. The father\nwould be using coercive power if he said, \"If you don't do what I say, you'll have to stay in your room all weekend.\""
+    },
+    {
+      "question": "Which of the following is not considered an example of a social norm in American culture?",
+      "options": {
+        "A": "Shaking hands when meeting someone",
+        "B": "Saying niceties",
+        "C": "Calling to let someone know you'll be late",
+        "D": "Looking down when conversing with someone"
+      },
+      "correct": "D",
+      "explanation": "Social norms are de\u0000ned as the acceptable ways of behaving within a social group. Looking down or away from a person during conversation\nis not thought of as the norm.\nAnswers A, B, C: These answers are examples of social norms."
+    },
+    {
+      "question": "A person with symbolic racist views is least likely to oppose which of the following?",
+      "options": {
+        "A": "Welfare",
+        "B": "Medicaid/Medicare",
+        "C": "A\u0000rmative Action",
+        "D": "Bilingual election ballots"
+      },
+      "correct": "B",
+      "explanation": "Symbolic racists usually reject obvious forms of prejudice and discrimination but oppose busing, welfare, a\u0000rmative action, and other\nprograms designed to assist those who have been the target of discrimination.\nAnswers A, C, and D: A person with symbolic racist views is likely to oppose efforts designed to promote equality or bene\u0000t members of\nminority groups - e.g., a\u0000rmative action, welfare, and bilingual ballots, on the ground that they violate traditional American values. (Note that\nthis question is asking which type of opposition is characteristic of symbolic racism.)"
+    },
+    {
+      "question": "When a person's internal motivation to perform a task is weakened, this is known as the:",
+      "options": {
+        "A": "availability heuristic.",
+        "B": "dilution effect.",
+        "C": "psychological reactance.",
+        "D": "overjusti\u0000cation hypothesis."
+      },
+      "correct": "D",
+      "explanation": "The \"overjusti\u0000cation effect\" refers to the tendency of one's internal motivation to perform a task to decline when provided with an external\nreward.\nAnswer A: The \"availability heuristic\" refers to the tendency to judge the frequency of an event based on how easy it is to think of examples of\nthat event.\nAnswer B: The \"dilution effect\" refers to the weakening of an inference about someone due to the presence of irrelevant information about\nhim/her.\nAnswer C: \"Reactance\" occurs when a person does not comply with a request because he/she feels that the request violates his/her sense of\npersonal freedom."
+    },
+    {
+      "question": "Asch (1946) found that some characteristics (e.g., warm and cold) in\u0000uence the impressions people form of others more than other characteristics do, and he referred to these in\u0000uential characteristics as:",
+      "options": {
+        "A": "stable attributes",
+        "B": "central traits",
+        "C": "schemata",
+        "D": "stereotypes"
+      },
+      "correct": "B",
+      "explanation": "Solomon Asch (1946) was among the \u0000rst to conduct research on impression formation. The results of his studies con\u0000rmed that some\ncharacteristics of people have a greater impact on others' impression of them than others do. He referred to these characteristics as central\ntraits.\nAnswer A: At its most basic, an attribute is a quality or property of a person, sensation, or object.\nAnswer C: Schemata (or schemas) are organized, interconnected mental networks of information that are based on our previous personal\nand social experiences and help us process and organize information.\nAnswer D: Stereotypes are the beliefs about a person based on his/her group membership."
+    },
+    {
+      "question": "Moscovici (1985) found that individuals with a minority opinion are most likely to change the minds of those holding the majority opinion when those with the minority opinion:",
+      "options": {
+        "A": "express their opinion as consistently as possible.",
+        "B": "use ingratiation techniques to gain the acceptance of members of the majority.",
+        "C": "initially agree with the majority position and gradually introduce their own opinion.",
+        "D": "point out the ways in which they agree with the majority."
+      },
+      "correct": "A",
+      "explanation": "Moscovici (1985) was interested in the factors that increase the likelihood that a minority can sway the opinion of the majority. Moscovici\nfound consistency to be the key factor in determining whether a minority would successfully change the opinion of the majority.\nAnswer B: This was not found by Moscovici to be an effective way for a minority to alter the opinion of the majority.\nAnswer C: Maintaining a consistent position is more effective than is initially agreeing with the majority.\nAnswer D: This has not been found to be an effective way for a minority to alter the opinion of the majority."
+    },
+    {
+      "question": "According to social comparison theory:",
+      "options": {
+        "A": "we feel better when people like and appreciate us.",
+        "B": "we often judge our own actions by looking at those of other people.",
+        "C": "we tend to imitate other people who we perceive to be most like us.",
+        "D": "we are most attracted to people who compare favorably with us."
+      },
+      "correct": "B",
+      "explanation": "Even if you're unfamiliar with social comparison theory, you may have been able to identify the correct answer to this question since its name\ndescribes what it predicts. Social comparison theory sounds like what it is: It predicts that people make judgments about themselves by\ncomparing their behaviors and beliefs to those of other people.\nAnswers A, C, D: None of these answers accurately describes the theory. Social comparison theory sounds like what it is—predicting that\npeople make judgments about their own behaviors by comparing them to those of other people."
+    },
+    {
+      "question": "In general, a communicator of a persuasive message will produce the greatest amount of attitude change in a listener when the communicator is _____ in credibility and the discrepancy between the listener's initial position and the position advocated by the communicator is _____.",
+      "options": {
+        "A": "high; moderate",
+        "B": "high; small",
+        "C": "low; large",
+        "D": "low; moderate"
+      },
+      "correct": "A",
+      "explanation": "The ability of a communicator to change a listener's attitude depends on several factors, including the communicator's credibility and the\namount of discrepancy between the listener's initial attitude and the attitude advocated by the communicator. The optimal combination of\ncommunicator credibility and communication discrepancy for attitude change is a highly credible communicator and a moderate level of\ndiscrepancy between the listener's initial position and the position advocated by the communicator.\nAnswers B, C, and D: The optimal condition for attitude change is a highly credible communicator and a moderate degree of discrepancy\nbetween the listener's initial position and the position advocated by the communicator."
+    },
+    {
+      "question": "Participants in a research study are injected with epinephrine, which produces mild arousal. One-half of the participants are told to expect arousal while the other half are told that the injection will have no physiological side effects. Each participant is then placed in a waiting room with a confederate who has been instructed to act in an angry manner. Subsequently, participants who were told to expect arousal from the epinephrine report no change in their emotional state, while those who were told to expect no side effects report feeling angry. Results of this study provide evidence for which of the following?",
+      "options": {
+        "A": "Attribution theory",
+        "B": "Dissonance theory",
+        "C": "Self-serving bias",
+        "D": "Self-perception theory"
+      },
+      "correct": "D",
+      "explanation": "Results of the study are consistent with \"self-perception theory,\" which predicts that, in ambiguous situations, a person's self-attributions are\nbased on cues in the external environment.\nAnswers A, B, and C: The scenario described in the question is best explained by self-perception theory."
+    },
+    {
+      "question": "The elaboration likelihood model predicts that the recipient of a persuasive message is more likely to use the peripheral route of information processing when:",
+      "options": {
+        "A": "the person delivering the message is a well-liked and attractive.",
+        "B": "the recipient is in a neutral or slightly negative mood.",
+        "C": "the message is considered important or personally relevant by the recipient.",
+        "D": "the recipient has a high need for cognition."
+      },
+      "correct": "A",
+      "explanation": "The elaboration likelihood model (Petty and Cacioppo, 1980) distinguishes between central and peripheral cognitive processing routes. The\ncentral route involves active, effortful cognitive processing (cognitive elaboration), while the peripheral route involves reliance on simple\ndecision-making rules. A listener is more likely to use the peripheral route (i.e., rely on peripheral cues) when the person delivering the message\nis attractive or well-liked.\nAnswer B: A recipient who is in a neutral or slightly negative mood is more likely to use the central route for processing a communication.\nAnswer C: A person is more likely to use the central route when the message is important or personally relevant.\nAnswer D: People with a high need for cognition (i.e., those who usually think carefully about issues) are more likely to rely on the central route."
+    },
+    {
+      "question": "In Zimbardo's (1972) prison study, students were randomly assigned to enact the role of either a prisoner or prison guard and were placed in an environment that simulated an actual prison. Results of the study indicated that:",
+      "options": {
+        "A": "introverted prisoners and extroverted prison guards more easily adapted to their roles than did extroverted prisoners and introverted prison guards.",
+        "B": "prisoners and prison guards more easily adapted to their roles when they were paid for participating in the study than when they were not paid.",
+        "C": "prisoners and prison guards both quickly adapted to their assigned roles to such an extreme that the study had to be terminated early.",
+        "D": "prisoners and prison guards actively resisted their assigned roles and often deliberately engaged in \"role reversal.\""
+      },
+      "correct": "C",
+      "explanation": "Zimbardo's (1972) prison study con\u0000rmed that people often alter their behaviors so that they are consistent with assigned roles. Within the \u0000rst\nsix days of Zimbardo's prison simulation study, students assigned the role of guard became very aggressive and authoritarian, while those\nassigned the role of prisoner quickly lapsed into depression and helplessness and began exhibiting signs of both physical and emotional\ndistress. Because of the rapid decay of the behavior of both prison guards and prisoners, the study was halted prematurely.\nAnswers A, B, and D: The major \u0000nding of the prison study was that subjects in both assigned categories quickly adapted to their roles to an\nextreme degree."
+    },
+    {
+      "question": "_____________ refers to publicly acting in ways that are consistent with what is requested by another person in order to obtain a reward or avoid punishment while privately disagreeing with the request.",
+      "options": {
+        "A": "Identi\u0000cation",
+        "B": "Internalization",
+        "C": "Commitment",
+        "D": "Compliance"
+      },
+      "correct": "D",
+      "explanation": "Compliance occurs when a person publicly changes his/her opinion to obtain a reward or avoid punishment but does not actually (privately)\naccept that opinion.\nAnswer A: Identi\u0000cation occurs when a person changes his/her opinion or behavior in response to a request because he/she wants to be liked\nby or identi\u0000ed with the person making the request.\nAnswer B: Internalization occurs when the person changes his/her opinion or behavior because the person actually (privately) accepts the\nbeliefs or opinions of another person.\nAnswer C: Commitment is not one of the terms that is usually used to describe responses to persuasion but, in terms of its general meaning, is\nmost similar to internalization."
+    },
+    {
+      "question": "The results of research on the \"jigsaw classroom\" are consistent with which of the following?",
+      "options": {
+        "A": "The results of Sherif's Robber's Cave study",
+        "B": "The results of Zimbardo's deindividuation study",
+        "C": "The predictions of Berkowitz's frustration-aggression hypothesis",
+        "D": "The predictions of Ajzen and Fishbein's theory of reasoned action"
+      },
+      "correct": "A",
+      "explanation": "In a jigsaw classroom, students work together in teams to complete an assignment (i.e., to achieve a superordinate goal). The research has\nfound that the jigsaw classroom helps reduce hostilities related to racial, ethnic, or cultural differences. Sherif\"s Robber's Cave Study found that\ncooperation in achieving a superordinate goal reduced hostility between groups of boys.\nAnswer B: Zimbardo's deindividuation study found that people are more willing to act in antisocial ways when they can do so anonymously.\nAnswer C: Berkowitz found that frustration may lead to aggression, especially in the presence of aggressive cues.\nAnswer D: According to the \"theory of reasoned action,\" people consider two factors when deciding whether to behave in certain ways: their\nattitude toward the behavior and the subjective norms that apply to the situation."
+    },
+    {
+      "question": "Schachter's (1959) conclusion that \"misery loves miserable company\" is most consistent with the predictions of which of the following?",
+      "options": {
+        "A": "Social impact theory",
+        "B": "The overjusti\u0000cation hypothesis",
+        "C": "The notion of psychological reactance",
+        "D": "Social comparison theory"
+      },
+      "correct": "D",
+      "explanation": "Schachter found that, when fearful participants who were anxious about the study were given a choice of waiting alone or with another anxious\nparticipant, they preferred to wait with other another anxious participant. However, if anxious participants were given a choice of waiting alone\nor with a non-anxious individual, they chose to wait alone. Similarly, social comparison theory predicts that we reduce uncertainty about our\nfeelings, opinions, etc. by observing those of others in similar circumstances.\nAnswer A: Social impact theory predicts that the force to comply is determined by the strength, immediacy, and number of sources of social\nin\u0000uence that are present.\nAnswer B: The overjusti\u0000cation hypothesis predicts that providing a person with external rewards for engaging in a behavior diminishes the\nperson's internal motivation for doing so.\nAnswer C: Psychological reactance is the tendency to do the opposite of what is requested because one feels the request is violating one's\nfreedom of choice."
+    },
+    {
+      "question": "Raymond R. and his wife have not been getting along for some time, and Raymond has recently started thinking about seeking a divorce. The problem with getting a divorce is that it will require Raymond to either divide the business he and his wife have or to sell his share of the business to her, neither of which appeals to him. The problem with staying with his wife is that Raymond will have to continue putting up with her nagging and his feeling that he has no \"life of his own.\" Assuming that Raymond is experiencing an \"avoidance-avoidance con\u0000ict,\" it is most likely that he will do which of the following in the near future?",
+      "options": {
+        "A": "Choose one of his two options and feel con\u0000dent that it was the correct one",
+        "B": "Alternate between the two options, \u0000rst choosing one and then the other",
+        "C": "Antagonize his wife in order to force her to make the decision to get a divorce",
+        "D": "Decide that \"no one is really satis\u0000ed anyway\" and, consequently, stay with his wife"
+      },
+      "correct": "B",
+      "explanation": "Four types of con\u0000ict have been distinguished by researchers interested in intraindividual con\u0000ict: avoidance-avoidance, approach-approach,\napproach-avoidance, and double approach-avoidance. An avoidance-avoidance con\u0000ict produces indecision between two courses of action,\nwhich is likely the case in the given scenario.\nAnswer A: This is the more likely outcome in an approach-approach condition.\nAnswer C: This is a possibility, but is not consistent with predictions about the outcome of an avoidance-avoidance con\u0000ict.\nAnswer D: This is also not consistent with predictions about the outcome of an avoidance-avoidance con\u0000ict."
+    },
+    {
+      "question": "Research on the \"intergroup contact hypothesis\" has demonstrated that antagonism between members of two groups is most likely to be reduced when:",
+      "options": {
+        "A": "members of the two groups are initially provided with numerous opportunities for casual (super\u0000cial) contact.",
+        "B": "members of the two groups are provided with incentives for getting along while interacting.",
+        "C": "the leaders from each group meet to discuss the issues underlying the antagonism before group members interact.",
+        "D": "interactions between group members provide opportunities to discon\u0000rm negative stereotypes."
+      },
+      "correct": "D",
+      "explanation": "The research has shown that, for interpersonal contact to reduce intergroup hostility, certain conditions must be met. Intergroup contact is\nmost likely to reduce hostility when it provides opportunities for discon\u0000rming negative stereotypes.\nAnswer A: Casual contact may actually provide opportunities for continued expressions of hostility.\nAnswer B: This has not been shown to be an effective method for reducing intergroup hostility.\nAnswer C: This has not been shown to be an effective method for reducing intergroup hostility. Having leaders meet to discuss the issues\nwould likely be viewed as suspicious by group members."
+    },
+    {
+      "question": "According to Baumeister, Catanese, and Wallace (2002), a man may feel that his personal freedom is being restricted when a woman refuses his sexual advances and, as a result, become aggressive toward the woman. Baumeister and his colleagues suggest that, in some circumstances, sexual aggression toward women by men may be attributable to which of the following?",
+      "options": {
+        "A": "Sublimation",
+        "B": "Psychological reactance",
+        "C": "Coercive power",
+        "D": "Behavioral catharsis"
+      },
+      "correct": "B",
+      "explanation": "This question is referring to a study conducted by R. F. Baumeister, K. R. Catanese, and H. M. Wallace on the causes of sexual coercion\n(Conquest by force: A narcissistic reactance theory of rape and sexual coercion, Review of General Psychology, 2002, 92-135). The phrase \"feel\nthat his personal freedom is being restricted\" may have helped you identify the correct response to this question. \"Psychological reactance\"\noccurs when a person acts in a way that is opposite of what is being requested because the person feels that his/her freedom of choice is\nbeing restricted. Based on their research, Baumeister and his colleagues concluded that the attempts of sexually coercive men to force women\nto engage in sexual behavior is the result of a combination of reactance and narcissism.\nAnswer A: Sublimation is a type of displacement in which an unacceptable impulse is diverted into a socially acceptable, even admirable,\nactivity. Sublimation is considered to be a “mature” defense mechanism (i.e., it is common in “healthy” adults).\nAnswer C: French and Raven identi\u0000ed six bases of social power that induce compliance in another person: coercive, reward, expert,\nlegitimate, referent, and informational. Coercive power is the in\u0000uencing agent who has control over punishments.\nAnswer D: According to the catharsis hypothesis, an act of aggression reduces an individual’s arousal level which then decreases the\nlikelihood that he/she will act aggressively again in the near future. The research has not been very supportive of this claim. Instead,\nthe studies have generally found that, when people act aggressively toward another person, this increases their negative feelings\ntoward the person as well as the likelihood that they will act aggressively again in the near future (Geen, Stonner, & Shope, 1975)."
+    },
+    {
+      "question": "The elaboration likelihood model (ELM) of persuasion predicts that:",
+      "options": {
+        "A": "central route processing produces attitude change that is more persistent over time than does peripheral route processing.",
+        "B": "in terms of short-term effects, central route processing produces a greater amount of attitude change than does peripheral route processing.",
+        "C": "central route processing relies more on environmental cues than does peripheral route processing.",
+        "D": "central route processing produces positive attitude change while peripheral route processing is more likely to produce negative attitude change."
+      },
+      "correct": "A",
+      "explanation": "Petty, et al., (1994) \"elaboration likelihood model\" distinguishes between central and peripheral processing routes. The two routes differ in\nterms of the amount of effortful cognitive processing (elaboration) they require and their impact on attitude change. The model predicts (and\nthe research has con\u0000rmed) that attitude change resulting from central (versus peripheral) route processing results in more persistent attitude\nchange as well as attitudes that are more predictive of behavior.\nAnswer B: In terms of immediate (short-term) effects, the two routes can produce the same amount of attitude change.\nAnswer C: It is peripheral processing that relies on environmental (peripheral) cues—for example, the length of the message or the\nattractiveness of the person delivering the message.\nAnswer D: Both routes can produce either positive or negative (favorable or unfavorable) attitude change."
+    },
+    {
+      "question": "Research on __________ has found that people tend to pay more attention to information that con\u0000rms their beliefs about themselves than to information that contradicts those beliefs.",
+      "options": {
+        "A": "frustration-aggression hypothesis",
+        "B": "heuristics",
+        "C": "schemas",
+        "D": "metamemory"
+      },
+      "correct": "C",
+      "explanation": "Researchers interested in how people interpret their experiences to distinguish between several phenomena including schemas, prototypes,\nand scripts. Schemas (schemata) are organized mental networks of information that are based on prior experience or knowledge. They are\nbelieved to in\u0000uence our interpretation of or reaction to current experience. Research has shown that people pay more attention to and recall\nschema-consistent information better than information that is inconsistent with their current schemas.\nAnswer A: According to the frustration-aggression hypothesis (Dollard et al., 1939), aggression is the consequence of frustration, which is\nproduced whenever the attainment of the desired goal is blocked.\nAnswer B: Heuristics are mental shortcuts that help us process complex information.\nAnswer D: Metamemory refers to awareness of one's own memory processes."
+    },
+    {
+      "question": "The tendency to take credit for our successes but to blame other people or external circumstances for our failures is referred to as the:",
+      "options": {
+        "A": "fundamental attribution bias.",
+        "B": "con\u0000rmation bias.",
+        "C": "self-serving bias.",
+        "D": "optimism bias."
+      },
+      "correct": "C",
+      "explanation": "The self-serving bias applies to the attributions we make for our own behaviors. It refers to the tendency to take credit for our successes (make\ndispositional attributions), but to blame circumstances or other people for our failures.\nAnswer A: The fundamental attribution bias is the tendency to attribute another person's behavior to dispositional factors.\nAnswer B: The con\u0000rmation bias involves focusing on and seeking out information that con\u0000rms our preconceptions.\nAnswer D: As its name suggests, the optimism bias refers to a tendency to be overly optimistic about the outcomes of our behaviors."
+    },
+    {
+      "question": "In a research study, prison inmates and counselors working at the prison were asked to explain why the inmates had committed their crimes. In response, the inmates cited situational factors, while the counselors attributed the offenses to the dispositional characteristics of the inmates. Which of the following predicts the outcome of this study?",
+      "options": {
+        "A": "Fundamental attribution bias",
+        "B": "Self-serving bias",
+        "C": "Actor-observer effect",
+        "D": "False consensus effect"
+      },
+      "correct": "C",
+      "explanation": "The actor-observer effect addresses the discrepancy in an actor's and observer's attributions for the actor's behavior. It predicts that actors\ntend to attribute their own behaviors to situational factors, while observers tend to attribute the actors' behaviors to dispositional factors.\nAnswer A: The fundamental attribution bias is the tendency to overestimate the role of dispositional factors when making attributions about\nthe behaviors of others. Since the fundamental attribution bias only explains the counselors' attributions about the crimes committed by the\ninmates, this answer is only partially correct and not the best answer of those given.\nAnswer B: The self-serving bias refers to the tendency to make dispositional attributions for our successes but situational attributions for our\nfailures.\nAnswer D: The false consensus effect is the tendency to overestimate the extent to which others agree with us."
+    },
+    {
+      "question": "According to Berscheid's (1991) emotion-in-relationships model, strong emotions in romantic relationships occur when:",
+      "options": {
+        "A": "interactions between partners deviate from expected patterns.",
+        "B": "interactions between partners become coercive.",
+        "C": "a partner's internal working model of intimate relationships is not effective.",
+        "D": "a partner's unrealistic expectations about romantic relationships are contradicted."
+      },
+      "correct": "A",
+      "explanation": "Berscheid's emotion-in-relationships model (ERM) is one of several models that have been proposed as explanations for affect in close\nrelationships. Berscheid's model proposes that strong positive or negative emotions occur when there is a disruption in interpersonal scripts—\ni.e., when a partner violates expectations regarding important couple or personal goals.\nAnswer B: Although this answer has merit, it is not the best answer to the proposed question.\nAnswer C: This answer seems reasonable, but it does not \u0000t the model.\nAnswer D: Although the emotion-in-relationships model addresses the violation of expectations, it does not attribute emotions only to\nviolations of unrealistic expectations, so this is not the best answer of those given."
+    },
+    {
+      "question": "Solomon Asch (1958) found that a research participant's conformity to group norms was substantially reduced when:",
+      "options": {
+        "A": "the stimulus was unambiguous.",
+        "B": "even one of the group members (confederates) deviated from the group norm.",
+        "C": "the participant was not directly pressured to conform to the group norm.",
+        "D": "the discrepancy between the judgment of the confederates and the judgment of the participants increased over time."
+      },
+      "correct": "B",
+      "explanation": "In Asch's (1958) studies, participants and confederates were shown a vertical line and asked to indicate which of three other lines it matched in\nterms of length. Results indicated that when the confederates offered their estimates \u0000rst, the participant conformed to the confederates'\nestimates about one-third of the time. The participant was more likely to conform when the confederates were unanimous in their judgment of\nthe line length than when even one confederate deviated from the group norm.\nAnswer A: Asch's studies used an unambiguous stimulus (a vertical line), which did not eliminate conformity to the group norm.\nAnswer C: Participants in Asch's study were not directly pressured to conform to the group norm.\nAnswer D: An increase in the discrepancy of the confederates' judgment and the participants' judgment over time actually increased the\nlikelihood that the participant would conform to the group norm."
+    },
+    {
+      "question": "Which of the following emphasizes the role of the costs and rewards of a relationship on a person's decision to stay in the relationship?",
+      "options": {
+        "A": "Gain-loss theory",
+        "B": "Expectancy theory",
+        "C": "Social exchange theory",
+        "D": "Social comparison theory"
+      },
+      "correct": "C",
+      "explanation": "Social exchange theory is based on the premise that human behavior is affected by the exchange of rewards. Speci\u0000cally, it predicts that the\ndecision to stay in a relationship depends on the balance of costs and rewards. When a person believes that costs exceed rewards, the person\nwill leave the relationship, but when the person believes that rewards exceed the costs, he/she will stay in the relationship.\nAnswer A: Gain-loss theory (also known as the gain-loss effect) refers to the tendency to like or be most attracted to people who initially\nevaluate us negatively but subsequently evaluate us in positive ways.\nAnswer B: Expectancy theory predicts that motivation is the result of three beliefs—expectancy, instrumentality, and valence.\nAnswer D: Social comparison theory predicts that people make judgments about themselves by comparing their behaviors, attitudes, and\nbeliefs to those of other people."
+    },
+    {
+      "question": "You are convinced that you are psychic because you're able to predict when close friends are going to call you on the phone. As a result, you always notice the times when your predictions are correct but ignore those times when they're not. This is an example of which of the following?",
+      "options": {
+        "A": "Correspondence bias",
+        "B": "Con\u0000rmation bias",
+        "C": "Self-ful\u0000lling prophecy effect",
+        "D": "Post hoc fallacy"
+      },
+      "correct": "B",
+      "explanation": "The con\u0000rmation bias would predict that you are noticing only those phone calls that con\u0000rm your belief about your psychic ability.\nAnswer A: The correspondence bias is another name for the fundamental attribution bias, which is the tendency to attribute the behaviors of\nothers to dispositional factors.\nAnswer C: The self-ful\u0000lling prophecy effect occurs when a person's expectations alter the behaviors of the targets of those expectations.\nAnswer D: The post hoc fallacy occurs when we conclude that Event A caused Event B simply because Event A preceded Event B."
+    },
+    {
+      "question": "When Rosenhan's (1973) pseudo-patients were admitted to a mental health facility after reporting that they were \"hearing voices,\" they were:",
+      "options": {
+        "A": "recognized as being normal by most staff members but not by the other patients.",
+        "B": "recognized as being normal by the other patients more often than by the staff members.",
+        "C": "not recognized as being normal by the staff members or patients until they stopped faking their symptoms.",
+        "D": "not recognized as being normal by the staff members or patients even after they stopped faking their symptoms."
+      },
+      "correct": "B",
+      "explanation": "Rosenhan and seven of his assistants had themselves admitted to different mental health facilities by complaining of \"hearing voices.\" Once\nthey were admitted, they stopped faking their symptoms. Nearly one-third of the patients identi\u0000ed the pseudo-patients as sane, but the\nhospital staff members diagnosed all but one of the pseudo-patients as schizophrenic.\nAnswers A, C, and D: The subjects were seen as sane by other patients more often than by staff."
+    },
+    {
+      "question": "Sherif and Hovland's (1961) \"social judgment theory\" is useful for understanding which of the following?",
+      "options": {
+        "A": "Interpersonal attraction",
+        "B": "Attitude change",
+        "C": "Attribution of cause",
+        "D": "Impression formation"
+      },
+      "correct": "B",
+      "explanation": "\"Social judgment theory\" distinguishes between three \"categories of judgment\" that determine our susceptibility to persuasion—the latitude of\nacceptance, the latitude of non-commitment, and the latitude of rejection. The theory predicts that we are most likely to be persuaded (to\nchange our attitude) when the position advocated by a message is within our latitude of acceptance.\nAnswers A, C, and D: Social judgment theory relates to attitude change."
+    },
+    {
+      "question": "Lewin's (1936) \"\u0000eld theory\" predicts that human behavior is a function of:",
+      "options": {
+        "A": "the person's attitude, values, and beliefs.",
+        "B": "the person's actual and perceived abilities.",
+        "C": "the characteristics of the person and the person's environment.",
+        "D": "the antecedents and consequences of the behavior."
+      },
+      "correct": "C",
+      "explanation": "Lewin's (1936) \"\u0000eld theory\" is expressed by the following formula: B = (P,E), where B is behavior, P is person, and E is environment. Lewin\ndescribed behavior as a function of interactions between the person's characteristics (e.g., heredity, personality, health) and the characteristics\nof the person's social environment.\nAnswers A, B, and D: These concepts are not expressed by \u0000eld theory."
+    },
+    {
+      "question": "\"Self-veri\u0000cation theory\" predicts that a person with low self-esteem will prefer to receive evaluations from others that:",
+      "options": {
+        "A": "con\u0000rm his/her own negative self-evaluations.",
+        "B": "refute his/her own negative self-evaluations.",
+        "C": "avoid addressing his/her self-evaluations.",
+        "D": "are clearly non-evaluative."
+      },
+      "correct": "A",
+      "explanation": "Swann, Pelham, and Krull's (1989) \"self-veri\u0000cation theory\" predicts that people prefer con\u0000rmation of their self-concept. It predicts that a\nperson with low self-esteem will prefer evaluations from others that con\u0000rm his/her own negative self-evaluations.\nAnswers B, C, and D: Self-veri\u0000cation theory predicts that people with poor self-esteem prefer evaluations which con\u0000rm their own negative\nself-evaluations, or self-concept."
+    },
+    {
+      "question": "According to Sherif and Hovland's (1961) \"social judgment theory,\" a person's latitudes of rejection, non-commitment, and acceptance are affected by which of the following?",
+      "options": {
+        "A": "The person's level of involvement with the topic addressed by the persuasive message",
+        "B": "The person's perceptions about the consequences of altering his/her opinion or behavior",
+        "C": "The person's self-e\u0000cacy beliefs",
+        "D": "The person's level of cognitive dissonance"
+      },
+      "correct": "A",
+      "explanation": "\"Social judgment theory\" (Sherif and Hovland, 1961) distinguishes between three \"categories of judgment\" that determine our susceptibility to\npersuasion—the latitude of acceptance, the latitude of non-commitment, and the latitude of rejection. The theory predicts that the size of these\nlatitudes are affected by the individual's level of ego-involvement (i.e., the extent to which the person is personally involved with the topic\naddressed by the persuasive message). When the individual's ego-involvement is high, his/her latitude of rejection is wide.\nAnswers B, C, and D: The three categories of judgment, or latitudes, described by social judgment theory, are affected by the person's level of\nego involvement with the topic addressed by the persuasive message."
+    },
+    {
+      "question": "Aronson and Linder's (1965) \"gain-loss theory\" predicts that we will like a person most when his/her evaluations of us are:",
+      "options": {
+        "A": "initially positive and remain positive.",
+        "B": "initially negative but become positive.",
+        "C": "initially positive but become negative.",
+        "D": "initially and subsequently neutral."
+      },
+      "correct": "B",
+      "explanation": "\"Gain-loss theory\" (Aronson and Linder, 1965) is a theory of personal attraction. Gain-loss theory predicts that an evaluation sequence involving\na change from a negative to a positive evaluation will result in greater liking for the evaluator than will a consistent positive evaluation\nsequence. Conversely, an evaluation sequence involving a change from a positive to a negative evaluation will result in greater dislike for the\nevaluator than will a consistent negative evaluation sequence.\nAnswers A, C, and D: Gain-loss theory predicts a greater liking for the evaluator when the evaluation is initially negative and becomes positive."
+    },
+    {
+      "question": "As a supervisor, Jason J. always tries to modify his communication and managerial style so that they \"match\" the style and characteristics of the particular employee he is interacting with. Based on this information, you can conclude that Jason:",
+      "options": {
+        "A": "is high in self-monitoring.",
+        "B": "is high in initiating structure.",
+        "C": "has low self-e\u0000cacy beliefs.",
+        "D": "has an internal locus of control."
+      },
+      "correct": "A",
+      "explanation": "\"High self-monitoring\" people are concerned about the impression they make and, thus, pay close attention to the behaviors of other people in\norder to adjust their own behavior to \u0000t the style of those people.\nAnswer B: \"Initiating structure\" refers to the degree to which a leader is goal-oriented and is not relevant to the situation described in this\nquestion.\nAnswers C and D: The scenario described in the question re\u0000ects someone with high self-monitoring, rather than low self-e\u0000cacy or an internal\nlocus of control."
+    },
+    {
+      "question": "Which of the following is true about a person who is faced with an \"approach-avoidance\" con\u0000ict?",
+      "options": {
+        "A": "The closer the person gets to his/her goal, the stronger the desire to approach it.",
+        "B": "The closer the person gets to his/her goal, the stronger the desire to avoid it.",
+        "C": "Regardless of his/her proximity to the goal, the person's desire to avoid the goal is stronger than his/her desire to approach it.",
+        "D": "Regardless of his/her proximity to the goal, the person's desire to approach it is equal to the desire to avoid it."
+      },
+      "correct": "B",
+      "explanation": "Lewin (1931) and Miller (1944) distinguished between four motivational con\u0000icts: \"approach-approach,\" \"avoidance-avoidance,\" \"approach-\navoidance,\" and \"double approach-avoidance.\" The approach-avoidance con\u0000ict occurs when a goal has both positive and negative aspects.\nThis kind of con\u0000ict is di\u0000cult to resolve because, as a person moves closer to the goal, the desire to avoid it becomes stronger. As the person\nmoves away from the goal, the desire to approach it increases.\nAnswers A, C, and D: In an approach-avoidance con\u0000ict, as the person moves closer to the goal, the desire to avoid it becomes stronger."
+    },
+    {
+      "question": "In a research study, a social psychologist offers participants either $1.00 or $20.00 to tell potential participants that a dull experiment was very interesting. With regard to \"cognitive dissonance theory\" and \"self-perception theory,\" which of the following is true?",
+      "options": {
+        "A": "Cognitive dissonance theory predicts that participants in the $1.00 condition will subsequently report greater liking for the dull experiment. Self-perception theory predicts that participants in the $20.00 condition will subsequently report greater liking for the dull experiment.",
+        "B": "Self-perception theory predicts that participants in the $1.00 condition will subsequently report greater liking for the dull experiment. Cognitive dissonance theory predicts that participants in the $20.00 condition will subsequently report greater liking for the dull experiment.",
+        "C": "Cognitive dissonance theory and self-perception theory both predict that participants in the $1.00 condition will subsequently report greater liking for the dull experiment than will those in the $20.00 condition.",
+        "D": "Cognitive dissonance theory and self-perception theory both predict that participants in the $20.00 condition will subsequently report greater liking for the dull experiment than will those in the $1.00 condition."
+      },
+      "correct": "C",
+      "explanation": "Both cognitive dissonance theory and self-perception theory predict that those offered $1.00 to tell potential participants that the dull\nexperiment was very interesting will report greater liking for the experiment. The reasoning behind each theory is different, however. Accepting\nonly $1.00, as opposed to $20.00, to describe the dull experiment as interesting would produce less cognitive dissonance within the\nparticipant. Self-perception theory would predict that the participant would rely on their own behavioral cues when expressing their liking for\nthe dull experiment, i.e., their stating to potential participants that it was a very interesting experiment.\nAnswers A, B, and D: Based on cognitive dissonance theory and self-perception theory, participants offered $1.00 (as opposed to $20.00)\nwould report a greater liking for the dull experiment."
+    },
+    {
+      "question": "When a listener is exposed to both sides of an argument, a \"primacy effect\" is most likely to occur when:",
+      "options": {
+        "A": "the \u0000rst side of the argument is presented immediately before the second side and the listener's attitude is measured immediately after presentation of the second argument.",
+        "B": "the \u0000rst side of the argument is presented immediately before the second side and the listener's attitude is measured at a later time.",
+        "C": "there is a delay between presentation of the \u0000rst and second sides of the argument and the listener's attitude is measured immediately after presentation of the second argument.",
+        "D": "there is a delay between presentation of the \u0000rst and second sides of the argument and the listener's attitude is measured at a later time."
+      },
+      "correct": "B",
+      "explanation": "The research has found that the order of presentation of two sides of an argument and the time at which a listener's attitude is measured\ndetermine whether a \"primacy\" or \"recency\" effect will occur. When both sides of an argument are presented, a primacy effect occurs (the\nlistener is swayed more by the \u0000rst argument) when the second argument immediately follows the \u0000rst and the attitude measure is\nadministered at a later time. In contrast, a recency effect occurs (the listener is swayed more by the second argument) when there is a delay\nbetween presentation of the two sides of the argument and the attitude measure is administered immediately after the second argument.\nAnswers A, C, and D: These answers do not describe the conditions that make a primacy effect most likely to occur. A primacy effect occurs\n(the listener is swayed more by the \u0000rst argument) when the second argument immediately follows the \u0000rst and the attitude measure is\nadministered at a later time."
+    },
+    {
+      "question": "Research on persuasion has found that people who argue against their own self-interest are:",
+      "options": {
+        "A": "usually viewed by listeners as untrustworthy.",
+        "B": "usually viewed by listeners as credible.",
+        "C": "viewed as reliable by uninformed listeners only.",
+        "D": "viewed as knowledgeable by listeners who have low-esteem."
+      },
+      "correct": "B",
+      "explanation": "Studies have found that a communicator's credibility is affected by a number of factors, including his/her apparent motives for advocating a\nparticular position. Walster, Aronson, and Abrahams (1966) found that communicators are usually considered credible when they are arguing\nagainst their own self-interests, which apparently causes them to be seen as more trustworthy.\nAnswers A, C, and D: Communicators arguing against their own self-interests are usually deemed more credible."
+    },
+    {
+      "question": "Research on persuasion revealed that, one month following exposure to a persuasive message, participants in the study could remember the message, but they had forgotten the source of the message. This result is a manifestation of which of the following?",
+      "options": {
+        "A": "Primacy effect",
+        "B": "Deindividuation",
+        "C": "Sleeper effect",
+        "D": "Correspondence bias"
+      },
+      "correct": "C",
+      "explanation": "The sleeper effect refers to the tendency to remember a message over time but to forget the source.\nAnswer A: The primacy effect refers to the tendency to remember stimuli that occurred \u0000rst better than stimuli that occurred last.\nAnswer B: Deindividuation refers to the tendency for people to be more willing to act in antisocial ways when they can do so anonymously.\nAnswer D: The correspondence bias is another name for the fundamental attribution bias and is not relevant to the phenomenon described in\nthis question."
+    },
+    {
+      "question": "People who frequently view media violence are most likely to:",
+      "options": {
+        "A": "exhibit high levels of empathy for the victims of violence.",
+        "B": "judge aggressive retaliation as unacceptable and unjusti\u0000able.",
+        "C": "report that they have been the victims of unprovoked violence.",
+        "D": "overestimate the likelihood that they will be a victim of violence."
+      },
+      "correct": "D",
+      "explanation": "Research has found that long-term exposure to media violence is associated with a tendency to overestimate the amount of violence in society,\nas well as the likelihood of being a victim of violence.\nAnswer A: Long-term exposure to media violence has been linked to a decrease in empathy for the victims of violence.\nAnswer B: People who are often exposed to media violence are more likely to judge aggressive retaliation more positively than do people who\nare infrequently exposed to media violence.\nAnswer C: Although frequent exposure to media violence has been linked to a tendency to overestimate one's risk for being a victim of violence,\nit has not been linked to an increase in reported rates of being a victim."
+    },
+    {
+      "question": "The \"jigsaw technique\" is a(n):",
+      "options": {
+        "A": "individual decision-making strategy.",
+        "B": "cooperative learning strategy.",
+        "C": "method for reducing susceptibility to persuasion.",
+        "D": "method for decreasing conformity to group norms."
+      },
+      "correct": "B",
+      "explanation": "The \"jigsaw classroom\" was developed as a cooperative learning strategy by Aronson and his colleagues (1978). It is a method for enhancing\nlearning and motivation and reducing racial/ethnic con\u0000ict in classrooms.\nAnswers A, C, and D: The jigsaw classroom was developed as a cooperative learning strategy."
+    },
+    {
+      "question": "A co-worker says, \"It never fails. Every time I plan to go hiking with my children, it rains.\" Assuming that your co-worker's claim is not really true, her statement is best described as a manifestation of which of the following?",
+      "options": {
+        "A": "False consensus bias",
+        "B": "Hedonic relevance",
+        "C": "Base rate fallacy",
+        "D": "Illusory correlation"
+      },
+      "correct": "D",
+      "explanation": "In this situation, your co-worker is overestimating the relationship between two events (hiking and raining). This is known as an \"illusory\ncorrelation.\"\nAnswer A: The \"false consensus bias\" is the tendency to overestimate the extent to which others agree with us.\nAnswer B: \"Hedonic relevance\" is a source of attribution bias, and refers to the extent to which the other person's behavior has positive or\nnegative consequences for us.\nAnswer C: The \"base rate fallacy\" refers to the tendency to rely on irrelevant information rather than statistical information when making a\njudgment."
+    },
+    {
+      "question": "Which of the following is most important for reducing the negative effects of crowding on behavior?",
+      "options": {
+        "A": "Diffusion of responsibility",
+        "B": "Level of self-monitoring",
+        "C": "A sense of control",
+        "D": "Behavioral incentives"
+      },
+      "correct": "C",
+      "explanation": "Research has found that a sense of control over a situation mediates the impact of crowding on behavior. Sherrod (1974) found that, when\npeople working on a task in a crowded situation could press an \"escape button\" to be able to leave the situation, their performance was\nenhanced even if they never had to push the button.\nAnswers A, B, and D: Having a sense of control has been found to reduce the impact of crowding on behavior."
+    },
+    {
+      "question": "A movie viewer is most likely to report feeling uncomfortable in a crowded movie theater when he/she is viewing a ________ \u0000lm.",
+      "options": {
+        "A": "frightening",
+        "B": "sexually arousing",
+        "C": "humorous",
+        "D": "boring"
+      },
+      "correct": "D",
+      "explanation": "The consequences of crowding depend on several factors, including the nature of the environment and task. Research by Worchel and Brown\n(1984) found that crowding is experienced as less uncomfortable or less stressful in attention-grabbing, arousing situations than in\nuninteresting (boring) situations. This is apparently due to the fact that crowding produces arousal and, when the arousal can be attributed to\nthe circumstances, it is not experienced as unpleasant. However, when the arousal cannot be attributed to the circumstances (e.g., when the\nmovie is boring), it is experienced as unpleasant.\nAnswers A, B, and C: Crowding has been found to be more stressful in boring situations, e.g. boring movies."
+    },
+    {
+      "question": "According to Herek (1991), harassment of and violence against lesbians and gay men is the result of:",
+      "options": {
+        "A": "an antisocial predisposition.",
+        "B": "extreme authoritarianism.",
+        "C": "homophobia.",
+        "D": "heterosexism."
+      },
+      "correct": "D",
+      "explanation": "Herek (1991) de\u0000nes \"heterosexism\" as \"an ideological system that denies, denigrates, and stigmatizes non-heterosexual forms of behavior,\nidentity, relationships, or community.\" His research has linked a combination of individual (psychological) and cultural heterosexism to violence\nagainst lesbians and gay men.\nAnswers A, B, and C: Although these choices are plausible answers, \"heterosexism\" is the term coined to refer to the violence directed toward\nhomosexual people."
+    },
+    {
+      "question": "Berkowitz (1971) revised the original frustration-aggression hypothesis by proposing that frustration leads to aggression only when:",
+      "options": {
+        "A": "the aggressor anticipates positive consequences for acting aggressively.",
+        "B": "there are aggressive cues in the environment.",
+        "C": "the recipient of the aggression has low status.",
+        "D": "the recipient of the aggression provoked the aggressor."
+      },
+      "correct": "B",
+      "explanation": "The original frustration-aggression hypothesis proposed by Dollard et al. (1939) was subsequently modi\u0000ed by several researchers. For\nexample, Berkowitz's (1971) research found that frustration leads to a \"readiness for aggression\" but that the actual expression of aggression\nrequires anger arousal plus the presence of appropriate environmental (aggressive) cues.\nAnswers A, C, and D: The frustration-aggression hypothesis was modi\u0000ed to predict that the expression of aggression requires the presence of\naggressive environmental cues."
+    },
+    {
+      "question": "In a research study, boys observe a model acting aggressively toward an in\u0000atable \"Bobo\" doll. For some boys, the model is rewarded for acting aggressively; for others, the model is punished; and, for others, the model is neither rewarded nor punished. Subsequently, all boys are offered incentives for acting aggressively toward the doll. Based on your knowledge of Bandura's (1983) research on \"social learning theory,\" you predict that:",
+      "options": {
+        "A": "only boys who observed the model being rewarded for being aggressive toward the doll will themselves act aggressively toward the doll.",
+        "B": "only boys who observed the model being rewarded or receiving no consequence for being aggressive toward the doll will themselves act aggressively toward the doll.",
+        "C": "only boys who observed the model being punished for acting aggressively toward the doll will themselves act aggressively toward the doll.",
+        "D": "all boys (those who saw the model being rewarded, receiving no consequence, or being punished for being aggressive toward the doll) will themselves act aggressively toward the doll."
+      },
+      "correct": "D",
+      "explanation": "Bandura's \"Bobo Doll\" experiments were conducted to test his \"social learning theory\" of behavior, which states that learning is largely due to\nobserving, imitating, and modeling. This theory argues that we learn not only by receiving rewards and punishments, but by also observing\nothers receiving rewards and punishments (observational learning). The Bobo Doll experiments found that all of the boys had learned to act\naggressively toward the doll by observing the model being aggressive toward the doll. Whether this learning was expressed through behavior,\nhowever, depended on the personal incentive offered. When no incentive was offered for imitating the model's behavior, those who had\nobserved the model being rewarded or receiving no consequence for acting aggressively, were themselves aggressive toward the doll.\nHowever, when the boys were instead offered an incentive for imitating the model, all of the boys acted aggressively toward the Bobo doll\n(whether the model had received a reward, a punishment, or no consequence for acting aggressively toward the doll.)\nAnswers A, B, and C: Social learning theory predicted that all of the boys (those observing the model being rewarded, punished, or receiving no\nconsequence for acting aggressively), would act aggressively toward the Bobo doll."
+    },
+    {
+      "question": "\"Cognitive dissonance theory\" is most useful for understanding:",
+      "options": {
+        "A": "interpersonal attraction.",
+        "B": "minority in\u0000uence.",
+        "C": "self attributions.",
+        "D": "attitude change."
+      },
+      "correct": "D",
+      "explanation": "According to cognitive dissonance theory, inconsistencies in cognitions produce tension (dissonance), which motivates the individual to\nmodify one of his/her cognitions. Cognitive dissonance theory is useful for understanding how attitude change is sometimes an attempt to\nalleviate cognitive dissonance.\nAnswers A, B, and C: Of all options presented, cognitive dissonance theory is useful for understanding attitude change."
+    },
+    {
+      "question": "A therapy client is exhibiting a \"depressive attributional style\" when she consistently attributes the negative events she experiences to:",
+      "options": {
+        "A": "internal, stable, and global factors.",
+        "B": "external, stable, and global factors.",
+        "C": "internal, unstable, and speci\u0000c factors.",
+        "D": "external, unstable, and speci\u0000c factors."
+      },
+      "correct": "A",
+      "explanation": "Researchers interested in causal attribution distinguish between three attributional dimensions: internal/external, stable/unstable, and\nglobal/speci\u0000c. Abramson, Seligman, and Teasdale (1978) found that people who are depressed tend to attribute negative events to internal,\nstable, and global factors.\nAnswers B, C, and D: A depressive attributional style re\u0000ects a tendency to attribute negative events to internal, stable, and global factors."
+    },
+    {
+      "question": "The predictions of \"social exchange theory\" are most applicable to one's relationship with:",
+      "options": {
+        "A": "close friends.",
+        "B": "parents.",
+        "C": "romantic partners.",
+        "D": "business associates."
+      },
+      "correct": "D",
+      "explanation": "Social exchange theory suggests that that social behavior is the result of an exchange process and involves maximizing bene\u0000ts and\nminimizing costs. Research suggests that social exchange theory is most applicable to more formal relationships, e.g., business associates.\nAnswers A, B, and C: Social exchange theory is most applicable to formal relationships, such as those with business associates."
+    },
+    {
+      "question": "Research by Herek and colleagues (2000) on the attitudes of heterosexual men and women toward gays and lesbians has found that all of the following have been linked to higher levels of sexual prejudice EXCEPT:",
+      "options": {
+        "A": "being of younger age.",
+        "B": "high levels of authoritarianism.",
+        "C": "conservative political views.",
+        "D": "lower levels of education."
+      },
+      "correct": "A",
+      "explanation": "Being of younger age (as opposed to older) has not been found to be strongly associated with sexual prejudice toward gays and lesbians.\nAnswers B, C, and D: These responses have all been associated with higher levels of sexual prejudice."
+    },
+    {
+      "question": "Zimbardo's (1970) \"deindividuation model\" applies to which of the following?",
+      "options": {
+        "A": "Cooperative behavior",
+        "B": "Aggressive behavior",
+        "C": "Sexual prejudice",
+        "D": "Self-attributions"
+      },
+      "correct": "B",
+      "explanation": "Zimbardo's deindividuation model addresses the role of anonymity in a person's willingness to act aggressively. Zimbardo found that people\nwere more likely to act aggressively when participating in a group when they could do so anonymously.\nAnswers A, C, and D: Zimbardo's deindividuation model best applies to aggressive behavior."
+    },
+    {
+      "question": "Which of the following has been used to explain the phenomenon known as the \"Zeigarnik Effect\"?",
+      "options": {
+        "A": "Bystander apathy",
+        "B": "Intergroup cooperation",
+        "C": "Deindividuation",
+        "D": "Psychic tension"
+      },
+      "correct": "D",
+      "explanation": "The \"Zeigarnik Effect\" refers to the tendency to recall uncompleted tasks better than completed tasks. Zeigarnik proposed that it is easier to\nrecall uncompleted tasks (at least in some conditions) because they create a state of \"psychic tension.\"\nAnswers A, B, and C: Psychic tension associated with uncompleted tasks is a component of the Zeigarnik Effect."
+    },
+    {
+      "question": "_____________ predicts that our perceptions of fairness in relationships are more important than the absolute costs and rewards of being in that relationship.",
+      "options": {
+        "A": "Social comparison theory",
+        "B": "Social judgment theory",
+        "C": "Equity theory",
+        "D": "Self-veri\u0000cation theory"
+      },
+      "correct": "C",
+      "explanation": "According to \"equity theory,\" people perceive a relationship to be equitable when they believe their reward/cost ratio is proportional to the\nreward/cost ratio of the other person.\nAnswers A, B, and D: Perceptions of fairness in relationships are predicted by equity theory."
+    },
+    {
+      "question": "Ajzen's (1991) \"theory of planned behavior\" predicts that attitudes are good predictors of a person's behavior when the measure of attitudes assesses the person's:",
+      "options": {
+        "A": "intrinsic motivation",
+        "B": "ego involvement",
+        "C": "behavioral intention",
+        "D": "past behavior"
+      },
+      "correct": "C",
+      "explanation": "The theory of planned behavior predicts that the accuracy of a measure of a person's attitude is increased when the measure assesses the\nthree factors that determine the person's behavioral intention—i.e., the person's attitude toward engaging in the behavior, what the person\nbelieves other people think about the behavior, and the person's perceived behavioral control.\nAnswers A, B, and D: These responses are incorrect as the theory of planned behavior predicts that attitudes are good predictors of a person's\nbehavior when the measure of attitudes assesses the person's behavioral intention."
+    },
+    {
+      "question": "The belief that other people are paying more attention to our appearance and behavior than they actually are is known as the:",
+      "options": {
+        "A": "spotlight effect.",
+        "B": "the actor/observer effect.",
+        "C": "the shrinking violet effect.",
+        "D": "the center stage effect."
+      },
+      "correct": "A",
+      "explanation": "The belief that others are paying more attention to our appearance and actions than they really are is known as the \"spotlight effect.\"\nAnswers B, C, and D: These answers are not terms for the phenomenon described in the question."
+    },
+    {
+      "question": "Heider's (1958) \"balance theory\" describes attitude change as a function of which of the following?",
+      "options": {
+        "A": "Categories of judgment",
+        "B": "Fear arousal",
+        "C": "Cognitive consistency",
+        "D": "Behavioral intentions"
+      },
+      "correct": "C",
+      "explanation": "\"Balance theory\" focuses on the relationships between three entities (the person, a second person, and a third person, object, or event). It\nproposes that the relations between these entities can be balanced or unbalanced. When the relationships between these entities are\nunbalanced, the person experiences a state of disequilibrium (inconsistency) and is motivated to change his/her attitude toward one of the\nentities.\nAnswers A, B, and D: Balance theory argues that attitude change is a function of cognitive consistency between three entities (a person, second\nperson, and third person, object, or event)."
+    },
+    {
+      "question": "According to Kelman (1961), the possible responses to social in\u0000uence are:",
+      "options": {
+        "A": "compliance, identi\u0000cation, and internalization.",
+        "B": "conformity, compliance, and obedience.",
+        "C": "compliance, conformity, and internalization.",
+        "D": "rejection, concession, and compliance."
+      },
+      "correct": "A",
+      "explanation": "Kelman (1961) distinguished between three types of responses to social in\u0000uence. Compliance, identi\u0000cation, and internalization are the three\nresponses identi\u0000ed.\nAnswer B: Conformity and obedience were not identi\u0000ed by Kelman.\nAnswer C: Conformity was not identi\u0000ed by Kelman.\nAnswer D: Rejection and concession were not identi\u0000ed by Kelman."
+    },
+    {
+      "question": "Stanley Milgram investigated which of the following at Yale University in the 1960s?",
+      "options": {
+        "A": "The willingness of individuals to conform to group norms even when those norms were obviously incorrect",
+        "B": "The willingness of individuals to obey an authority even when doing so had harmful consequences for someone else",
+        "C": "The ability of individuals holding a minority opinion to in\u0000uence the opinion of the majority",
+        "D": "The ability of exposure to repeated con\u0000ict among groups to generate hostility and aggression toward members of the outgroup"
+      },
+      "correct": "B",
+      "explanation": "Milgram's research at Yale University is among the most well-known and controversial research in the \u0000eld of social psychology. He discovered\nthat, under certain conditions, people are willing to comply with the requests of an authority, even when doing so seems to have negative\nconsequences for another person.\nAnswers A, C, and D: Milgram's research pertained to the willingness to obey authority."
+    },
+    {
+      "question": "The \"base rate fallacy\" refers to the tendency to:",
+      "options": {
+        "A": "believe that a particular chance event is affected by the occurrence of previous events.",
+        "B": "overestimate the link between two events that are unrelated or only slightly related.",
+        "C": "focus on a speci\u0000c case rather than general information when reaching a conclusion or making a judgment.",
+        "D": "overestimate the number of people who share one's beliefs, opinions, and attitudes."
+      },
+      "correct": "C",
+      "explanation": "The tendency to ignore base rate (general) information and to focus, instead, on a speci\u0000c case, is referred to as the \"base rate fallacy.\"\nAnswer A: This describes the \"gambler's fallacy.\"\nAnswer B: This describes the phenomenon known as the \"illusory correlation.\"\nAnswer D: This describes the \"false consensus bias.\""
+    },
+    {
+      "question": "Research on prejudice indicates that certain conditions can reduce intergroup hostilities. Which of the following conditions would be MOST effective for reducing racial prejudice displayed by groups of White and African American children?",
+      "options": {
+        "A": "The children are required to cooperate in order to achieve a common goal.",
+        "B": "The children are confronted with a \"common enemy.\"",
+        "C": "Contact between the children occurs daily over an extended period of time.",
+        "D": "The children are provided with norms that prescribe courtesy and friendliness."
+      },
+      "correct": "A",
+      "explanation": "Having a common (superordinate) goal to work toward has been shown to increase cooperation and reduce hostility between opposing\ngroups.\nAnswer B: There is no mention of a common goal; having a common enemy is not a relevant factor here.\nAnswers C and D: There is no mention of a common goal, which is the most effective condition for reducing racial prejudice of the options\ngiven."
+    },
+    {
+      "question": "In his book, The Nature of Prejudice, Gordon Allport concludes that:",
+      "options": {
+        "A": "stateways cannot change folkways.",
+        "B": "stateways can only intensify existing folkways.",
+        "C": "stateways are often in advance of folkways.",
+        "D": "folkways always proceed stateways."
+      },
+      "correct": "C",
+      "explanation": "In contrast to the traditional view that \"stateways cannot change folkways\" (e.g., you cannot legislate against racial prejudice), Allport asserts\nthat, at least in the United States, stateways are often in advance of folkways.\nAnswers A, B, and D: These statements are each inconsistent with the view expressed by Allport that legislatures in the United States often\nproduce or at least precede changes in personal prejudice."
+    }
+  ]
+}

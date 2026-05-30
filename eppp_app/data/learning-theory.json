@@ -1,0 +1,1009 @@
+{
+  "name": "Learning Theory",
+  "slug": "learning-theory",
+  "category": "Category Tests",
+  "questionCount": 91,
+  "questions": [
+    {
+      "question": "The phenomena known as retroactive and proactive interference are most useful for understanding which of the following?",
+      "options": {
+        "A": "Habituation versus satiation",
+        "B": "Anterograde amnesia",
+        "C": "Memory consolidation",
+        "D": "Forgetting (loss of memory)"
+      },
+      "correct": "D",
+      "explanation": "Proactive interference occurs when previously learned information hinders the ability to recall information learned more recently; while\nretroactive interference occurs when information acquired more recently hinders the ability to recall previously acquired information.\nRetroactive and proactive interference provide an alternative explanation to trace decay theory for the inability to recall previously acquired\ninformation.\nAnswer A: Habituation occurs when a punishment loses its effectiveness, whereas satiation occurs when a reinforcer has lost its reinforcing\nvalue.\nAnswer B: Anterograde amnesia is the inability to form new long-term memories.\nAnswer C: Memory consolidation refers to the process whereby learning experiences in short-term memory are transformed into long-term\nmemory."
+    },
+    {
+      "question": "All of the following techniques are based on principles of classical conditioning except:",
+      "options": {
+        "A": "systematic desensitization",
+        "B": "covert sensitization",
+        "C": "response cost",
+        "D": "implosive therapy"
+      },
+      "correct": "C",
+      "explanation": "Note that this question is asking which technique is NOT based on classical conditioning. Response cost is a type of negative punishment\n(operant conditioning) that involves removing a reinforcer following a target behavior to reduce or eliminate that behavior.\nAnswer A: Incorrect. Systematic desensitization is an evidence-based therapy approach for treating phobias and other anxiety by exposing\npatients to progressively more anxiety-provoking stimuli while teaching the use of relaxation techniques. It aims to substitute the anxiety\nresponse with a relaxation response using counter conditioning.\nAnswer B: Incorrect. Covert sensitization is a type of aversive counterconditioning that involves pairing the conditioned stimulus (CS) and\nunconditioned stimulus (US) in imagination.\nAnswer D: Incorrect. Implosive therapy is a behavior therapy for anxiety that combines classical extinction with psychodynamic principles.\nAdditional information on the techniques listed in the answers to this question is provided in the Learning Theory chapter of the written study\nmaterials."
+    },
+    {
+      "question": "Which of the following is an example of negative reinforcement:",
+      "options": {
+        "A": "A mom gives her 2-year-old son a sticker every time he picks up his toys.",
+        "B": "A mom takes away her 16-year-old daughter's car keys every time she fails a test at school.",
+        "C": "A teacher gives students extra credit every two weeks to students who have perfect attendance for that period of time.",
+        "D": "A teacher makes the weekly essay assignment optional if students complete all homework assignments for the week."
+      },
+      "correct": "D",
+      "explanation": "Negative reinforcement is the removal of an aversive stimulus following a target behavior in order to increase the frequency of the target\nbehavior. In this case, if students complete their homework for the week, they do not have to do the extra work of writing an essay that week.\nThe removal of the aversive stimulus (i.e., writing the essay) will increase the frequency or likelihood that students will complete their\nhomework (i.e., the target behavior).\nAnswer A: This is an example of positive reinforcement on a continuous reinforcement schedule; the son is rewarded each time the target\nbehavior (i.e., picking up his toys) occurs, which will likely increase this behavior.\nAnswer B: This is an example of punishment by removal. The mom hopes that by taking away her daughter's car keys, it will decrease the\nnumber of tests she fails.\nAnswer C: This is an example of positive reinforcement on a \u0000xed interval reinforcement schedule (i.e., reward every two weeks if the target\nbehavior of perfect attendance occurred)."
+    },
+    {
+      "question": "When using punishment to reduce or eliminate an undesirable behavior, it is important to keep in mind that gradually increasing the intensity or severity of a punishment will likely reduce its effectiveness. This reduction in the effectiveness of punishment is referred to as:",
+      "options": {
+        "A": "satiation",
+        "B": "habituation",
+        "C": "sensitization",
+        "D": "extinction"
+      },
+      "correct": "B",
+      "explanation": "The question describes habituation which, in the context of punishment, occurs when the punisher loses its effectiveness. Gradually increasing\nthe intensity of punishment over time is usually ineffective because it leads to habituation.\nAnswer A: Satiation occurs when a reinforcer loses its reinforcing value because the individual has received too much reinforcement.\nAnswer C: In the context of punishment, sensitization occurs when an individual's response to a neutral (innocuous) stimulus increases after\nthe individual has been exposed to a punishing (aversive) stimulus.\nAnswer D: In operant conditioning, extinction occurs when a previously reinforced response is no longer reinforced and, as a result, the\nresponse decreases or no longer occurs."
+    },
+    {
+      "question": "As originally described by Wolpe (1958), reciprocal inhibition involved replacing:",
+      "options": {
+        "A": "an automatic response with an intentional response",
+        "B": "a dysfunctional thought with a more functional one",
+        "C": "an anxiety response with a relaxation response",
+        "D": "an external attribution with an internal attribution"
+      },
+      "correct": "C",
+      "explanation": "Reciprocal inhibition involves using classical conditioning to replace an undesirable response with an incompatible response. The term\nreciprocal inhibition is often used interchangeably with counterconditioning. Wolpe originally used reciprocal inhibition to reduce anxiety. This\ninvolved pairing, in imagination, anxiety-arousing events with relaxation, which is incompatible with anxiety.\nAnswer A: This answer sounds most like self-instructional training (SIT) developed by Meichenbaum and Goodman (1971). The main goal of\nthe treatment is to teach hyperactive and impulsive children to insert more adaptive and self-controlling thoughts between a stimulus situation\nand their behavioral response to the situation.\nAnswer B: A target of Beck's (1967, 1984) cognitive therapy is to identify cognitive dysfunctions and modify them.\nAnswer D: The goal of attribution retraining is to alter the individual's perceptions of the causes of his or her problematic behavior. Seligman's\ntheory of learned optimism seeks to help clients attribute their failures to external, unstable, and speci\u0000c factors and successes to internal,\nstable, and global factors."
+    },
+    {
+      "question": "Research on primacy and recency effects has shown that:",
+      "options": {
+        "A": "memory for the \u0000rst item in a list decreases while memory for the last item increases as the delay between study and recall increases",
+        "B": "memory for the \u0000rst item in a list increases while memory for the last item decreases as the delay between study and recall increases",
+        "C": "memory for the \u0000rst and the last item decreases as the delay between study and recall increases",
+        "D": "memory for the \u0000rst and the last item increases as the delay between study and recall increases."
+      },
+      "correct": "B",
+      "explanation": "This question is asking about research on the serial position effect, which identi\u0000ed a \"recency-primacy shift.\" Speci\u0000cally, the research has\nshown that, as the delay between study and recall increases, memory for the last item in a list decreases but memory for the \u0000rst item\nincreases -- i.e., there is a shift from a recency effect to a primacy effect.\nAnswer A: This is the opposite of what the recency-primacy shift indicates, as memory for the \u0000rst item in a list increases and memory for the\nlast item in a list decreases.\nAnswer C: As the delay between study and recall increases, only memory for the last item decreases.\nAnswer D: As the delay between study and recall increases, only memory for the \u0000rst item increases."
+    },
+    {
+      "question": "Implosive therapy would be most useful as a treatment for which of the following?",
+      "options": {
+        "A": "Speci\u0000c Phobia",
+        "B": "Major Depressive Disorder",
+        "C": "Hypoactive Sexual Desire Disorder",
+        "D": "Reactive Attachment Disorder"
+      },
+      "correct": "A",
+      "explanation": "Implosive therapy combines classical extinction with psychodynamic interpretation and is used to treat anxiety reactions. Knowing that\nimplosive therapy is used to extinguish a phobic or other anxiety response would have enabled you to identify the correct answer to this\nquestion.\nAnswer B: Major Depressive Disorder is most effectively treated with a combination of an antidepressant and psychotherapy (usually CBT or\nIPT).\nAnswer C: Hypoactive Sexual Desire Disorder is most effectively treated with sex therapy and medications.\nAnswer D: Reactive Attachment Disorder is usually treated with psychotherapy for the child, family therapy, and parenting education."
+    },
+    {
+      "question": "When using ________ as a memory aid, a phrase or rhyme is constructed from the \u0000rst letter of each word in the list of words that is to be recalled.",
+      "options": {
+        "A": "the chunking strategy",
+        "B": "the keyword method",
+        "C": "an acronym",
+        "D": "an acrostic"
+      },
+      "correct": "D",
+      "explanation": "An acrostic is made up of words beginning with the \u0000rst letter of each word or phrase that is to be remembered. For example, the acrostic \"my\nvery educated mother just sent us nachos\" is used to memorize the names of the eight planets (Mercury, Venus, Earth, Mars, Jupiter, Saturn,\nUranus, and Neptune).\nAnswer A: Chunking involves grouping related items of information. To remember a string of 21 numbers, for instance, you might chunk the\nnumbers into groups of three, resulting in seven distinct units of information. Chunking is useful for maintaining information in working\nmemory.\nAnswer B: The keyword method is an imagery mnemonic that is useful for paired associate tasks in which two words must be linked. It\ninvolves creating an image for each word and visually joining the two images. As an example, to remember that the French word for church is\neglise, you could form an image of a church with a giant egg outside the church doors.\nAnswer C: An acronym is a word that is formed using the \u0000rst letter of each item in a list. For example, the acronym HOMES is used to\nremember the Great Lakes (Huron, Ontario, Michigan, Erie, and Superior)."
+    },
+    {
+      "question": "In a study on learning and memory, participants in the experimental group learned two lists of nonsense syllables (\u0000rst List A, then List B) and were then asked to recall List A. Participants in the control group also learned List A but, instead of learning List B, were asked to count backward from 10 numerous times before being asked to recall List A. Results of the study indicated that participants in the control group recalled more words from List A than did participants in the experimental group. These results are best explained by which of the following principles?",
+      "options": {
+        "A": "Proactive interference",
+        "B": "Retroactive interference",
+        "C": "Trace decay",
+        "D": "Serial position effect"
+      },
+      "correct": "B",
+      "explanation": "The purpose of the study described in this question was to investigate how subsequent experience affects prior learning. Retroactive\ninterference occurs when subsequent (new) learning interferes with prior (old) learning. It is most likely to occur when the new and old learning\nare similar in terms of content. In the study described in this question, participants in the experimental group learned two lists of similar\ncontent (i.e., nonsense syllables). In contrast, participants in the control group engaged in an unrelated task after learning the list of nonsense\nsyllables to ensure that they did not continue to rehearse the list prior to recall testing. The \u0000nding that participants in the control group recalled\nmore words from List A than participants in the experimental group is evidence that retroactive interference contributes to di\u0000culty with the\nrecall of the original list.\nAnswer A: Incorrect. Proactive interference occurs when prior (old) learning interferes with subsequent (new) learning; this is the opposite of\nwhat was observed in this study.\nAnswer C: Incorrect. Trace decay theory predicts that forgetting is due to the passage of time. The amount of time between learning List A and\nbeing tested on recall was the same for both the experimental and the control group, so the difference in the accuracy of recall between groups\ncannot be explained by this theory.\nAnswer D: Incorrect. The serial position effect refers to the tendency to recall the \u0000rst and last items in a list better than items in the middle of\nthe list, and therefore, it does not pertain to the results of this study."
+    },
+    {
+      "question": "Using a tachistoscope, a researcher \u0000ashes a rectangle containing 12 letters of the alphabet to a participant for 50 milliseconds and then asks the participant to say what he or she has just seen. Apparently, the researcher is investigating which of the following?",
+      "options": {
+        "A": "Flashbulb memory",
+        "B": "Recognition memory",
+        "C": "Iconic memory",
+        "D": "Echoic memory"
+      },
+      "correct": "C",
+      "explanation": "Iconic memory is a component of the visual memory system. It refers to visual sensory memory or memory of brief (<1 second) visual images\n(i.e., icons).\nAnswer A: Flashbulb memories are vivid memories of surprising, emotional events.\nAnswer B: Recognition memory refers to the ability to recall information from long-term memory on the basis of recognition when given\nappropriate cues.\nAnswer D: Echoic memory refers to auditory sensory memory or memory of brief exposure to auditory information."
+    },
+    {
+      "question": "You are hired by an organization to develop an incentive program for salespeople. You decide to give each salesperson a bonus after every sixth sale which means that most salespeople will receive a bonus every six to eight weeks. Your incentive program represents which schedule of reinforcement?",
+      "options": {
+        "A": "Variable interval",
+        "B": "Variable ratio",
+        "C": "Fixed interval",
+        "D": "Fixed ratio"
+      },
+      "correct": "D",
+      "explanation": "This incentive represents a \u0000xed ratio schedule. Do not be misled by the statement \"every six to eight weeks\" because it is the number of\nresponses (i.e., number of sales), NOT the time interval, that determines when salespeople will receive a bonus. Additionally, this example\nrepresents a \u0000xed schedule because the reward follows a consistent number of responses (i.e., after every sixth sale).\nAnswer A: Variable schedules of reinforcement involve unpredictable or inconsistent number of responses or amount of time that must occur\nin order for a reward to be given. Interval schedules of reinforcement mean that the schedule is based on the time between reinforcements,\nwhich is not the case in this example.\nAnswer B: An incentive program would have a variable ratio schedule of reinforcement if rewards were given after an unpredictable number of\nresponses or sales.\nAnswer C: Fixed interval schedules are reinforcement schedules in which rewards for a response are given only after a speci\u0000ed amount of\ntime has elapsed."
+    },
+    {
+      "question": "Betsy's parents give her a quarter each time she practices her violin and another quarter each time she completes her homework. Betsy is 9 years old. If Betsy's parents stop paying her for completing her homework, they are most likely to \u0000nd that Betsy will:",
+      "options": {
+        "A": "spend less time doing homework and less time practicing the violin",
+        "B": "spend less time doing homework but more time practicing the violin",
+        "C": "spend less time doing homework but about the same amount of time practicing the violin",
+        "D": "Spend about the same amount of time doing homework but more time practicing the violin"
+      },
+      "correct": "B",
+      "explanation": "In this scenario, Betsy receives reinforcement for two different behaviors, but the reinforcement for one behavior will be terminated. This\nquestion describes a \"behavioral contrast,\" which occurs when a change in the reinforcement schedule of one part of the reinforcement\nchanges a behavior in the opposite direction in the other component of the schedule. In this situation, the behavior that is no longer reinforced\n(i.e., the homework completion) will decrease while the behavior that continues to be reinforced (i.e., the violin playing) will increase.\nAnswer A: The behavior that is still being reinforced will not decrease.\nAnswer C: In this situation, the behavior that is no longer reinforced (i.e., the homework completion) will decrease while the behavior that\ncontinues to be reinforced (i.e., the violin playing) will increase.\nAnswer D: The behavior that is no longer being reinforced will decrease."
+    },
+    {
+      "question": "You witness a four-car collision on your way to work and \u0000nd yourself thinking about the incident frequently during the next several weeks. Which aspect of your long-term memory is responsible for your memory of the accident?",
+      "options": {
+        "A": "Implicit memory",
+        "B": "Semantic memory",
+        "C": "Episodic memory",
+        "D": "Sensory memory"
+      },
+      "correct": "C",
+      "explanation": "In this situation, you are recalling a personally experienced event, which is the de\u0000nition of episodic memory.\nAnswer A: Implicit memory is one type of long-term memory, also known as unconscious memory; it is memory that occurs automatically.\nExamples include typing on a computer or riding a bike.\nAnswer B: Semantic memory is memory for the meaning of words and concepts. For example, recalling the names of colors or the sounds of\nletters or other basic facts uses semantic memory.\nAnswer D: Sensory memory is the shortest-term type of memory. It refers to brief impressions formed by input from the senses."
+    },
+    {
+      "question": "Which type of reinforcement schedule causes a behavior to be most resistant to extinction?",
+      "options": {
+        "A": "Fixed ratio",
+        "B": "Variable ratio",
+        "C": "Fixed interval",
+        "D": "Variable interval"
+      },
+      "correct": "B",
+      "explanation": "A variable ratio schedule produces behaviors that are most resistant to extinction because the relationship between responding and\nreinforcement is unpredictable.\nAnswer A: The acquisition of a response is rapid when using a \u0000xed ratio schedule of reinforcement. However, because the relationship\nbetween responding and reinforcement is predictable, extinction happens faster for this schedule than for the variable ratio schedule.\nAnswer C: In the \u0000xed interval schedule, resistance to extinction increases as the interval lengthens in time. However, the rate of extinction is\nfaster with this schedule than with the variable ratio schedule.\nAnswer D: The rate of extinction with a variable interval schedule is faster than with the variable ratio schedule. Each of the intermittent\nschedules of reinforcement is associated with different rates of acquisition and extinction. Additional information about these schedules is\nprovided in the Learning Theory chapter of the written study materials."
+    },
+    {
+      "question": "An example of using stimulus control for the treatment of obesity is to:",
+      "options": {
+        "A": "replace the client's pleasurable sensations related to eating with unpleasant sensations",
+        "B": "ensure that the client is consistently reinforced for appropriate eating behaviors",
+        "C": "replace eating behaviors with alternative activities",
+        "D": "limit the client's exposure to events and objects that prompt overeating"
+      },
+      "correct": "D",
+      "explanation": "As its name implies, stimulus control occurs when the probability of a behavior is greater under certain environmental conditions than others.\nIn treatment, it involves bringing a behavior under the control by focusing on or reducing exposure to speci\u0000c stimuli or cues. In the behavioral\ntreatment of obesity, stimulus control involves strengthening appropriate cues for eating while weakening inappropriate cues by, for example,\nhaving the individual eat only in certain locations and at speci\u0000c times of the day that have not been previously associated with overeating.\nAnswer A: This response is an example of aversive conditioning.\nAnswer B: This is an example of positive reinforcement on a \u0000xed ratio schedule.\nAnswer C: This is an example of using replacement behaviors to facilitate behavior change."
+    },
+    {
+      "question": "Bandura's social learning theory posits that:",
+      "options": {
+        "A": "people can acquire behaviors without performing them",
+        "B": "reinforcement is unnecessary for learning to occur",
+        "C": "learning re\u0000ects a series of internal stimulus-response connections",
+        "D": "learning is facilitated when a person is provided with adequate \"social scaffolding\""
+      },
+      "correct": "A",
+      "explanation": "Bandura's social learning theory is distinguished from behavioral theories by its recognition of the role of cognitive factors in learning. Bandura\ndistinguished between learning and performance and proposed that people can learn (acquire) behaviors without actually performing them but\nby observing others perform the behavior.\nAnswer B: Although Bandura downplays the importance of external reinforcement, he does not entirely abandon the idea that reinforcement\nenhances the acquisition and performance of behaviors.\nAnswer C: Stimulus-Response connections are not part of Bandura's theory.\nAnswer D: Scaffolding is an element of Vygotsky's sociocultural theory of cognitive development."
+    },
+    {
+      "question": "Whenever Bahir, age 5, has tantrums in his kindergarten class, his teacher removes him from all opportunities for reinforcement by having him sit in a small empty room adjacent to the classroom for \u0000ve minutes. The teacher is using which of the following techniques to reduce Bahir's tantrums?",
+      "options": {
+        "A": "Positive punishment",
+        "B": "Negative reinforcement",
+        "C": "Negative punishment",
+        "D": "Overcorrection"
+      },
+      "correct": "C",
+      "explanation": "Interventions based on operant conditioning aim to increase behaviors through reinforcement or decrease behaviors through punishment or\nextinction. Negative punishment involves taking something desirable away to reduce the occurrence of a behavior. In this case, the teacher is\nusing a time-out to remove the child from all possible sources of positive reinforcement for a brief period whenever the unwanted behavior (i.e.,\ntantrum) occurs to reduce its frequency.\nAnswer A: Positive punishment involves applying an undesirable stimulus following a behavior to decrease the occurrence of that behavior. In\nthe situation described in the question, opportunities for reinforcement are being removed following the behavior.\nAnswer B: Negative reinforcement involves removing an undesirable stimulus following a behavior to increase the occurrence of that behavior.\nAnswer D: Overcorrection is a type of punishment that involves having an individual practice an appropriate behavior multiple times after\nengaging in an undesirable behavior."
+    },
+    {
+      "question": "Rehm's (1977) self-control therapy for depression focuses on which the following?",
+      "options": {
+        "A": "Beliefs about the self, the world, and the future",
+        "B": "Thoughts, feelings, and actions",
+        "C": "Knowledge, skills, and abilities",
+        "D": "Self-monitoring, self-evaluation, and self-reinforcement"
+      },
+      "correct": "D",
+      "explanation": "Rehm's self-control therapy focuses on three aspects of self-control that contribute to depression. According to Rehm, de\u0000cits in self-\nmonitoring, self-evaluation, and self-reinforcement increase a person's vulnerability to depression.\nAnswer A: According to Beck, depression involves the cognitive triad of a negative view of oneself, the world, and the future.\nAnswer B: There are a number of therapies that address thoughts, feelings, and actions in treating depression; however, this answer option is\nvery broad and does not re\u0000ect the components of Rehm's self-control therapy.\nAnswer C: Worker-oriented methods of a job analysis provide information about the knowledge, skills, and abilities that a worker needs to\nperform a job successfully."
+    },
+    {
+      "question": "A functional behavioral assessment (FBA) is conducted to identify _______ variables or behaviors.",
+      "options": {
+        "A": "undesirable",
+        "B": "moderator",
+        "C": "dependent",
+        "D": "organismic"
+      },
+      "correct": "A",
+      "explanation": "A functional behavioral assessment is conducted to identify the factors that are maintaining or controlling an undesirable behavior and identify\na more desirable substitute behavior that serves the same purpose.\nAnswer B: FBA is used to identify the factors (antecedents and consequences) that are controlling the target behavior so that those factors can\nbe altered. A moderator is a variable that changes the strength or direction of the relationship between the independent and dependent\nvariables.\nAnswer C: A dependent variable is a variable that changes in response to changes in the independent variable; in an FBA, the dependent\nvariable may be the undesirable target behavior.\nAnswer D: Organismic variables are internal forces that cause animals to engage in behavior appropriate to their species (e.g., birds to \u0000y)."
+    },
+    {
+      "question": "Whenever four-year-old William whines, his parents try to ignore him. Occasionally, however, William's mother or father picks him up when he whines. As a result, William's whining has increased. The increase in William's whining is due to which of the following?",
+      "options": {
+        "A": "Differential reinforcement",
+        "B": "Response generalization",
+        "C": "Intermittent reinforcement",
+        "D": "Response discrimination"
+      },
+      "correct": "C",
+      "explanation": "William's parents are reinforcing the boy's whining on an intermittent schedule (i.e., not every time), which is producing an increase in his\nbehavior.\nAnswer A: Differential reinforcement involves reinforcing a speci\u0000c behavior while withholding reinforcement for other behaviors. Differential\nreinforcement of incompatible behaviors can be used to decrease a target behavior by reinforcing a behavior for which the target behavior\ncannot be completed simultaneously, but that is not what is occurring in this example.\nAnswer B: Response generalization occurs when a conditioned stimulus (CS) produces responses similar to the conditioned response (CR) or\nwhen a learned behavior is demonstrated in a novel way (i.e., in response to new conditions).\nAnswer D: Response discrimination is the opposite of response generalization and occurs when the individual responds to the CS only with a\nspeci\u0000c response (the original CR)."
+    },
+    {
+      "question": "Sensate focus was developed by Masters and Johnson (1970) as a technique for reducing performance anxiety related to sexual intercourse. If viewed as a behavioral technique, sensate focus is best described as a form of:",
+      "options": {
+        "A": "classical extinction",
+        "B": "operant extinction",
+        "C": "counterconditioning",
+        "D": "covert sensitization"
+      },
+      "correct": "C",
+      "explanation": "Counterconditioning is based on the principles of classical conditioning and involves pairing two incompatible responses in order to eliminate\none of the responses. In sensate focus, pleasurable sensations are paired with performance anxiety in order to reduce the latter.\nAnswer A: Classical extinction occurs when a conditioned stimulus is presented repeatedly without the unconditioned stimulus, and as a result,\nthey are no longer associated with one another and the conditioned response ceases to occur.\nAnswer B: Operant extinction occurs when reinforcement is no longer provided in response to a speci\u0000c behavior; as a result, the target\nbehavior eventually stops.\nAnswer D: Covert sensitization occurs when the client imagines engaging in the maladaptive behavior and then imagines (rather than actually\nconfronts) an aversive stimulus."
+    },
+    {
+      "question": "\"If a child's whining and crying secures his parents' attention, the child is likely to whine and cry again.\" Which of the following individuals is most likely to agree with this statement?",
+      "options": {
+        "A": "Bandura",
+        "B": "Ebbinghaus",
+        "C": "Watson",
+        "D": "Thorndike"
+      },
+      "correct": "D",
+      "explanation": "The statement in this question asserts that a behavior followed by a positive (satisfying) consequence will increase in frequency. This is a type\nof operant conditioning referred to as positive reinforcement. The \u0000rst name that may have come to mind when you read this question was\nSkinner. Thorndike was a predecessor of Skinner and proposed the law of effect, which predicts that behaviors that are followed by satisfying\nconsequences will tend to occur again.\nAnswer A: Although Bandura recognizes the role of reinforcement in the acquisition and performance of behavior, his social learning theory\nproposes that people can acquire behaviors simply by observing others perform those behaviors. In addition, Bandura places more emphasis\non the role of internal (versus external) reinforcement.\nAnswer B: Ebbinghaus is associated with research on memory and forgetting.\nAnswer C: Watson is associated with classical conditioning, not operant conditioning."
+    },
+    {
+      "question": "Within the Pavlovian paradigm, experimental neurosis is the result of:",
+      "options": {
+        "A": "unavoidable aversive stimuli",
+        "B": "di\u0000cult discriminations",
+        "C": "accidental conditioning",
+        "D": "higher order conditioning"
+      },
+      "correct": "B",
+      "explanation": "Experimental neurosis is an abnormal behavior condition (e.g., erratic behavior mimicking a mental disorder) displayed in laboratory settings\nwhen the scenario is di\u0000cult or impossible. It was exhibited by dogs in Pavlov's research when they were presented with stimuli very similar to\nthe original conditioned stimulus; the normally docile animals became very agitated.\nAnswer A: Unavoidable aversive stimuli (i.e., exposure to negative stimuli that one cannot avoid or control) is a term related to the process by\nwhich learned helplessness is developed.\nAnswer C: Accidental conditioning refers to the unintentional pairing of a CS and unconditioned stimulus that results in a conditioned\nresponse.\nAnswer D: Higher order conditioning occurs when a stimulus that was previously neutral is paired with the conditioned stimulus and then\nproduces the same conditioned response."
+    },
+    {
+      "question": "Which of the following best describes \"backward conditioning?\"",
+      "options": {
+        "A": "It involves presentation of the unconditioned stimulus prior to presentation of the conditioned stimulus and is rarely effective.",
+        "B": "It involves presentation of the unconditioned stimulus prior to presentation of the conditioned stimulus and is very effective when the stimuli are similar in kind.",
+        "C": "It involves presentation of the conditioned stimulus prior to presentation of the unconditioned stimulus and is effective only when the two stimuli occur naturally in that order.",
+        "D": "It involves presentation of the reinforcer prior to the target behavior and is effective only when the reinforcer is highly desirable."
+      },
+      "correct": "A",
+      "explanation": "The term backward conditioning is associated with classical conditioning and involves presenting the US (unconditioned stimulus) prior to the\nCS (conditioned stimulus). To effectively establish a CR (conditioned response), the CS must be presented before or at the same time as the\nUS.\nAnswer B: Presenting the US prior to the CS is not an effective strategy for conditioning even when the stimuli are similar.\nAnswer C: Presenting the CS before the US is the order of presentation for classical conditioning.\nAnswer D: Backward conditioning is a classical conditioning term and unrelated to positive reinforcement."
+    },
+    {
+      "question": "To maximize the effectiveness of overcorrection, its restitution and positive practice phases are often combined with:",
+      "options": {
+        "A": "differential reinforcement",
+        "B": "activity scheduling",
+        "C": "physical guidance",
+        "D": "stimulus control"
+      },
+      "correct": "C",
+      "explanation": "To ensure that the person actually performs the behaviors required during the restitution and positive practice phases of overcorrection, \"extra\nhelp\" is sometimes needed. It may be necessary to physically guide the person through the behaviors required during restitution and/or\npositive practice when the person is resistant to perform them on his/her own. Because physical guidance may be necessary, overcorrection is\ncontraindicated for children who have experienced abuse or who are more physically powerful than the person administering the treatment.\nAnswer A: Differential reinforcement is an operant technique that combines positive reinforcement and extinction. Overcorrection is also an\noperant technique but is a form of positive punishment.\nAnswer B: Beck's Cognitive Therapy (CT) may utilize activity scheduling as a behavioral intervention.\nAnswer D: Behavior is said to be under stimulus control when its performance is contingent on the presence of certain stimuli, and it is\nconsidered a self-management procedure. Overcorrection is not a self-management procedure."
+    },
+    {
+      "question": "When conducting a study to investigate the phenomenon known as \"blocking,\" you will present the CS prior to the US; then, once the CR is established:",
+      "options": {
+        "A": "present the US prior to the CS",
+        "B": "present the CS prior to a second US",
+        "C": "present the original CS simultaneously with a second CS prior to the US",
+        "D": "present a second CS after the US"
+      },
+      "correct": "C",
+      "explanation": "Blocking occurs when two different conditioned stimuli are paired with the unconditioned stimulus. The process described in this answer is the\nprocedure used to investigate blocking. In this case, the second CS never becomes associated with the US and therefore does not elicit a CR.\nOne theory to explain blocking is that the second CS does not provide information beyond what is already provided by the original CS.\nAnswer A: This sequence does not elicit blocking.\nAnswer B: Blocking involves the presence of two conditioned stimuli, not two unconditioned stimuli.\nAnswer D: For blocking to occur, the second CS is presented simultaneously with the original CS before the US."
+    },
+    {
+      "question": "When using covert sensitization to treat a sexual fetish, the fetish object acts as a(n):",
+      "options": {
+        "A": "primary reinforcer",
+        "B": "secondary reinforcer",
+        "C": "unconditioned stimulus",
+        "D": "conditioned stimulus"
+      },
+      "correct": "D",
+      "explanation": "The goal of covert sensitization is to eliminate a response by replacing it with an incompatible response. The target stimulus (in this case the\nfetish object) is paired in imagination with an aversive stimulus. Eventually, the target stimulus elicits the same unpleasant response as the\naversive stimulus and, as a consequence, will be avoided. In this situation, the conditioned stimulus is the target stimulus, while the\nunconditioned stimulus is the aversive stimulus.\nAnswer A: A primary reinforcer is rewarding because of its inherent value. Food is a primary reinforcer for a hungry organism.\nAnswer B: A secondary reinforcer acquires its reinforcing value through its pairing with a primary reinforcer. Money is an example of a\nsecondary reinforcer: It is valuable only because it can be exchanged for primary reinforcers.\nAnswer C: When using covert sensitization to reduce an undesirable behavior, the aversive stimulus (not the target) is the unconditioned\nstimulus."
+    },
+    {
+      "question": "The use of shaping to establish a complex behavior depends on which of the following?",
+      "options": {
+        "A": "Desensitization",
+        "B": "Positive reinforcement",
+        "C": "Alternate response training",
+        "D": "Higher-order conditioning"
+      },
+      "correct": "B",
+      "explanation": "Shaping is based on operant conditioning and involves reinforcing successive approximations to the target (desired) behavior. When using\nshaping to establish a new behavior, responses that come closer and closer to the desired behavior are successively reinforced.\nAnswer A: The term desensitization has several meanings depending on the context, and it is not relevant to the process of shaping.\nDesensitization typically refers to a decrease in emotional responsiveness to a stimulus after repeated exposure to it.\nAnswer C: Alternate response training involves training the individual to engage in a response that interferes with or is incompatible with the\ntarget (undesirable) response. Wolpe's technique of reciprocal inhibition is an example of alternate response training.\nAnswer D: Higher-order conditioning is a type of classical (not operant) conditioning in which a conditioned stimulus (CS) is paired with a\nneutral stimulus so that the neutral stimulus also elicits the conditioned response (CR). Higher-order conditioning is not a component of\nshaping."
+    },
+    {
+      "question": "You are using in vivo aversive counterconditioning to reduce a client's consumption of alcohol. To maximize the effectiveness of the treatment, the aversive stimulus (electric shock) should be applied:",
+      "options": {
+        "A": "when the drink is \u0000rst presented to the client",
+        "B": "right before the client takes a drink",
+        "C": "just as the client begins drinking",
+        "D": "immediately after the client has \u0000nished a drink"
+      },
+      "correct": "C",
+      "explanation": "Aversive counterconditioning is a type of classical conditioning, and classical conditioning is most effective when a \"delay\" procedure is used.\nDelay conditioning involves applying the conditioned stimulus (the drink) before the start of the unconditioned stimulus (the electric shock) so\nthat presentation of the two stimuli overlaps and both are terminated together. Of the various types of forward conditioning, delay conditioning\nis usually the most effective.\nAnswer A: This answer does not involve any delay between exposure to the conditioned stimulus and the unconditioned stimulus, and therefore\nwould not be as effective at reducing the client's consumption of alcohol.\nAnswer B: This would be an example of backward conditioning in which the unconditioned stimulus is presented \u0000rst; this order is usually\nineffective in creating behavior change.\nAnswer D: This is an example of trace conditioning, in which the conditioned stimulus is presented \u0000rst and the presentation to the\nunconditioned stimulus is presented only after an interval, without overlap to the conditioned stimulus. This approach is ordinarily less\neffective than delay conditioning."
+    },
+    {
+      "question": "From a behavioral perspective, phobic reactions to benign objects or events are acquired when those objects or events become associated with a stimulus that naturally produces a fear response. In other words, phobic reactions are due to:",
+      "options": {
+        "A": "negative reinforcement",
+        "B": "negative punishment",
+        "C": "stimulus discrimination",
+        "D": "classical conditioning"
+      },
+      "correct": "D",
+      "explanation": "The explanation for the development of phobias provided in this question is consistent with the Pavlovian view. According to this theory, a fear\nresponse to a previously neutral object or event is a classically conditioned response in which fear is a conditioned response attached to the\nneutral stimulus (the conditioned stimulus) through its pairing with a stimulus that naturally elicits fear (the unconditioned stimulus).\nAnswer A: Negative reinforcement is an operant conditioning tool in which an aversive stimulus is removed as a consequence of a behavior,\nwhich is likely to lead to an increase of that behavior.\nAnswer B: Negative punishment is a type of operant conditioning in which something desirable is taken away in response to a behavior to\ndecrease the frequency of that behavior.\nAnswer C: Stimulus discrimination is the ability to differentiate between a learned stimulus and similar stimuli; this would prevent phobic\nreactions from occurring in response to similar objects rather than facilitate additional phobic responses."
+    },
+    {
+      "question": "To make sure that the housekeeper you hired does a good job, you decide to pay him for each chore he does well rather than giving him an hourly or weekly salary. You have apparently been in\u0000uenced by which of the following individuals?",
+      "options": {
+        "A": "Pavlov",
+        "B": "Skinner",
+        "C": "Wolpe",
+        "D": "Tolman"
+      },
+      "correct": "B",
+      "explanation": "This question is asking, \"Which of the following individuals would recommend clearly linking reinforcement to the behavior that you want to\nreinforce?\" Skinner believed that behavior is determined by the consequences that follow it and that, when a behavior is reinforced, it increases.\nAccording to the principles of Skinner's operant conditioning, clearly linking reinforcement to performance of the behavior (e.g., by providing\nreinforcement immediately after the behavior) is one way to maximize the effectiveness of reinforcement.\nAnswer A: Pavlov is associated with classical conditioning, which involves pairing a conditioned stimulus with an unconditioned stimulus so\nthat the conditioned stimulus alone produces a response similar to the response produced by the unconditioned stimulus. This type of\nconditioning is not relevant to this situation.\nAnswer C: Wolpe is most associated with systematic desensitization, which is based on the principles of classical conditioning.\nAnswer D: Tolman is best known for his research on rats in mazes, which led to his idea of cognitive maps and his cognitive theory of learning."
+    },
+    {
+      "question": "A psychologist who views learning as the result of operant conditioning would likely attribute the acquisition of complex behaviors to which of the following?",
+      "options": {
+        "A": "Behavioral chaining",
+        "B": "Stimulus substitution",
+        "C": "Higher order conditioning",
+        "D": "Stimulus generalization"
+      },
+      "correct": "A",
+      "explanation": "From the perspective of operant conditioning, new behaviors are acquired as the result of reinforcement. Behavioral chaining accounts for the\nacquisition of complex behavior based on the premise that each response in the chain of responses leading to the performance of a complex\nbehavior serves as reinforcement for the previous response in the chain.\nAnswer B: Pavlov used the term stimulus substitution to describe the connection between a CS and US; speci\u0000cally, the idea that the\nconditioned stimulus takes on the functions of the unconditioned stimulus. This view is no longer widely accepted.\nAnswer C: Higher order conditioning is a form of classical conditioning involving the pairing of a neutral stimulus with an established\nconditioned stimulus so that the neutral stimulus also elicits the conditioned response.\nAnswer D: Stimulus generalization occurs when stimuli similar to the conditioned stimulus also elicit the conditioned response. It explains why\nbehaviors occur in situations outside the context in which they were originally learned."
+    },
+    {
+      "question": "As described in the multi-store model, __________ memory is the aspect of memory that is involved in the recall of information acquired within the past few hours to days.",
+      "options": {
+        "A": "working",
+        "B": "sensory",
+        "C": "long-term",
+        "D": "prospective"
+      },
+      "correct": "C",
+      "explanation": "The multi-store model of memory divides it into three components: sensory, short-term, and long-term memory. Information acquired in the\npast few hours to days is stored in recent long-term memory.\nAnswer A: Working memory is part of short-term memory and is responsible for the temporary storage and manipulation of information (e.g.,\nremembering a phone number until you have dialed it).\nAnswer B: Sensory memory stores sensory information for very brief periods (up to several seconds).\nAnswer D: Prospective memory refers to the ability to remember to do something in the future (e.g., to remember a future appointment)."
+    },
+    {
+      "question": "A person consistently avoids an object that produces a classically conditioned anxiety response because avoidance is:",
+      "options": {
+        "A": "positively reinforced",
+        "B": "negatively reinforced",
+        "C": "a conditioned response",
+        "D": "an unconditioned response"
+      },
+      "correct": "B",
+      "explanation": "According to the two-factor theory of learning, the development of a phobic response is the result of a combination of classical and operant\nconditioning. This question is asking about avoidance behavior, which is the aspect of a phobic response that is the result of operant\nconditioning. In this situation, the person's avoidance behaviors allow him/her to reduce or alleviate anxiety. In other words, avoidance\nbehaviors occur because they are being negatively reinforced.\nAnswer A: Positive reinforcement does increase a behavior but involves the application of a stimulus following the behavior and therefore does\nnot explain avoidance behavior related to phobias.\nAnswer C: The development of the phobia (i.e., the anxiety reaction) is the result of classical conditioning, but avoidance behavior is the result\nof operant conditioning.\nAnswer D: Unconditioned response is a classical conditioning term, and therefore, not possible to be the correct answer."
+    },
+    {
+      "question": "From the perspective of Beck's cognitive-behavioral therapy, the modi\u0000cation of maladaptive cognitions requires which of the following?",
+      "options": {
+        "A": "A balance of intrinsic and extrinsic reinforcement",
+        "B": "The experience of affective arousal",
+        "C": "An adequate level of self-e\u0000cacy",
+        "D": "A sense of personal responsibility"
+      },
+      "correct": "B",
+      "explanation": "As described in the section on cognitive-behavioral interventions in the Learning Theory chapter of the written study materials, Beck's approach\nis based on the assumption that certain conditions must be met for relevant cognitions to become accessible and modi\u0000able. According to\nBeck, the modi\u0000cation of dysfunctional cognitions \"can only occur if the patient is engaged in the problematic situation and experiences\naffective arousal\" (A. T. Beck and M. Weishaar. 1989. Cognitive therapy. In A. Freeman, et al. (Eds.), Comprehensive Handbook of Cognitive\nTherapy (pp. 29). New York, Plenum Press.).\nAnswer A: Intrinsic and extrinsic reinforcement are not part of Beck's cognitive-behavioral therapy.\nAnswer C: Self-e\u0000cacy, the belief in one's capacity to execute behaviors necessary to produce speci\u0000c performance attainments, is a concept\noriginally proposed by Albert Bandura.\nAnswer D: Personal responsibility is not part of Beck's cognitive-behavioral therapy."
+    },
+    {
+      "question": "Tommy, a bright four-year-old, has learned that if he starts crying as soon as his mother begins to yell at him for misbehaving, his mother will stop yelling and will play with him instead, which is what Tommy wanted in the \u0000rst place. In this situation, the mother's yelling is acting as a(n):",
+      "options": {
+        "A": "discriminative stimulus",
+        "B": "unconditioned stimulus",
+        "C": "conditioned response",
+        "D": "primary reinforcer"
+      },
+      "correct": "A",
+      "explanation": "A discriminative stimulus is a cue (antecedent) that signals that a particular response will be followed by a reinforcer. In the situation described\nin this question, the mother's yelling is serving as a cue that signals to Tommy that crying will result in reinforcement.\nAnswer B: An unconditioned stimulus naturally elicits the target response without learning or conditioning trials.\nAnswer C: A conditioned response is a response that occurs in the presence of a stimulus (the conditioned stimulus) as the result of the\npairing of that stimulus with an unconditioned stimulus.\nAnswer D: The mother's yelling is not acting as a reinforcer for Tommy's behavior. Instead, it is her attention that has reinforcing value for\nTommy and leads to increased frequency of him crying."
+    },
+    {
+      "question": "A person who argues that \"all psychopathology has a similar set of underlying irrational beliefs\" is most likely sympathetic with the views of:",
+      "options": {
+        "A": "Beck",
+        "B": "Ellis",
+        "C": "Glasser",
+        "D": "Meichenbaum"
+      },
+      "correct": "B",
+      "explanation": "The term \"irrational beliefs\" should have pointed to Ellis as the correct response. Ellis's assumption that all disorders can be attributed to the\nsame set of irrational beliefs is considered by some to be a shortcoming of his approach.\nAnswer A: An important distinction between Beck and Ellis is that the former views each mental disorder as being characterized by a unique\nset of faulty cognitions, while the latter assumes that all disorders derive from the same set of basic irrational beliefs.\nAnswer C: Glasser is a psychiatrist known for the creation of Choice Theory and Reality Therapy. Glasser's work is based on the idea that every\nindividual has the power to control themselves but limited power to control others and the theory that humans have \u0000ve basic needs that they\nattempt to satisfy through behavioral choices.\nAnswer D: Meichenbaum is known for the development of cognitive behavioral modi\u0000cation, an approach to identify and challenge self-\ndestructive beliefs speci\u0000c to the individual."
+    },
+    {
+      "question": "Meichenbaum and Goodman (1971) originally developed self-instructional training as an intervention for:",
+      "options": {
+        "A": "impulsivity",
+        "B": "schizophrenia",
+        "C": "depression",
+        "D": "anxiety"
+      },
+      "correct": "A",
+      "explanation": "Self-instructional training is a cognitive-behavioral technique that is used to teach people to make positive and helpful self-statements when\nthey encounter problematic situations. Although it has subsequently been used to treat a variety of disorders, self-instructional training was\noriginally described by Meichenbaum and Goodman as a method for helping children learn to control their impulsive behaviors (Meichenbaum,\nD. H., & Goodman, J. (1971). Training impulsive children to talk to themselves: A means of developing self-control. Journal of Abnormal\nPsychology, 77, 115-126).\nAnswers B, C, and D: It was originally developed to reduce impulsivity."
+    },
+    {
+      "question": "The mother of a teenage girl complains that all her daughter wants to do is talk on the telephone and that, as a result, the girl is not studying and her grades have been declining. The psychologist suggests that the daughter adheres to a schedule that allows her to talk on the telephone only after she has studied for a speci\u0000ed amount of time. The psychologist is recommending that the mother use which of the following strategies?",
+      "options": {
+        "A": "Overcorrection",
+        "B": "The Premack Principle",
+        "C": "Response cost",
+        "D": "Flooding"
+      },
+      "correct": "B",
+      "explanation": "The Premack Principle is a type of positive reinforcement in which a high-frequency behavior is used to reinforce, and thus increase a low-\nfrequency behavior. In this situation, the psychologist is suggesting that the mother use talking on the telephone (a high probability behavior) to\nreinforce studying (a low probability behavior). Note that the goal of the intervention is to increase studying and not to decrease talking on the\ntelephone.\nAnswer A: Overcorrection is used to decrease a behavior and involves having the client correct the ill-effects of the target behavior and practice\nmore appropriate behaviors.\nAnswer C: Response cost is used to reduce a behavior and involves removing a positive reinforcer each time the target behavior is performed.\nAnswer D: Flooding involves exposing a person to a conditioned stimulus without the unconditioned stimulus so that the conditioned response\nis extinguished."
+    },
+    {
+      "question": "Masaaki M. has not yet learned to distinguish between a cow and a horse. When he sees a cow, he sometimes says \"horse\" and he sometimes calls a horse a \"cow\". To help him learn the difference between these two animals, Masaaki's parents make the sounds \"moo\" or \"neigh,\" as appropriate, whenever the boy encounters a cow or horse. Masaaki's parents are using which of the following techniques?",
+      "options": {
+        "A": "Shaping",
+        "B": "Prompting",
+        "C": "Chaining",
+        "D": "Thinning"
+      },
+      "correct": "B",
+      "explanation": "Prompting involves providing an individual with appropriate cues to help elicit the desired behavior. In this situation, \"moo\" and \"neigh\" are\nacting as cues.\nAnswer A: Shaping is used to help an individual acquire a complex behavior and involves reinforcing successive approximations to the target\nbehavior.\nAnswer C: Chaining is used to help establish a complex behavior by breaking the behavior down into a sequence of responses and using each\nresponse as reinforcement for the previous response and as a discriminative stimulus for the next response.\nAnswer D: Thinning is the process of gradually reducing the frequency of reinforcement (e.g., of switching from a continuous to an intermittent\nschedule of reinforcement). For the exam, you want to be familiar with the four techniques listed in the answers to this question. Additional\ninformation on these techniques is provided in the Learning Theory chapter of the written study materials."
+    },
+    {
+      "question": "A behavioral psychologist warns that \"a single exception can reinstate the target response and may even maintain it for an extended period of time.\" Apparently, the psychologist is referring to the use of which of the following learning techniques to eliminate an undesirable response?",
+      "options": {
+        "A": "Extinction",
+        "B": "Shaping",
+        "C": "Negative reinforcement",
+        "D": "Chaining"
+      },
+      "correct": "A",
+      "explanation": "The wording of this question implies that the correct answer must be a technique that is used to eliminate a response. Intermittent\nreinforcement produces behaviors that are very resistant to extinction. Therefore, when using extinction to eliminate a behavior, all\nreinforcement for that behavior must be consistently withheld. If the behavior is reinforced even once, the behavior may be reinstated and the\nextinction process will have to begin again.\nAnswer B: Shaping is used to establish a behavior and involves reinforcing successive approximations to the desired behavior.\nAnswer C: Negative reinforcement is also used to increase a behavior and involves removing an undesirable consequence when the behavior is\nperformed.\nAnswer D: Chaining is used to establish complex behaviors."
+    },
+    {
+      "question": "Lewinsohn's behavioral model proposes a causal link between ______________ and depression.",
+      "options": {
+        "A": "a lack of reinforcement from the environment",
+        "B": "accidental external reinforcement for depressogenic behaviors",
+        "C": "a high need for perfectionism",
+        "D": "chronic physical and psychological stress"
+      },
+      "correct": "A",
+      "explanation": "Lewinsohn's (1974) behavioral model is based on operant conditioning and focuses on the consequences of behavior. Lewinsohn attributes\ndepression primarily to a low rate of response-contingent reinforcement and proposes that, when a person's behaviors are not reinforced, those\nbehaviors are extinguished and the person is at increased risk for pessimism, low self-esteem, and other symptoms associated with\ndepression.\nAnswer B: Although some behavioral models of depression do consider reinforcement of depressogenic behaviors, Lewinsohn's model does\nnot.\nAnswer C: Perfectionism has been associated with depression and other mental health risks but is not part of Lewinsohn's behavioral model.\nAnswer D: Again, these factors have been linked to depression and poor mental health outcomes but are not part of Lewinsohn's model."
+    },
+    {
+      "question": "Meichenbaum and Jaremko's (1982) stress inoculation is best described as a type of:",
+      "options": {
+        "A": "coping skills training",
+        "B": "crisis intervention",
+        "C": "aversive conditioning",
+        "D": "habit reversal training"
+      },
+      "correct": "A",
+      "explanation": "Stress inoculation is a cognitive-behavioral strategy that involves teaching clients skills to cope with future stressful situations. During the\ncourse of stress inoculation, clients learn to distinguish between ineffective and effective thoughts, actions, etc., and are taught alternative\ncognitive and behavioral skills that lead to effective coping in stressful situations.\nAnswer B: Although the skills taught in stress inoculation training may help reduce distress, it is not a crisis intervention.\nAnswer C: Aversive conditioning is a type of behavior therapy that makes a particular behavior (e.g., drinking) less appealing by pairing it with\nan unpleasant stimulus.\nAnswer D: Habit reversal training is a behavior therapy designed to help people eliminate unwanted behaviors or habits; for example, it can be\nused to treat trichotillomania."
+    },
+    {
+      "question": "Which of the following statements provides support for the encoding speci\u0000city principle?",
+      "options": {
+        "A": "Elaborative rehearsal is more effective than maintenance rehearsal.",
+        "B": "Retroactive interference has a greater impact on recent (versus remote) memories.",
+        "C": "Recognition memory is ordinarily better than recall memory.",
+        "D": "Most memory loss is consistent with the typical forgetting curve."
+      },
+      "correct": "C",
+      "explanation": "The encoding speci\u0000city principle (Tulving & Thomson, 1973) states that the ability to recall information is improved when the same cues are\navailable at encoding and retrieval. Research has consistently found that recognition memory is better than recall memory, and this has been\nattributed to the fact that recognition items provide more cues than do recall items (i.e., there is greater overlap between the information in the\ntest items and the information contained in the memory trace). This \u0000nding is consistent with the encoding speci\u0000city principle.\nAnswer A: Although it is true that elaborative rehearsal is more effective than maintenance rehearsal, it does not support the encoding\nspeci\u0000city principle.\nAnswer B: Research indicating that retroactive interference has a greater impact on recent memories supports the consolidation theory of\nmemory.\nAnswer D: Research showing that most memory loss is consistent with the typical forgetting curve supports the consolidation theory of\nmemory."
+    },
+    {
+      "question": "Edward Tolman is best known for his research on ________ learning.",
+      "options": {
+        "A": "discovery",
+        "B": "observational",
+        "C": "latent",
+        "D": "insight"
+      },
+      "correct": "C",
+      "explanation": "Tolman believed that learning could occur without being manifested in performance (i.e., that learning could be latent). His research with rats in\nmazes indicated that the rats had learned the maze (i.e., had formed \"cognitive maps\") without exhibiting that learning until they were\nreinforced for doing so. He referred to this as latent learning. Additional information on latent learning is provided in the Learning Theory\nchapter of the written study materials.\nAnswer A: Bruner was a major contributor to knowledge about discovery (inquiry) learning.\nAnswer B: Bandura conducted research on observational learning.\nAnswer D: Kohler conducted research on insight learning."
+    },
+    {
+      "question": "Charging telephone customers for using directory assistance to obtain phone numbers to decrease their use of directory assistance is an application of which of the following?",
+      "options": {
+        "A": "The Premack Principle",
+        "B": "Overcorrection",
+        "C": "Negative reinforcement",
+        "D": "Negative punishment"
+      },
+      "correct": "D",
+      "explanation": "Negative punishment occurs when the removal of a stimulus following a behavior decreases the behavior. In this situation, money (the\nstimulus) is being taken away following the use of directory assistance to decrease that behavior.\nAnswer A: The Premack Principle is a type of positive reinforcement used to increase a behavior.\nAnswer B: Overcorrection involves having the individual engage in alternative behaviors (e.g., \"\u0000xing\" the consequences of the undesirable\nbehavior and/or practicing appropriate behaviors) whenever he/she performs the undesirable behavior.\nAnswer C: Negative reinforcement is used to increase a behavior and involves removing an undesirable stimulus when that behavior is\nperformed. If you are having trouble distinguishing between positive and negative reinforcement and punishment, the summary table included\nin the section on principles of operant conditioning in the Learning Theory chapter may be helpful."
+    },
+    {
+      "question": "In his studies on memory and forgetting, Ebbinghaus:",
+      "options": {
+        "A": "used hungry cats as research subjects",
+        "B": "used himself as the research subject",
+        "C": "had volunteers memorize word pairs",
+        "D": "had volunteers think aloud while solving complex problems"
+      },
+      "correct": "B",
+      "explanation": "Ebbinghaus was among the \u0000rst to conduct empirical studies on human memory. He was the participant in his own research, which involved\nmemorizing lists of nonsense syllables and subsequently recalling the words to evaluate retention. His research led to the identi\u0000cation of\nlearning and forgetting curves.\nAnswer A: Thorndike's experiments with cats in puzzle boxes led to the formulation of the \"Law of Effect\".\nAnswer C: Ebbinghaus used himself as his subject so did not need volunteers.\nAnswer D: Ebbinghaus's research focused on recall, not solving complex problems."
+    },
+    {
+      "question": "Meta-analyses of research on EMDR (eye movement desensitization and reprocessing) suggest that its effectiveness for alleviating the symptoms of PTSD is attributable to which of the following?",
+      "options": {
+        "A": "Imaginal exposure",
+        "B": "Higher order conditioning",
+        "C": "Relaxation training",
+        "D": "Fixed visual attention"
+      },
+      "correct": "A",
+      "explanation": "EMDR combines rapid lateral eye movements (which purportedly trigger adaptive neurophysiological information-processing mechanisms)\nwith exposure and other techniques. Studies using a dismantling strategy or comparing EMDR to exposure-based treatments have generally\nfound evidence that the essential component of EMDR is exposure to the feared stimulus in imagination rather than lateral eye movements.\nSee Taylor, S., et al. (2003). Comparative e\u0000cacy, speed, and adverse effects of three PTSD treatments: Exposure therapy, EMDR, and\nrelaxation. Journal of Clinical and Consulting Psychology, 72, 330-338.\nAnswer B: EMDR does not seek to utilize higher-order conditioning.\nAnswer C: Studies have generally found evidence that the essential component of EMDR is exposure to the feared stimulus in imagination\nrather than relaxation training.\nAnswer D: EMDR utilizes rapid lateral eye movement as opposed to \u0000xed visual attention."
+    },
+    {
+      "question": "A mother yells at her 4-year-old son every time he runs while he is in the house. She quickly notices that her son's running is increasing in frequency despite her reprimands. Apparently, the boy's increased running is the result of:",
+      "options": {
+        "A": "negative reinforcement",
+        "B": "positive reinforcement",
+        "C": "punishment",
+        "D": "second-order conditioning"
+      },
+      "correct": "B",
+      "explanation": "Positive reinforcement is occurring when a behavior increases because it is followed by the application of a stimulus. In the situation described\nin this question, the increase in the boy's behavior is apparently due to the stimulus (the mother's yelling) that is applied after he engages in the\nbehavior. Note that this example illustrates the fact that a positive reinforcer doesn't have to be considered positive or pleasant by everyone.\nFor example, although many people might \u0000nd yelling to be punishing, it may be that the boy in this situation thinks it is funny or that this is the\nonly time when his mother's attention is focused on him.\nAnswer A: Negative reinforcement occurs when the removal of a stimulus following a behavior increases that behavior.\nAnswer C: Punishment decreases a behavior. Although the mother intends for her yelling to act as punishment, it is acting as reinforcement.\nAnswer D: Second-order conditioning (also referred to as higher order conditioning) occurs when presentation of the original conditioned\nstimulus is paired with a neutral stimulus so that presentation of the neutral stimulus eventually produces a conditioned response. Second-\norder conditioning is not relevant to the situation described in this question."
+    },
+    {
+      "question": "When using operant extinction to decrease or eliminate a previously reinforced behavior, the \u0000rst thing you will likely observe is:",
+      "options": {
+        "A": "an initial increase in the behavior",
+        "B": "a sharp reduction in the behavior",
+        "C": "a gradual decline in the behavior",
+        "D": "no change in the behavior"
+      },
+      "correct": "A",
+      "explanation": "Operant extinction involves removing reinforcement from a previously reinforced behavior in order to reduce or eliminate that behavior. When\nusing extinction, the withdrawal of reinforcement does not usually result in an immediate cessation of the behavior. Instead, the behavior often\nbecomes more forceful and frequent before it begins to decline in severity or frequency. This phenomenon is referred to as a response (or\nextinction) burst.\nAnswer B: This is the opposite- you would see an initial increase rather than a reduction in behavior.\nAnswer C: The behavior will become more frequent before it begins to decline in severity or frequency.\nAnswer D: There is evidence of the effectiveness of using operant extinction; the behavior eventually does become eliminated if reinforcement\ncontinues to be absent."
+    },
+    {
+      "question": "When using higher-order conditioning to establish a conditioned response, the:",
+      "options": {
+        "A": "US serves as a CS",
+        "B": "US serves as a UR",
+        "C": "UR serves as a CR",
+        "D": "CS serves as a US"
+      },
+      "correct": "D",
+      "explanation": "Higher-order conditioning is a type of classical conditioning in which a conditioned stimulus (CS) is paired with a neutral stimulus so that the\nneutral stimulus also elicits the conditioned response. In this situation, the CS is acting as a US (unconditioned stimulus) when it is paired with\nthe neutral stimulus.\nAnswer A: The US is not typically part of higher order conditioning after it has been used to establish the CS and CR.\nAnswer B: The US is not a response.\nAnswer C: The UR and CR are often the same or similar (e.g., dogs salivating in response to food and/or the bell), but this is true for classical\nconditioning as well. An example of higher-order conditioning is provided in the Learning Theory chapter of the written study materials."
+    },
+    {
+      "question": "Secondary reinforcers:",
+      "options": {
+        "A": "are applied after a primary reinforcer",
+        "B": "are applied on an intermittent schedule",
+        "C": "have inherent (innate) reinforcing value",
+        "D": "acquire their reinforcing value through conditioning"
+      },
+      "correct": "D",
+      "explanation": "Behaviorists distinguish between primary and secondary reinforcers. This answer describes secondary reinforcers, which are also known as\nconditioned reinforcers because they acquire their reinforcing value through their association with primary reinforcers (i.e., as the result of\nbeing \"paired with\" primary reinforcers). Money is a secondary reinforcer that has value only because it enables us to purchase primary\nreinforcers.\nAnswer A: This answer does not accurately describe the use of secondary reinforcers; secondary reinforcers can be, and often are, applied on\ntheir own, independent of a primary reinforcer.\nAnswer B: Secondary reinforcers may be applied on a continuous or intermittent schedule.\nAnswer C: Primary reinforcers have an inherent reinforcing value."
+    },
+    {
+      "question": "Socratic dialogue and collaborative empiricism are most associated with which of the following therapeutic approaches?",
+      "options": {
+        "A": "Kelly's personal construct therapy",
+        "B": "Glasser's reality therapy",
+        "C": "Ellis's rational-emotive behavioral therapy",
+        "D": "Beck's cognitive-behavioral therapy"
+      },
+      "correct": "D",
+      "explanation": "Only one of the approaches listed in the answers conceptualizes therapy as involving collaborative empiricism and uses Socratic dialogue as a\nmethod for encouraging collaboration between the therapist and client. Beck's cognitive-behavioral therapy is referred to as collaborative\nempiricism because it is founded on a collaborative therapist-client relationship that involves testing hypotheses about the client's beliefs and\nassumptions. Socratic dialogue is an important aspect of cognitive-behavioral therapy and is used to help the client question and challenge\nhis/her underlying beliefs, obtain discon\u0000rming evidence for those beliefs, and identify alternative beliefs.\nAnswer A: Kelly's personal construct therapy is a constructivist approach that explains people's beliefs and worldviews by use of \"personal\nconstructs\"--bipolar dimensions of meaning that begin to develop in infancy and may operate on a conscious or unconscious level.\nAnswer B: Glasser's reality therapy is based on choice theory, which assumes that people are responsible for the choices they make.\nAnswer C: Ellis's rational-emotive behavior therapy (REBT) conceptualizes emotions and behaviors in terms of a chain of events."
+    },
+    {
+      "question": "Which of the following is an example of negative reinforcement?",
+      "options": {
+        "A": "A child continues to misbehave in class because of the negative attention he gets from his teacher whenever he does.",
+        "B": "A husband stops smoking because, whenever he smokes, his children and wife berate him and tell him he is going to die from lung cancer.",
+        "C": "A student stops misbehaving in class because his teacher makes him sit in the corner for ten minutes whenever he misbehaves.",
+        "D": "A graduate student smokes cigarettes in order to alleviate anxiety he feels about his ability to receive good grades in his classes."
+      },
+      "correct": "D",
+      "explanation": "Negative reinforcement occurs when the removal of a stimulus following a behavior increases the likelihood that the behavior will be repeated.\nIn this situation, the student's smoking continues because smoking removes (alleviates) anxiety.\nAnswer A: This is an example of positive reinforcement: The child's misbehavior is continuing because a stimulus is applied (the teacher pays\nattention to him) whenever he misbehaves.\nAnswer B: This is an example of positive punishment. The target behavior (smoking) decreases in response to punishment.\nAnswer C: This is an example of a time-out, which is a form of negative punishment (i.e., removing stimulation or desirable interaction from the\nenvironment to decrease the behavior)."
+    },
+    {
+      "question": "The assumption underlying the use of implosive therapy for treating a phobia is that:",
+      "options": {
+        "A": "extinction of a conditioned response occurs when positive reinforcement for that response is repeatedly withheld",
+        "B": "extinction of a conditioned response occurs when the CS is repeatedly presented without the US",
+        "C": "consistent application of an aversive stimulus following a response results in elimination of that response",
+        "D": "pairing a maladaptive response with an alternative adaptive response eliminates the maladaptive response"
+      },
+      "correct": "B",
+      "explanation": "Implosive therapy uses classical extinction to eliminate an undesirable anxiety response experienced in phobias. It involves having the client\nrepeatedly imagine a feared stimulus (CS) in the absence of the stimulus (US) that initially evoked the fear in order to eliminate the conditioned\nfear response.\nAnswer A: Implosive therapy is based on classical conditioning and does not involve operant conditioning (e.g., positive reinforcement).\nAnswer C: Implosive therapy does not use aversive conditioning or covert sensitization, which is what is described in this response.\nAnswer D: Implosive therapy does not involve habit reversal training, in which people are taught to engage in a competing, adaptive response\nwhen the target behavior occurs in order to eliminate that behavior."
+    },
+    {
+      "question": "According to the levels of processing model of memory, words and other information may be encoded at different levels, with _______ processing being the deepest level.",
+      "options": {
+        "A": "orthographic",
+        "B": "phonemic",
+        "C": "semantic",
+        "D": "perceptual"
+      },
+      "correct": "C",
+      "explanation": "Craik and Lockhart's (1972) levels of processing model proposes that the level (depth) of processing of information affects how well that\ninformation is retained. They distinguished between shallow and deep processing. According to their theory, shallow processing (processing\nwords on the basis of their phonemic or orthographic characteristics) is less effective than deep processing (processing words at the semantic\nor meaning-based level).\nAnswer A: Orthographic processing is a type of shallow processing.\nAnswer C: Phonemic processing is a type of shallow processing.\nAnswer D: Perceptual processing includes orthographic and phonemic processing, which are shallow levels of processing."
+    },
+    {
+      "question": "Which of the following is an example of semantic memory?",
+      "options": {
+        "A": "Remembering that you have a doctor appointment next Monday",
+        "B": "Remembering what you did on your last birthday",
+        "C": "Remembering the de\u0000nition of semantic memory",
+        "D": "Remembering how to ride a bicycle after not doing so for several years"
+      },
+      "correct": "C",
+      "explanation": "Semantic memory refers to memory for facts, concepts, and other types of information that are independent of time and context. De\u0000nitions\nare stored in semantic memory.\nAnswer A: Remembering a future appointment is an example of prospective memory, which is usually classi\u0000ed as a separate aspect of long-\nterm memory or as part of episodic memory.\nAnswer B: Remembering what you did on your last birthday is an example of episodic memory.\nAnswer D: Remembering how to ride a bicycle is an example of procedural memory."
+    },
+    {
+      "question": "A(n) _________ stimulus signals that performance of a behavior will result in reinforcement.",
+      "options": {
+        "A": "conditioned",
+        "B": "unconditioned",
+        "C": "discriminative",
+        "D": "second-order"
+      },
+      "correct": "C",
+      "explanation": "This question is asking which type of stimulus affects the occurrence of an operant response. A discriminative stimulus (SD) is an\nenvironmental event or condition that signals that reinforcement (or punishment) is contingent on the performance of a particular response.\nAnswer A: Conditioned stimulus is a classical conditioning term and not tied to reinforcement.\nAnswer B: Unconditioned stimulus is also a classical conditioning term.\nAnswer D: Second-order conditioning is a classical conditioning term in which a neutral stimulus is paired with the conditioned stimulus until it\nelicits the conditioned response, and it is not dependent on reinforcement but rather on being paired with the conditioned stimulus."
+    },
+    {
+      "question": "Although he was unable to carry out his plans, John Watson outlined several methods for removing Little Albert's classically-conditioned fear reaction to white rats. One plan involved repeatedly confronting Albert with a white rat without the loud noise in order to produce extinction of his fear response. This technique now underlies the behavioral treatment known as:",
+      "options": {
+        "A": "covert sensitization",
+        "B": "\u0000ooding",
+        "C": "response cost",
+        "D": "stress inoculation"
+      },
+      "correct": "B",
+      "explanation": "The intervention described in this question involves exposing Little Albert to the feared object in vivo (in \"real life\"). Flooding (which is now\nmore commonly referred to as in vivo exposure with response prevention) involves the extinction of a conditioned response through prolonged\nexposure to the conditioned stimulus without the unconditioned stimulus.\nAnswer A: When using covert sensitization, the target stimulus is paired in imagination with an aversive stimulus. Eventually, the target\nstimulus elicits the same unpleasant response as the aversive stimulus and will be avoided.\nAnswer C: Response cost involves removing a speci\u0000c reinforcer following a behavior to decrease that behavior.\nAnswer D: Stress inoculation is used to help people deal with stressful events by improving their coping skills."
+    },
+    {
+      "question": "Which of the following is responsible for your ability to remember to call your friend next week to wish her a \"happy birthday\"?",
+      "options": {
+        "A": "Prospective memory",
+        "B": "Meta-memory",
+        "C": "Episodic memory",
+        "D": "Working memory"
+      },
+      "correct": "A",
+      "explanation": "Prospective memory refers to the ability to \"remember to remember;\" in other words, it refers to the ability to remember to do something in the\nfuture.\nAnswer B: Meta-memory refers to awareness and understanding of one's own memory processes. It includes the ability to know what memory\nstrategies to use for speci\u0000c tasks.\nAnswer C: Episodic (or autobiographical) memory is the aspect of long-term memory that is responsible for the storage of personally\nexperienced events.\nAnswer D: Working memory is the aspect of short-term memory that is used to perform certain mental tasks (e.g., to solve a simple arithmetic\nproblem \"in your head\")."
+    },
+    {
+      "question": "When using aversive conditioning as a treatment for cocaine use, cocaine would be the:",
+      "options": {
+        "A": "conditioned stimulus",
+        "B": "unconditioned stimulus",
+        "C": "positive reinforcer",
+        "D": "negative reinforcer"
+      },
+      "correct": "A",
+      "explanation": "Aversive conditioning involves pairing a stimulus (the US) that produces an aversive response (the UR) with the undesirable stimulus (the CS)\nso that the undesirable stimulus alone will eventually elicit an aversive response (CR) as opposed to any positive responses that it might\noriginally elicit. In the example given in this question, cocaine would be the CS. The US would be electric shock or other aversive stimulus. The\ngoal would be for cocaine use to result in the client experiencing the same or similar response to that experienced in response to the US.\nAnswer B: The US is whatever aversive stimulus is used (e.g., electric shock, nausea-inducing medication).\nAnswer C: Positive reinforcement is an operant conditioning technique used to increase a behavior by presenting a reward after the desired\nbehavior.\nAnswer D: Negative reinforcement is also an operant conditioning technique used to increase a behavior. When using negative reinforcement,\nan aversive stimulus is removed following the desirable behavior."
+    },
+    {
+      "question": "Which of the following is an example of self-monitoring?",
+      "options": {
+        "A": "A young man who is overweight is asked to keep a daily record of all the food that he eats.",
+        "B": "A high school student must complete her homework before she watches television (an activity she enjoys).",
+        "C": "A college student who wants to study more begins studying in the same location every day.",
+        "D": "A child with ADHD is taught to give himself instructions to slow down while solving math problems."
+      },
+      "correct": "A",
+      "explanation": "Self-monitoring is a self-control technique that involves recording information about the target behavior. Asking a person who frequently\novereats to keep a record of the food he eats to obtain information about his eating behavior is an example of self-monitoring.\nAnswer B: This answer is an example of the Premack Principle, which involves using a high-frequency behavior as a positive reinforcer for a\nlow-frequency behavior in order to increase the low-frequency behavior.\nAnswer C: This answer is an example of stimulus control, which involves bringing a person's behavior under the control of certain stimuli\n(cues).\nAnswer D: This answer is an example of self-instruction, which involves training the individual to give him/herself instructions while performing\na task to enhance task performance."
+    },
+    {
+      "question": "When using classical extinction to eliminate a learned (conditioned) response, the:",
+      "options": {
+        "A": "CS is presented before the US",
+        "B": "CS is presented without the US",
+        "C": "CS is presented after the US",
+        "D": "US is presented without the CS"
+      },
+      "correct": "B",
+      "explanation": "Classical conditioning involves pairing a conditioned stimulus (CS) with an unconditioned stimulus (US) so that the CS produces a response\n(CR) that is similar to the unconditioned response (UR). To extinguish the CR, the CS is repeatedly presented without the US.\nAnswer A: This is the order of presentation for creating a CS and CR in classical conditioning.\nAnswer C: This order will not result in learning nor will it extinguish an already established CS.\nAnswer D: This will not impact the response to the CS whenever it is presented."
+    },
+    {
+      "question": "Research has demonstrated that behavioral techniques that reduce or eliminate a behavior are more effective when they are combined with techniques that increase alternative behaviors. This probably explains why __________ is often an effective intervention.",
+      "options": {
+        "A": "differential reinforcement",
+        "B": "response cost",
+        "C": "covert sensitization",
+        "D": "stimulus control"
+      },
+      "correct": "A",
+      "explanation": "Of the interventions listed in the responses, only one involves eliminating an undesirable behavior while establishing more desirable behaviors.\nDifferential reinforcement not only uses extinction to eliminate an undesirable behavior but also reinforces the individual for engaging in\nalternative behaviors.\nAnswer B: Incorrect. Response cost is a type of negative punishment in which involves removing a reinforcer following a target behavior to\nreduce or eliminate that behavior.\nAnswer C: Covert sensitization is a classical conditioning technique used to eliminate undesirable behavior.\nAnswer D: Stimulus control occurs when the probability of a behavior is greater under certain environmental conditions than others. In\ntreatment, it involves bringing a behavior under the control by focusing on or reducing exposure to speci\u0000c stimuli or cues."
+    },
+    {
+      "question": "When using reinforcement to establish a new behavior, the most effective approach is to begin with a continuous schedule of reinforcement and then, when the behavior has reached the desired level, switch to an intermittent schedule. The process of switching from a continuous to an intermittent schedule is referred to as:",
+      "options": {
+        "A": "fading",
+        "B": "desensitizing",
+        "C": "thinning",
+        "D": "blocking"
+      },
+      "correct": "C",
+      "explanation": "This question is asking for the term that is used to describe reducing the proportion of reinforcement. Thinning is a technique in which a\ngradual increase in the intermittency of reinforcement is introduced.\nAnswer A: Fading refers to the gradual removal of a prompt. A prompt is provided before the target behavior to cue that behavior as opposed to\nafter the behavior to reinforce that behavior.\nAnswer B: Desensitizing involves using deconditioning to help an individual unlearn or reduce the intensity of learned responses.\nAnswer D: Blocking is a classical conditioning term and occurs when two different conditioned stimuli are paired with the unconditioned\nstimulus."
+    },
+    {
+      "question": "Operant extinction would NOT be the treatment-of-choice when:",
+      "options": {
+        "A": "an alternative behavior cannot be identi\u0000ed",
+        "B": "the behavior has been reinforced on a continuous schedule",
+        "C": "a temporary increase in the behavior cannot be tolerated",
+        "D": "the baseline levels of the behavior cannot be established"
+      },
+      "correct": "C",
+      "explanation": "Extinction is accomplished by consistently withholding all reinforcement from a previously reinforced behavior. This technique often produces\nan initial \"extinction burst\" (i.e., temporary increase in the target behavior). Consequently, it would be contraindicated when a temporary\nincrease in the behavior cannot be tolerated.\nAnswer A: It would be helpful to be simultaneously reinforcing an alternative behavior, but the absence of an alternative behavior would not rule\nout the use of extinction.\nAnswer B: Behaviors that have been reinforced on a continuous schedule are easier to extinguish than those that have been reinforced on an\nintermittent schedule.\nAnswer D: It would be useful to have a baseline reading to determine the effects of the extinction procedure, but the absence of a baseline\nmeasure would not rule out the use of extinction."
+    },
+    {
+      "question": "Images and sounds are maintained in sensory memory for:",
+      "options": {
+        "A": "an inde\u0000nite period of time",
+        "B": "minutes to days, depending on the depth of encoding",
+        "C": "about 60 to 90 seconds",
+        "D": "less than 5 seconds"
+      },
+      "correct": "D",
+      "explanation": "Sensory memory provides very brief storage of incoming sensory input. It includes a separate store for each sense, and the duration of sensory\nmemory varies somewhat, depending on the sense. For iconic (visual) memories, the duration is about .5 to 1.0 seconds; for echoic (auditory)\nmemories, the duration is up to 4 or 5 seconds.\nAnswer A: Research supports the maintenance of images and sounds in sensory memory for less than 5 seconds.\nAnswer B: The depth of encoding does not impact the duration that information is maintained in sensory memory.\nAnswer C: This length is much too long for the information to be maintained in sensory memory. The information could be maintained in\nworking memory for this duration."
+    },
+    {
+      "question": "Prior to taking an important test, David feels very anxious and, on the basis of this anxiety, concludes that he is not prepared for the test and will fail it. David is exhibiting which of the following?",
+      "options": {
+        "A": "Polarized thinking",
+        "B": "Demanding expectations",
+        "C": "Catastrophizing",
+        "D": "Emotional reasoning"
+      },
+      "correct": "D",
+      "explanation": "David is exhibiting a cognitive distortion that involves making a judgment based on his emotions. This is the de\u0000nition of emotional reasoning:\nconcluding that what you feel must be the truth.\nAnswer A: Polarized (dichotomous) thinking involves seeing things as either \"black or white.\"\nAnswer B: Demanding expectations is the belief that there are rules or laws that must always be obeyed.\nAnswer C: Catastrophizing involves believing that an event will have catastrophic consequences when, in fact, it is more likely that the\nconsequences will be minor."
+    },
+    {
+      "question": "EMG frontalis biofeedback is considered by many to be the treatment of choice for tension (muscle contraction) headaches. However, some research suggests that which of the following interventions is as effective, if not more effective, than EMG feedback for this type of headache?",
+      "options": {
+        "A": "Thermal feedback",
+        "B": "Relaxation training",
+        "C": "Alternate response training",
+        "D": "Covert sensitization"
+      },
+      "correct": "B",
+      "explanation": "Multiple studies have found relaxation training to be as effective as (or even more effective than) EMG biofeedback for tension headaches.\nAnswer A: Thermal (temperature) feedback has been found to be an effective treatment for migraine headaches but not for tension headaches.\nAnswer C: Alternate response training is a self-control technique that is used primarily to alleviate anxiety.\nAnswer D: When using covert sensitization to eliminate undesirable behavior, the target stimulus is paired in imagination with an aversive\nstimulus so that the target stimulus elicits the same unpleasant response as the aversive stimulus and will therefore be avoided. It has not\nbeen studied as a treatment for tension headaches."
+    },
+    {
+      "question": "From the perspective of learning theory, phobic anxiety is:",
+      "options": {
+        "A": "elicited by unconditioned (aversive) stimuli or stimuli that have been associated with the conditioned stimuli",
+        "B": "elicited by secondary punishing, frustrating, or otherwise aversive stimuli",
+        "C": "the result of a low level of response-contingent reinforcement",
+        "D": "the result of accidental pairings between intense levels of internal arousal and reinforcing stimuli"
+      },
+      "correct": "A",
+      "explanation": "Knowing that learning theorists consider anxiety to be the result of classical conditioning will help you identify the correct response to this\nquestion. The classical conditioning explanation for anxiety is that it is produced by exposure to an unconditioned stimulus that naturally elicits\nanxiety or by exposure to a conditioned stimulus that has been paired with an unconditioned stimulus that naturally elicits anxiety.\nAnswer B: The term \"secondary\" is ambiguous in this response and, therefore, this is not the best answer. Additionally, this answer does not\nalso identify unconditioned aversive stimuli as a correct response.\nAnswer C: A low level of response-contingent reinforcement has been linked to depression, not to phobic anxiety.\nAnswer D: This answer does not accurately describe the learning theory view of phobic anxiety."
+    },
+    {
+      "question": "Which of the following types of biofeedback has been found to be most effective for the treatment of Raynaud's disease?",
+      "options": {
+        "A": "EEG",
+        "B": "GSR",
+        "C": "Thermal",
+        "D": "Respiration"
+      },
+      "correct": "C",
+      "explanation": "Knowing that Raynaud's disease involves a constriction of blood vessels in the extremities will help you identify the correct answer to this\nquestion. Thermal (temperature) biofeedback has been found to be an effective treatment for a number of circulatory disorders, including\nRaynaud's disease.\nAnswer A: EEG (electroencephalogram) biofeedback provides information about brain activity and has not been found useful for treating\nRaynaud's disease.\nAnswer B: GSR (galvanic skin response) biofeedback has been found useful for treating stress, anxiety, ADHD, and stuttering but not Raynaud's\ndisease.\nAnswer D: Respiration biofeedback provides information on breathing rate and is used to treat anxiety, asthma, and hyperventilation."
+    },
+    {
+      "question": "The various intermittent schedules of reinforcement are associated with different response patterns. Which of the following schedules and patterns is INCORRECTLY matched?",
+      "options": {
+        "A": "Variable ratio: stable rates of responding with high resistance to extinction",
+        "B": "Variable interval: smooth, stable rates of responding with moderate to low resistance to extinction",
+        "C": "Fixed ratio: post-reinforcement response pauses with moderately high resistance to extinction",
+        "D": "Fixed interval: smooth but slow rates of responding with moderate resistance to extinction"
+      },
+      "correct": "D",
+      "explanation": "The speci\u0000c intermittent schedule of reinforcement used in\u0000uences how quickly an operant behavior is acquired and how well it is maintained.\nNote that this question is asking for the schedule that is incorrectly matched with its description. When using a \u0000xed interval schedule,\nreinforcement is provided after a \u0000xed interval of time as long as the response occurred at least once during that interval. It produces a\n\"scalloped\" (not smooth) response pattern characterized by brief pauses in responding following reinforcement and low resistance to\nextinction.\nAnswer A: When using a variable ratio schedule, reinforcement is provided after a variable number of responses. This schedule does produce\nstable rates of responding and responses that are highly resistant to extinction.\nAnswer B: The use of a variable interval schedule involves providing reinforcement after random or variable time intervals. It does produce\nstable rates of responding and low to moderate resistance to extinction.\nAnswer C: The use of a \u0000xed ratio schedule entails consistently providing reinforcement after a \u0000xed number of correct responses. It produces\na steady rate of responding with a brief pause following delivery of the reinforcer and it does result in moderately high resistance to extinction."
+    },
+    {
+      "question": "When treating a client with panic disorder, a practitioner of Beck's cognitive-behavioral therapy would initially help the client:",
+      "options": {
+        "A": "identify and rehearse methods for alleviating their symptoms",
+        "B": "understand how symptoms are affecting their interpersonal relationships and other aspects of their life",
+        "C": "identify the underlying causes of their symptoms",
+        "D": "see how they misinterpret the meaning of their symptoms"
+      },
+      "correct": "D",
+      "explanation": "As de\u0000ned by Aaron Beck, the \"goals of cognitive-behavior therapy are to correct faulty information processing and to modify dysfunctional\nbeliefs and assumptions that maintain maladaptive behaviors and emotions\" (Comprehensive Handbook of Cognitive Therapy, 1989, p. 28).\nFrom the perspective of cognitive-behavior therapy, panic disorder stems from \"catastrophic misinterpretations\" of bodily sensations and\nmental experiences. Therefore, the \u0000rst few sessions of therapy focus on clarifying the nature of the client's symptoms and how they\nmisinterprets them.\nAnswers A, B, and C: When treating a client with panic disorder, a practitioner of Beck's cognitive-behavioral therapy would initially help the\nclient see how they misinterprets the meaning of their symptoms."
+    },
+    {
+      "question": "A key factor in distinguishing between implicit and explicit memory is:",
+      "options": {
+        "A": "the duration of the memory",
+        "B": "the sensory system(s) involved in the initial processing of the information",
+        "C": "whether the memory resides in short- or long-term memory",
+        "D": "the degree to which recall of the information involves conscious awareness"
+      },
+      "correct": "D",
+      "explanation": "Researchers interested in long-term memory often distinguish between implicit and explicit memory. Recalling information from explicit\nmemory requires conscious awareness and intentional or deliberate effort, whereas recall from implicit memory is automatic (i.e., done without\nconscious awareness or intentional or deliberate effort).\nAnswer A: The duration of the memory can vary for both implicit and explicit memory.\nAnswer B: Both implicit and explicit memory can involve information from multiple sensory systems.\nAnswer C: Both implicit and explicit memory are types of long-term memory."
+    },
+    {
+      "question": "Research investigating the effectiveness of modeling for treating speci\u0000c phobias has found which of the following methods is generally most effective?",
+      "options": {
+        "A": "Covert modeling",
+        "B": "Symbolic modeling",
+        "C": "Participant modeling",
+        "D": "Vicarious modeling"
+      },
+      "correct": "C",
+      "explanation": "Bandura and others have compared the effectiveness of different types of modeling for reducing phobias and other anxiety responses. When\nusing participant modeling, the model \u0000rst engages in the target behavior (or an aspect of it) and then prompts the individual to engage in the\nsame behavior. The research has found that participant modeling is the most effective form of modeling for treating phobias.\nAnswer A: When using covert modeling, the individual is asked to imagine someone else engaging in the target behavior. It is not as effective\nas participant modeling.\nAnswer B: Symbolic modeling involves observing models indirectly, for example in \u0000lms, videotapes, or books, and it is not as effective as\nparticipant modeling.\nAnswer D: Vicarious (overt) modeling involves observing others successfully perform the target behavior. Vicarious modeling plus guided\nparticipation (i.e., participant modeling) is more effective for treating phobias than is vicarious modeling alone."
+    },
+    {
+      "question": "Which of the following interventions does NOT use classical extinction to eliminate an undesirable anxiety response?",
+      "options": {
+        "A": "Covert sensitization",
+        "B": "Graduated exposure",
+        "C": "Flooding",
+        "D": "Implosive therapy"
+      },
+      "correct": "A",
+      "explanation": "When using classical extinction to eliminate an anxiety response, the individual is exposed to the anxiety-arousing stimulus (which is assumed\nto be a conditioned stimulus) in the absence of the unconditioned stimulus. Covert sensitization uses counterconditioning to eliminate\nundesirable self-reinforcing behaviors (e.g., drug use, paraphilias). Of the interventions listed in the answers, only covert sensitization is not\nbased on classical extinction and is not used to eliminate an anxiety response.\nAnswer B: Graduated exposure involves gradually exposing the individual to anxiety-arousing stimuli beginning with stimuli that produce the\nleast amount of anxiety and then progressing to stimuli that evoke higher levels of anxiety.\nAnswer C: Flooding, which is also known as in vivo exposure with response prevention, involves exposing the individual to fear-arousing stimuli\nwhile preventing him/her from making his/her usual avoidance response.\nAnswer D: Implosive therapy involves exposing the individual to fear-arousing stimuli in imagination."
+    },
+    {
+      "question": "When using punishment to modify behavior, habituation is most likely to be a problem when:",
+      "options": {
+        "A": "the intensity of the punishment is gradually increased over time",
+        "B": "the individual is given brief vacations from punishment",
+        "C": "different methods of punishment are alternately applied to the target behavior",
+        "D": "the use of punishment is restricted to one or two (versus numerous) behaviors"
+      },
+      "correct": "A",
+      "explanation": "In the context of punishment, habituation refers to a reduction in the effectiveness of punishment. Gradually increasing the intensity of\npunishment over time (i.e., beginning with a weak form of punishment and then gradually increasing its intensity) increases the likelihood that\nhabituation will occur.\nAnswer B: Brief vacations from punishment is a useful approach for reducing habituation.\nAnswer C: Utilizing different methods of punishment can also reduce habituation.\nAnswer D: Restricting the use of punishment to only a couple of speci\u0000c target behaviors can also reduce habituation. For more information on\nusing punishment, see: Lerman, D. C. & Vorndran, C. M. (2002). On the status of knowledge for using punishment: Implications for treating\nbehavioral disorders. Journal of Applied Behavior Analysis, 35, 431-464."
+    },
+    {
+      "question": "In a research study, Variable B is paired with Variable A so that, eventually, the response automatically produced by Variable A is also produced by Variable B. Then, Variable C is paired with Variable B so that it produces the same response. Based on this information, you can conclude that this study was designed to investigate which of the following?",
+      "options": {
+        "A": "Pseudoconditioning",
+        "B": "Spontaneous recovery",
+        "C": "Two-factor learning",
+        "D": "Higher-order conditioning"
+      },
+      "correct": "D",
+      "explanation": "The term \"paired with\" suggests that this study is investigating some form of classical conditioning. (In classical conditioning, presentation of a\nconditioned stimulus is paired with presentation of an unconditioned stimulus so that the conditioned stimulus produces a response that is\nsimilar to the one produced by the unconditioned stimulus.) This question describes the procedure used in higher-order conditioning. In higher-\norder conditioning, the initial conditioned stimulus (CS) is treated as an unconditioned stimulus (US) and paired with a neutral stimulus so that\nthe neutral stimulus also produces a conditioned response.\nAnswer A: In classical conditioning, pseudoconditioning occurs when: (1) the neutral stimulus is accidentally paired with the US and, as a\nresult, produces a response similar to the UR; or (2) repeated presentation of the US increases the likelihood that the individual will respond to a\nnovel stimulus (not just the US or CS) with a response similar to the UR, especially in the same context in which the US was presented.\nAnswer B: Spontaneous recovery refers to the return of a classically conditioned or operant response following extinction.\nAnswer C: Two-factor learning (e.g., avoidance conditioning) combines classical and operant conditioning, which is not occurring in the study\ndescribed in this question."
+    },
+    {
+      "question": "In Albert Ellis's A-B-C model, B refers to:",
+      "options": {
+        "A": "beliefs about an event",
+        "B": "behaviors that occur in response to an event",
+        "C": "biological predispositions",
+        "D": "baseline rates of responding"
+      },
+      "correct": "A",
+      "explanation": "Ellis's rational-emotive behavior therapy (REBT) is based on the assumption that behavioral and emotional reactions to events are due to\nbeliefs about those events rather than to the events themselves. Ellis depicts the relationship between antecedent events, beliefs about those\nevents, and reactions to those events in terms of an A-B-C model, where A represents the antecedent event, B represents beliefs about the\nevent, and C represents the behavioral or emotional consequence of the beliefs.\nAnswer B: Although Ellis's therapy addresses behavior, the \"B\" in his model represents beliefs about the antecedent event, not behaviors.\nAnswer C: Ellis believed that irrational beliefs are the result of certain biological tendencies; however, the \"B\" in his model represents the beliefs,\nnot the biological predispositions.\nAnswer D: Baseline rates of responding are not represented in REBT."
+    },
+    {
+      "question": "Emelina, age 4, has learned that when she approaches her father while he is watching a football game on TV, her father ignores her, but when she approaches her father while he is watching any other type of TV show, he is willing to talk to and play with her. As a result, Emelina only approaches her father when he is not watching football. Emelina's behavior illustrates which of the following?",
+      "options": {
+        "A": "Stimulus fading",
+        "B": "Shaping",
+        "C": "Stimulus control",
+        "D": "Pseudoconditioning"
+      },
+      "correct": "C",
+      "explanation": "A behavior is \"under stimulus control\" when it is more likely to occur in the presence of certain stimuli than in the presence of other stimuli\nbecause the stimuli signal whether or not reinforcement for the behavior will be provided. Emelina has learned that she will not be reinforced\nfor approaching her father when he is watching a football game but will be reinforced if she approaches him when he is watching other types\nof TV shows.\nAnswer A: Stimulus fading refers to the gradual elimination of a discriminative stimulus. In this situation, the discriminative stimulus (type of\nTV show) is not being gradually eliminated.\nAnswer B: Shaping is a type of positive reinforcement in which successive approximations to the desired behavior are reinforced until the\ntarget behavior is reached.\nAnswer D: Pseudoconditioning occurs when a neutral stimulus elicits a response due to the accidental pairing of the stimulus with another\nstimulus that evokes that response or when repeated exposure to a US increases the likelihood that the individual will respond to a neutral\nstimulus with a response similar to the UR."
+    },
+    {
+      "question": "The keyword method is most useful for:",
+      "options": {
+        "A": "remembering word pairs",
+        "B": "remembering a long list of unrelated words",
+        "C": "recalling the order of mathematical operations",
+        "D": "mastering spatial relationships"
+      },
+      "correct": "A",
+      "explanation": "The keyword method is a mnemonic device that involves forming an image that links two words. For example, to remember that \"Ranidae\" is\nthe scienti\u0000c term for common frogs, you might create an image of a frog sitting in the rain under an umbrella.\nAnswer B: The method of loci may be used to remember a long list of unrelated words. Using this method, a person visually associates items\nto be remembered with a series of places (loci) already in memory.\nAnswer C: An acronym is a word that is formed using the \u0000rst letter of each item in a list. An example of an acronym used to remember the\norder of mathematical operations is PEMDAS (parentheses, exponents, multiplication, division, addition, subtraction).\nAnswer D: The keyword method is a mnemonic device that links two words, and it is not useful for mastering spatial relationships."
+    },
+    {
+      "question": "Pavlov concluded that spontaneous recovery provided support for which of the following assumptions?",
+      "options": {
+        "A": "Regardless of the number of conditioning trials, the conditioned response (CR) is always weaker than the (UR).",
+        "B": "Extinction trials suppress (rather than eliminate) a conditioned response.",
+        "C": "Negative punishment is more effective than positive punishment for suppressing an undesirable behavior.",
+        "D": "Learning (but not performance) can occur without positive reinforcement."
+      },
+      "correct": "B",
+      "explanation": "Spontaneous recovery refers to the re-emergence of a conditioned response following extinction trials without additional conditioning trials.\nAccording to Pavlov, the spontaneous re-emergence of a conditioned response after it has been extinguished suggests that extinction trials\nsuppress the conditioned response rather than eliminate it.\nAnswer A: Although this statement is true, this does not explain the occurrence of spontaneous recovery.\nAnswer C: Punishment is an operant conditioning term and not relevant to Pavlov's theories and assumptions regarding classical conditioning.\nAnswer D: Tolman proposed that latent learning occurs without manifestation in performance. Reinforcement is not necessary for the learning\nof the response but may be an important factor in the performance of a response."
+    },
+    {
+      "question": "Once John Watson established Little Albert's phobic reaction to white rats, Albert displayed _______ by exhibiting a fear response to other white furry objects.",
+      "options": {
+        "A": "experimental neurosis",
+        "B": "spontaneous recovery",
+        "C": "response generalization",
+        "D": "stimulus generalization"
+      },
+      "correct": "D",
+      "explanation": "In classical conditioning, stimulus generalization occurs when the individual responds to stimuli similar to the conditioned stimulus (CS) with a\nconditioned response (CR).\nAnswer A: Experimental neurosis refers to subjects' uncharacteristic behaviors that may include extreme restlessness, agitation, and\nunprovoked aggression, which may occur when subjects have di\u0000culty with stimulus discriminations. It was exhibited by dogs in Pavlov's\nresearch when they were presented with stimuli very similar to the original CS; the normally docile animals became very agitated.\nAnswer B: Spontaneous recovery refers to the return of a conditioned response (CR) following the apparent extinction of that response.\nAnswer C: Response generalization occurs when reinforcement of a target behavior results in an increase in other (similar or related) behavior\nthat was not reinforced."
+    },
+    {
+      "question": "_________ research with chimpanzees led to his conclusion that the performance of a new behavior may be the result of insight learning.",
+      "options": {
+        "A": "Kohler's",
+        "B": "Tolman's",
+        "C": "Watson's",
+        "D": "Thorndike's"
+      },
+      "correct": "A",
+      "explanation": "Kohler's research led him to conclude that learning is not just the result of trial-and-error or reinforcement but involves cognitive restructuring,\nwhich he referred to as insight learning.\nAnswer B: Tolman is associated with latent learning. Tolman's research indicated that learning a new behavior (but not necessarily\nperformance of that behavior) occurs without reinforcement.\nAnswer C: Watson used classical conditioning to establish a phobia in a young child.\nAnswer D: Thorndike developed the law of effect after observing that cats were more likely to repeat a behavior if they were reinforced for\nengaging in that behavior."
+    },
+    {
+      "question": "The \"tip-of-the-tongue\" phenomenon is believed to be due to which of the following?",
+      "options": {
+        "A": "Trace decay",
+        "B": "Inadequate retrieval cues",
+        "C": "Retroactive interference",
+        "D": "Attention de\u0000cits"
+      },
+      "correct": "B",
+      "explanation": "The tip-of-the-tongue phenomenon refers to the sense that you know something (e.g., a song or movie title) but are not able to recall it. One\ntheory of the tip-of-the-tongue phenomenon is that it is due to insu\u0000cient cues that facilitate the retrieval of information stored in long-term\nmemory.\nAnswer A: Trace decay theory predicts that forgetting is due to the passage of time.\nAnswer C: Retroactive interference occurs when new information interferes with one's ability to recall older memories or previously learned\ninformation.\nAnswer D: Attention de\u0000cits may interfere with encoding information but do not explain the \"tip-of-the-tongue\" phenomenon."
+    },
+    {
+      "question": "Research on the serial position effect has found that if participants are asked to recall a list of words immediately after reading the list, they are better able to remember the words:",
+      "options": {
+        "A": "from the middle of the list than the words from the beginning or end of the list",
+        "B": "from the middle and end of the list than the words from the beginning of the list",
+        "C": "from the beginning and middle of the list than the words from the end of the list",
+        "D": "from the beginning and end of the list than the words from the middle of the list"
+      },
+      "correct": "D",
+      "explanation": "In studies investigating the serial position effect, participants are presented with a list of words to remember and asked to recall the words in\nany order either immediately after reading the list or following a brief delay after reading the list. When participants recall the words\nimmediately after reading the list, more words from the beginning and end of the list are recalled than words from the middle of the list. This is\napparently because words at the beginning of the list have been transferred to long-term memory while words at the end of the list are still in\nshort-term memory.\nAnswers A, B, and C: Research on the serial position effect has found that if participants are asked to recall a list of words immediately after\nreading the list, they are better able to remember the words from the beginning and end of the list than the words from the middle of the list."
+    },
+    {
+      "question": "Which of the following is an example of higher-order conditioning?",
+      "options": {
+        "A": "A conditioned stimulus (CS) is paired with an unconditioned stimulus (US) until a conditioned response (CR) is established; subsequently, the CR occurs in the presence of stimuli similar to the US.",
+        "B": "A conditioned stimulus (CS) is paired with an unconditioned stimulus (US) until a conditioned response (CR) is established; subsequently, the CS elicits a variety of responses including the CR.",
+        "C": "A conditioned stimulus (CS) is paired with an unconditioned stimulus (US) until a conditioned response (CR) is established; subsequently, the CS is paired with a second US until a second CR is established.",
+        "D": "A conditioned stimulus (CS) is paired with an unconditioned stimulus (US) until a conditioned response (CR) is established; subsequently, a second CS is paired with the \u0000rst CS until it also elicits a CR."
+      },
+      "correct": "D",
+      "explanation": "This answer describes the procedure known as higher-order conditioning. Higher-order conditioning involves using a conditioned stimulus (CS)\nas an unconditioned stimulus (US) in order to establish a conditioned response (CR) for a second CS.\nAnswer A: This describes stimulus generalization.\nAnswer B: This could be interpreted as response generalization, although the description is too vague to know exactly what is being described.\nAnswer C: This simply describes classical conditioning in which the CS is paired with two different US's."
+    },
+    {
+      "question": "In Albert Ellis's (1985) A-B-C model, B refers to:",
+      "options": {
+        "A": "the environmental barriers to rational thought",
+        "B": "the biological bases for human behavior",
+        "C": "a person's belief about an activating event",
+        "D": "a person's behavioral reaction to an activating event"
+      },
+      "correct": "C",
+      "explanation": "Ellis described emotions and behaviors in terms of a chain of events -- an external activating event (A), the person's belief about the activating\nevent (B), and the emotional or behavioral consequence of that belief (C). Ellis's A-B-C model is central to the theory and practice of his\nRational-Emotive Behavior Therapy.\nAnswers A, B, and D: These responses provide false statements. In Albert Ellis's A-B-C model, B refers to a person's belief about an activating\nevent."
+    },
+    {
+      "question": "__________ inhibition occurs when the ability to remember new information is impaired by previously acquired information.",
+      "options": {
+        "A": "Proactive",
+        "B": "Retroactive",
+        "C": "Anterograde",
+        "D": "Retrograde"
+      },
+      "correct": "A",
+      "explanation": "For the exam, you want to be familiar with the difference between proactive and retroactive inhibition (interference) and between anterograde\nand retrograde amnesia. Proactive inhibition (interference) occurs when old (previous) learning interferes with the learning or recall of new\n(subsequent) information.\nAnswer B: Retroactive inhibition (interference) occurs when recently learned information interferes with the ability to recall previously learned\ninformation.\nAnswer C: Anterograde amnesia refers to the inability to recall events and experiences that occur after the event that produced the amnesia.\nAnswer D: Retrograde amnesia refers to the inability to recall events and experiences that occurred before the event that produced the\namnesia."
+    },
+    {
+      "question": "In 1989, Abramson, Metalsky, and Alloy revised the 1978 learned helplessness theory of depression. In their revision, _________ is conceptualized as a proximal and su\u0000cient cause of depressive symptoms.",
+      "options": {
+        "A": "non-contingent reinforcement",
+        "B": "a depressogenic cognitive style",
+        "C": "an external locus of control",
+        "D": "a sense of hopelessness"
+      },
+      "correct": "D",
+      "explanation": "Abramson, Metalsky, and Alloy identi\u0000ed a sense of hopelessness as a proximal cause of depression because in the chain of events leading to\ndepression, it is at the end of the chain, closest to depressive symptoms. They identi\u0000ed it as a su\u0000cient cause because the presence of\nhopelessness is su\u0000cient to cause depressive symptoms in the absence of any other causal factors.\nAnswer A: Non-contingent reinforcement (the use of positive reinforcement that is not related to a target behavior) is a powerful method to\nreduce problematic behavior, and it is not identi\u0000ed as a cause of depression in Abramson and colleagues' theory.\nAnswer B: These investigators do not identify a depressogenic cognitive style as a cause of depression.\nAnswer C: Although some research supports a link between an external locus of control and depression, it is not tied to learned helplessness\ntheory of depression nor identi\u0000ed as a cause of depression by these investigators."
+    },
+    {
+      "question": "A practitioner of Beck's cognitive behavioral therapy works together with a therapy client to identify and test faulty interpretations. This process is referred to as:",
+      "options": {
+        "A": "cognitive experimentation",
+        "B": "collaborative empiricism",
+        "C": "cognitive disputation",
+        "D": "collaborative analysis"
+      },
+      "correct": "B",
+      "explanation": "A key feature of Beck's cognitive behavioral therapy (CBT) is its collaborative approach. In CBT, the therapist and client work collaboratively to\nreality test the client's cognitions. This approach is referred to as collaborative empiricism.\nAnswer A: Cognitive experimentation is a broad term and does not refer speci\u0000cally to the collaborative approach of CBT.\nAnswer C: In Ellis's Rational-Emotive Behavior Therapy (REBT), therapists attempt to dispute and alter the individual's irrational beliefs.\nAnswer D: Collaborative analysis is not a term utilized by Beck in his practice of CBT."
+    }
+  ]
+}

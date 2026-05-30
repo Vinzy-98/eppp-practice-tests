@@ -1,0 +1,19 @@
+{
+  "name": "Lifespan Development",
+  "slug": "lifespan-development",
+  "category": "Category Tests",
+  "questionCount": 1,
+  "questions": [
+    {
+      "question": "The factors contributing most to a lasting marriage, according to Gottman and Levenson (2000) are:",
+      "options": {
+        "A": "the couple's maturity level",
+        "B": "the couple's access to social support",
+        "C": "the couple's ability to resolve con\u0000icts in their relationship",
+        "D": "the couple's level of compatibility in terms of need ful\u0000llment"
+      },
+      "correct": "C",
+      "explanation": "In their longitudinal research, Gottman and his colleagues investigated the factors that contribute to marital dissolution. Gottman's cascade\ntheory of marital dissolution predicts that a couple's ability to resolve inevitable con\u0000icts is the key to a lasting relationship.\nAnswer A: Communication related to con\u0000ict rather than maturity level was the\nfocus of this research.\nAnswer B: Social support was not identi\u0000ed as a major factor in marital dissolution.\nAnswer D: Need ful\u0000llment was not identi\u0000ed as a factor in this research. Additional information about their research is provided in the\nLifespan Development chapter of the written study materials."
+    }
+  ]
+}

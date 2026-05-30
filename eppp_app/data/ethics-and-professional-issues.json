@@ -1,0 +1,987 @@
+{
+  "name": "Ethics and Professional Issues",
+  "slug": "ethics-and-professional-issues",
+  "category": "Category Tests",
+  "questionCount": 89,
+  "questions": [
+    {
+      "question": "At the beginning of therapy with Mark M., you discussed the possible duration of treatment and estimated that therapy would not extend beyond his insurance coverage of your fee. You also informed Mark that you would be unable to reduce your fee when his therapy was no longer covered by insurance. Unfortunately, that time has arrived as Mark's insurance will cover only the next three sessions, many of Mark's problems are still unresolved, and he cannot afford your full fee. In terms of ethical responsibilities, you are ____________________.",
+      "options": {
+        "A": "required to see Mark at a reduced or deferred fee until his problems are adequately resolved",
+        "B": "required to see Mark at a reduced or deferred fee until he feels ready to terminate treatment",
+        "C": "required to discuss the matter with Mark and make a referral at the end of the three sessions if necessary",
+        "D": "not required to continue seeing Mark since you discussed this matter at the beginning of therapy"
+      },
+      "correct": "C",
+      "explanation": "You are not required to continue seeing a client if the client cannot pay your fee. However, to avoid abandoning the client when insurance\ncoverage has ended, you should either offer services at a reduced or deferred fee or, if that is not feasible, make appropriate referrals. Standard\n6.04 of the APA's Ethics Code and Principle II.32 of the Canadian Code of Ethics apply to this situation.\nAnswer A: This is incorrect as ethical guidelines do not require you to see a patient at a reduced or deferred rate.\nAnswer B: This is incorrect as psychologists are not required to provide services at reduced or deferred rates.\nAnswer D: This answer is incorrect because even though discussion of this issue at the beginning of therapy is a good practice, it does not\neliminate your responsibility to the client when his insurance ends."
+    },
+    {
+      "question": "After a year in private practice, you hire a newly-licensed psychologist whom you will provide with an o\u0000ce and secretarial services. You will also refer clients to the psychologist and pay him 50% of the fees he collects from those clients. This arrangement is ________________.",
+      "options": {
+        "A": "unethical because it involves barter",
+        "B": "unethical because it involves being paid for client referrals",
+        "C": "ethical as long as the psychologist is being compensated in an equitable way",
+        "D": "ethical because, as an employer, you can determine the conditions of employment"
+      },
+      "correct": "C",
+      "explanation": "Of the responses given, this one is the best. The arrangement described in this question seems somewhat dubious in terms of acceptability,\nbut the facts presented do not clearly indicate an ethical violation. One can quickly misread this question and think that the fee split is\nbased on the referral (which would be problematic between colleagues). But for two reasons, this scenario is actually ethical. 1) the\nfee split is not between colleagues; it is between an employee and an employer and 2) the fee split is based on services rendered not\nthe referral. The employed psychologist is receiving 50% of the fee for providing therapy services and the employer psychologist is\nreceiving 50% of the fee for providing rent, o\u0000ce supplies, scheduling, marketing, and clientele. This issue is addressed in Standard 6.07\nof the Ethics Code and is discussed in the Ethics Manual of the written study materials.\nAnswer A: This is incorrect as ethical guidelines only address barter with clients, and barter is acceptable under some circumstances.\nAnswer B: This is incorrect as referral fees are not entirely prohibited by ethical guidelines.\nAnswer D: This is incorrect because it is not an accurate description of an employer's ethical responsibilities."
+    },
+    {
+      "question": "Informed consent from a client _____________________________.",
+      "options": {
+        "A": "must always be in writing",
+        "B": "must always be in writing and in the client's native language",
+        "C": "may be either verbal or in writing",
+        "D": "may be either verbal or in writing but must be documented"
+      },
+      "correct": "D",
+      "explanation": "Standard 3.10 of the APA's Ethics Code states that consent must be \"appropriately documented,\" and Principle I.22 of the Canadian Code of\nEthics states that it is permissible to \"accept and document oral consents\" when there is a good reason not to obtain signed written consent.\nAnswer A: This is incorrect, as informed consent must be documented, but ethical guidelines do not require consent to be written.\nAnswer B: This answer is incorrect because clinicians are responsible for documenting consent, but it may be verbal if documented.\nAnswer C: This answer is incorrect because it is a less complete answer than Answer D, which speci\u0000es consent must be documented."
+    },
+    {
+      "question": "Dr. Oliver Olivetti has been seeing a client for several months who recently changed jobs. The client learns her new insurance plan does not begin covering pre-existing conditions for 12 months. The client asks Dr. Olivetti to produce invoices so that it appears she has just started therapy. If Dr. Olivetti complies with the client's request, he is acting _____________________.",
+      "options": {
+        "A": "ethically since he is taking the client's welfare into consideration",
+        "B": "ethically only if not to do so would require the client to quit therapy",
+        "C": "ethically only if the insurance forms do not require him to sign a statement saying that treatment began after the effective date of the insurance",
+        "D": "unethically"
+      },
+      "correct": "D",
+      "explanation": "The client in this situation is asking Dr. Olivetti to commit insurance fraud and, if Dr. Olivetti does so, he will be acting both unethically and\nillegally. Standard 6.04 of the APA's Ethics Code addresses this matter.\nAnswer A: This is incorrect because although Dr. Olivetti should consider his client's welfare, he would be acting unethically and illegally if he\nagrees to the arrangement requested by the client.\nAnswer B: This answer is incorrect, as this arrangement would be illegal and unethical regardless of the rami\u0000cations for the client.\nAnswer C: This is incorrect because this would still represent insurance fraud since the client and therapist are well aware of the insurance\nprovisions."
+    },
+    {
+      "question": "Which of the following best describes the status of professional (therapy) records?",
+      "options": {
+        "A": "The physical record belongs to the client.",
+        "B": "The physical record belongs to the therapist.",
+        "C": "The physical record belongs to the therapist, but the information contained therein belongs to the client.",
+        "D": "The physical record and the information contained therein belong jointly to the therapist and the client."
+      },
+      "correct": "C",
+      "explanation": "While the actual physical record is the property of the therapist, laws require therapists to make the information contained in records available\nto the client in most situations. This does not mean that a therapist must release the physical record to a client but, instead, that the therapist\nmay be required to show the client the record or provide the client with a summary or copy of it. The laws regarding professional records are\ncomplex and vary somewhat from jurisdiction to jurisdiction. When answering questions like this one, you'll want to pick a general answer that\nis likely to apply to most jurisdictions.\nAnswer A: This answer is incorrect as the client does not own the physical record.\nAnswer B: This is incorrect because it is a less complete answer than C. While the physical record does belong to the therapist, this answer\nfails to address the complexity of the question, which is that the client has access to the contents of the therapy notes.\nAnswer D: This is incorrect because while the client has a right to the contents of the therapy records, the record itself belongs to the therapist."
+    },
+    {
+      "question": "Dr. Bettina Browne, a licensed psychologist, undertakes a child custody evaluation at the request of the child's mother. The father agrees to be evaluated also, and Dr. Browne obtains signed informed consent from both parents before beginning her assessment. Dr. Browne administers the MMPI and Rorschach tests to both parents. The mother obtains signi\u0000cantly elevated scores on the MMPI's K and L scales, suggesting that she tends to lie and to be excessively defensive, and these tendencies are con\u0000rmed by her Rorschach responses. No signi\u0000cant abnormality is suggested by the father's MMPI and Rorschach results. Based on the test results, Dr. Browne recommends that the mother not be awarded custody of the child. Dr. Browne ______________________.",
+      "options": {
+        "A": "has acted ethically because her evaluation included both parents",
+        "B": "has acted ethically because the parents signed informed consents before the evaluation",
+        "C": "has acted unethically because of her use of the MMPI and Rorschach tests as methods of evaluating the mothers parental suitability",
+        "D": "has acted unethically because she made speci\u0000c recommendations regarding custody rather than simply reporting the results of the evaluation"
+      },
+      "correct": "C",
+      "explanation": "A psychologist is ethically required to use tests only for purposes for which they have been validated according to Standard 9.02 of the APA's\nEthics Code. Based on the information given, it appears that Dr. Browne has acted unethically by basing her custody recommendation on MMPI\nand Rorschach test results since these tests have not been validated for this purpose. Even if the tests had been validated for this purpose, Dr.\nBrowne's recommendation should have been based on more than the results of only two tests.\nAnswer A: This is incorrect because even though the psychologist acted appropriately by evaluating both parents prior to making a\nrecommendation, response C. is a better answer.\nAnswer B: This is incorrect because obtaining signed informed consent does not overcome the problem of using the MMPI and Rorschach as\npredictors of parental functioning, a purpose for which they have not been validated.\nAnswer D: This answer is incorrect because recommendations are acceptable as long as they are based on a thorough evaluation of all parties."
+    },
+    {
+      "question": "Miranda M., age 32, makes an appointment with you at the recommendation of her physician who has diagnosed her with recurrent headaches due to stress. The woman tells you that a friend of hers was trained in self-hypnosis for tension headaches and says that she also would like to learn self-hypnosis. You took a weekend workshop on hypnosis in graduate school but have not used it in your clinical practice. As an ethical psychologist, you should _______________________.",
+      "options": {
+        "A": "admit your lack of expertise in the use of self-hypnosis and refer the woman to another therapist",
+        "B": "advise the woman that the underlying cause of her headaches would probably not be dealt with by self-hypnosis and suggest that she begin individual psychotherapy",
+        "C": "accept the woman for treatment and begin training her in self-hypnosis after reviewing your workshop notes",
+        "D": "accept the woman for treatment and begin training her in self-hypnosis but obtain consultation if you encounter any problems during the course of treatment"
+      },
+      "correct": "A",
+      "explanation": "Of the responses given, this one is most consistent with the requirement to provide services that are within the boundaries of your professional\ncompetence. Note that, while it is up to you to determine your competence with regard to a particular service or technique, a weekend\nworkshop in self-hypnosis is clearly inadequate. Providing services within the boundaries of one's competence is addressed by Standard 2.01\nof the APA's Ethics Code and Principle II.6 of the Canadian Code of Ethics.\nAnswer B: This answer is incorrect, as It would be unethical to try to convince the client to choose another course of treatment simply because\nyou are not trained in the treatment she desires.\nAnswer C: This is incorrect because reviewing your workshop notes would not be adequate training.\nAnswer D: This is incorrect because although this response comes closer to ful\u0000lling the requirements of the ethical guidelines than do\nresponses B. and C., it falls short of those requirements because it implies that consultation would not be sought unless you believe that you\nare having problems during the course of treatment."
+    },
+    {
+      "question": "You have been hired to assist with a research project on process variables in group psychotherapy. The psychologist who is the principal investigator tells you to discourage participants from leaving the group prior to the end of the study because, if too many participants drop out, the study's potential usefulness will be seriously compromised. As an ethical psychologist, you should ____________________________________.",
+      "options": {
+        "A": "refuse to assist with the research project",
+        "B": "immediately \u0000le a complaint against the psychologist with the psychology licensing board or ethics committee",
+        "C": "write a letter to the psychologist, indicating the relevant ethical standards and offering to discuss the matter with him",
+        "D": "follow the psychologist's instructions since, by \"discouraging\" participants from leaving the group, you are not actually coercing them to participate"
+      },
+      "correct": "C",
+      "explanation": "By offering to discuss the matter with the psychologist, you are attempting to resolve the matter informally, which is consistent with the\nrequirements of the ethical guidelines. Standard 8.02 of the APA's Ethics Code and Principle I.30 of the Canadian Code of Ethics both require\npsychologists to allow participants to withdraw from a research study at any time.\nAnswer A: This answer is incorrect because resigning from the project would not correct the ethical violation.\nAnswer B: This is incorrect because although a report may eventually be necessary, it is not the best \u0000rst step since this matter may be\namenable to an informal resolution.\nAnswer D: This answer is incorrect because this would be unethical, and you would be violating the provisions of Standards 1.04 and 1.05 of\nthe Ethics Code and Principles II.40 and II.41 of the Canadian Code of Ethics, which require psychologists to take action when a colleague acts\nin an unethical way."
+    },
+    {
+      "question": "A psychologist supervisor of several interns at a community hospital in a small town notices that one of the interns seems unenthusiastic and depressed. When he talks to her, she tells him that she's been very unhappy lately and feels she has no one to turn to. The intern asks the psychologist to see her in therapy, and he agrees to do so. The psychologist has acted ___________________________.",
+      "options": {
+        "A": "unethically by agreeing to get involved in a dual relationship",
+        "B": "unethically by violating the intern's right to privacy",
+        "C": "ethically because they are working in a community hospital in a small town",
+        "D": "ethically because the intern is in desperate need of help"
+      },
+      "correct": "A",
+      "explanation": "In most situations, psychologists should avoid multiple (dual) relationships. Standard 3.05(a) of the APA Ethics Code states that \"a\npsychologist refrains from entering into multiple relationships if the multiple relationships could reasonably be expected to impair the\npsychologist's objectivity, competence, or effectiveness in performing his or her functions as a psychologist, or otherwise risks exploitation or\nharm to the person with whom the professional relationship exists.\" The psychologist in the situation described is entering into multiple\nrelationships that may threaten his objectivity and effectiveness as a supervisor and therapist.\nAnswer B: This answer is incorrect as there is no indication that privacy is an issue in this situation.\nAnswer C: This is incorrect, because, in some circumstances, multiple relationships may be unavoidable. However, the fact that the intern and\npsychologist work in a community hospital in a small town does not necessarily mean that no other options are available.\nAnswer D: This is incorrect, as there is no indication that the intern is in such \"desperate need of help\" that she cannot wait to see another\nprofessional."
+    },
+    {
+      "question": "A psychologist decides to use a computerized test service to facilitate scoring and interpretation of the MMPI-2, which he frequently administers to his clients. The psychologist should be aware that ____________________.",
+      "options": {
+        "A": "the use of computerized interpretations is prohibited by ethical guidelines",
+        "B": "computerized scoring and interpretation services are notoriously unreliable",
+        "C": "computerized interpretations should always be supplemented with other information obtained by the psychologist",
+        "D": "because of their objectivity, computerized interpretations are preferable to subjective interpretations"
+      },
+      "correct": "C",
+      "explanation": "Automated scoring and interpretation services are available for a number of psychological tests including the MMPI-2. The information in a\ncomputerized interpretation is limited and, therefore, the best policy is to always supplement computerized interpretations with information\nfrom other tests, interviews, and observations, according to Standards 9.02 and 9.09 of the APA's Ethics Code.\nAnswer A: This is incorrect because the use of automated interpretation services is not prohibited by ethical guidelines as long as certain\nstandards are met by both the service and the users of the service.\nAnswer B: This answer is incorrect, because the quality of computer interpretations varies from service to service, and it cannot be concluded\nthat all computerized interpretations are \"notoriously unreliable.\"\nAnswer D: This is incorrect, as the information provided by computerized interpretations is limited, and the accuracy of the interpretation\ndepends on the quality of the service. Therefore, it cannot be concluded that computerized interpretations are necessarily the preferred method\nof score interpretation."
+    },
+    {
+      "question": "The term \"insanity\" is a ______________________.",
+      "options": {
+        "A": "popular term for a mental disorder",
+        "B": "legal, nonpsychiatric term for certain types of mental disorders",
+        "C": "psychiatric term that refers to a psychotic disorder with an unknown etiology",
+        "D": "psychiatric term that refers to an organic mental disorder"
+      },
+      "correct": "B",
+      "explanation": "The term \"insanity\" is used in the legal arena and is not a psychiatric term. Defendants who plead not guilty by reason of insanity are\ncontending that a mental disease or defect precluded them from understanding the difference between right and wrong. Insanity is a legal term\nthat varies in terms of its de\u0000nition from jurisdiction to jurisdiction.\nAnswer A: This answer is incorrect, as \"insanity\" has a distinct legal meaning.\nAnswer C: This answer is incorrect, as the term \"insanity\" has a legal, not psychiatric, meaning.\nAnswer D: This answer is incorrect, because \"insanity\" is not a term used to describe a mental disorder."
+    },
+    {
+      "question": "Alice A. has a master's degree in clinical psychology but is not licensed. She is hired by a community mental health clinic to administer several standard psychological tests to adults. According to ethical guidelines, this is ___________________.",
+      "options": {
+        "A": "acceptable as long as a professional clinical psychologist co-signs Alice's evaluations",
+        "B": "acceptable as long as a professional clinical psychologist supervises Alice's activities",
+        "C": "unacceptable since Alice is not a licensed psychologist",
+        "D": "unacceptable since Alice does not have a doctoral degree"
+      },
+      "correct": "B",
+      "explanation": "Ethical (and legal) guidelines do not prohibit the provision of all psychological services by individuals who are not licensed, clinical\npsychologists. However, they do require that such persons be supervised by a licensed psychologist.\nAnswer A: This answer is incorrect. Simply co-signing reports would not be considered adequate supervision.\nAnswer C: This answer is incorrect, because Alice may administer some psychological tests as long as she has been adequately trained and is\nsupervised by a licensed psychologist according to Standard 9.07 of the APA's Ethics Code.\nAnswer D: This answer is incorrect because having a doctoral degree is not required for the provision of psychological services, but supervision\nby a licensed psychologist is required in this case."
+    },
+    {
+      "question": "Following the retirement of his business partner, Dr. Sheldon Smith is the only psychologist in a small town with the closest mental health professional over 100 miles away. Several of Dr. Smith's new clients have problems for which he has limited training and experience. Dr. Smith should ____________________.",
+      "options": {
+        "A": "refuse to see the clients",
+        "B": "see these clients but use only interventions that he has experience using",
+        "C": "see the clients and obtain supervision or consultation by telephone",
+        "D": "agree to see these clients only if they are in crisis"
+      },
+      "correct": "C",
+      "explanation": "Rather than turning patients away, Dr. Smith should seek supervision to meet his clients' needs. Standard 2.01 of the APA Ethics Code states\nthat \"When psychologists are asked to provide services to individuals for whom appropriate mental health services are not available and for\nwhich psychologists have not obtained the competence necessary, psychologists ... may provide such services in order to ensure that services\nare not denied if they make a reasonable effort to obtain the competence required by using relevant research, training, consultation, or study.\"\nAnswer A: This answer is incorrect, given the ethics code encourages psychologists to seek the training and supervision needed to meet\nclients' needs when there are limited referral options available.\nAnswer B: This answer is incorrect, given the clients' needs, including the client's diagnosis and cultural background should determine the\nmode of treatment delivered.\nAnswer D is incorrect. While delivering treatment in an emergency may be appropriate, this answer is less complete than Answer C."
+    },
+    {
+      "question": "A 24-year-old woman calls Dr. Sylvia Silby for an appointment but refuses to discuss her problem on the phone. During the initial therapy session, the young woman discusses her di\u0000culties in a vague, guarded manner, indicating that, for the past few months, she has had increasing di\u0000culty sleeping and has felt anxious and irritable. Ten minutes before the end of the session, the young woman tells Dr. Silby that she has been seeing another therapist for six months and that four weeks ago they began having a sexual relationship. As an ethical psychologist, Dr. Silby should _______________________.",
+      "options": {
+        "A": "advise the woman to terminate treatment with the other psychologist and begin therapy with her",
+        "B": "advise her of her rights and alternative courses of action",
+        "C": "contact the other therapist to discuss the matter with them",
+        "D": "\u0000le a complaint against the other therapist with the ethics committee and recommend to the woman that she immediately terminate treatment with the other therapist"
+      },
+      "correct": "B",
+      "explanation": "Of the actions listed in the answers, the best one is to discuss the matter with the client and advise her of her options. Ethical violations by\ncolleagues are covered in Standards 1.04 and 1.05 of the APA's Ethics Code and are discussed in the Ethics Manual of the written study\nmaterials. Clearly, the original therapist has violated ethical guidelines and may have violated the law.\nAnswer A: In order to respect the client's autonomy, Dr. Silby should discuss with the client her options so the client can determine the next\nsteps.\nAnswer C: Dr. Silby cannot contact the therapist without the client's consent, since to do so would represent a breach of con\u0000dentiality.\nAnswer D: Dr. Silby cannot make a report herself without the client's consent, as again, this action would be a breach of con\u0000dentiality."
+    },
+    {
+      "question": "Farris F. terminated therapy with Dr. Pamela Prince several months ago but calls to request an appointment due to feeling lonely and depressed. Farris also feels \"like he wants to die.\" In the past two months, Dr. Prince has been reducing her caseload due to retirement. The best course of action in this situation is for Dr. Prince to ______________________________.",
+      "options": {
+        "A": "explain to Farris that she is reducing her caseload but that she is willing to counsel him by phone in case of an emergency",
+        "B": "see Farris in therapy until the crisis has passed and then provide him with appropriate referrals",
+        "C": "explain to Farris that she is no longer accepting clients and refer him to a colleague",
+        "D": "provide Farris with several referrals and ask him to call her if none of those turn out to be satisfactory"
+      },
+      "correct": "B",
+      "explanation": "Because the client states he \"feels like he wants to die,\" the best course of action is to see the client in therapy until the crisis has passed, and\nthen provide him with appropriate referrals. This answer is most consistent with the \"spirit\" of the ethical guidelines. See, for example,\nStandards 3.04 and 10.09 of the APA's Ethics Code and Principles II.2 and II.34 of the Canadian Code of Ethics.\nAnswer A: This answer is incorrect. This response fails to prioritize the client's welfare in accordance with ethical mandates.\nAnswer C: This answer is incorrect as, again, it does not respond to the fact the client is experiencing a crisis.\nAnswer D: This answer is incorrect. It, too, fails to account for the serious nature of the client's concerns."
+    },
+    {
+      "question": "Dr. Wanda Weim, a licensed psychologist, receives a request to testify in a custody proceeding on behalf of a male client that was receiving conjoint marital therapy six months prior. He requests Dr. Weim to provide the court with information about his parenting skills and relationship with his spouse and children. Dr. Weim contacts the man's wife, who refuses to give the psychologist permission to testify. Dr. Weim should do which of the following?",
+      "options": {
+        "A": "testify as requested by the husband",
+        "B": "testify only about matters pertaining to the husband",
+        "C": "testify only about matters for which she is quali\u0000ed to make a judgment",
+        "D": "refuse to testify"
+      },
+      "correct": "D",
+      "explanation": "Multi-client situations create special considerations and concerns about con\u0000dentiality since it is not often possible to release information\nabout one client without also revealing con\u0000dential information about another client. In this situation, both clients (the husband and wife) must\ngive their permission before Dr. Weim can release con\u0000dential information. Therefore, she should refuse to testify, unless she is ordered to do\nso by the court.\nAnswer A: This answer is incorrect. Dr. Weim does not have permission to release information from one of the clients.\nAnswer B: This answer is incorrect. Because therapy was conjoint, Dr. Weim will be unable to release information pertaining to one client\nwithout releasing information about the other client.\nAnswer C: This answer is incorrect. In this case, the primary concern is whether both clients grant permission for Dr. Weim to testify."
+    },
+    {
+      "question": "You have started seeing a client who is from a different cultural background than you. She is having di\u0000culty coping with the recent death of her mother. You have frequently worked with clients who are coping with loss, but you have never worked with a client from this background. You'd like to continue seeing this client in therapy to broaden your experience with culturally diverse populations. Your best course of action would be to ____________________________.",
+      "options": {
+        "A": "continue working with the client but proceed with caution",
+        "B": "seek supervision or consultation and continue to work with the client",
+        "C": "refer the client to another therapist who has experience working with clients from this background",
+        "D": "explain the situation to the client and terminate therapy"
+      },
+      "correct": "B",
+      "explanation": "This is addressed by Standard 2.01(b) of the APA's Ethics Code and Principle II.8 of the Canadian Code of Ethics. Standard 2.01(b) states\n\"where scienti\u0000c or professional knowledge in the discipline of psychology establishes that an understanding of factors associated with age,\ngender, gender identity, race, ethnicity, culture, national origin, religion, sexual orientation, disability, language or socioeconomic status is\nessential for effective implementation of their services or research, psychologists have or obtain the training, experience, consultation, or\nsupervision necessary to ensure the competence of their services, or they make appropriate referrals.\"\nAnswer A: This answer is incorrect. To proceed with caution is insu\u0000ciently vague, but seeking consultation or supervision is consistent with\nthe ethical guidelines.\nAnswer C: This answer is incorrect. Given the therapist has previously worked with clients who have experienced loss, there is no indication\nthat a referral is necessary, particularly when the therapist can obtain consultation or supervision.\nAnswer D: This answer is incorrect. It is both acceptable and desirable for psychologists to acquire new skills and to treat new problems,\nprovided they obtain appropriate supervision or consultation."
+    },
+    {
+      "question": "After three sessions with a therapy client, Dr. Leonard Lykowski realizes that he's feeling somewhat hostile toward the client, because she reminds him of his wife whom he's currently divorcing. Dr. Lykowski's best course of action would be to _______________________________.",
+      "options": {
+        "A": "refer the client to another therapist without telling the client the reason for the referral",
+        "B": "refer the client to another therapist after discussing the reason with her",
+        "C": "recognize that his feelings are the result of countertransference and continue to work with the client",
+        "D": "consult with another psychologist to determine whether or not to continue seeing the client in therapy"
+      },
+      "correct": "D",
+      "explanation": "This issue is addressed in Standard 2.06 of the APA's Ethics Code and is discussed in the Ethics Manual of the written study materials. In this\nsituation, Dr. Lykowski's personal problems may be affecting his objectivity. Consultation with another professional is ordinarily the best course\nof action whenever a therapist is concerned that a personal problem might interfere with one's ability to provide adequate therapy. While you\nwouldn't simply terminate treatment due to countertransference, if you are unable to work through it and provide objective treatment,\ntermination may be applicable.\nAnswer A: Referring the client without an explanation is generally not consistent with sound practice and concern for the client's welfare.\nAnswer B: While Dr. Lykowski may decide to take this route as a last resort, he would serve the client better by consulting with another\nprofessional to attempt to resolve the con\u0000ict.\nAnswer C: Dr. Lykowski's feelings likely do, in fact, represent countertransference, but he would want to seek consultation to determine if those\nfeelings are negatively impacting his ability to provide the client with appropriate services."
+    },
+    {
+      "question": "Dr. Jacob Mans\u0000eld receives a subpoena requiring him to testify about a current therapy client. Dr. Mans\u0000eld contacts the client who states that she does not want him to release any con\u0000dential information to the court. Dr. Mans\u0000eld should _____________________.",
+      "options": {
+        "A": "notify the attorney who issued the subpoena that the client has asserted the privilege and request that he be released from subpoena",
+        "B": "do nothing further until he receives an order from the court to appear at the trial",
+        "C": "notify the court that he will not be appearing at the trial because the client does not want him to do so",
+        "D": "advise the attorney who issued the subpoena that he cannot appear as requested because the client has not given him permission to do so"
+      },
+      "correct": "A",
+      "explanation": "A subpoena is a legal document that requires a psychologist to appear at a designated time in a legal proceeding. If the client invokes the\nprivilege by saying she does not want the therapist to release con\u0000dential information to the court, the subpoena is still valid, and the\npsychologist must appear unless he/she has been released from it. When the client invokes the privilege in this type of situation, the\npsychologist should contact the client's attorney or his/her own attorney to discuss the matter. The psychologist can also contact the attorney\nwho issued the subpoena to request to be released from it.\nAnswer B: This answer is incorrect. Psychologists should not ignore subpoenas. Unless the psychologist receives a written release, he/she\nmust appear as requested but would not reveal con\u0000dential (privileged) information without the client's consent or without an order from the\ncourt to do so.\nAnswer C: This answer is incorrect. The psychologist should work through an attorney to obtain a release from the subpoena.\nAnswer D: This answer is incorrect. Without a release from the subpoena, the psychologist must appear in court."
+    },
+    {
+      "question": "You receive an email from Dr. Brenda Browne, a licensed psychologist, who is currently seeing one of your former clients for a substance use disorder. Dr. Browne asks you to forward the client's record to her and states that the client has signed a release authorizing you to do so. You should:",
+      "options": {
+        "A": "wait until you receive a request from the client before taking any action",
+        "B": "contact the client to discuss the release of information",
+        "C": "forward a photocopy of the \u0000le to the psychologist as requested",
+        "D": "forward a summary of the \u0000le to the psychologist that includes only information related to the client's current condition"
+      },
+      "correct": "B",
+      "explanation": "Even though the person requesting the client's record is a licensed psychologist, you would not want to breach con\u0000dentiality by providing\ncon\u0000dential client information to her without knowing speci\u0000cally to what the client has consented to.\nAnswer A: This answer is incorrect. It is unlikely the client would contact the psychologist directly to ask that records be forwarded.\nAnswer C: This answer is incorrect. You would want to verify that the client has, in fact, signed a release and discuss the release and its\npotential consequences with the client before providing the psychologist with the requested information.\nAnswer D: This answer is incorrect. The primary concern, in this case, is to con\u0000rm the client understands the consequences of releasing\ninformation. Further, it may be di\u0000cult to separate out which information is speci\u0000c to the client's current presenting concerns."
+    },
+    {
+      "question": "The term privilege refers to _____________________________.",
+      "options": {
+        "A": "an ethical requirement designed to protect client information from being disclosed except when the client has signed a release",
+        "B": "a legal requirement designed to protect con\u0000dential information from being disclosed to anyone not directly involved in a client's case",
+        "C": "an ethical requirement that applies to the con\u0000dentiality of therapist-client communications in both legal and nonlegal situations",
+        "D": "a legal requirement designed to protect con\u0000dential information from being disclosed in a legal proceeding"
+      },
+      "correct": "D",
+      "explanation": "Privilege is a legal term and refers to \"privileged communications\" that arise in legally designated relationships (e.g., the therapist-client\nrelationship).\nAnswer A: This answer is incorrect, as it does not address the legal context of the term.\nAnswer B: This answer is incorrect, as to whether one is involved in a client's case is largely irrelevant in a legal setting.\nAnswer C: This answer is incorrect because privilege applies to a legal obligation. Privilege is discussed in the Ethics Manual of the written\nstudy materials."
+    },
+    {
+      "question": "A woman comes to family therapy with her three daughters, ages 10, 13, and 19, all of whom live at home with the woman and their father. During the third therapy session, the 19-year-old tells you that her father began sexually molesting her when she was 13 years old. When you ask the younger girls if their father has ever abused them, they are reluctant to say anything about their father, and the mother adamantly denies any knowledge of abuse. In this situation, you should _____________________________________.",
+      "options": {
+        "A": "advise the mother to contact the appropriate authorities",
+        "B": "\u0000le a report with the appropriate authorities yourself",
+        "C": "meet with the father to determine if he is abusing the younger daughters",
+        "D": "maintain con\u0000dentiality since the known victim of abuse is over 18 years old"
+      },
+      "correct": "B",
+      "explanation": "Whenever you acquire a reasonable suspicion in your professional capacity that a minor is being abused, you have a legal obligation to report\nthe abuse. Therefore, you would be legally required to \u0000le a report with the appropriate authorities.\nAnswer A: This answer is incorrect. As a professional psychologist, you are required to report suspected abuse, and would not rely exclusively\non a client who stated she \u0000led a report.\nAnswer C: This answer is incorrect. Your responsibility lies in reporting the abuse, but not in investigating it. Addressing it with the father may\ninterfere with the ability of proper authorities to investigate the concern.\nAnswer D: This answer is incorrect. Although psychologists are not usually required to make a report when the individual is over the age of 18,\nin the situation described in the question, you would have reasonable suspicion that the younger sisters are also victims of abuse. Additional\ninformation about reporting child abuse is provided in the Ethics Manual of the written study materials."
+    },
+    {
+      "question": "You receive a letter from Mrs. Bisque's attorney asking you to testify on behalf of Mrs. Bisque in a divorce settlement regarding the custody of her children. You are aware that Mrs. Bisque's husband was recently admitted to a psychiatric hospital in another city. You should _____________________________________.",
+      "options": {
+        "A": "make a recommendation based on your knowledge that Mr. Bisque is obviously unable to have custody of the children",
+        "B": "make a recommendation based on an interview with Mrs. Bisque and her children",
+        "C": "refuse to make a recommendation since psychologists are not supposed to make speci\u0000c custody recommendations",
+        "D": "refuse to make a speci\u0000c recommendation about custody unless you can evaluate the entire family"
+      },
+      "correct": "D",
+      "explanation": "Although it is not unethical to provide information (e.g., test results) about a single party in a custody dispute, it would be unethical to make a\nrecommendation about custody based on incomplete information. An accepted standard of practice in custody situations is that a\npsychologist should not make a recommendation for custody unless the psychologist has evaluated all parties. This is consistent with the\nrequirements of Standard 9.01 of APA's Ethics Code and Principle II.13 of the Canadian Code of Ethics and with the provisions of the APA's\nGuidelines for Child Custody Evaluations in Divorce Proceedings.\nAnswer A: This answer is incorrect. The question does not indicate you have any knowledge of Mr. Bisque as a parent, given it does not state\nyou conducted an evaluation of the family.\nAnswer B: This answer is incorrect. An interview with one parent is an insu\u0000cient basis on which to make a custody recommendation.\nAnswer C: This answer is incorrect. Psychologists may make recommendations regarding child custody provided they follow the ethical and\npractice guidelines cited above."
+    },
+    {
+      "question": "You receive a request from a psychologist working at a mental health crisis unit for information about a former client of yours who left three months ago with an outstanding balance of $500. Due to an emergency situation, the client has been admitted as an inpatient and has signed a release. You tell the psychologist that you will provide her with the information she has requested only after the client has made arrangements for paying his bill. You have ___________________________________.",
+      "options": {
+        "A": "acted ethically as long as you had informed the client of your policy regarding unpaid fees",
+        "B": "acted ethically since the client has violated your implicit contract with him to pay the fee for the services you provided to him",
+        "C": "acted ethically since this action is not covered by the ethical guidelines",
+        "D": "acted unethically"
+      },
+      "correct": "D",
+      "explanation": "In this situation, the former client's records are needed for an emergency situation as the client has been admitted as an inpatient to a mental\nhealth crisis unit.\nAnswer A: This answer is incorrect. The ethical guidelines prohibit \"holding a client's records hostage\" because the client has not paid his or her\nbill when these records are requested and needed for emergency treatment.\nAnswer B: This answer is incorrect. Again, withholding the client's records because of an outstanding bill would be unethical.\nAnswer C: This answer is incorrect. See Standard 6.03 of the APA's Ethics Code which explicitly prohibits this practice and Principles II.1 and 2\nof the Canadian Code of Ethics which require psychologists to promote the welfare of clients and to avoid harming them."
+    },
+    {
+      "question": "Kameko K., a psychology intern, administers psychological tests for a community mental health clinic, but her supervisor always scores the tests and interprets the results. When preparing the psychological report for these clients, the supervisor does not indicate that the intern administered the tests. This is _________________________.",
+      "options": {
+        "A": "ethical because the supervisor scored and interpreted the tests",
+        "B": "ethical because the supervisor is responsible for the accuracy of the psychological report",
+        "C": "unethical because an intern should not be administering psychological tests",
+        "D": "unethical because the intern should be listed as the examiner in the report"
+      },
+      "correct": "D",
+      "explanation": "This issue is not directly addressed by ethical guidelines, so the best approach when choosing the answer would be to identify the one that is\nmost consistent with the \"spirit\" of the guidelines. In this case, Standard 5.01(b) of the APA's Ethics Code prohibits psychologists from making\nmisleading statements, and Standard 6.06 requires psychologists to provide accurate information to payors and funding sources. It is also\nconsistent with Principles III.1 and 5 of the Canadian Code of Ethics.\nAnswer A: This answer is incorrect. In the interest of reporting accurate information, the psychologist should list the clinician who administered\nthe tests.\nAnswer B: This answer is incorrect. Administering, scoring, and interpreting test results are critical components of a psychological evaluation.\nTo withhold the contributions of a clinician would not be in keeping with ethical requirements.\nAnswer C: This answer is incorrect. Provided interns are trained in test administration, it is ethical for them to administer psychological tests\nunder supervision."
+    },
+    {
+      "question": "A client of Dr. William Wong who has been in therapy for six months is currently the defendant in a court case. The client's attorney contacts Dr. Wong, requesting that he provide her with information regarding diagnosis and treatment progress. Dr. Wong should _______________________________.",
+      "options": {
+        "A": "release the information as requested since privilege is waived in this situation",
+        "B": "release only the information he believes is relevant to the client's case",
+        "C": "release the information since the request came from the client's attorney",
+        "D": "discuss the release with the client before taking any additional action"
+      },
+      "correct": "D",
+      "explanation": "The release of con\u0000dential client information ordinarily requires a waiver of con\u0000dentiality from the client. Privilege may or may not be waived\nin this situation. Dr. Wong should discuss the release of con\u0000dential information and obtain a waiver from the client before sharing information\nwith the attorney.\nAnswer A: This answer is incorrect because it fails to prioritize con\u0000dentiality as the primary concern.\nAnswer B: This answer is incorrect. Again, Dr. Wong needs to con\u0000rm the client intends to release information to the attorney.\nAnswer C: This answer is incorrect. Even though the client's attorney has contacted Dr. Wong, a release is still required. Dr. Wong cannot\ndetermine whether the client intends to release information without consulting with her."
+    },
+    {
+      "question": "During a discussion with a 4th-grade teacher, the teacher tells a school psychologist that one of her students is constantly disrupting the class. After evaluating the child and obtaining more information about the situation, the school psychologist concludes that the teacher's approach with the child is part of the problem. Consequently, the school psychologist should __________________________________.",
+      "options": {
+        "A": "make an appointment with the principal to discuss the teacher's approach",
+        "B": "explain to the teacher how her approach may be exacerbating the problem",
+        "C": "recommend that he (the therapist) start counseling the child on a regular basis",
+        "D": "recommend that the child be transferred to another classroom"
+      },
+      "correct": "B",
+      "explanation": "Although this situation is not explicitly addressed by ethical guidelines, the APA's Ethics Code and the Canadian Code of Ethics require\npsychologists to cooperate with other professionals. School psychologists must often act as a coordinator to bring together a variety of people\nand resources to resolve problems. Of the answers given, this one is most in line with the child's best interests and the school psychologist's\nresponsibility to work with all people involved in the case.\nAnswer A: This answer is incorrect. General Principle B of the APA's Ethics Code states that \"psychologists consult with, refer to, or cooperate\nwith other professionals and institutions to the extent needed to serve the best interests of those with whom they work.\" The child's teacher is\nthe most directly involved professional, and given that she asked for help, it makes sense to start with her.\nAnswer C: This answer is incorrect. The question indicates the teacher's behavior is contributing to the problem. Depending on the child's\nsituation, individual therapy may be appropriate at some point, but this is not the best answer.\nAnswer D: This answer is incorrect. Because the teacher asked for assistance, it makes sense, to begin with advising her what she can do\ndifferently. Moving the child to a different classroom could be more disruptive for the child. This is not a reasonable choice."
+    },
+    {
+      "question": "To serve as an expert witness in a court case, a psychologist must ______________________________________.",
+      "options": {
+        "A": "be board certi\u0000ed as an expert witness",
+        "B": "be quali\u0000ed by the court to offer opinions and conclusions about the case",
+        "C": "have been hired by the person he/she will be testifying about",
+        "D": "testify only about what he/she personally observed or obtained"
+      },
+      "correct": "B",
+      "explanation": "An expert witness is a person who, because of his/her special training, knowledge, or experience, is quali\u0000ed to offer an opinion as testimony in\na court proceeding.\nAnswer A: This answer is incorrect. Board certi\u0000cation is not required to serve as an expert witness.\nAnswer C: This answer is incorrect. Whether the psychologist is hired by the subject of his or her testimony is irrelevant.\nAnswer D: This answer is incorrect. A lay witness or eyewitness testi\u0000es regarding what he or she personally observed."
+    },
+    {
+      "question": "Sally, age 14, tells her therapist that she wants to die and that she has access to her mother's sleeping medication. The therapist believes that Sally's threat is serious and tells Sally that he'll have to contact her parents. Sally states their agreement when beginning therapy was that all information provided would be con\u0000dential. If the therapist contacts Sally's parents, he has acted ____________________.",
+      "options": {
+        "A": "unethically if Sally was, in fact, told that con\u0000dentiality would be maintained",
+        "B": "unethically if he contacts Sally's parents without \u0000rst obtaining Sally's consent to do so",
+        "C": "ethically as long as the limits of con\u0000dentiality were discussed with Sally at the outset of therapy",
+        "D": "ethically since a breach of con\u0000dentiality is justi\u0000ed when a client is threatening suicide"
+      },
+      "correct": "D",
+      "explanation": "Psychologists are legally and ethically obligated to breach con\u0000dentiality whenever a client is believed to be a danger to themselves. With\nrespect to choosing to tell her parents, the therapist acted ethically regardless of whether or not they clearly explained the limits of\ncon\u0000dentiality at the start of therapy.\nAnswer A: This answer is incorrect. Psychologists must take appropriate action whenever a client is suicidal.\nAnswer B: This answer is incorrect. Because Sally is a minor, contacting her parents would be an appropriate action.\nAnswer C: While psychologists should discuss the limits of con\u0000dentiality, whether or not this discussion took place, the psychologist should\nstill contact the parents to protect Sally."
+    },
+    {
+      "question": "You receive a call from Mrs. Wang who is very upset because her 14-year-old daughter witnessed an assault of her best friend three days ago and is distraught. Her daughter has not slept, declines to eat, and is consistently tearful. You have limited experience working with adolescents and in providing crisis intervention. However, you are the most experienced psychologist in the community. As an ethical psychologist, you will _____________________.",
+      "options": {
+        "A": "agree to see Mrs. Wang's daughter in therapy since you've had some experience providing crisis intervention experiences",
+        "B": "inform Mrs. Wang about your lack of experience and let her decide if she wants you to provide therapy to her daughter",
+        "C": "inform Mrs. Wang that you cannot see her daughter because of your lack of experience",
+        "D": "see Mrs. Wang's daughter in therapy only until the crisis has ended or until you locate alternative services"
+      },
+      "correct": "D",
+      "explanation": "This answer is most consistent with ethical requirements. 2.02 of the APA's Ethics Code and Principle II.8 of the Canadian Code of Ethics apply\nto this situation. 2.02 of the Ethics Code, for example, states that \"in emergencies, when psychologists provide services to individuals for whom\nother mental health services are not available and for which psychologists have not obtained the necessary training, psychologists may provide\nsuch services in order to ensure that services are not denied. The services are discontinued as soon as the emergency has ended or\nappropriate services are available.\"\nAnswer A: This answer is incorrect because it does not take into account the limited services that would be provided to address an emergency\nsituation.\nAnswer B: This answer is incorrect. The psychologist needs to determine the degree to which she or he can address the client's needs given the\ncrisis.\nAnswer C: This answer is incorrect. The ethical guidelines allow for \u0000exibility in the case of a psychologist responding to an emergency\nsituation on a short-term basis."
+    },
+    {
+      "question": "Which of the following is true about the use of deception in research studies that may cause participants pain?",
+      "options": {
+        "A": "Deception is acceptable in studies that may cause pain only when the use of pain is justi\u0000ed by the study's potential value.",
+        "B": "Deception is acceptable in studies that may cause pain only when there are no alternative methods for conducting a study.",
+        "C": "Deception is prohibited when the pain is physical but not when it is psychological in nature.",
+        "D": "Deception is prohibited whether the pain is physical or psychological in nature."
+      },
+      "correct": "D",
+      "explanation": "This answer is most consistent with Standard 8.07(b) of the APA's Ethics Code and Principle III.24 of the Canadian Code of Ethics. Standard\n8.07(b), for example, states that \"psychologists do not deceive prospective participants about research that is reasonably expected to cause\nphysical pain or severe emotional distress.\" Pain in research is acceptable only when certain conditions are met.\nAnswer A: This answer is incorrect. When pain is expected, the ethical guidelines do not weigh the potential contributions of the study.\nAnswer B: This answer is incorrect. It does not align with ethical mandates.\nAnswer C: This answer is incorrect. The ethical standards prohibiting deception apply to both physical and emotional pain."
+    },
+    {
+      "question": "Dr. Calvin Claymore, a licensed psychologist, regularly waives the co-payment for low-income clients whose therapy fees are covered by insurance. This practice is:",
+      "options": {
+        "A": "ethical only if the insurance company has agreed to this arrangement",
+        "B": "ethical since it is in the best interests of low-income clients",
+        "C": "ethical as long as Dr. Claymore does not bill the insurance company for an increased hourly fee in order to collect her full fee",
+        "D": "ethical as long as the insurance company does not explicitly prohibit this arrangement"
+      },
+      "correct": "A",
+      "explanation": "The practice described in this question represents insurance fraud, which is both unethical and illegal. Most insurance companies agree to pay\na speci\u0000c percentage of a psychologist's fee but, when the co-payment is waived, this means the insurance company is paying the entire fee.\nConsequently, regularly waiving the co-payment without the permission of the insurance company represents insurance fraud.\nAnswer B: This answer is incorrect. A psychologist who waives the co-payment when the insurance company has not agreed to the\narrangement is engaging in insurance fraud.\nAnswer C: This answer is incorrect. Insurance companies that require patients to submit a co-payment mandate psychologists bill the patient\nfor his or her share.\nAnswer D: This answer is incorrect. Psychologists who waive the co-pay because an insurance company has not explicitly prohibited it, risk\ninsurance fraud, which has serious legal and \u0000nancial penalties."
+    },
+    {
+      "question": "A psychologist receives a phone call from a person with whom the psychologist had an intimate relationship for a short period of time over two years ago. The relationship ended amicably, and this person wants to start therapy with the psychologist. With regard to ethical requirements, which of the following is true about this situation?",
+      "options": {
+        "A": "It would be ethical to begin therapy with this person as long as the psychologist does not revive their previous personal relationship.",
+        "B": "It would be ethical to begin therapy with this person since two years have passed since the end of the relationship.",
+        "C": "It would be ethical to begin therapy with this person as long as the psychologist discusses the potential con\u0000icts of interest during the informed consent process.",
+        "D": "It would be unethical to begin therapy with this person."
+      },
+      "correct": "D",
+      "explanation": "This answer is most consistent with Standard 10.07, which explicitly prohibits psychologists from accepting former sexual partners as therapy\nclients, and Principle III.33 which prohibits multiple relationships that might impair a psychologist's objectivity.\nAnswer A: This answer is incorrect. The APA ethical guidelines are clear that psychologists do not accept clients who are former sexual\npartners.\nAnswer B. This answer is incorrect. There is no two-year timeframe for beginning therapy with former romantic partners, as ethical mandates\nforbid such arrangements.\nAnswer C: This answer is incorrect. Again, the ethical guidelines clearly prohibit therapeutic relationships with former sexual partners."
+    },
+    {
+      "question": "When conducting research with human participants, a psychologist should be aware that ___________________________.",
+      "options": {
+        "A": "participants must be debriefed as soon as possible after their participation in the study, especially when the study has involved deception",
+        "B": "participants must be debriefed after their participation in the study only if the psychologist believes that not doing so will result in harm to them",
+        "C": "participants may be debriefed after their participation when deception occurs",
+        "D": "participants must be debriefed after their participation only if the study places them at high risk"
+      },
+      "correct": "A",
+      "explanation": "Debrie\u0000ng of research participants is addressed in Standard 8.08 of the APA's Ethics Code and Principles II.44 and III.26 of the Canadian Code\nof Ethics. Standard 8.08 of the Ethics Code requires psychologists to inform participants promptly following their participation in the study\nabout its nature, results, and conclusions; and Principle III.26 of the Canadian Code of Ethics requires psychologists to debrief participants as\nsoon as possible after their involvement in a study when there has been incomplete disclosure about the study's purpose. Consequently, of the\nanswers given, this one is most consistent with ethical guidelines.\nAnswer B: Weighing perceived harm is not included in the language of the ethics codes regarding debrie\u0000ng participants.\nAnswer C: Debrie\u0000ng is always required when deception is used in research studies.\nAnswer D: This answer is incorrect, as the guidelines require participants to be debriefed as soon as possible when they have participated in a\nstudy where deception was used."
+    },
+    {
+      "question": "A psychologist should be aware that information contained in client records _________________________________.",
+      "options": {
+        "A": "is protected by law and can never be disclosed without the client's consent",
+        "B": "is the property of the psychologist and cannot be disclosed without his/her consent",
+        "C": "is the joint property of the psychologist and client and cannot be disclosed without the consent of both",
+        "D": "is not free from disclosure all of the time, regardless of the wishes of the client or the psychologist"
+      },
+      "correct": "D",
+      "explanation": "Con\u0000dentiality of client information is waived in certain situations in the military and privilege is waived in certain legally de\u0000ned situations.\nTherefore, this is the best answer choice.\nAnswer A: This answer is incorrect. There are some situations when client information must be released, despite the wishes of the client or the\npsychologist. Record ownership and access are governed by legal guidelines.\nAnswer B: This answer is incorrect. In most jurisdictions, the laws grant ownership of the physical record to the practitioner but give clients the\nright to have access to the information contained in the record.\nAnswer C: This answer is incorrect. There are times when other individuals or entities have the right to access client information."
+    },
+    {
+      "question": "A psychologist in private practice is going through a di\u0000cult divorce and, as a result, has started drinking and is often depressed. He should do which of the following?",
+      "options": {
+        "A": "plunge deeper into his work to take his mind off his own problems",
+        "B": "seek professional consultation and consider temporarily suspending his practice",
+        "C": "explain the situation to his clients and offer to refer them to other therapists",
+        "D": "immediately refer his clients to other therapists"
+      },
+      "correct": "B",
+      "explanation": "This issue is addressed by Standard 2.06(b) of the APA's Ethics Code and Principle II.11 of the Canadian Code of Ethics. According to the APA\nEthics Code, the psychologist should take appropriate action, which may include, \"obtaining professional consultation or assistance ... to\ndetermine whether they should limit, suspend, or terminate their work-related duties\" [Ethics Code, Standard 2.06(b)]. Psychologists do not\nnecessarily have to abandon their professional practice when experiencing a period of personal distress. However, when personal problems\nmay be adversely affecting the welfare of their clients, psychologists must take appropriate action.\nAnswer A: This answer is incorrect. Seeking consultation with another professional is the best answer.\nAnswer C: This answer is incorrect. This may be necessary at some point, but the best initial step would be to seek consultation to determine\nthe most appropriate course of action.\nAnswer D: This answer is incorrect. Seeking professional consultation would be the appropriate \u0000rst step."
+    },
+    {
+      "question": "A psychology intern offers his supervisor a chance to invest in a real estate business. The supervisor _____________________________.",
+      "options": {
+        "A": "should consult a colleague regarding this decision",
+        "B": "should invest but only in his wife's name",
+        "C": "should refuse to invest",
+        "D": "should report the intern to the ethics committee"
+      },
+      "correct": "C",
+      "explanation": "Multiple relationships are addressed in Standard 3.05 of the APA's Ethics Code and Principle III.33 of the Canadian Code of Ethics. Standard\n3.05 states that \"a psychologist refrains from entering into multiple relationships if the multiple relationships could reasonably be expected to\nimpair the psychologist's objectivity, competence, or effectiveness in performing his or her functions as a psychologist, or otherwise risks\nexploitation or harm to the person with whom the professional relationship exists.\" Principle III.33 of the Canadian Code of Ethics includes a\nsimilar requirement. The situation described in this question represents a multiple (dual) relationship that could potentially impact the\npsychologist's ability to remain objective when acting as a supervisor for the intern.\nAnswer A: This answer is incorrect. Ethics codes clearly direct psychologists to avoid multiple relationships that will compromise their\nobjectivity.\nAnswer B: This answer is incorrect. Any \u0000nancial entanglement with a supervisee signi\u0000cantly risks compromise in the psychologist's\ncompetence and objectivity.\nAnswer D: This answer is incorrect. It would be a better strategy for the supervisor to educate the intern about multiple relationships rather than\nreport the intern to the ethics committee."
+    },
+    {
+      "question": "Dr. Molly Mendez, a well-known behavioral psychologist, is asked by her secretary if she would be willing to provide him with therapy to overcome gambling addiction. If Dr. Mendez agrees to do so, she will be acting ____________________________.",
+      "options": {
+        "A": "ethically as long as she has expertise in treating gambling addiction",
+        "B": "ethically as long as she charges the secretary her usual fee for psychological services",
+        "C": "unethically since doing so is likely to create an unacceptable multiple relationship",
+        "D": "unethically since maintaining the secretary's con\u0000dentiality will be di\u0000cult in this situation"
+      },
+      "correct": "C",
+      "explanation": "The situation described in this question represents a multiple relationship. Multiple relationships are addressed in Standard 3.05 of the APA's\nEthics Code and Principle III.33 of the Canadian Code of Ethics. These guidelines prohibit multiple relationships that could be expected to\nimpair a psychologist's objectivity, which is a potential problem in this situation since the roles of employer and therapist would continue\nsimultaneously over an extended period of time.\nAnswer A: This answer is incorrect as Dr. Mendez would be acting as both employer and therapist if she agrees to see her secretary in therapy.\nAnswer B: This answer is incorrect because it does not address the potentially harmful multiple relationship described in this question.\nAnswer D: This answer is incorrect because this answer fails to take into account the primary ethical dilemma presented."
+    },
+    {
+      "question": "Dr. Dennis Jones, in having a casual talk with a colleague, takes an idea from their conversation and decides to design and conduct a study to follow-up on the idea. When publishing the results of the study, it would be best for Dr. Jones to ___________________________.",
+      "options": {
+        "A": "offer his colleague joint authorship as \u0000rst author",
+        "B": "offer his colleague joint authorship as second author",
+        "C": "acknowledge his colleague's contribution in a footnote or introductory statement",
+        "D": "publish the study without acknowledging his colleague since the colleagues contribution was minor"
+      },
+      "correct": "C",
+      "explanation": "This issue is addressed by Standard 8.12 of the APA's Ethics Code and Principle III.7 of the Canadian Code of Ethics. Standard 8.12(b) states\nthat publication credit must \"accurately re\u0000ect the relative scienti\u0000c or professional contributions of the individuals involved, regardless of their\nrelative status\"; and Principle III.7 states that psychologists \"give credit for work done or ideas contributed by others ... in proportion to their\ncontribution.\"\nAnswer A: This answer is incorrect. While the idea for the study came from the colleague, she did not participate in designing or carrying out\nthe study and it would be acceptable to acknowledge her contribution in an introductory statement or footnote. This answer is incorrect.\nAnswer B: This answer incorrect. If the colleague does not contribute to the study by means of conducting or writing up the study, a footnote is\nsu\u0000cient.\nAnswer D: This answer is incorrect. The ethical guidelines clearly address giving publication credit relative to another's contributions."
+    },
+    {
+      "question": "A psychologist is writing a book for distribution and illustrates the section on projective personality tests with a number of pictures used in the Hand Test. This use of test materials in this way is _______________________.",
+      "options": {
+        "A": "clearly unethical because it compromises the usefulness of the test",
+        "B": "ethical only if the publisher of the book has accepted responsibility for including the pictures",
+        "C": "ethical since the Hand Test is not a commonly used psychological test",
+        "D": "professionally questionable but not covered by ethical guidelines"
+      },
+      "correct": "A",
+      "explanation": "This answer is most consistent with the provisions of Standard 9.11 of the APA's Ethics Code and Principle IV.11 of the Canadian Code of\nEthics. Standard 9.11 states that \"psychologists make reasonable efforts to maintain the integrity and security of test materials and other\nassessment techniques\"; and Principle IV.11 states that psychologists \"protect the skills, knowledge, and interpretations of psychology from\nbeing misused, used incompetently, or made useless (e.g., loss of security of assessment techniques) by others.\"\nAnswer B: This answer is incorrect as it fails to take into account test security.\nAnswer C: This answer is incorrect. Whether a test is used frequently or not is irrelevant to the ethical question in this question.\nAnswer D: This answer is incorrect, given the ethical guidelines prioritize the integrity and security of test materials."
+    },
+    {
+      "question": "Dr. Beatrice Bowen, a licensed psychologist, has been contacted by a company to evaluate job applicants. The job will involve administering projective tests to applicants for an accountant position to determine their sexual orientation. Dr. Bowen should ____________________.",
+      "options": {
+        "A": "not accept the job because the evaluation she is being requested to conduct represents an invasion of privacy",
+        "B": "not accept the job because projective tests have been shown to be unreliable and invalid",
+        "C": "accept the job and administer the tests as required but explain their purpose to all applicants before doing so",
+        "D": "accept the job, administer the tests as required, and report the results to the company"
+      },
+      "correct": "A",
+      "explanation": "Sexual orientation is not relevant to the ability to perform an accountant job successfully, and to seek such information as part of a job-related\nassessment is clearly an invasion of privacy. Standard 9.04(b) of the APA's Ethics Code, for example, states that \"psychologists may refrain\nfrom releasing test data to protect a client/patient or others from substantial harm or misuse or misrepresentation of the data or the test\"; and\nPrinciple I.38 of the Canadian Code of Ethics states that psychologists \"take care not to infringe ... on the personal, developmentally, or\nculturally de\u0000ned private space of individuals or groups unless clear permission is granted to do so.\"\nAnswer B: This answer is incorrect, as it fails to address the primary ethical con\u0000ict presented.\nAnswer C: This answer is incorrect, given it does not acknowledge the unethical nature of the request.\nAnswer D: This answer is incorrect and not consistent with ethical guidelines."
+    },
+    {
+      "question": "A client is in therapy with you as part of the requirements for her probation. During the third therapy session, she tells you that she wants to quit therapy. You should _________________________.",
+      "options": {
+        "A": "tell her that she cannot do so",
+        "B": "tell her that she can quit but that she needs to consider the legal rami\u0000cations of doing so",
+        "C": "tell her that her desire to quit is normal resistance and that she should come to therapy for at least two more sessions before making a decision",
+        "D": "call her probation o\u0000cer immediately"
+      },
+      "correct": "B",
+      "explanation": "The situation described in this question is addressed by Standard 3.07 of the APA's Ethics Code and Principle I.26 of the Canadian Code of\nEthics. This answer is most consistent with Standard 3.07 and Principle I.26, which address a psychologist's responsibilities when providing\nservices at the request of a third party. In this situation, the psychologist must ensure that the client understands what legal sanctions she may\nface if she does not stay in therapy.\nAnswer A: This answer is incorrect. The client may quit therapy, but there will be legal consequences as a result.\nAnswer C: This answer is incorrect as it overlooks the critical ethical issue inherent in this situation.\nAnswer D: This answer is incorrect, as it is aligned with neither ethical nor legal mandates."
+    },
+    {
+      "question": "A ___________ is a person appointed by the court to represent and make decisions in a legal proceeding for a minor or another person legally incapable of doing so.",
+      "options": {
+        "A": "testamentary guardian",
+        "B": "guardian ad litem",
+        "C": "conservator of a minor",
+        "D": "special conservator"
+      },
+      "correct": "B",
+      "explanation": "The description presented in this question best describes a guardian ad litem who is appointed by the court for a speci\u0000c purpose, such as to\nmake decisions for someone who is incapable of doing so. Additional information about guardianship is provided in the Ethics Manual of the\nwritten study materials.\nAnswer A: This answer is incorrect. A testamentary guardian is a person who is appointed in a deed or will to serve as guardian of a minor or\ndisabled person.\nAnswer C: This answer is incorrect. A conservator of a minor is responsible for managing the minor's \u0000nances.\nAnswer D: This answer is incorrect. A special conservator carries out the terms of preliminary protective orders."
+    },
+    {
+      "question": "Dr. Dolores Del Rio has been seeing Jeff J. in therapy for four months. For the last month, Jeff has complained about the progress he is making in therapy, and Dr. Del Rio has responded by working with him to modify treatment goals. In the last therapy session, however, Jeff stated that he is not happy with therapy. Dr. Del Rio's best course of action would be to ___________________.",
+      "options": {
+        "A": "recognize that Jeff's concerns are a normal reaction to the changes he is making as the result of therapy",
+        "B": "make a clinical decision as to whether or not Jeff is actually bene\u0000ting from therapy and, if he is, encourage him to continue with therapy for at least several more sessions",
+        "C": "discuss Jeff's continued dissatisfaction with him and the possibility of terminating therapy",
+        "D": "tell Jeff that she is ethically required to terminate therapy with him since he is not satis\u0000ed with the progress he is making"
+      },
+      "correct": "C",
+      "explanation": "This question addresses the issue of terminating therapy when a client does not seem to be bene\u0000ting from it. This is the best answer of those\ngiven because it takes the client's welfare into consideration and is most consistent with ethical guidelines regarding termination of\nprofessional services [see Standard 10.10(a) of the APA's Ethics Code or Principle II.37 of the Canadian Code of Ethics].\nAnswer A: The client's dissatisfaction may be related to several different factors, but the critical ethical issue in this question deals with the\nmatter of terminating therapy.\nAnswer B: This answer is incorrect. Given the client's concerns expressed over a month and the fact that the therapist has already adjusted\ntreatment goals, it is best to discuss termination with the client.\nAnswer D: This answer is incorrect because it fails to take into account the need for further discussion between the client and therapist."
+    },
+    {
+      "question": "Dr. Donald Jackson is starting a therapy group for recently divorced men. He tells the editor of the local newspaper, who has just divorced his wife, that he can attend the group for free if the editor includes an article about the program in the newspaper. Dr. Jackson has acted ____________________.",
+      "options": {
+        "A": "ethically since his request does not violate ethical guidelines",
+        "B": "ethically as long as the editor accurately describes the program",
+        "C": "unethically because his request is exploitative and violates ethical guidelines",
+        "D": "unethically only if the arrangement negatively impacts his objectivity when working with the editor in therapy"
+      },
+      "correct": "C",
+      "explanation": "Of the answers given, this one is most consistent with ethical guidelines. Standard 5.02(b) of the APA Ethics Code prohibits psychologists from\ncompensating \"employees of press, radio, television, or other communication media in return for publicity in a news item.\" Principle III.31 of the\nCanadian Code of Ethics prohibits psychologists from exploiting \"any relationship established as a psychologist to further personal, political, or\nbusiness interests at the expense of the best interests of their clients.\nAnswer A: Incorrect, because offering therapy in exchange for free publicity violates ethical guidelines.\nAnswer B: This answer is incorrect because it fails to address the ethical con\u0000ict inherent in offering therapy in exchange for coverage in the\nnewspaper.\nAnswer D: This answer is incorrect as the psychologist would not want to engage in any arrangement that might impact his objectivity."
+    },
+    {
+      "question": "You are hired as a psychology adjunct professor to teach a course at a graduate school. Which of the following are you ethically required to do in this case?",
+      "options": {
+        "A": "provide accurate information about the course content and be sure it is available for all interested parties",
+        "B": "con\u0000rm that the course content addresses the most recent research and theory in the area",
+        "C": "con\u0000rm that the course content addresses the interests of the students who enroll in the class",
+        "D": "allow students an opportunity to evaluate you at the end of the semester"
+      },
+      "correct": "A",
+      "explanation": "This issue is addressed by Standard 7.02 of the APA's Ethics Code and Principle III.5 of the Canadian Code of Ethics. Ethical guidelines\nexplicitly require psychologists to provide interested parties (in this case, the school administration and the students) with accurate and\ncomplete information about the course content.\nAnswer B: Incorrect, because although presenting the most recent research and theory is usually a good idea, the importance of doing so\nwould depend on the nature of the class. For example, recent research and theory would not be covered in a \"history of psychology\" class.\nAnswer C: This answer is incorrect because the interests of the students do not necessarily coincide with the content that you, as the\ninstructor, believe is important to present.\nAnswer D: This answer is incorrect. Providing students with opportunities to evaluate the course is desirable but is not required by ethical\nguidelines."
+    },
+    {
+      "question": "In general, which of the following is considered the \"best defense\" for a psychologist who is being sued for malpractice?",
+      "options": {
+        "A": "adequate records",
+        "B": "a signed informed consent",
+        "C": "providing state-of-the-art services",
+        "D": "good malpractice insurance"
+      },
+      "correct": "A",
+      "explanation": "Most experts agree that good record-keeping is the best defense for practitioners in cases of litigation. In addition to being familiar with\nrelevant laws and ethical guidelines, the best way to reduce vulnerability to malpractice is maintaining adequate records.\nAnswer B is incorrect. While documenting informed consent is required by ethical standards, the practice alone does not provide a better\ndefense than accurate and detailed case records.\nAnswer C is incorrect. Adequate records are the best defense in the event of litigation.\nAnswer D is incorrect because while good malpractice insurance is usually wise, it will only help protect the clinician from fees incurred and will\nnot impact the outcome of litigation."
+    },
+    {
+      "question": "A 26-year-old client you have been seeing for two months unexpectedly admits to you that he had sexual relations with the 15-year old daughter of his neighbor six months ago. He says that he knows what he did was wrong and that he will never do it again. You should __________________________________.",
+      "options": {
+        "A": "maintain the client's con\u0000dentiality",
+        "B": "report the client to the appropriate authorities",
+        "C": "alert the parents of his victim",
+        "D": "report the client to the appropriate authorities and alert the parents of his victim"
+      },
+      "correct": "B",
+      "explanation": "In cases of known and suspected child abuse, a psychologist is legally and ethically required to make a report to the appropriate authorities.\nAnswer A: This answer is incorrect. As mandated reporters, psychologists are required by law to report child abuse.\nAnswer C: This does not account for the psychologist's duty to report known or suspected child abuse to the appropriate authorities.\nAnswer D: This may result in breaching the client's con\u0000dentiality."
+    },
+    {
+      "question": "A consulting \u0000rm hired Dr. Sam Stone to assist with an ongoing research project. Dr. Stone works under the project director, Dr. Thompson, an organizational psychologist. Dr. Thompson asks Dr. Stone to review the preliminary report she has prepared for the project; and, in doing so, Dr. Stone discovers that some of the reported data is misleading and inaccurate. Dr. Stone expresses his concerns to Dr. Thompson and is told that \"it will be taken care of.\" Subsequently, Dr. Stone learns that the report was submitted to the company without any changes. Dr. Stone reviews the ethical guidelines and decides that pursuing the matter further isn't necessary. Dr. Stone's conclusion is _________________________.",
+      "options": {
+        "A": "correct since this situation is not covered by ethical guidelines",
+        "B": "correct since he has already attempted to resolve the matter in an informal manner as proscribed by ethical guidelines",
+        "C": "correct since it is the project directors responsibility to provide the company with complete and accurate data",
+        "D": "incorrect because he has a responsibility to ensure that the company is provided with complete and accurate data"
+      },
+      "correct": "D",
+      "explanation": "This issue is addressed by Standard 1.01 of the APA's Ethics Code and Principle II.5 of the Canadian Code of Ethics. Answer D is most\nconsistent with the \"spirit\" of these guidelines. Speci\u0000cally, Standard 1.01 of the Ethics Code states that \"if psychologists learn of misuse or\nmisinterpretation of their work, they take reasonable steps to correct or minimize the misuse or misrepresentation.\" Principle II.5 of the\nCanadian Code of Ethics, states that psychologists \"make every reasonable effort to ensure that psychological knowledge is not misused,\nintentionally or unintentionally, to harm others.\" (Also see Standard 5.01 of the Ethics Code and Principle III.1 of the Canadian Code of Ethics.)\nAnswer A: Ethical guidelines address the importance of psychologists representing their work accurately.\nAnswer B: Even though Dr. Stone made an attempt to resolve the discrepancy, the company still received inaccurate data and should be made\naware.\nAnswer C: Dr. Stone needs to take additional steps to address the misrepresentation of data."
+    },
+    {
+      "question": "The mother of a 31-year-old client that you have been providing therapy to for six months calls to check on her son's progress. She says that she is very concerned about her son and wants to know if there is anything she can do to help him. As an ethical psychologist, you _________________________.",
+      "options": {
+        "A": "advise her in general terms about how she can help her son",
+        "B": "suggest that she make an appointment so you can discuss the matter in person",
+        "C": "suggest that she come to therapy with her son at his next appointment",
+        "D": "tell her that you cannot discuss her son's condition with her"
+      },
+      "correct": "D",
+      "explanation": "This question addresses the issue of client con\u0000dentiality. The client is an adult, and unless a release of information allowing communication\nbetween the psychologist and the client's mother is on \u0000le, it would be unethical to release information to her. The ideal correct response is to\nnot even acknowledge that the son is a client, but because that option is not available, this is the next best response.\nAnswer A: Releasing information without the client's consent is unethical.\nAnswer B. A psychologist should not release information over the phone or in person with the mother.\nAnswer C. Giving the mother any information about her adult son would represent a breach of con\u0000dentiality."
+    },
+    {
+      "question": "Dr. Karen Kempfer, a licensed psychologist who specializes in couples and marriage therapy, has a con\u0000rmed stage 4 cancer diagnosis. She is incredibly upset by this diagnosis. In terms of ethical requirements, Dr. Kempfer _____________________.",
+      "options": {
+        "A": "should seek supervision",
+        "B": "should refrain from participating in any professional activities that might be adversely affected by her medical condition",
+        "C": "should inform her therapy clients of her medical condition so that they can decide whether they want to continue seeing her",
+        "D": "is not obligated to take any precautions due to her medical condition"
+      },
+      "correct": "B",
+      "explanation": "Standard 2.06 of the APA's Ethics Code and Principle II.11 of the Canadian Code of Ethics apply to the situation described in this question. This\nanswer is most consistent with ethical guidelines that address the impact of a psychologist's social, emotional, and health-related problems on\ntheir professional services. Standard 2.06 requires psychologists to \"refrain from initiating an activity when they know or should know there is a\nsubstantial likelihood that their personal problems will prevent them from performing their work-related activities in a competent manner\"; and\nPrinciple II.11 similarly requires psychologists to obtain appropriate help and/or discontinue professional activities when \"a physical or\npsychological condition reduces their ability to bene\u0000t and not harm others.\"\nAnswer A: Although Dr. Kempfer should take appropriate action if she believes her condition may interfere with her effectiveness as a therapist,\nthis response is too vague.\nAnswer C: It is not necessary for Dr. Kempfer to inform her clients of her condition.\nAnswer D: Dr. Kempfer would want to take some action if her medical condition is impacting her ability to provide effective psychological\nservices."
+    },
+    {
+      "question": "To be consistent with ethical requirements, David DeFoe, a psychology intern, must do which of the following?",
+      "options": {
+        "A": "He must tell his clients that he is a psychology intern.",
+        "B": "He may tell his clients that his work is being supervised.",
+        "C": "He must provide clients with information about his education and experience.",
+        "D": "He must indicate his status on his business card."
+      },
+      "correct": "A",
+      "explanation": "Standard 10.01 of the APA's Ethics Code and Principle III.22 of the Canadian Code of Ethics apply to the situation described in this question.\nThis answer is most consistent with ethical guidelines that require interns (trainees) to inform their clients of their professional status.\nAnswer B: Note that Standard 10.01(c) of the Ethics Code also requires that Mr. DeFoe provide clients with the name of his supervisor. To\nsimply say he, \"may\" tell negates the fact that this is an ethical requirement.\nAnswer C. This answer is incorrect. While an intern may provide this information, this answer fails to address the most important aspect of a\ntrainee's ethical requirement.\nAnswer D. This answer is incorrect because it misses the more critical aspect of the intern's responsibility, which is to inform the client of his\nstatus as an intern."
+    },
+    {
+      "question": "Dr. Amanda Alto's long-term client is suddenly \u0000red from her job and can no longer afford Dr. Alto's fee. The client suggests that she babysit for Dr. Alto's children in exchange for therapy. In terms of ethical guidelines, this exchange would be __________________________________.",
+      "options": {
+        "A": "ethical",
+        "B": "ethical only if Dr. Alto discusses the potential for con\u0000ict with the client",
+        "C": "ethical only if a fair market value is established for the client's babysitting services.",
+        "D": "unethical"
+      },
+      "correct": "D",
+      "explanation": "The situation described in this question is addressed by ethical guidelines related to multiple relationships and therapy fees. The arrangement\nwould violate ethical guidelines regarding multiple relationships and therapy fees. With regard to multiple relationships, if Dr. Alto agrees to the\narrangement, she will be acting as both therapist and employer, which may impair her ability to provide effective therapy to the client. In\naddition, the arrangement represents a form of barter (which is explicitly addressed by Standard 6.05 of the APA's Ethics Code and indirectly\naddressed by Principles II.1 and 2 of the Canadian Code of Ethics) that could also interfere with her objectivity.\nAnswer A is incorrect, given that the multiple relationships would interfere with Dr. Alto's ability to provide effective therapy to the client.\nAnswer B is incorrect, as Dr. Alto would not want to compromise her ability to provide effective therapy for her client.\nAnswer C is incorrect. Barter is permitted only when it will not impair a psychologist's objectivity."
+    },
+    {
+      "question": "Dr. Nancy Noonan plans to conduct a research study that will involve testing and interviewing psychiatric inpatients. Before beginning the study, she must obtain _____________________________.",
+      "options": {
+        "A": "informed consent from the hospital's administrator",
+        "B": "informed consents from the patients' legal guardians",
+        "C": "informed consent from the patients' legal guardian and assent from the patients",
+        "D": "assent from the patients"
+      },
+      "correct": "C",
+      "explanation": "Standards 3.10 and 8.02 of the APA's Ethics Code and Principle I.35 of the Canadian Code of Ethics apply to the situation described in this\nquestion. The answers given to this question imply that the patients are unable to give informed consent to their participation in the study since\nthis option is not provided in any of the answers. Therefore, the best answer concludes that whenever a person is unable to provide informed\nconsent for participation in research (i.e., because he/she is incapable of doing so), a psychologist must obtain consent from the person's legal\nguardian and assent (agreement) from the person.\nAnswer A is incorrect. A hospital administrator has no legal authority to provide consent for patient participation.\nAnswer B is incorrect, as this answer is incomplete given it does not include the necessity of obtaining patient assent.\nAnswer D is incorrect as it does not include the importance of obtaining informed consent from the patients' legal guardians."
+    },
+    {
+      "question": "A psychology intern who has been working at a mental health clinic for the past six months tells you that his internship was suddenly terminated by his supervisor for \"incompetence.\" He also says that he had not been given any warning that his performance was inadequate before being terminated. You tell the intern that ____________________________.",
+      "options": {
+        "A": "the supervisor's behavior seems unfair but is not addressed by ethical guidelines",
+        "B": "the supervisor's behavior is acceptable as long as the intern was given speci\u0000c reasons for his termination",
+        "C": "the supervisor's behavior is acceptable as long as the reason for the intern's termination is valid",
+        "D": "the supervisor's behavior may have violated ethical guidelines regarding supervisee performance evaluations"
+      },
+      "correct": "D",
+      "explanation": "Although the termination of supervisees is not directly addressed by ethical guidelines, evaluating and providing feedback to supervisees is\naddressed by Standard 7.06 of the APA's Ethics Code and Principle II.25 of the Canadian Code of Ethics. This answer is most consistent with\nethical guidelines regarding evaluation and feedback as well as with more general provisions regarding the avoidance of harm (e.g., Standard\n3.04 of the Ethics Code and Principles I.13 and II.2 of the Canadian Code of Ethics).\nAnswer A is incorrect as the APA Ethic's Code Standard 7.06 (a) states \"psychologists establish a timely and speci\u0000c process for providing\nfeedback to students and supervisees. Information regarding the process is provided to the student at the beginning of supervision.\"\nAnswer B: This answer fails to address the broader issue regarding the delivery of timely feedback.\nAnswer C: This answer fails to address the broader issue regarding the delivery of timely feedback."
+    },
+    {
+      "question": "Which of the following best describes ethical guidelines regarding barter as a substitute for the collection of fees for professional psychological services?",
+      "options": {
+        "A": "Barter may be acceptable when certain conditions are met.",
+        "B": "The barter of goods (but not services) is prohibited by ethical guidelines.",
+        "C": "The barter of services (but not goods) is prohibited by ethical guidelines.",
+        "D": "Barter of any kind is prohibited by ethical guidelines."
+      },
+      "correct": "A",
+      "explanation": "Barter is explicitly addressed by Standard 6.05 of the APA's Ethics Code and indirectly addressed by Principles III.31-33 of the Canadian Code\nof Ethics. Barter is prohibited by Standard 6.05 of the APA's Ethics Code when it is clinically contraindicated or exploitative. In other words, in\ncertain circumstances, barter may be acceptable. The Canadian Code of Ethics does not directly address barter but, to be consistent with the\n\"spirit\" of the Code, barter should be avoided when it may be harmful to the client.\nAnswer B: This answer is incorrect as ethical guidelines make no such distinction.\nAnswer C: This answer is incorrect as again, the ethical codes do not distinguish between bartering for goods and services.\nAnswer D: This answer is incorrect, given the ethical codes make allowance for barter under certain circumstances."
+    },
+    {
+      "question": "Which of the following is not a condition for a claim of malpractice against a psychologist?",
+      "options": {
+        "A": "The psychologist must have a duty to the client.",
+        "B": "There must be evidence that the psychologists' actions were not in the best interests of the client.",
+        "C": "The psychologist must have acted negligent or improperly.",
+        "D": "There must be a causal relationship between the psychologists' negligence and the harm claimed by the client."
+      },
+      "correct": "B",
+      "explanation": "This is the correct response because it is the only one that is not required for a claim of malpractice against a psychologist. A claim of\nmalpractice requires that four conditions be met: a duty to the client; a breach of that duty; harm to the patient; and a causal relationship\nbetween the breach of duty and harm to the patient.\nAnswer A: This answer is incorrect, as it names one of the four conditions for a malpractice claim.\nAnswer C: This answer is incorrect because it describes a condition for a claim of malpractice.\nAnswer D: This answer is incorrect because it names one of the four conditions of malpractice."
+    },
+    {
+      "question": "Dr. Kay Klein, a licensed psychologist, is preparing a brochure for her weekend workshop on \"Effective Parenting Strategies for Single Parents.\" Included in the brochure are several testimonials from former workshop participants. According to ethical guidelines, the use of testimonials is ____________________________.",
+      "options": {
+        "A": "clearly ethical",
+        "B": "ethical if certain conditions are met",
+        "C": "unethical only when the testimonials are false or misleading",
+        "D": "clearly unethical"
+      },
+      "correct": "B",
+      "explanation": "The use of testimonials is addressed by Standard 5.05 of the APA's Ethics Code and Principle III.31 of the Canadian Code of Ethics. Standard\n5.05 states that psychologists do not solicit testimonials \"from current therapy clients/patients or other persons who because of their\nparticular circumstances are vulnerable to undue in\u0000uence\"; and Principle III.31 prohibits psychologists from exploiting clients. Of the answers\ngiven, this one is most consistent with ethical guidelines.\nAnswer A: This answer is incorrect because using client testimonials is ethical only when certain conditions are met. This answer fails to\naccount for the fact that publishing testimonials can sometimes be unethical.\nAnswer C: Although false or misleading testimonials would be unethical, this answer is not the best choice since it states that testimonials are\nunethical when they contain false or misleading information and does not address the ethical responsibilities inherent in obtaining client\ntestimonials.\nAnswer D: This answer is incorrect, given that testimonials may be used under certain circumstances."
+    },
+    {
+      "question": "Malpractice is a tort involving which of the following?",
+      "options": {
+        "A": "failure to protect",
+        "B": "coercion",
+        "C": "negligence",
+        "D": "breach of contract"
+      },
+      "correct": "C",
+      "explanation": "A tort is civil wrongdoing resulting from a breach of duty. Malpractice is a civil tort involving a negligent breach of duty that results in harm to\nthe client. Being familiar with the conditions for a claim of malpractice would have helped you identify this as the correct answer (see the\nEthics Manual in the written study materials).\nAnswer A. This answer is incorrect. Although a tort involves a breach of duty, it is not necessarily related to the duty to protect (although a\nfailure to protect in certain legally de\u0000ned situations might result in a claim of malpractice).\nAnswer B: This answer is incorrect, as coercion is not central to the de\u0000nition of malpractice.\nAnswer D: This answer is incorrect as it does not address the larger issue of malpractice as a breach of duty."
+    },
+    {
+      "question": "Which of the following is responsible for the largest proportion of complaints \u0000led with the APA's Ethics Committee?",
+      "options": {
+        "A": "sexual misconduct",
+        "B": "test misuse",
+        "C": "breach of con\u0000dentiality",
+        "D": "discrimination"
+      },
+      "correct": "A",
+      "explanation": "Although the types of actions that underlie complaints \u0000led with the APA's Ethics Committee vary in number from year to year, one of the\nactions listed in the answers to this question has consistently been the most frequent cause of complaints. The 2009 Report of the Ethics\nCommittee, for example, identi\u0000es sexual misconduct of an adult as being the behavior most commonly cited in cases opened by the Ethics\nCommittee, which is consistent with previous reports. Test misuse, breach of con\u0000dentiality, and discrimination (answers b, c, and d) are\ncauses of complaints but not as often as is sexual misconduct.\nAnswer B: Test misuse is among those complaints \u0000led with the APA Ethics Committee, but it is cited less frequently than sexual misconduct.\nAnswer C: Breach of con\u0000dentiality is among those complaints \u0000led with the APA Ethics Committee, but it is cited less frequently than sexual\nmisconduct.\nAnswer D: Discrimination is among complaints \u0000led with the APA Ethics Committee, but it is cited less frequently than sexual misconduct."
+    },
+    {
+      "question": "You are contacted by a defendant's attorney to evaluate the possibility of an insanity plea. Who is the \"holder of the privilege\" in this situation?",
+      "options": {
+        "A": "the defendant",
+        "B": "the defendant's attorney",
+        "C": "the court",
+        "D": "the psychologist"
+      },
+      "correct": "A",
+      "explanation": "Privilege is waived only in certain circumstances and even when it is waived, another person or agency does not become the \"holder of the\nprivilege.\" The defendant would still be the \"holder of the privilege\" even if the privilege is waived. In the situation described in this question,\nprivilege would be waived only if the defendant actually claims insanity as his/her defense during the trial. Additional information on privilege is\nprovided in the Ethics Manual in the written study materials.\nAnswer B: Incorrect. The defendant's attorney is not the \"holder of the privilege.\"\nAnswer C: Incorrect. The court is not the \"holder of the privilege.\"\nAnswer D: Incorrect. The client remains the \"holder of the privilege\" even if the privilege is waived."
+    },
+    {
+      "question": "Which of the following is most likely a violation of ethical guidelines?",
+      "options": {
+        "A": "A brochure containing client testimonials mailed to potential attendees at a conference for adult children of alcoholics.",
+        "B": "An advertisement offering a free initial therapy session that is published in the campus newspaper prior to \u0000nal exams.",
+        "C": "Uninvited in-person solicitations for therapy of individuals whose homes were destroyed several months prior by a hurricane.",
+        "D": "A display ad for psychotherapy services in the yellow pages."
+      },
+      "correct": "C",
+      "explanation": "Of the advertisements/solicitations described in the responses, only one is clearly prohibited by ethical guidelines. In-person solicitation of\nindividuals who are vulnerable to undue in\u0000uence is explicitly prohibited by Standard 5.06 of the APA's Ethics Code and is inconsistent with the\n\"spirit\" of the Canadian Code of Ethics (see, e.g., Principles I.27 and III.31).\nAnswer A: This answer is incorrect as testimonials are acceptable as long as they are not solicited from clients who are susceptible to undue\nin\u0000uence (see Standard 5.05 of the APA's Ethics Code).\nAnswer B: This answer is incorrect, as free initial sessions are not prohibited by ethical guidelines.\nAnswer D: Ads in the yellow pages of the phone directory are not prohibited by ethical guidelines."
+    },
+    {
+      "question": "Dr. Snyder, a clinical psychologist, is planning to take a three-week cruise. In terms of his clinical practice, Dr. Snyder's best course of action would be __________________________.",
+      "options": {
+        "A": "discuss his vacation plans with his current clients ahead of time so that they know he will be unavailable during that time",
+        "B": "give his clients a phone number where he can be reached",
+        "C": "give his clients the phone number of a colleague who has agreed to accept phone calls in emergencies",
+        "D": "hire a colleague to take over his appointments while he is on vacation"
+      },
+      "correct": "C",
+      "explanation": "Of the answers given, this one makes the most sense in terms of the client's welfare and Dr. Snyder's interests. To be consistent with ethical\nrequirements (e.g., Standard 3.12 of the APA's Ethics Code), Dr. Snyder should make some kind of arrangements for his clients while he is on\nvacation.\nAnswer A: Simply informing his clients of his unavailability without arranging for crisis coverage would be insu\u0000cient and unethical.\nAnswer B: This answer is incorrect. Ethically, Dr. Snyder would not be required to be available by phone to his clients during his vacation.\nHowever, he would be required to provide clients with a contact for emergency situations.\nAnswer D: This answer is Incorrect. Dr. Snyder would not be required to provide alternative ongoing services for his clients."
+    },
+    {
+      "question": "Which of the following best describes the provisions of the APA's \"Specialty Guidelines for Forensic Psychology\" regarding contingency fees?",
+      "options": {
+        "A": "Contingent fees are acceptable as long as they are fair and equitable.",
+        "B": "Contingent fees are acceptable only for expert or fact witnesses who do not have a previous relationship with the person they are testifying about.",
+        "C": "Contingent fees should ordinarily be avoided.",
+        "D": "Contingent fees are not addressed by the Specialty Guidelines."
+      },
+      "correct": "C",
+      "explanation": "Contingent fees are fees that depend on the outcome of a case and are often a percentage of the money the client receives. Contingent fees\nare addressed in Paragraph 5.02 of the \"Specialty Guidelines,\" which states, \"Forensic practitioners seek to avoid undue in\u0000uence that might\nresult from \u0000nancial compensation or other gains. Because of the threat to impartiality presented by the acceptance of contingent fees and\nassociated legal prohibitions, forensic practitioners strive to avoid providing professional services on the basis of contingent fees.\"\nAnswer A: This answer is incorrect given contingent fees to compromise a psychologist's ability to remain impartial.\nAnswer B: This answer is incorrect as practitioners, regardless of their role in the forensic proceedings, are discouraged from accepting\ncontingent fees.\nAnswer D: Incorrect. The \"Specialty Guidelines\" include speci\u0000c language regarding contingent fees."
+    },
+    {
+      "question": "As de\u0000ned in the APA's General Guidelines for Providers of Psychological Services and the CPA's Practice Guidelines for Providers of Psychological Services, \"psychological services\" include all of the following except?",
+      "options": {
+        "A": "the conduct of scienti\u0000c research",
+        "B": "program development",
+        "C": "consultation related to assessment and intervention",
+        "D": "supervision of psychological services"
+      },
+      "correct": "A",
+      "explanation": "The APA and CPA guidelines are both very speci\u0000c about the activities that constitute \"psychological services.\" The conduct of scienti\u0000c\nresearch is not included in the de\u0000nition of psychological services.\nAnswer B: This answer is incorrect given program development is included.\nAnswer C: This answer is incorrect as consultation is included.\nAnswer D: This answer is incorrect, given supervision is included."
+    },
+    {
+      "question": "A psychologist realizes that one of her therapy clients is a co-owner of a company that just hired her as a consultant. To be consistent with ethical requirements, the psychologist should _____________________________.",
+      "options": {
+        "A": "remedy the situation in a way that takes the client's best interests into account",
+        "B": "continue in both roles but discuss any problems when they occur",
+        "C": "terminate her role as a therapist or consultant",
+        "D": "terminate her role as a consultant"
+      },
+      "correct": "A",
+      "explanation": "This is a di\u0000cult question to answer since none of the answers is obviously incorrect. The best answer, however, is the one that comes closest\nto the actual language of the ethical guidelines. Standard 3.05(b) of the APA's Ethics Code states that, when a multiple relationship occurs, \"the\npsychologist takes reasonable steps to resolve it with due regard for the best interests of the affected person and maximal compliance with\nthe Ethics Code\"; and the Values Statement of Principle III of the Canadian Code of Ethics contains similar language.\nAnswer B: This answer is incorrect. Discussing problems as they arise may be included in the \u0000nal decision the psychologist makes, but this\nanswer fails to account for the larger concerns inherent in this dilemma.\nAnswer C: This answer is incorrect. It is unlikely that withdrawing from her role as a therapist would be in the client's best interest.\nAnswer D: This answer is incorrect. Withdrawal from the consultant role may ultimately be a part of the psychologist's \u0000nal decision, but this\nanswer is less desirable than Answer A, which uses language from the ethics codes."
+    },
+    {
+      "question": "Within the context of sexual harassment, \"quid pro quo\" refers to ______________________________.",
+      "options": {
+        "A": "a situation in which an employees response to sexual demands impacts his/her job",
+        "B": "the creation of a \"hostile environment\" as a result of sexually offensive conduct",
+        "C": "the judgment of a \"reasonable woman\" that an act is offensive",
+        "D": "overt sexual conduct"
+      },
+      "correct": "A",
+      "explanation": "Quid pro quo is one of the two legally recognized types of sexual harassment. Sexual harassment is addressed in Standard 3.02 of the APA's\nEthics Code and described in the Ethics Manual in the written study materials. Quid pro quo sexual harassment occurs when a person's\nsubmission to or rejection of sexual advances affects his/her employment status.\nAnswer B: This answer is incorrect. A hostile environment is, however, the second legally recognized type of sexual harassment.\nAnswer C: This answer is incorrect as it does not describe \"quid pro quo.\"\nAnswer D: This answer is incorrect because it does not describe \"quid pro quo.\""
+    },
+    {
+      "question": "You have been seeing Malcolm M. for several months and believe that the original issues that Malcolm came to therapy for have been successfully resolved. When you bring up the topic of termination with Malcolm, he says that he wants to continue therapy. In subsequent sessions, you and Malcolm are unable to come up with additional treatment goals. As an ethical psychologist, your best course of action would be to do which of the following?",
+      "options": {
+        "A": "tell Malcolm that you are ethically required to terminate therapy and reassure him that he'll be okay",
+        "B": "provide Malcolm with a brief period of pretermination counseling and discuss the reasons why termination is appropriate",
+        "C": "establish a contract with Malcolm for a maximum of three more months of therapy",
+        "D": "continue seeing Malcolm until he feels he is ready to terminate"
+      },
+      "correct": "B",
+      "explanation": "Ethical guidelines are very clear about situations in which a therapist believes that it is the appropriate time to terminate therapy. Standard\n10.10 of the APA's Ethics Code requires psychologists to terminate therapy when it is \"reasonably clear that the client/patient no longer needs\nthe service\" but to do so only after providing the appropriate pre-termination counseling. Principles III.31 and 37 of the Canadian Code of Ethics\ncontain similar language.\nAnswer A: This answer is inconsistent with ethical guidelines. Pretermination counseling will explore the therapist's and client's perspectives on\nterminating treatment. Reassuring the client that he will be okay may not be appropriate, given the client's individual situation.\nAnswer C: This answer is incorrect as it fails to take into account the client's unique situation and does not adhere to ethical guidelines\nregarding termination.\nAnswer D: This answer is incorrect as it does not include direction provided by ethical guidelines regarding termination."
+    },
+    {
+      "question": "You are subpoenaed to appear at a deposition to testify about a former client of yours. During the deposition, the attorney for the opposing party asks you to provide con\u0000dential client information. You should _______________________.",
+      "options": {
+        "A": "ask the attorney to order you to release the information",
+        "B": "assert the privilege unless the client has signed a waiver",
+        "C": "provide the information if you believe it is pertinent to the case",
+        "D": "provide the information since privilege is waived in this situation"
+      },
+      "correct": "B",
+      "explanation": "Con\u0000dential client information should be revealed in a legal proceeding only when the client has signed a waiver or when the court has issued\nan order indicating that privilege is waived.\nAnswer A: This answer is incorrect. You may provide the information if the client has signed a waiver. If the client's attorney is present, you may\nask him or her if you should answer the question. However, if the attorney is not present, you should not provide the information without a\nwaiver from the client but, instead, should assert the privilege on behalf of the client.\nAnswer C: This answer is incorrect. Without a signed waiver, the client's privilege should be protected, and you should not release information.\nAnswer D: This answer is incorrect. There is no indication the client has waived privilege in this case."
+    },
+    {
+      "question": "You believe that one of your clients is exhibiting symptoms of PTSD. A new test for PTSD has been developed by a psychologist at the local university, and you would like to use the test to evaluate the client. However, the test is currently labeled \"For Research Purposes Only.\" You should _______________________________.",
+      "options": {
+        "A": "get permission to use the test from the psychologist who developed it",
+        "B": "get an informed consent from the client before administering the test",
+        "C": "make sure that you combine test results with other data you have collected",
+        "D": "not use the test"
+      },
+      "correct": "D",
+      "explanation": "Ethical guidelines require that tests be used only for the purposes for which they have been validated. \"For research purposes only\" implies that\nthis test has not been validated for clinical use and, therefore, should not be used for that purpose.\nAnswer A: This answer is incorrect as it fails to address the ethical concern of whether an instrument has been approved for clinical use.\nAnswer B: This answer is incorrect. Informed consent, in this case, is less relevant than the correct usage of the test.\nAnswer C: This answer is incorrect. If the instrument has not been evaluated for clinical application, you should not use it."
+    },
+    {
+      "question": "Which of the following is not an element of informed consent?",
+      "options": {
+        "A": "credibility",
+        "B": "comprehension",
+        "C": "voluntariness",
+        "D": "competence"
+      },
+      "correct": "A",
+      "explanation": "Legally, three conditions are required for consent to be truly \"informed.\" Note that this question is asking for the element that is NOT required. In\norder for consent to be informed, the individual must have adequate information (knowledge) and be able to comprehend that information,\nmust give consent voluntarily (without coercion), and must have the capacity to make rational decisions. Credibility is not one of the conditions\nfor consent. Additional information on informed consent is provided in the Ethics Manual in the written study materials.\nAnswer B: Comprehension is required for informed consent.\nAnswer C: Voluntariness is required for informed consent.\nAnswer D: Competence is required for informed consent."
+    },
+    {
+      "question": "Psychologists are most likely to identify which of the following as the most frequent \"ethically troubling issue\" that they encounter in their professional practice?",
+      "options": {
+        "A": "conduct of colleagues",
+        "B": "con\u0000dentiality",
+        "C": "treatment termination",
+        "D": "intimacy"
+      },
+      "correct": "B",
+      "explanation": "The issues listed in the answers for this question were all identi\u0000ed as \"ethically troubling issues\" in a survey of psychologists by K. S. Pope\nand V. A. Vetter (1992). Of the 703 ethically troubling issues cited by psychologists in the study, the largest number (128) were related to\ncon\u0000dentiality [Ethical dilemmas encountered by members of the American Psychological Association: A national survey, American\nPsychologist, 47 (3), 397-411].\nAnswer A: This answer is incorrect. The conduct of colleagues was cited as an issue of concern but was less frequently cited than\ncon\u0000dentiality.\nAnswer C: This answer is incorrect. Treatment termination was listed, but with less frequency than con\u0000dentiality.\nAnswer D: This answer is incorrect. Sexual issues were cited less frequently than con\u0000dentiality."
+    },
+    {
+      "question": "The Examination for Professional Practice in Psychology (EPPP) is best described as which of the following?",
+      "options": {
+        "A": "predictor of performance as a professional psychologist",
+        "B": "measure of basic knowledge of psychology",
+        "C": "measure of basic competence",
+        "D": "method for protecting the profession of psychology"
+      },
+      "correct": "B",
+      "explanation": "The EPPP is a requirement for licensure in the United States and Canada. The Association of State and Provincial Psychology Boards (ASPPB)\ndescribes the EPPP as a measure of \"the knowledge that should have been acquired by any candidate who is seeking licensure to practice\npsychology.\"\nAnswer A: The EPPP is one of several measures used by licensing boards to evaluate a candidate's credentials. It does not predict future\nperformance as a professional psychologist. The EPPP measures knowledge of psychology.\nAnswer C: The EPPP measures knowledge of psychological content.\nAnswer D: The EPPP is not designed to protect the profession of psychology."
+    },
+    {
+      "question": "In a research study that uses deception, participants are not told the exact nature of the study prior to their participation. In terms of ethical requirements, the investigator is obligated to do which of the following?",
+      "options": {
+        "A": "explain why participants were not informed in the presentation of his research \u0000ndings",
+        "B": "explain the true nature of the study to all participants as soon as possible",
+        "C": "\u0000le a waiver of informed consent with the institutional review board prior to beginning the study",
+        "D": "do nothing out of the ordinary as long as the study is determined to be of signi\u0000cant scienti\u0000c value"
+      },
+      "correct": "B",
+      "explanation": "The use of deception is not prohibited by ethical guidelines, but when it is used, it must be accompanied by certain actions. Guidelines for the\nuse of deception are provided in Standard 8.07 of the APA's Ethics Code and are discussed in the Ethics Manual in the written study materials.\nWhen deception is necessary, participants must be provided with an explanation of the purpose of the study as soon as possible.\nAnswer A: This answer is incorrect because explaining why deception was necessary is not required by the ethical guidelines.\nAnswer C: This answer is incorrect. This is not required by ethical guidelines.\nAnswer D: This answer is incorrect, since \"signi\u0000cant scienti\u0000c value\" does not preclude explaining the true purpose of the study to participants\nas soon as possible."
+    },
+    {
+      "question": "A psychotherapist, who is a member of APA, uses business cards that include her sliding scale fee. This is _____________________.",
+      "options": {
+        "A": "unethical because sliding scale fees cannot be addressed on a business card",
+        "B": "unethical because sliding scale fees are not allowed",
+        "C": "unethical because of APA membership",
+        "D": "ethical"
+      },
+      "correct": "D",
+      "explanation": "None of the information included in the psychologist's business card is prohibited by ethical guidelines. It is not unethical to charge clients on a\nsliding scale, and it would only be unethical to provide the \u0000rst session free if there was some underlying coercion involved. It is also\nacceptable to list oneself as an APA member as long as it is not done in a way that is misleading.\nAnswer A: This answer is incorrect. Including information about fees or sliding scale feels is permissible.\nAnswer B: This answer is incorrect. Offering a free initial session is allowable provided no coercion is involved.\nAnswer C: This answer is incorrect. Including APA membership is permissible."
+    },
+    {
+      "question": "A psychologist who already has an established therapeutic relationship with a child is asked to act as an expert witness in a divorce proceeding involving custody of the child. The psychologist's best course of action would be to ____________________________.",
+      "options": {
+        "A": "decline the request to testify",
+        "B": "agree to testify only if she obtains consent from both parents",
+        "C": "agree to testify only if she can evaluate all of the involved parties",
+        "D": "agree to testify only if her relationship will not bias her judgment"
+      },
+      "correct": "A",
+      "explanation": "The psychologist already has an established relationship with the child, which changes the situation in an important way. Since the\npsychologist has a therapeutic relationship with the child, it would be in the child's best interests for the psychologist to refrain from testifying.\nInstead, the psychologist's role should be to provide the child with continued support.\nAnswer B: This answer is incorrect. Even if both parents consent to her testimony, the psychologist would be engaging in multiple relationships\nwhich ordinarily should be avoided in custody cases. See\nParagraph II.7 of the APA's \"Guidelines for Child Custody Evaluations in Family Law Proceedings.\"\nAnswer C: This answer is incorrect. This would be the best course of action when a psychologist does not have a previous relationship with any\nof the involved parties.\nAnswer D: This answer is incorrect. One of the reasons that the psychologist should not testify is because it might be di\u0000cult to be objective."
+    },
+    {
+      "question": "Your colleague, who is a licensed psychologist, con\u0000des that he has just ended a sexual relationship with one of his clients. As he describes the client, you realize that she is someone you referred to him 18 months ago. As an ethical psychologist, you should ______________________________.",
+      "options": {
+        "A": "\u0000le a written complaint against the colleague",
+        "B": "\u0000le a complaint against the colleague with the Ethics Committee after informing him that you intend to do so",
+        "C": "discuss the matter further with the colleague to see what course of action he plans to take",
+        "D": "contact the client and discuss the matter with her"
+      },
+      "correct": "C",
+      "explanation": "Ethical violations by colleagues are addressed by Standards 1.04 and 1.05 of the APA's Ethics Code and Principles II.40 and 41 of the Canadian\nCode of Ethics. Ethical guidelines require psychologists to address ethical violations by other psychologists, but to do so in a way that does not\nviolate the con\u0000dentiality of the involved client. Standard 1.05 states \"If an apparent ethical violation has substantially harmed or is likely to\nsubstantially harm a person or organization and is not appropriate for informal resolution ... psychologists take further action appropriate to\nthe situation. Such action might include referral to state or national committees on professional ethics, to state licensing boards, or to the\nappropriate institutional authorities. This standard does not apply when an intervention would violate con\u0000dentiality rights.\" Therefore, this is\nthe best course of action of those presented in the answers to this question.\nAnswer A: This answer is incorrect. Filing a complaint with the Ethics Committee would be unethical if it involved a breach of the client's\ncon\u0000dentiality.\nAnswer B: This answer is incorrect. Informing a colleague of a pending ethics report is not required by ethics codes.\nAnswer D: This answer is incorrect. The question does not say that you have a current professional relationship with the client and, even if you\ndid, it would not be appropriate to confront her with this from both an ethical and clinical perspective."
+    },
+    {
+      "question": "As a psychologist working in a multidisciplinary setting, you should _____________.",
+      "options": {
+        "A": "develop professional and ethical standards for mental health services that do not recognize professional differences",
+        "B": "consult with your local ethics committee for permission to work with other professionals when developing professional and ethical standards for psychological services",
+        "C": "cooperate with other professionals to the extent needed, when adhering to professional and ethical standards for psychological services",
+        "D": "only work with fellow psychologists when developing professional and ethical standards for psychological services"
+      },
+      "correct": "B",
+      "explanation": "Psychologists frequently consult with other professionals, such as medical doctors, lawyers, and teachers. It is imperative that they be aware\nthat every profession has professional and ethical standards that must be maintained. General Principle B of APA's Ethics Code states that\n\"psychologists consult with, refer to, or cooperate with other professionals and institutions to the extent needed to serve the best interests of\nthose with whom they work\"; and the Values Statement of Principle IV of the Canadian Code of Ethics states that \"in order to be responsible\nand accountable to society, and to contribute constructively to its ongoing development, psychologists need to be willing to work in partnership\nwith others.\" This answer is most consistent with these guidelines.\nAnswer A: It is unrealistic to presume that it is possible to limit decision-making to psychologists only. There are many situations, especially in\na multidisciplinary setting, where consultation with other professionals is necessary.\nAnswer C: Psychologists do not need to obtain permission to work with other professionals.\nAnswer D: Each profession has different professional and ethical responsibilities, and it is not advisable (and often not possible) to\nhomogenize the responsibilities of different professions."
+    },
+    {
+      "question": "Dr. Ja-Hoon Jang is conducting a research study that involves interviewing junior high school students about peer relationships. Before beginning the study, Dr. Jang obtained informed consent from the parents of the students as well as assent from the students. During the course of the study, one of the students says he doesn't want to complete the interview. Dr. Jang should __________________________.",
+      "options": {
+        "A": "tell the student that he cannot withdraw from the study since his parents signed a consent",
+        "B": "tell the student that he cannot withdraw from the study since he agreed to participate",
+        "C": "contact the student's parents to ask them to encourage their son to complete the interview",
+        "D": "allow the student to withdraw from the study"
+      },
+      "correct": "D",
+      "explanation": "This issue is addressed by Standard 8.02 of the APA's Ethics Code and Principle I.24 of the Canadian Code of Ethics. Ethical guidelines require\nresearchers to allow participants to withdraw at any time from a research study. This answer is most consistent with this requirement.\nAnswer A: This answer is incorrect. The student should be allowed to withdraw.\nAnswer B: Research participants should always be allowed to withdraw from a study, regardless of whether they gave their assent or consent\nat the beginning.\nAnswer C: This answer is incorrect. The psychologist should allow the student to withdraw."
+    },
+    {
+      "question": "Dr. Leonard, a licensed psychologist, has been seeing a prison inmate in group therapy for several months and is asked by the parole board to evaluate the inmate to assist with their decision. As an ethical psychologist, Dr. Leonard should:",
+      "options": {
+        "A": "agree to evaluate the inmate",
+        "B": "agree to evaluate the inmate only if the inmate believes it is in their best interest",
+        "C": "agree to do so only if she is allowed to explain the purpose of the evaluation and the limits on con\u0000dentiality to the inmate",
+        "D": "refuse to evaluate the inmate for the purpose of parole"
+      },
+      "correct": "A",
+      "explanation": "Although the APA guidelines state that multiple relationships should be avoided if there is risk of exploitation or impaired objectivity, an\nexception is allowed for therapists in a forensic setting to also conduct parole evaluations. Thus, it would be okay for Dr. Leonard to complete\nthe parole evaluation.\nAnswers B, C, and D: These statements are incorrect because they describe actions that are inaccurate."
+    },
+    {
+      "question": "Which of the following best describes ethical guidelines regarding the use of inducements to encourage individuals to participate in a research study?",
+      "options": {
+        "A": "Financial and other inducements are acceptable only when they do not coerce participation in the research study.",
+        "B": "Financial and other inducements are acceptable only when the risks for participating in the study are clearly described to potential participants.",
+        "C": "Financial and other inducements are acceptable only when alternative methods for obtaining participants are unavailable.",
+        "D": "Financial inducements are unacceptable under any circumstances."
+      },
+      "correct": "A",
+      "explanation": "The use of inducements to encourage participation in a research study is addressed by Standard 8.06 of the APA's Ethics Code and Principles\nI.27 and III.32 of the Canadian Code of Ethics. This answer is most consistent with ethical guidelines. For example, Standard 8.06 of the Ethics\nCode states that \"psychologists make reasonable efforts to avoid offering excessive or inappropriate \u0000nancial or other inducements for\nresearch participation when such inducements are likely to coerce participation.\"\nAnswer B is incorrect. This answer does not accurately describe ethical guidelines regarding the use of inducements.\nAnswer C is incorrect. This answer does not accurately describe ethical guidelines regarding the use of inducements.\nAnswer D is incorrect because \u0000nancial and other inducements are acceptable in some circumstances."
+    },
+    {
+      "question": "Dr. Brian Bertram, a licensed psychologist, is hired by the owner of a company to evaluate employees who are underperforming. The determination would assist in identifying additional training needs or counseling for employees. In this situation, Dr. Bertram should _______________.",
+      "options": {
+        "A": "reveal the information obtained from each employee to the owner of the company",
+        "B": "reveal information about each employee only after obtaining a signed consent from employees",
+        "C": "not discuss con\u0000dentiality with the employees since to do so might limit their willingness to reveal information",
+        "D": "inform each employee prior to the evaluation of the potential limits on con\u0000dentiality"
+      },
+      "correct": "D",
+      "explanation": "Standard 3.07 of the APA's Ethics Code states that \"when psychologists agree to provide services to a person or entity at the request of a third\nparty, psychologists attempt to clarify at the outset of the service the nature of the relationship with all individuals or organizations involved.\nThis clari\u0000cation includes ... the fact that there may be limits to con\u0000dentiality.\" Principle I.26 of the Canadian Code of Ethics contains similar\nlanguage. In the situation described in this question, the company does have a right to relevant information, but this does not free the\npsychologist from the obligation to inform employees about the limits of con\u0000dentiality and the company about what kinds of employee\ninformation will be revealed.\nAnswer A: This answer is incorrect because it fails to abide by ethical codes which emphasize informing individuals regarding the limits of\ncon\u0000dentiality.\nAnswer B: This answer is incorrect. The organization is the client, but the psychologist has a responsibility to inform employees regarding the\nnature of the relationships involved.\nAnswer C: This answer is incorrect and not aligned with ethical obligations."
+    },
+    {
+      "question": "If a psychologist acts as both a fact witness for a plaintiff and an expert witness for the court in a criminal trial, she has acted _____________________________.",
+      "options": {
+        "A": "unethically by accepting dual roles",
+        "B": "ethically as long as she did not have a prior relationship with the plaintiff",
+        "C": "ethically as long as she clari\u0000es her roles with all parties",
+        "D": "ethically as long as she obtains a waiver from the court"
+      },
+      "correct": "C",
+      "explanation": "The adoption of multiple roles is addressed in the ethics codes published by the American and Canadian Psychological Associations and in the\nAPA's \"Specialty Guidelines for Forensic Psychology.\" According to ethical guidelines, maintaining multiple roles may be acceptable as long as\nthe psychologist considers the risks and bene\u0000ts of doing so for all involved parties and clari\u0000es the nature of the multiples roles with all\ninvolved parties. See Standard 3.05 of the APA's Ethics Code and Principle I.26 of the Canadian Code of Ethics and Paragraph 4.02 of the\n\"Specialty Guidelines for Forensic Psychology.\"\nAnswer A: This answer is incorrect. As long as the psychologist meets the criteria described above, she has behaved ethically.\nAnswers B and D are incorrect as they are not relevant to the situation described."
+    },
+    {
+      "question": "Which of the following best describes the Health Insurance Portability and Accountability Act requirements?",
+      "options": {
+        "A": "HIPAA takes precedence over state laws.",
+        "B": "HIPAA is superseded by state laws when those laws provide greater privacy protection.",
+        "C": "HIPAA is enforceable only in the absence of state and other relevant federal laws.",
+        "D": "HIPAA applies only to organizations that receive \u0000nancial assistance from the federal government."
+      },
+      "correct": "B",
+      "explanation": "HIPAA's privacy rule provides standards for protecting the privacy and security of health information that is transmitted electronically. The\nprivacy rule provides minimum standards for access to and use of patient information and is superseded by other laws that provide patients\nwith greater control over their health records.\nAnswer A is incorrect. If state laws provide a higher level of privacy protection, those laws take precedence.\nAnswers C and D are incorrect as neither answer applies to HIPAA."
+    },
+    {
+      "question": "Dr. Melba Morrison, a licensed psychologist, conducts research and teaches several classes at a large university. In her social psychology class, she usually covers only material that is consistent with the results of her research. In terms of the ethical guidelines, this practice is ________________________.",
+      "options": {
+        "A": "ethical since it is up to Dr. Morrison to decide what to cover in her class",
+        "B": "ethical as long as Dr. Morrison provides information about her policy in the class syllabus",
+        "C": "questionable, but not addressed by ethical guidelines",
+        "D": "unethical"
+      },
+      "correct": "D",
+      "explanation": "Standard 7.03 of the APA's Ethics Code and Principle III.12 of the Canadian Code of Ethics addresses this issue. To be consistent with ethical\nrequirements, when acting as an instructor or trainer, psychologists must present information accurately and in an unbiased way. Therefore, Dr.\nMorrison is acting unethically by presenting only information that is consistent with the results of her own research.\nAnswer A: This answer is incorrect given ethics codes require psychologists to deliver academic material in an unbiased way.\nAnswer B: This answer is incorrect as it misses the larger point that academic material needs to be presented in an accurate and unbiased way.\nAnswer C: This answer is incorrect given the behavior is inconsistent with ethical guidelines."
+    },
+    {
+      "question": "During his third therapy session with Dr. Janet Bramwell, a client reveals that he is also in therapy with another psychologist. As an ethical psychologist, Dr. Bramwell should _______________________.",
+      "options": {
+        "A": "inform the client that he will have to make a choice in the near future about which therapist to continue seeing",
+        "B": "inform the client that it would be unethical to continue seeing him while he is receiving treatment from another psychologist",
+        "C": "call the other psychologist to inform him of the situation and obtain his permission to continue therapy with the client",
+        "D": "discuss the treatment issues with the client during the next session"
+      },
+      "correct": "D",
+      "explanation": "Standard 10.04 of the APA's Ethics Code and Principle II.18 of the Canadian Code of Ethics addresses this issue. In this situation, Dr. Bramwell\nwould want to consider the client's welfare and avoid duplicating services or working at cross purposes with the other psychologist.\nConsequently, of the answers given, this is the best one.\nAnswers A, B, and C are incorrect because there are no requirements in the ethics codes."
+    },
+    {
+      "question": "Which of the following techniques would be most useful in evaluating the impact of an intervention on a patients' quality of life?",
+      "options": {
+        "A": "cost-feasibility analysis",
+        "B": "cost-minimization analysis",
+        "C": "cost-utility analysis",
+        "D": "cost-bene\u0000t analysis"
+      },
+      "correct": "C",
+      "explanation": "Cost analysis is conducted to determine the optimal allocation of \u0000nancial resources. Experts distinguish between the four methods of cost\nanalysis listed in the answers to this question. Cost-utility analysis is conducted to compare the costs and patient outcomes of an intervention,\nwith outcomes including patients' duration and quality of life. Additional information on these methods is provided in the Ethics and\nProfessional Issues chapter of the written study materials.\nAnswer A: Cost-feasibility analysis is used to determine the feasibility of an intervention based on the monetary and other resources it requires.\nAnswer B: As its name implies, cost-minimization analysis is conducted to identify the least costly option among several options that produce\nequivalent outcomes.\nAnswer D: As its name implies, a cost-bene\u0000t analysis is used to determine the relative costs and bene\u0000ts of a particular intervention."
+    },
+    {
+      "question": "When evaluating a defendant's competence to stand trial, the focus of the evaluation is on the defendant's _____________________________.",
+      "options": {
+        "A": "ability to distinguish right from wrong",
+        "B": "ability to comprehend the charges against him/her",
+        "C": "state of mind at the time he/she committed the crime",
+        "D": "mental health diagnoses"
+      },
+      "correct": "B",
+      "explanation": "An evaluation to determine a defendant's competence to stand trial focuses on his/her current psychological abilities and impairments. It\nexamines the defendant's ability to comprehend the charges against him/her, to understand the trial process, and to cooperate with his/her\nattorney.\nAnswer A: A defendant's ability to distinguish between right and wrong is not a part of the evaluation of competence to stand trial.\nAnswer C: The person's mental state at the time of the crime is not a part of the evaluation of competence to stand trial.\nAnswer D: The person's DSM-V diagnosis is not a part of the evaluation of competence to stand trial."
+    },
+    {
+      "question": "A psychologist's behavior as a private citizen _______________________.",
+      "options": {
+        "A": "can never serve as grounds for a charge of unethical conduct",
+        "B": "may serve as grounds for a charge of unethical conduct if it violates the ethics code",
+        "C": "may serve as grounds for a charge of unethical conduct if it compromises his/her professional responsibilities",
+        "D": "will serve as grounds for a charge of unethical conduct when it violates the law"
+      },
+      "correct": "C",
+      "explanation": "The introduction of the APA Ethics Code and the Preamble of the Canadian Code of Ethics address a psychologist's private behaviors. The\nIntroduction to the APA's Ethics Code states that the \"This Ethics Code applies only to psychologists’ activities that are part of their scienti\u0000c,\neducational, or professional roles as psychologists......... These activities shall be distinguished from the purely private conduct of\npsychologists, which is not within the purview of the Ethics Code.\" Similar language is included in the Preamble of the Canadian Code of Ethics.\nAnswer A: A psychologist's private behavior that compromises their professional responsibilities or negatively impacts the public's trust in the\n\u0000eld may be grounds for an ethics violation.\nAnswer B: This answer initially may appear to be a reasonable choice, but it is incorrect because personal behavior is not governed by\nprofessional ethics codes.\nAnswer D: Minor legal infractions such as tra\u0000c violations are not likely to be grounds for a charge of unethical conduct."
+    }
+  ]
+}
